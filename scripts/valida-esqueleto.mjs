@@ -41,7 +41,12 @@ const semAcento = (s) =>
 const lerJson = (p) => { try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; } };
 
 // A pasta é a fonte do par: curso-<destino>-<linguaDoComprador>.
-const m = /^curso-([a-z]+)(?:-([a-z]{2}))?$/.exec(pasta);
+// O sufixo de língua aceita 2-4 letras, não só 2: curso-eua-esp (espanhol
+// PENINSULAR→EUA) precisou de um sufixo de 3 letras porque "es" já estava
+// tomado por curso-eua-es (MÉXICO→EUA, o corredor maior) — sem essa folga o
+// regex inteiro falhava e desligava TODO o portão pra esse SKU, não só o
+// pedaço da língua (achado em 2026-08-20).
+const m = /^curso-([a-z]+)(?:-([a-z]{2,4}))?$/.exec(pasta);
 if (!m) {
   console.log(`\nvalida-esqueleto · pasta "${pasta}" fora do padrão curso-<destino>[-<lingua>] — portão DESLIGADO\n`);
   process.exit(0);
@@ -52,8 +57,16 @@ const destino = m[1];
 // já vem certa no clone (foi a camada que trocaram), o conteúdo não.
 const LINGUA_DO_DESTINO = {
   espanha: 'es', mexico: 'es', franca: 'fr', italia: 'it',
-  grecia: 'el', turquia: 'tr', portugal: 'pt', alemanha: 'de'
+  grecia: 'el', turquia: 'tr', portugal: 'pt', alemanha: 'de',
+  eua: 'en', reinounido: 'en', holanda: 'nl', japao: 'ja'
 };
+
+// Sufixos de pasta que NÃO são o buyerLang ISO puro — desambiguadores de
+// variante regional dentro da mesma língua (dois compradores diferentes
+// competindo pelo mesmo código de 2 letras). Sem esta tabela, o teste 6
+// compararia "es" (buyerLang real) com "esp" (sufixo) e acusaria falso
+// positivo em vez de simplesmente não achar nada de errado.
+const DESAMBIGUACAO_SUFIXO = { esp: 'es' };
 
 // ── 1. package.json chama a si mesmo pelo nome certo ─────────────────────────
 // Pega o caso mais barato e mais comum: curso-franca-en dizendo "curso-espanha".
@@ -158,8 +171,11 @@ const buyerLang = existsSync(cfgPath)
   ? (readFileSync(cfgPath, 'utf8').match(/buyerLang:\s*'([a-z-]+)'/) || [])[1] || null
   : null;
 const linguaDaPasta = m[2] || null;
+const buyerLangEsperado = linguaDaPasta
+  ? DESAMBIGUACAO_SUFIXO[linguaDaPasta] || linguaDaPasta
+  : null;
 
-if (buyerLang && linguaDaPasta && buyerLang !== linguaDaPasta)
+if (buyerLang && buyerLangEsperado && buyerLang !== buyerLangEsperado)
   erros.push(`curso.config.ts tem buyerLang "${buyerLang}" e a worktree é "-${linguaDaPasta}" — config do SKU de origem`);
 
 // ── 7. o roster nomeia a ORIGEM certa, não só o destino ──────────────────────
@@ -169,7 +185,10 @@ if (buyerLang && linguaDaPasta && buyerLang !== linguaDaPasta)
 if (moldes && moldes.sku && linguaDaPasta) {
   const sku = semAcento(moldes.sku);
   const origem = sku.split(/->|→/)[0] || '';
-  if (origem && !origem.includes(linguaDaPasta))
+  // Aceita tanto o sufixo literal da pasta ("esp") quanto o buyerLang ISO
+  // ("es") — o texto do moldes.json pode citar qualquer um dos dois.
+  const bate = origem && (origem.includes(linguaDaPasta) || origem.includes(buyerLangEsperado || ''));
+  if (origem && !bate)
     erros.push(
       `moldes.json declara sku "${moldes.sku}" e a origem desta worktree é "${linguaDaPasta}" — roster do SKU irmão`
     );
