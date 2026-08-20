@@ -1087,10 +1087,15 @@ const ehCasa = (() => {
 // PT e EN). Regex que casa "nomear a peça".
 // \b em JS só marca fronteira entre \w e não-\w — CJK (框架 etc.) não é \w em
 // nenhum dos dois lados, então "\bXX\b" nunca casa dentro de prosa chinesa
-// (confirmado: /\b框架\b/.test('今天的框架') === false). Para um termo com
-// caractere CJK, cai para busca literal sem fronteira de \w; termos latinos
+// (confirmado: /\b框架\b/.test('今天的框架') === false). O MESMO vale pro
+// HANGUL coreano — \w também não cobre Hangul (/\w/.test('가') === false) —
+// então um termo coreano puro sofreria o mesmo silêncio, ainda que nenhum SKU
+// coreano publicado use um hoje (curso-japao-ko segue com o fallback "the
+// frame" em inglês). Cobrindo os dois de uma vez para não repetir o achado
+// quando o termo coreano for escolhido. Para um termo com caractere CJK ou
+// Hangul, cai para busca literal sem fronteira de \w; termos latinos
 // continuam exigindo \b dos dois lados, como antes.
-const TEM_CJK = /[㐀-鿿]/;
+const TEM_CJK = /[㐀-鿿가-힣ᄀ-ᇿ]/;
 const alternativasMolde = ['the frame', 'molde'];
 if (vocabMolde) alternativasMolde.push(vocabMolde);
 const NOMEIA_MOLDE = new RegExp(
