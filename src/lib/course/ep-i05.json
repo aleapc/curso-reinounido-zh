@@ -1,0 +1,267 @@
+{
+  "id": "i05",
+  "slot": "I05",
+  "nivel": "intermediario",
+  "numero": 5,
+  "parte": "I05",
+  "titulo": "总是同样的那些问题",
+  "subtitulo": "You alright? 不需要长篇回答，而你从哪里来、待多久这些问题几乎到处都会被问到",
+  "cena": "出租车司机、店员，还有酒吧柜台前的陌生人，几乎按照同样的顺序问了你同样的问题——提前想好答案，能让对话继续下去，而不是卡在那里。",
+  "decisao": "留在对话里还是找机会退出——把最常见的四五个问题的答案提前准备好，能让你自己掌握主动权，而不是每次都临场发挥",
+  "emJogo": "tempo",
+  "moldura": "ganha",
+  "moldes": ["PREFERENCIA"],
+  "clique": {
+    "contagem": ["出租车上", "纪念品店", "酒吧柜台"],
+    "desconto": "没有人给过你一句专门说食物偏好的话、一句专门说天气的话、再一句专门说城市的话。你是用同一个框架，把这三种情况都搭出来的，只换掉你要在其中选择的那两样东西。"
+  },
+  "frasePiso": "一天里你会被问同样的五个问题三次，你会用同样的句子回答，第三次听起来会跟第一次一样自然。",
+  "fichasCulturais": [
+    {
+      "sinal": "一个你不认识的人——出租车司机、柜台旁边的陌生人——你一坐下他就问了句「You alright?」，也等着你给一个同样简短的回答。",
+      "suaLeitura": "他在问我身体怎么样，我得详细回答。",
+      "oQueEAli": "「You alright?」或「You all right?」是标准的问候语，相当于英式的「你好」——这不是真的在问你的状态，这是一句打招呼，预期的回答也一样简短。",
+      "oQueVoceFaz": "简短平静地回应——「Yeah, you alright?」就够了——然后对话会自然而然地继续下去。",
+      "oQueMelhora": "你得到的是一次更有温度的交流，而不是一次纯粹的买卖对话，有时候还能顺带打听到一些当地的好去处。",
+      "ondeNaoVale": "这不是让你分享敏感信息的信号，比如你具体住在哪家酒店、完整的行程安排；轻松的闲聊不需要这个程度的细节。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-i05-n01"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i05-n01",
+      "gesto": 4,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "do you PRE-fer 里的那个结尾手势：prefer 词尾的辅音要清楚发出来。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i05-p01",
+      "promptPt": "昨晚你没等别人提醒就付了自己那轮的钱。今天你直接这样点一杯咖啡。现在请说。",
+      "bloco": "callback",
+      "audioKey": "gb-i05-t01",
+      "es": "Could I have a coffee, please?",
+      "tts": "Could I have a coffee, please?",
+      "pinyin": "kud ai hav e KOF-i, pliz",
+      "pt": "能来一杯咖啡吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i05-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "出租车还没开动，司机就问了句「you alright?」——几乎总是最先被问到的那个问题。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i05-r01",
+      "es": "You alright? Where are you from, then?",
+      "tts": "You alright? Where are you from, then?",
+      "pinyin": "yu ol-RAIT? wehr ar yu from, then",
+      "pt": "你好呀？那你从哪里来？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i05-n03",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "You alright 不是在等一个详细的回答——这是一句问候。简短回应，然后接上真正的问题。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i05-p02",
+      "promptPt": "简短回应，再说说你从哪里来。现在请说。",
+      "audioKey": "gb-i05-t02",
+      "es": "Yeah, good thanks. I'm from China.",
+      "tts": "Yeah, good thanks. I'm from China.",
+      "pinyin": "ye, gud sanks. aim from CHAI-na",
+      "pt": "挺好的，谢谢。我从中国来。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i05-r02",
+      "es": "Nice! How long are you staying?",
+      "tts": "Nice! How long are you staying?",
+      "pinyin": "nais! hau long ar yu STEI-ing",
+      "pt": "不错！你要待多久？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i05-p03",
+      "promptPt": "给一个真实又简短的数字，不用讲整个行程。现在请说。",
+      "audioKey": "gb-i05-t03",
+      "es": "About ten days.",
+      "tts": "About ten days.",
+      "pinyin": "e-BAUT ten deiz",
+      "pt": "大概十天。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i05-n04",
+      "bloco": "molde",
+      "tom": "ganha",
+      "pt": "今天的框架：在两样东西之间问偏好。Do you prefer，加上这两样。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i05-r03",
+      "es": "Do you prefer the coast or the countryside?",
+      "tts": "Do you prefer the coast or the countryside?",
+      "pinyin": "du yu pri-FER the kohst or the KAN-tri-said",
+      "pt": "你喜欢海边还是乡村？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "PREFERENCIA",
+      "encaixe": "the coast or the countryside",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i05-p04",
+      "promptPt": "用同一个框架回答：说出你自己的偏好。现在请说。",
+      "audioKey": "gb-i05-t04",
+      "es": "I prefer the coast.",
+      "tts": "I prefer the coast.",
+      "pinyin": "ai pri-FER the kohst",
+      "pt": "我更喜欢海边。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i05-p05",
+      "promptPt": "现在换你在商店里问了，关于同一件商品的两种颜色。现在请说。",
+      "molde": "PREFERENCIA",
+      "encaixe": "the red one or the green one",
+      "audioKey": "gb-i05-t05",
+      "es": "Do you prefer the red one or the green one?",
+      "tts": "Do you prefer the red one or the green one?",
+      "pinyin": "du yu pri-FER the red wan or the grin wan",
+      "pt": "你喜欢红色的还是绿色的？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i05-p06",
+      "promptPt": "在酒吧柜台，有人问你在两款本地啤酒之间更喜欢哪个。现在请说。",
+      "molde": "PREFERENCIA",
+      "encaixe": "the ale or the lager",
+      "audioKey": "gb-i05-t06",
+      "es": "Do you prefer the ale or the lager?",
+      "tts": "Do you prefer the ale or the lager?",
+      "pinyin": "du yu pri-FER thi eil or the LA-ger",
+      "pt": "你喜欢艾尔啤酒还是拉格啤酒？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i05-n05",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "还有一个问题，充满善意，从来不是在做买卖：问你最喜欢什么。用具体的东西回答，不要只说「都挺好」。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i05-r04",
+      "es": "What have you liked most so far?",
+      "tts": "What have you liked most so far?",
+      "pinyin": "wot hav yu laikt mohst soh far",
+      "pt": "到目前为止你最喜欢什么？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i05-p07",
+      "promptPt": "说出一件你真心喜欢的具体事物。现在请说。",
+      "audioKey": "gb-i05-t07",
+      "es": "I really liked the food, especially the pies.",
+      "tts": "I really liked the food, especially the pies.",
+      "pinyin": "ai RIL-i laikt the fud, es-PESH-a-li the paiz",
+      "pt": "我特别喜欢这里的食物，尤其是派。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i05-p08",
+      "promptPt": "你需要从容地退出这段对话。用一句简短的话道别。现在请说。",
+      "audioKey": "gb-i05-t08",
+      "es": "Well, it was nice talking to you. Take care.",
+      "tts": "Well, it was nice talking to you. Take care.",
+      "pinyin": "wel, it woz nais TOK-ing tu yu. teik kehr",
+      "pt": "跟你聊天很开心。保重。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i05-n06",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "整趟旅程你都可以用同样的三句回答。没有人会因为你重复而挑剔——因为这些都是真话。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i05-n07",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "你问过海边还是乡村、红色还是绿色、艾尔还是拉格。没有人给过你这些句子：都是你用一个框架搭出来的。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "PREFERENCIA",
+      "audioKey": "gb-i05-s01",
+      "es": "I'm from China. About ten days. I prefer the coast.",
+      "tts": "I'm from China. About ten days. I prefer the coast.",
+      "pinyin": "aim from CHAI-na. e-BAUT ten deiz. ai pri-FER the kohst",
+      "pt": "跟读这三句最常用的回答，一句接一句。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i05-n08",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "I05 完成。来自哪里、待多久、最喜欢什么——答案都提前准备好了——do you prefer 用来在两者之间做选择，不管是你自己的偏好还是问别人的。"
+    }
+  ],
+  "permissao": "被问到同样的问题时，你不需要每次都给出不同的回答。这些问题会反复出现，正是因为它们本来就是礼貌的开场白，不是一场要求你有创意的考试。",
+  "permissaoAudioKey": "gb-i05-n06",
+  "espelho": "在任何国家，和陌生人的闲聊都会围绕着差不多同一小撮问题——你从哪里来、待多久、最喜欢什么——提前准备好两三个答案不是什么外国的技巧，而是你在自己国家早就在用的同一种社交捷径。",
+  "aprofundar": {
+    "titulo": "提前准备好，不是死记硬背",
+    "secoes": [
+      {
+        "titulo": "You alright 不是在等长篇回答",
+        "corpo": "这是英式的「你好」——一句包装成问题的问候，从来不是真的在调查你的状态。一个词的回答就够了，接着可以把问题反问回去。"
+      },
+      {
+        "titulo": "PREFERENCIA 这个框架",
+        "corpo": "Do you prefer，加上用「or」连接的两样具体东西，能用来问海边还是乡村、颜色、啤酒——任何一对真实摆在你面前的选项，不管是你自己的偏好还是对方的。"
+      },
+      {
+        "titulo": "具体比笼统更好",
+        "corpo": "「I liked everything」是个安全但平淡的回答。说出具体的一样东西——一道菜、一个地方——能给对方一个继续聊下去的话头。"
+      }
+    ]
+  }
+}

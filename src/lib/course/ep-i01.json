@@ -1,0 +1,254 @@
+{
+  "id": "i01",
+  "slot": "I01",
+  "nivel": "intermediario",
+  "numero": 1,
+  "parte": "I01",
+  "titulo": "这个国家的时钟，不是你手机上的时钟",
+  "subtitulo": "厨房关门比你想象的早，就算晚上八点半才去吃饭在你看来不算晚，也可能落得没地方点餐",
+  "cena": "现在是九点一刻，服务员已经开始把椅子倒扣在空桌子上了，门边的牌子写着「Kitchen closes at 9pm」——你进门的时候没注意到。",
+  "decisao": "几点去吃晚饭——觉得晚上八点半还不算晚，结果可能面对的是已经关掉的厨房，酒吧只能再给你倒杯啤酒",
+  "emJogo": "ambos",
+  "moldura": "ganha",
+  "frasePiso": "在这种情况真的发生之前，先问一句几点关门，光是这一点，就已经让你领先了那一半站在关着的门前发愣的游客。",
+  "fichasCulturais": [
+    {
+      "sinal": "你晚上八点半走进一家酒吧餐厅，服务员抱歉地告诉你厨房刚刚关了。",
+      "suaLeitura": "一家九点就不再供餐的地方，肯定是家不太行的餐厅，或者根本没什么客人。",
+      "oQueEAli": "在英国，晚餐集中在晚上六点到八点之间；很多厨房，哪怕在大城市，也会在晚上九点到十点之间就停止接单——但吧台会继续开着，照常倒酒。",
+      "oQueVoceFaz": "到了就先问一句厨房几点关门，或者提前打电话问：「What time does the kitchen close?」",
+      "oQueMelhora": "你再也不会站在一间已经关门的厨房前发愣，也会按这里的时钟来安排晚饭，而不是按自己习惯的时间。",
+      "ondeNaoVale": "在游客密集的大城市或者夜生活热闹的街区不一定适用，那里有些厨房会开到很晚；这条也不适用于吧台本身，吧台通常会比厨房开得晚很多。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-i01-n04"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i01-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "第一部分。拳头打在有分量的那个词上：WHAT time，不是 what TIME。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i01-p01",
+      "promptPt": "昨天在酒店你用同一个框架问过退房时间。再问一次，这次是问厨房。现在请说。",
+      "bloco": "callback",
+      "molde": "WHAT-TIME",
+      "encaixe": "is check-out",
+      "audioKey": "gb-i01-t01",
+      "es": "What time is check-out?",
+      "tts": "What time is check-out?",
+      "pinyin": "wot taim iz chek-AUT",
+      "pt": "几点退房？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i01-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "九点一刻，服务员在倒扣椅子，门上的牌子写着一件你之前没注意到的事。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i01-n03",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "在这里晚饭不会拖得很晚。高峰是晚上六点到八点，厨房关门比你想的要早。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i01-r01",
+      "es": "Sorry, we stopped serving at nine.",
+      "tts": "Sorry, we stopped serving at nine.",
+      "pinyin": "SO-ri, wi stopt SER-ving at nain",
+      "pt": "不好意思，我们九点就不供餐了。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i01-p02",
+      "promptPt": "在对方开口告诉你之前，先主动问一句：厨房供应到几点。现在请说。",
+      "molde": "WHAT-TIME",
+      "encaixe": "does the kitchen close",
+      "audioKey": "gb-i01-t02",
+      "es": "What time does the kitchen close?",
+      "tts": "What time does the kitchen close?",
+      "pinyin": "wot taim daz the KICH-en klohz",
+      "pt": "厨房几点关门？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i01-r02",
+      "es": "Nine on weekdays, half nine on Sundays.",
+      "tts": "Nine on weekdays, half nine on Sundays.",
+      "pinyin": "nain on WIK-deiz, haf nain on SAN-deiz",
+      "pt": "平时九点，周日九点半。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i01-p03",
+      "promptPt": "第二天你来得早，想好好吃个早餐。问他们几点开始供应早餐。现在请说。",
+      "molde": "WHAT-TIME",
+      "encaixe": "do you open for breakfast",
+      "audioKey": "gb-i01-t03",
+      "es": "What time do you open for breakfast?",
+      "tts": "What time do you open for breakfast?",
+      "pinyin": "wot taim du yu OH-pen for BREK-fest",
+      "pt": "几点开始供应早餐？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i01-r03",
+      "es": "Seven, but it gets busy by eight.",
+      "tts": "Seven, but it gets busy by eight.",
+      "pinyin": "SEV-en, bat it gets BIZ-i bai eit",
+      "pt": "七点，不过八点左右就会很忙。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i01-n04",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "还有一个特别的时间窗口：Sunday roast，周日的传统午餐，有自己独立的供应时段——而且很快就会卖完。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i01-p04",
+      "promptPt": "你在吧台看到了「Sunday roast」的招牌。问几点开始供应。现在请说。",
+      "molde": "WHAT-TIME",
+      "encaixe": "does the Sunday roast start",
+      "audioKey": "gb-i01-t04",
+      "es": "What time does the Sunday roast start?",
+      "tts": "What time does the Sunday roast start?",
+      "pinyin": "wot taim daz the SAN-dei rohst start",
+      "pt": "Sunday roast 几点开始？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i01-r04",
+      "es": "Midday, but it sells out early.",
+      "tts": "Midday, but it sells out early.",
+      "pinyin": "MID-dei, bat it selz aut ER-li",
+      "pt": "中午开始，不过很早就会卖完。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i01-p04b",
+      "promptPt": "你想订个桌位，确保能吃到。问你应该几点到。现在请说。",
+      "molde": "WHAT-TIME",
+      "encaixe": "should I get there",
+      "audioKey": "gb-i01-t04b",
+      "es": "What time should I get there?",
+      "tts": "What time should I get there?",
+      "pinyin": "wot taim shud ai get thehr",
+      "pt": "我应该几点到？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i01-p05",
+      "promptPt": "一位本地人邀你周六一起吃饭，你不确定周末的时间是不是一样。问他们周末是不是关得晚一点。现在请说。",
+      "molde": "WHAT-TIME",
+      "encaixe": "do you close on weekends",
+      "audioKey": "gb-i01-t05",
+      "es": "What time do you close on weekends?",
+      "tts": "What time do you close on weekends?",
+      "pinyin": "wot taim du yu klohz on WIK-endz",
+      "pt": "周末几点关门？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i01-p06",
+      "promptPt": "用一句简短的话确认你听懂了这个时间。现在请说。",
+      "audioKey": "gb-i01-t06",
+      "es": "Got it, thanks.",
+      "tts": "Got it, thanks.",
+      "pinyin": "got it, sanks",
+      "pt": "明白了，谢谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i01-n05",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "你不需要背下这个国家每个地方的营业时间。一个问句，换个词，就能解决任何时间上的疑惑。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i01-p07",
+      "promptPt": "一个新地方，每晚的关门时间可能不一样。问今晚是不是关得晚一点。现在请说。",
+      "molde": "WHAT-TIME",
+      "encaixe": "do you close tonight",
+      "audioKey": "gb-i01-t07",
+      "es": "What time do you close tonight?",
+      "tts": "What time do you close tonight?",
+      "pinyin": "wot taim du yu klohz tu-NAIT",
+      "pt": "今晚几点关门？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "WHAT-TIME",
+      "audioKey": "gb-i01-s01",
+      "es": "What time does the kitchen close? What time do you open for breakfast?",
+      "tts": "What time does the kitchen close? What time do you open for breakfast?",
+      "pinyin": "wot taim daz the KICH-en klohz? wot taim du yu OH-pen for BREK-fest?",
+      "pt": "跟读同一个框架，配上两个不同的时间点。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i01-n06",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "I01 完成。What time 加上动词，能解决厨房、早餐、Sunday roast 的时间问题——就是第十八部分那个框架，只是换了内容。"
+    }
+  ],
+  "permissao": "你不需要去猜任何人的营业时间。What time 加上动词，本身就是一个完整的问题，不管是问厨房、早餐还是 Sunday roast——你只是换个词，不用重新造句。",
+  "permissaoAudioKey": "gb-i01-n05",
+  "espelho": "任何在自己家附近的餐厅去晚了、发现厨房已经关了的人，都清楚记得那种感觉；这里唯一新鲜的地方是，关门的时间比你预想的要早。",
+  "aprofundar": {
+    "titulo": "同一个框架，套在时钟上",
+    "secoes": [
+      {
+        "titulo": "What time，你早就学过了",
+        "corpo": "这个框架诞生在第十八部分，那时用来问退房时间。这里的结构完全没变：你只是换掉问的东西——厨房、早餐、Sunday roast。"
+      },
+      {
+        "titulo": "这里的晚饭吃得比较早",
+        "corpo": "英国晚餐的高峰在晚上六点到八点之间，很多厨房，哪怕在大城市，也会在晚上九点到十点之间停止接单——吧台则会继续照常倒酒。"
+      },
+      {
+        "titulo": "Sunday roast 有固定的供应时段",
+        "corpo": "这是周日的传统午餐，供应时间有限，常常是中午到下午四点。问清楚具体时间，能避免到了却发现已经卖完的情况。"
+      }
+    ]
+  }
+}

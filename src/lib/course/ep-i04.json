@@ -1,0 +1,254 @@
+{
+  "id": "i04",
+  "slot": "I04",
+  "nivel": "intermediario",
+  "numero": 4,
+  "parte": "I04",
+  "titulo": "最后一轮酒",
+  "subtitulo": "Last orders 来得比你想象的早，朋友之间轮流请客是一条社交规则，不是可选项",
+  "cena": "酒吧里有人喊了一声「last orders!」，一声铃响了起来，你手里的啤酒还剩半杯，不知道该不该赶紧喝完。",
+  "decisao": "还能待多久、怎么收场这个夜晚——轮流请全桌喝一轮酒不是可选的，last orders 才是真正的倒计时信号",
+  "emJogo": "tempo",
+  "moldura": "ganha",
+  "frasePiso": "一听到 last orders，你就要点最后一杯；轮到你请客时，你也不用等别人提醒。",
+  "fichasCulturais": [
+    {
+      "sinal": "吧台响起一声铃，有人喊了句「last orders!」，二十分钟后灯突然全亮了，一个声音喊着「time, please!」。",
+      "suaLeitura": "现在马上就要关门了，得立刻走人。",
+      "oQueEAli": "「Last orders」是不再接受新点单的信号——不是这一秒酒吧就打烊了。一般还有大约十五到二十分钟能喝完手里的酒，直到「time」被喊出来，灯也重新亮起。",
+      "oQueVoceFaz": "如果你还想再来一杯，一听到「last orders」就赶紧点；不然的话，就不慌不忙地把手里这杯喝完。",
+      "oQueMelhora": "你能不慌不忙、也不会措手不及地结束这个夜晚，而不是等灯突然亮起时才发现自己还在喝。",
+      "ondeNaoVale": "这不是全国到处都一样的时间：打烊时间取决于每家店各自的执照，不是一条全国统一的规定——有的酒吧关得早，有的晚得多。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-i04-n04"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i04-n01",
+      "gesto": 4,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "今天是那个结尾的手势：last CALL，不是 last cal。词尾的辅音真的要发出来。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i04-p01",
+      "promptPt": "昨天你问了早餐几点开始供应。今天用同一个框架问酒吧。问它几点关门。现在请说。",
+      "bloco": "callback",
+      "molde": "WHAT-TIME",
+      "encaixe": "does the pub close",
+      "audioKey": "gb-i04-t01",
+      "es": "What time does the pub close?",
+      "tts": "What time does the pub close?",
+      "pinyin": "wot taim daz the pab klohz",
+      "pt": "酒吧几点关门？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i04-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "铃响了一声，有人喊「last orders!」，你手里的啤酒还剩半杯，不知道该不该赶紧喝。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i04-n03",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "在那之前，先了解一条社交规则：轮流请客。每个人轮到自己时，都要请全桌一轮。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i04-r01",
+      "es": "Same again for everyone?",
+      "tts": "Same again for everyone?",
+      "pinyin": "seim e-GEN for EV-ri-wan",
+      "pt": "大家再来一轮一样的吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i04-p02",
+      "promptPt": "轮到你请这一轮了。确认一下。现在请说。",
+      "audioKey": "gb-i04-t02",
+      "es": "Yes, this one's on me.",
+      "tts": "Yes, this one's on me.",
+      "pinyin": "yes, this wanz on mi",
+      "pt": "对，这轮我请。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i04-p03",
+      "promptPt": "你正从一家酒吧走到另一家，想知道离最后点单还有多久。问几点是 last orders。现在请说。",
+      "molde": "WHAT-TIME",
+      "encaixe": "are last orders",
+      "audioKey": "gb-i04-t03",
+      "es": "What time are last orders?",
+      "tts": "What time are last orders?",
+      "pinyin": "wot taim ar last OR-derz",
+      "pt": "最后点单是几点？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i04-r02",
+      "es": "Quarter to eleven. We close at eleven.",
+      "tts": "Quarter to eleven. We close at eleven.",
+      "pinyin": "KWOR-ter tu i-LEV-en. wi klohz at i-LEV-en",
+      "pt": "十点四十五。我们十一点关门。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i04-n04",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "一听到有人喊 last orders，你还有几分钟的时间，不是几秒钟。这是你点最后一杯的信号。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i04-p04",
+      "promptPt": "你听到了 last orders，想再来最后一轮。点单，也顺便请酒保喝一杯。现在请说。",
+      "audioKey": "gb-i04-t04",
+      "es": "One more round, please — and one for yourself.",
+      "tts": "One more round, please — and one for yourself.",
+      "pinyin": "wan mor raund, pliz — and wan for yor-SELF",
+      "pt": "最后一轮，麻烦了——也给您自己来一杯。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i04-r03",
+      "es": "Cheers, that's very kind.",
+      "tts": "Cheers, that's very kind.",
+      "pinyin": "chirz, thats VE-ri kaind",
+      "pt": "谢谢，您太客气了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i04-n05",
+      "pt": "「And one for yourself」在吧台前代替了小费：这里不留小费，而是请酒保喝一杯。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i04-p05",
+      "promptPt": "一个朋友明天要约你去另一家酒吧。问它几点开门，免得你去得太早。现在请说。",
+      "molde": "WHAT-TIME",
+      "encaixe": "do you open",
+      "audioKey": "gb-i04-t05",
+      "es": "What time do you open?",
+      "tts": "What time do you open?",
+      "pinyin": "wot taim du yu OH-pen",
+      "pt": "你们几点开门？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i04-r04",
+      "es": "Time, please! Come on, finish up.",
+      "tts": "Time, please! Come on, finish up.",
+      "pinyin": "taim, pliz! kam on, FIN-ish ap",
+      "pt": "打烊时间到了！快把杯里的喝完。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i04-p05b",
+      "promptPt": "你还剩最后一口。不慌不忙地说你喝完了。现在请说。",
+      "audioKey": "gb-i04-t05b",
+      "es": "All done, thanks.",
+      "tts": "All done, thanks.",
+      "pinyin": "ol dan, sanks",
+      "pt": "喝完了，谢谢。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i04-p06",
+      "promptPt": "出门前跟酒保打个招呼。现在请说。",
+      "audioKey": "gb-i04-t06",
+      "es": "Cheers, night then!",
+      "tts": "Cheers, night then!",
+      "pinyin": "chirz, nait then",
+      "pt": "谢谢，那晚安啦！"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i04-p07",
+      "promptPt": "一个朋友约你去这家之前的另一家酒吧。问它几点开门。现在请说。",
+      "molde": "WHAT-TIME",
+      "encaixe": "does that place open",
+      "audioKey": "gb-i04-t07",
+      "es": "What time does that place open?",
+      "tts": "What time does that place open?",
+      "pinyin": "wot taim daz that pleis OH-pen",
+      "pt": "那家店几点开门？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i04-n06",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "一听到 last orders，你不需要立刻慌张。你还有几分钟时间，可以从容地喝完手里的酒。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "WHAT-TIME",
+      "audioKey": "gb-i04-s01",
+      "es": "What time are last orders? One more round, please.",
+      "tts": "What time are last orders? One more round, please.",
+      "pinyin": "wot taim ar last OR-derz? wan mor raund, pliz",
+      "pt": "跟读问时间，还有点最后一轮酒。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i04-n07",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "I04 完成。轮流请客是一条社交规则，last orders 提醒你，time please 结束这个夜晚——又是第十八部分那套时钟。"
+    }
+  ],
+  "permissao": "一听到 last orders，你不需要立刻慌张。一般还有大约十五分钟，够你点最后一杯，或者从容地喝完手里这杯——这不是消防警报。",
+  "permissaoAudioKey": "gb-i04-n06",
+  "espelho": "轮流请客买单这件事，跟你熟悉的方式可能不太一样——但一旦身处这个系统里，轮到自己却不请客，会被看作是真正的失礼，而不是个人的自由选择。",
+  "aprofundar": {
+    "titulo": "轮流请客和酒吧的时钟",
+    "secoes": [
+      {
+        "titulo": "轮流请客不是可选项",
+        "corpo": "在酒吧的一群人里，每个人轮到自己时都要请全桌一轮。「忘记」自己那一轮，是一个真正的社交失误——比喝酒速度跟不上大家严重得多。"
+      },
+      {
+        "titulo": "Last orders 不等于立刻打烊",
+        "corpo": "这是最后一次点单的机会；一般还有十五到二十分钟，酒吧才会真正关门、灯也重新亮起。"
+      },
+      {
+        "titulo": "And one for yourself 代替了小费",
+        "corpo": "酒吧柜台不留小费——等价的心意是请酒保喝一杯，说一句「and one for yourself」。"
+      }
+    ]
+  }
+}

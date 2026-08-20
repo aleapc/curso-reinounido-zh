@@ -1,0 +1,72 @@
+{
+  "id": "q-i05",
+  "nivel": "intermediario",
+  "titulo": "问答 — 总是同样的那些问题",
+  "subtitulo": "You alright，以及 PREFERENCIA 框架",
+  "introAudioKey": "gb-i05-q-i",
+  "introPt": "出租车还没开动，司机就问了句「you alright?」。听听这位旅行者是怎么回应并接上话的。",
+  "cenario": "英国的一辆出租车里，刚上车。",
+  "dialogo": [
+    {
+      "audioKey": "gb-i05-q01",
+      "voz": "target_en_gb_m",
+      "es": "You alright? Where are you from, then?",
+      "tts": "You alright? Where are you from, then?",
+      "pinyin": "yu ol-RAIT? wehr ar yu from, then",
+      "pt": "你好呀？那你从哪里来？"
+    },
+    {
+      "audioKey": "gb-i05-q02",
+      "voz": "target_en_gb_f",
+      "es": "Yeah, good thanks. I'm from China.",
+      "tts": "Yeah, good thanks. I'm from China.",
+      "pinyin": "ye, gud sanks. aim from CHAI-na",
+      "pt": "挺好的，谢谢。我从中国来。"
+    },
+    {
+      "audioKey": "gb-i05-q03",
+      "voz": "target_en_gb_m",
+      "es": "Nice! How long are you staying?",
+      "tts": "Nice! How long are you staying?",
+      "pinyin": "nais! hau long ar yu STEI-ing",
+      "pt": "不错！你要待多久？"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "一个陌生人对你说「You alright?」，真正的意思是什么？",
+      "opcoes": ["真的在问你的健康状况", "一句简单的问候，就像「你好」", "一句抱怨", "让你离开的命令"],
+      "correta": 1,
+      "explica": "这是一句标准的问候语，只需要一个同样简短的回答。"
+    },
+    {
+      "pergunta": "几乎总是最先被问到的是哪些问题？",
+      "opcoes": ["你的薪水和年龄", "你从哪里来、待多久", "你的具体住址", "你的宗教信仰"],
+      "correta": 1,
+      "explica": "这些是轻松闲聊里最常见的开场问题。"
+    },
+    {
+      "pergunta": "在「Do you prefer ___ or ___?」这个框架里，什么是不变的？",
+      "opcoes": ["两个具体的选项", "「Do you prefer」", "回答的内容", "聊天的主题"],
+      "correta": 1,
+      "explica": "「Do you prefer」开启这个框架，问和答都能用。"
+    },
+    {
+      "pergunta": "有人问你在两款啤酒之间更喜欢哪个。如果你更喜欢拉格啤酒，你会怎么回答？",
+      "opcoes": ["I'm from France.", "I prefer the lager.", "Could I have the bill?", "Where's the toilet?"],
+      "correta": 1,
+      "explica": "这是同一个 PREFERENCIA 框架，用来回答问题时再次使用。"
+    },
+    {
+      "pergunta": "对于「what have you liked most?」，为什么回答「the pies」比回答「everything」更好？",
+      "opcoes": [
+        "因为「everything」显得没礼貌",
+        "因为具体的回答能给对方一个继续聊下去的话头",
+        "因为这样更简短",
+        "两者没有任何区别"
+      ],
+      "correta": 1,
+      "explica": "具体的内容能打开话题；笼统的回答会让话题结束。"
+    }
+  ]
+}

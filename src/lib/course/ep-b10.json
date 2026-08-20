@@ -1,0 +1,358 @@
+{
+  "id": "b10",
+  "slot": "B10",
+  "nivel": "basico",
+  "numero": 10,
+  "parte": "3C",
+  "titulo": "先读懂，再开口问",
+  "subtitulo": "WAY OUT 不是「紧急出口」：六块牌子决定你接下来怎么做，还有一个框架用来问没有牌子的地方",
+  "cena": "你站在一条走廊前，面对三扇门，手上拎满了行李，唯一能帮你选对门的信息，是每扇门上方一块不起眼的小牌子。",
+  "moldura": "ganha",
+  "frasePiso": "你要能读懂六块英文牌子，不用逐字翻译，还要能用一个框架问出没有牌子标示的东西。",
+  "moldes": ["LOOKING"],
+  "clique": {
+    "contagem": [
+      "登机口",
+      "机场药店",
+      "租车柜台",
+      "试衣间"
+    ],
+    "desconto": "没有人给过你一句专门用于每个你不知道确切英语单词的柜台的话。你是用「I'm looking for」把这四种情况都搭出来的，让对方来把话补完。",
+    "piso": "下次你缺一个确切的英语单词，你不会选择沉默：你会指出意图，让对方帮你把句子说完。"
+  },
+  "permissao": "你不需要读懂整块牌子。认出一个词，或者看懂图标，就已经足够知道该怎么做了；没有人会要求你把剩下的部分大声翻译出来。",
+  "permissaoAudioKey": "gb-b10-n10",
+  "espelho": "在你自己的国家，你也不假思索地读着各种牌子——推、拉、禁止入内；这里唯一新鲜的地方是，其中有一块牌子看起来像个你认识的词，意思却完全不同。",
+  "fichasCulturais": [
+    {
+      "sinal": "一个柜台前没有任何「QUEUE HERE」的牌子，也没有拉绳，但大家还是彼此保持着相同的距离，严格按照到达的先后顺序站着。",
+      "suaLeitura": "这里没有真正的队伍，我可以直接走到柜台前。",
+      "oQueEAli": "在英国，哪怕没有牌子也没有拉绳，队伍照样会自然形成：站在最后的那个人就是队尾，插队会像有拉绳时一样立刻被人注意到。",
+      "oQueVoceFaz": "在往前走之前先问一句「Sorry, are you in the queue?」，然后站到最后一个人的后面。",
+      "oQueMelhora": "你融入了大家都在遵守的这套秩序，而不是变成那个显眼的例外。",
+      "ondeNaoVale": "如果柜台前明显空无一人、没有人在等，就不适用：那种情况下根本没有队伍需要遵守。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-b10-n09"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b10-n01",
+      "gesto": 2,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "第十部分。手掌平摊，让英语元音保持纯净，不要拖出多余的滑音：是 WAY，不是 wei-yi-ye。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b10-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "面前三扇门，手上拎满行李，唯一的线索是门上方一块不起眼的小牌子。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b10-p01",
+      "promptPt": "跟昨天在闸机前一样，你还是没看到站台在哪里。问站台在哪。现在请说。",
+      "bloco": "callback",
+      "molde": "WHERE",
+      "audioKey": "gb-b10-t01",
+      "es": "Where's the platform?",
+      "tts": "Where's the platform?",
+      "pinyin": "wehrz the PLAT-form",
+      "pt": "站台在哪里？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b10-t02",
+      "es": "WAY OUT",
+      "tts": "Way out.",
+      "pinyin": "wei aut",
+      "pt": "出口"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b10-n03",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "注意这一块：在英国几乎没人说 EXIT。是 WAY OUT——出去的路。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b10-t03",
+      "es": "OUT OF ORDER",
+      "tts": "Out of order.",
+      "pinyin": "aut of OR-der",
+      "pt": "暂停使用"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b10-t04",
+      "es": "PULL · PUSH",
+      "tts": "Pull. Push.",
+      "pinyin": "pul · push",
+      "pt": "拉 · 推"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b10-n04",
+      "pt": "手动门上，pull 是往自己这边拉，push 是往外推。在手碰到门把手之前先读一读。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b10-t05",
+      "es": "TOILETS · MIND THE GAP",
+      "tts": "Toilets. Mind the gap.",
+      "pinyin": "TOI-lets · maind the gap",
+      "pt": "洗手间 · 注意间隙"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b10-n05",
+      "pt": "TOILETS，不是 restroom：你之前已经见过了。而 MIND THE GAP，是地铁在提醒你站台和车厢之间的那道空隙。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b10-n06",
+      "bloco": "molde",
+      "tom": "ganha",
+      "pt": "遇到没有牌子的情况：「I'm looking for」加上你要找的东西。不需要知道确切的词。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b10-t06",
+      "es": "I'm looking for my gate.",
+      "tts": "I'm looking for my gate.",
+      "pinyin": "aim LUK-ing for mai geit",
+      "pt": "我在找我的登机口。"
+    },
+    {
+      "consulta": ["chegar/embarque"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "LOOKING",
+      "encaixe": "my gate",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b10-p02",
+      "promptPt": "屏幕更新了，你已经认不出那个号码了。告诉机场工作人员你在找自己的登机口。现在请说。",
+      "audioKey": "gb-b10-t06",
+      "es": "I'm looking for my gate.",
+      "tts": "I'm looking for my gate.",
+      "pinyin": "aim LUK-ing for mai geit",
+      "pt": "我在找我的登机口。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b10-r01",
+      "es": "It's down that way, past the shops.",
+      "tts": "It's down that way, past the shops.",
+      "pinyin": "its daun that wei, past the shops",
+      "pt": "在那边，过了那些商店就到。"
+    },
+    {
+      "consulta": ["saude/farmacia"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "LOOKING",
+      "encaixe": "a chemist",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b10-p03",
+      "promptPt": "你头疼，却没看到任何药店的标示。告诉工作人员你在找什么。现在请说。",
+      "audioKey": "gb-b10-t07",
+      "es": "I'm looking for a chemist.",
+      "tts": "I'm looking for a chemist.",
+      "pinyin": "aim LUK-ing for e KEM-ist",
+      "pt": "我在找一家药店。"
+    },
+    {
+      "consulta": ["compras/tienda"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "LOOKING",
+      "encaixe": "sun cream",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b10-p04",
+      "promptPt": "你忘带防晒霜了，也不知道那个货架区确切叫什么名字。试试看，用这个框架加上你能想到的词。现在请说。",
+      "audioKey": "gb-b10-t08",
+      "es": "I'm looking for sun cream.",
+      "tts": "I'm looking for sun cream.",
+      "pinyin": "aim LUK-ing for san krim",
+      "pt": "我在找防晒霜。"
+    },
+    {
+      "consulta": ["reparo/apontar"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "CAN-I",
+      "encaixe": "go through here",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b10-p05",
+      "promptPt": "一块牌子写着 STAFF ONLY，你不确定这是不是也包括你。问一下。现在请说。",
+      "audioKey": "gb-b10-t09",
+      "es": "Can I go through here?",
+      "tts": "Can I go through here?",
+      "pinyin": "kn ai goh sru hir",
+      "pt": "我能从这里过去吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b10-r02",
+      "es": "Sorry, staff only — round the other side.",
+      "tts": "Sorry, staff only — round the other side.",
+      "pinyin": "SO-ri, staf OHN-li — raund the A-ther said",
+      "pt": "不好意思，仅限工作人员——从另一边绕过去。"
+    },
+    {
+      "consulta": ["compras/probador"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "LOOKING",
+      "encaixe": "a fitting room",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b10-p06",
+      "promptPt": "你选好了衣服，但没看到试衣间在哪里。用这个框架试试看。现在请说。",
+      "audioKey": "gb-b10-t10",
+      "es": "I'm looking for a fitting room.",
+      "tts": "I'm looking for a fitting room.",
+      "pinyin": "aim LUK-ing for e FIT-ing rum",
+      "pt": "我在找试衣间。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b10-r03",
+      "es": "Right this way, follow me.",
+      "tts": "Right this way, follow me.",
+      "pinyin": "rait this wei, FOL-oh mi",
+      "pt": "这边请，跟我来。"
+    },
+    {
+      "consulta": ["taxi/renta"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "LOOKING",
+      "encaixe": "the car hire desk",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b10-p07",
+      "promptPt": "你走错了门，没看到租车柜台。问一位安保人员。现在请说。",
+      "audioKey": "gb-b10-t11",
+      "es": "I'm looking for the car hire desk.",
+      "tts": "I'm looking for the car hire desk.",
+      "pinyin": "aim LUK-ing for the kar HAI-er desk",
+      "pt": "我在找租车柜台。"
+    },
+    {
+      "consulta": ["reparo/apontar"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "LOOKING",
+      "encaixe": "the lost property office",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b10-p08",
+      "promptPt": "你刚下飞机，才发现耳机忘在座位上了。用这个框架试试看。现在请说。",
+      "audioKey": "gb-b10-t12",
+      "es": "I'm looking for the lost property office.",
+      "tts": "I'm looking for the lost property office.",
+      "pinyin": "aim LUK-ing for the lost PROP-er-ti OF-is",
+      "pt": "我在找失物招领处。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b10-n07",
+      "bloco": "capsula",
+      "tom": "protege",
+      "pt": "另一个陷阱：在这里，subway 不是地铁。是给行人走的地下通道。地铁是 the Underground。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b10-n08",
+      "tom": "ganha",
+      "pt": "不过在格拉斯哥，地铁确实就叫 the Subway。这个陷阱不是出在中文和英语之间，而是两种英语之间。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b10-n09",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "就算没有牌子，队伍依然存在：站在最后的那个人就是队尾。往前走之前先问一句。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b10-n10",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "你不需要读懂整块牌子。认出一个词或者看懂图标，就已经足够知道该怎么做了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b10-n11",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "登机口、药店、租车、试衣间。没有人给过你四句不同的话：是你自己搭出来的。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "LOOKING",
+      "audioKey": "gb-b10-s01",
+      "es": "I'm looking for my gate. I'm looking for a chemist. I'm looking for a fitting room.",
+      "tts": "I'm looking for my gate. I'm looking for a chemist. I'm looking for a fitting room.",
+      "pinyin": "aim LUK-ing for mai geit. aim LUK-ing for e KEM-ist. aim LUK-ing for e FIT-ing rum.",
+      "pt": "同一个开头，三样不同的东西。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b10-n12",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "第十部分完成。WAY OUT、OUT OF ORDER、PULL、PUSH、TOILETS、MIND THE GAP——剩下的，一个框架就能应付。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "不能逐字翻译的牌子",
+    "secoes": [
+      {
+        "titulo": "代价最大的那个假朋友",
+        "corpo": "很多学习者下意识地会去找 EXIT——但在英国，出口的牌子几乎总是写着 WAY OUT，尤其是在地铁和火车站。EXIT 也存在（机场、电影院），但 WAY OUT 才是英式的默认说法。"
+      },
+      {
+        "titulo": "那个开放的框架",
+        "corpo": "「I'm looking for」加上你要找的东西，能覆盖任何一个地方或物品，就算你不知道确切的英语单词也没关系。对方会帮你把话补完；你要做的只是指出意图。"
+      },
+      {
+        "titulo": "Toilets，不是 restroom",
+        "corpo": "在第六部分已经见过了：在公共场所，正式说法是「the toilets」，随意一点可以说「the loo」。「Restroom」和「bathroom」是美式说法——能听懂，但一开口就会被认出来。"
+      },
+      {
+        "titulo": "「Subway」不是地铁",
+        "corpo": "在英国，subway 指的是马路下面给行人走的地下通道。伦敦的地铁是 the Underground，或者 the Tube。一个诚实的反例：在格拉斯哥，地铁的官方名字确实就叫 the Subway。"
+      },
+      {
+        "titulo": "那条看不见的队伍",
+        "corpo": "很多英国的柜台前既没有拉绳，也没有「QUEUE HERE」的牌子。队伍照样存在：就是那些按到达顺序站着的人。一句「Sorry, are you in the queue?」能帮你避开被当成插队的尴尬。"
+      }
+    ]
+  }
+}

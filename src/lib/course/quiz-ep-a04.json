@@ -1,0 +1,89 @@
+{
+  "id": "q-a04",
+  "nivel": "avancado",
+  "titulo": "问答 — 那场老恩怨",
+  "subtitulo": "在别国的地域恩怨里不站队",
+  "introAudioKey": "gb-a04-q-i",
+  "introPt": "有人在酒吧用一种特别的语气说了句「it's grim up North」。听完对话，回答问题。",
+  "cenario": "一群来自不同地区的人聚在酒吧里。",
+  "dialogo": [
+    {
+      "audioKey": "gb-a04-q01",
+      "voz": "target_en_gb_m",
+      "es": "Ah, must be nice up there in the frozen North.",
+      "tts": "Ah, must be nice up there in the frozen North.",
+      "pt": "啊，你们那冰天雪地的北方一定很舒服吧。"
+    },
+    {
+      "audioKey": "gb-a04-q02",
+      "voz": "target_en_gb_f",
+      "es": "So, where are you from, originally?",
+      "tts": "So, where are you from, originally?",
+      "pt": "那你原本是哪里人？"
+    },
+    {
+      "audioKey": "gb-a04-q03",
+      "voz": "target_en_gb_m",
+      "es": "Sheffield. Born and raised.",
+      "tts": "Sheffield. Born and raised.",
+      "pt": "谢菲尔德。土生土长。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "「it's grim up North」是什么意思？",
+      "opcoes": [
+        "一个官方天气预报",
+        "关于英格兰北方的说法，有时带着刺",
+        "某个地区的正式名称",
+        "一首歌的名字"
+      ],
+      "correta": 1,
+      "explica": "对南方的一些人来说这是个玩笑；对住在北方的人来说，有时听起来像是包装成玩笑的轻视。"
+    },
+    {
+      "pergunta": "当你听到一句带刺的地域玩笑时，最安全的问题是什么？",
+      "opcoes": [
+        "立刻重复用同一个词",
+        "不带标签地问对方是哪里人",
+        "大声笑以融入其中",
+        "为被提到的那个地区辩护"
+      ],
+      "correta": 1,
+      "explica": "中立地问「where are you from」，能让对方自己说出地名。"
+    },
+    {
+      "pergunta": "有人邀你一起调侃英国的另一个地区。你会怎么做？",
+      "opcoes": [
+        "为了显得合群，加入这个玩笑",
+        "轻松地婉拒，不站队",
+        "坚决为那个地区辩护",
+        "换一桌坐"
+      ],
+      "correta": 1,
+      "explica": "「I'll stay out of that one」能让你对所有人都保持友好，也不用去买一个不属于你的立场。"
+    },
+    {
+      "pergunta": "什么时候可以放心地用「Northerner」或「Yorkshireman」这样的词来称呼别人？",
+      "opcoes": [
+        "只要知道对方是哪里人，随时都可以",
+        "只有在对方自己先用这个词形容自己之后",
+        "在任何情况下都不可以",
+        "只对名人可以"
+      ],
+      "correta": 1,
+      "explica": "当一个人用某个词自称时，这个词就变得可以放心用回给他。"
+    },
+    {
+      "pergunta": "这部分对英国的南北差距是怎么说的？",
+      "opcoes": [
+        "这差距并不真实存在，只是个玩笑",
+        "这是收入和住房上真实的差距，同时也常被拿来调侃",
+        "北方总是比南方更富裕",
+        "这只跟伦敦有关"
+      ],
+      "correta": 1,
+      "explica": "这个差距在公共讨论中被认真引用，同时也是邻里之间善意调侃的话题。"
+    }
+  ]
+}

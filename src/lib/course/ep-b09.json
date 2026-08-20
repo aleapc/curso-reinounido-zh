@@ -1,0 +1,235 @@
+{
+  "id": "b09",
+  "slot": "B09",
+  "nivel": "basico",
+  "numero": 9,
+  "parte": "3B",
+  "titulo": "进站和出站，用同一张卡",
+  "subtitulo": "确认目的地，把卡贴到黄色读卡器上，路上千万别换卡",
+  "cena": "地铁闸机亮起了绿色圆圈，但你还是不确定这趟车到不到你要去的地方，站台上人来人往，个个都不带犹豫的。",
+  "moldura": "ganha",
+  "frasePiso": "进站时能用的一张卡，如果出站时不是同一张，那就白搭了。",
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b09-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "拳头打在 TAP 上：TAP in，TAP out。伦敦地铁已经没有纸质车票了。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WHERE",
+      "encaixe": "ticket gates",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b09-p00",
+      "promptPt": "你走进车站，还没看到闸机在哪里。问闸机在哪。现在请说。",
+      "audioKey": "gb-b09-x0",
+      "es": "Where's the ticket gates?",
+      "tts": "Where are the ticket gates?",
+      "pinyin": "wehr ar the TIK-et geits",
+      "pt": "闸机在哪里？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b09-n02",
+      "bloco": "cena",
+      "pt": "在闸机前，每个人都把自己的卡贴到黄色的读卡器上。你还差一个确认。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b09-t01",
+      "es": "Does this train go to Oxford Circus?",
+      "tts": "Does this train go to Oxford Circus?",
+      "pinyin": "daz this trein goh tu OKS-ferd SER-kes",
+      "pt": "这趟车到牛津广场吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b09-p01",
+      "promptPt": "在把卡贴上读卡器之前，先确认这条线到不到牛津广场。现在请说。",
+      "audioKey": "gb-b09-t01",
+      "es": "Does this train go to Oxford Circus?",
+      "tts": "Does this train go to Oxford Circus?",
+      "pinyin": "daz this trein goh tu OKS-ferd SER-kes",
+      "pt": "这趟车到牛津广场吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b09-r01",
+      "es": "Yes, but you'll need to change once.",
+      "tts": "Yes, but you'll need to change once.",
+      "pinyin": "yes, bat yul nid tu cheinj wans",
+      "pt": "到，不过你需要换乘一次。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b09-n03",
+      "bloco": "capsula",
+      "pt": "有一条规则不能通融：进站和出站要用同一张卡。不然费用封顶就会失效。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b09-p02",
+      "promptPt": "朋友把手机递给你，想替你贴读卡器。给他解释这样会打乱封顶计算：请他确认回程也一定用同一张卡。现在请说。",
+      "audioKey": "gb-b09-t02",
+      "es": "Same card, in and out — every time?",
+      "tts": "Same card, in and out — every time?",
+      "pinyin": "seim kard, in and aut — EV-ri taim",
+      "pt": "进站出站都用同一张卡，每次都是吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b09-r02",
+      "es": "Exactly. Otherwise the cap won't work.",
+      "tts": "Exactly. Otherwise the cap won't work.",
+      "pinyin": "ig-ZAKT-li. AH-ther-waiz the kap wohnt werk",
+      "pt": "没错。不然费用封顶就不管用了。"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WHERE",
+      "encaixe": "platform",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b09-p03",
+      "promptPt": "闸机已经通过了，但你还得找到正确的站台。问站台在哪里。现在请说。",
+      "audioKey": "gb-b09-t03",
+      "es": "Where's the platform?",
+      "tts": "Where's the platform?",
+      "pinyin": "wehrz the PLAT-form",
+      "pt": "站台在哪里？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b09-r03",
+      "es": "Down these stairs, to your right.",
+      "tts": "Down these stairs, to your right.",
+      "pinyin": "daun thiz stehrz, tu yor rait",
+      "pt": "下这段楼梯，在你右手边。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b09-n04",
+      "bloco": "corpo",
+      "pt": "你的银行卡在这里能直接用。真正的风险，是每笔交易可能被收取的手续费。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b09-p04",
+      "promptPt": "在站台上，最后再确认一次你到目的地是不是真的需要换乘。现在请说。",
+      "audioKey": "gb-b09-t04",
+      "es": "Do I need to change here?",
+      "tts": "Do I need to change here?",
+      "pinyin": "du ai nid tu cheinj hir",
+      "pt": "我需要在这里换乘吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b09-r04",
+      "es": "Yes, one stop from here.",
+      "tts": "Yes, one stop from here.",
+      "pinyin": "yes, wan stop from hir",
+      "pt": "对，从这里再过一站。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b09-px1",
+      "promptPt": "车进站了。上车之前，最后再确认一次它到不到牛津广场。现在请说。",
+      "audioKey": "gb-b09-t05",
+      "es": "Does this train go to Oxford Circus?",
+      "tts": "Does this train go to Oxford Circus?",
+      "pinyin": "daz this trein goh tu OKS-ferd SER-kes",
+      "pt": "这趟车到牛津广场吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b09-r05",
+      "es": "Yes, hop on.",
+      "tts": "Yes, hop on.",
+      "pinyin": "yes, hop on",
+      "pt": "对，快上车吧。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b09-px2",
+      "promptPt": "这趟车太挤了。问是不是等一下还有一趟。现在请说。",
+      "audioKey": "gb-b09-x1",
+      "es": "Is there another one later?",
+      "tts": "Is there another one later?",
+      "pinyin": "iz thehr e-NA-ther wan LEI-ter",
+      "pt": "等一下还有一趟吗？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b09-s01",
+      "es": "Does this train go to Oxford Circus? Do I need to change here?",
+      "tts": "Does this train go to Oxford Circus? Do I need to change here?",
+      "pinyin": "daz this trein goh tu OKS-ferd SER-kes? du ai nid tu cheinj hir",
+      "pt": "跟读同一个确认问句，用在两个不同的时刻。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b09-n05",
+      "bloco": "recap",
+      "pt": "第九部分完成。确认了目的地，进站出站用了同一张卡，找到了站台。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "取代车票的那个动作",
+    "secoes": [
+      {
+        "titulo": "没有一套全国统一的系统，但伦敦只有一个动作",
+        "corpo": "伦敦的公共交通自 2023 年 1 月起就没有纸质车票了：进站和出站，都把免接触卡、手机或者 Oyster 卡贴到读卡器上。"
+      },
+      {
+        "titulo": "永远用同一张卡",
+        "corpo": "系统会自动计算并封顶你当天和当周的总费用——前提是你一直用同一张卡或同一部设备。路上换了卡或换了手机，封顶就会在你不知情的情况下失效。",
+        "exemplos": [
+          {
+            "es": "Same card, in and out — every time?",
+            "pt": "进站出站都用同一张卡，每次都是吗？"
+          },
+          {
+            "es": "Exactly. Otherwise the cap won't work.",
+            "pt": "没错。不然费用封顶就不管用了。"
+          }
+        ]
+      },
+      {
+        "titulo": "你的银行卡能用——只需要确认一下手续费",
+        "corpo": "和去荷兰旅行、要面对当地支付系统的游客不同，你的中国银行卡在英国可以直接使用。出发前该确认的是，自己的银行会不会对每笔交易额外收费。"
+      },
+      {
+        "titulo": "永远不要说出具体的封顶金额",
+        "corpo": "这个金额每年一月都会变，还要看你经过哪些区域。这里不适合放任何固定数字——只有软件或者 TfL 官网上的信息才是最新的。"
+      }
+    ]
+  }
+}

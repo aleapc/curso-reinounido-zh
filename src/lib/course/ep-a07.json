@@ -1,0 +1,274 @@
+{
+  "id": "a07",
+  "slot": "A07",
+  "nivel": "avancado",
+  "numero": 35,
+  "parte": "A07",
+  "titulo": "信号：欢迎、尴尬，和该走的时候",
+  "subtitulo": "屏幕上跳出的 12.5% 小费你可以拒绝，没人看着你也能听到的那声「tut」，以及几乎从不会真正兑现的「改天再聚」",
+  "cena": "收银台的屏幕给你推荐了 12.5% 的小费选项，就为了一杯装在纸杯里的咖啡，店员在等你点一下屏幕。",
+  "moldura": "ganha",
+  "frasePiso": "一句不带具体日期的「we must do this again sometime」，几乎总是一种温暖的收尾，而不是一个承诺。这样理解它不会让你损失什么，还能省得你白等一个下午。",
+  "fatosDatados": [
+    {
+      "id": "gb-tut-desconforto",
+      "afirmacao": "British displeasure is often expressed indirectly rather than through direct confrontation: an audible 'tut' (a short tongue-click), a pointed sigh, a raised eyebrow, or an exaggeratedly patient silence — while an actual verbal complaint out loud, in public, is comparatively rare and often read as a bigger deal than the situation itself.",
+      "fonte": "Consenso de fontes culturais britânicas sobre comunicação indireta",
+      "ano": 2026,
+      "revisarAte": "2029-08-20",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["gb-a07-n06"]
+    },
+    {
+      "id": "gb-convite-vago",
+      "afirmacao": "'We must do this again sometime' or 'let's grab a pint sometime', said without a specific day or time, commonly functions in Britain as a warm way of ending a conversation rather than a firm commitment — it is not dishonesty, but a recognised social register, much like its American equivalent.",
+      "fonte": "Consenso de fontes de etiqueta social britânica",
+      "ano": 2026,
+      "revisarAte": "2029-08-20",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["gb-a07-n08"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a07-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "今天主要是听。信号早就发出来了——要做的是读懂它们。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a07-n02",
+      "bloco": "callback",
+      "pt": "回顾一下昨天。有人跟你说他法定假日的计划，你觉得挺好。像昨天一样说出来。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a07-p01",
+      "promptPt": "现在请说。",
+      "audioKey": "gb-a07-t01",
+      "es": "That sounds like a good day, honestly.",
+      "tts": "That sounds like a good day, honestly.",
+      "pinyin": "that saundz laik e gud dei, ON-est-li",
+      "pt": "说实话，听起来是很美好的一天。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a07-n03",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "收银台前，屏幕给你推荐了 12.5% 的小费，就为了一杯装在纸杯里的咖啡。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a07-o01",
+      "es": "Whenever you're ready.",
+      "tts": "Whenever you're ready.",
+      "pinyin": "wen-EV-er yor RED-i",
+      "pt": "你准备好了就行。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a07-n04",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "柜台前这块屏幕，在没有桌边服务的地方出现，连很多英国人自己都会觉得意外。选择拒绝是完全可以接受的。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a07-p02",
+      "promptPt": "冷静地选自己想给的金额，不用过多解释。现在请说。",
+      "audioKey": "gb-a07-t02",
+      "es": "I'll just skip that, thanks.",
+      "tts": "I'll just skip that, thanks.",
+      "pinyin": "ail jast skip that, sanks",
+      "pt": "这个我就不选了，谢谢。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a07-o02",
+      "es": "No worries at all.",
+      "tts": "No worries at all.",
+      "pinyin": "noh WER-riz at ol",
+      "pt": "完全没问题。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a07-n05",
+      "pt": "没有人往心里去。屏幕只是建议，决定权在你。信号就是这么简单。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a07-n06",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "接下来是不满。在这里，不满很少通过一句话表达出来——更多是一声轻轻的「tut」、一声叹气、一个挑起的眉毛。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a07-o03",
+      "receptivo": true,
+      "es": "Honestly...",
+      "tts": "Honestly...",
+      "pinyin": "ON-est-li...",
+      "pt": "👂 一声轻轻的咋舌，接着一声叹着气说出的「honestly」。没有人当面对你说什么——但这已经就是全部的信息了。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a07-p03",
+      "promptPt": "对方什么都没直接说，但你读懂了这个信息。为等待简短地道个歉。现在请说。",
+      "audioKey": "gb-a07-t03",
+      "es": "Sorry for the wait.",
+      "tts": "Sorry for the wait.",
+      "pinyin": "SO-ri for the weit",
+      "pt": "让你久等了，不好意思。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a07-o04",
+      "es": "Oh, no, don't worry about it!",
+      "tts": "Oh, no, don't worry about it!",
+      "pinyin": "oh, noh, dohnt WER-ri e-BAUT it",
+      "pt": "哎呀，别放在心上！"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a07-n07",
+      "pt": "注意这个反差：刚才的不满是安静无声的，你道歉之后得到的回应却很热情。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a07-o05",
+      "receptivo": true,
+      "es": "We must do this again sometime!",
+      "tts": "We must do this again sometime!",
+      "pinyin": "wi mast du this e-GEN SAM-taim",
+      "pt": "👂 这事可能会发生，也可能不会。「Sometime」同时装着这两种可能，而这份模糊正是它的用处所在。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a07-n08",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "「Sometime」不带具体日期或时间，这本身就是一个信号。不要追问——热情地回应，如果你真的感兴趣，再去约一个具体日期。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a07-p04",
+      "promptPt": "用同样的热情回应，先不去要求什么。现在请说。",
+      "audioKey": "gb-a07-t04",
+      "es": "Yeah, that'd be great!",
+      "tts": "Yeah, that'd be great!",
+      "pinyin": "ye, thatd greit",
+      "pt": "好啊，那太好了！"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a07-p05",
+      "promptPt": "你是真的感兴趣。把这句「改天」变成可以落实的事情，但不要显得强求。现在请说。",
+      "audioKey": "gb-a07-t05",
+      "es": "Are you free later this week, actually?",
+      "tts": "Are you free later this week, actually?",
+      "pinyin": "ar yu fri LEI-ter this wik, AK-tyu-a-li",
+      "pt": "其实……你这周晚些时候有空吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a07-o06",
+      "es": "Let me check and I'll text you.",
+      "tts": "Let me check and I'll text you.",
+      "pinyin": "let mi chek and ail tekst yu",
+      "pt": "我看一下再发短信告诉你。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a07-s01",
+      "es": "I'll just skip that, thanks. Sorry for the wait. Are you free later this week, actually?",
+      "tts": "I'll just skip that, thanks. Sorry for the wait. Are you free later this week, actually?",
+      "pinyin": "ail jast skip that, sanks. SO-ri for the weit. ar yu fri LEI-ter this wik, AK-tyu-a-li",
+      "pt": "跟读这几句：自己决定小费，不小题大做地道歉，把一句「改天」变成真的约定。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a07-n09",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "A07 完成。屏幕只是建议，决定权在你。不满是靠一声「tut」表达的，不是一句话。「Sometime」是收尾，不是承诺。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "读懂信号，但别往心里去",
+    "secoes": [
+      {
+        "titulo": "小费屏幕不是命令",
+        "corpo": "支付终端上首先跳出来的那个百分比，是系统的默认设置，不是社交规则——在没有桌边服务的地方，选一个更小的金额、甚至不给小费，都是许多英国人自己也会用的正当选项。"
+      },
+      {
+        "titulo": "含蓄的不满同样真实",
+        "corpo": "一声「tut」、一声明显的叹气、一段过度耐心的沉默：这些含蓄的信号传达的是真实的不满，只是不通过正面冲突表达。在公共场合大声抱怨反而比较少见，往往会被解读成比实际情况更严重的事。"
+      },
+      {
+        "titulo": "「Sometime」有它精确的用处",
+        "corpo": "说一句「改天该再聚聚」却不提具体日期，是一种被广泛认可、也被接受的方式，用来温暖地收尾一段对话，而不强迫任何人做出承诺。这既不是撒谎，也不是不感兴趣——这就是随意场合下英语里道别的声音。"
+      },
+      {
+        "titulo": "如果你真的感兴趣，就约一个具体日期",
+        "corpo": "问一个具体的日子并不是强人所难：这是唯一能区分「温暖的收尾」和「真正的邀请」的方法，而且大多数人会欣然接受，因为这表现出的是真诚的兴趣，而不是不信任。"
+      }
+    ]
+  },
+  "permissao": "在柜台前，你完全有权自己决定小费金额，不需要解释，也不需要道歉。你也完全有权在自己想温暖地收尾又不想定下具体日期时，主动说出「we must do this again sometime」——这是一种得体的说法，不是在敷衍。",
+  "permissaoAudioKey": "gb-a07-n04",
+  "espelho": "你在自己的语言里其实早就这么做了——「改天再约」「有空联系」。在那边，也没有人会当真。这里唯一的区别是，承担这个功能的换成了另一套说法，而现在轮到你，要用一门还没完全掌握的语言去接住它。",
+  "fichasCulturais": [
+    {
+      "sinal": "柜台的屏幕给一份没有桌边服务的外带订单推荐了 10%、12.5% 或 15% 的小费选项。",
+      "suaLeitura": "如果我不选这几个数字里的一个，会显得小气或者没礼貌。",
+      "oQueEAli": "屏幕上首先出现的那个百分比，只是支付终端的系统设置，很多英国人自己在没有桌边服务的地方也觉得这个比例偏高——选更小的金额，或者「不给小费」，在这里是完全正常的选项，不是不尊重。",
+      "oQueVoceFaz": "冷静地选择自己想留下的金额，不用解释，也不用道歉。",
+      "oQueMelhora": "你付的正是自己愿意付的金额，不会被一块专门设计来多要钱的屏幕带着走。",
+      "ondeNaoVale": "在有完整桌边服务的餐厅里不适用——那里小费是服务员收入的真实来源，低于 10% 会被解读成出了什么问题。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-a07-n04"]
+    },
+    {
+      "sinal": "你在排队时听到身后有人轻轻咋了一下舌，或者一声明显的叹气，但没有人当面对你说一个字。",
+      "suaLeitura": "没有人抱怨，所以大概没什么事。",
+      "oQueEAli": "英国人的不满常常通过这类含蓄的信号表达，而不是直接开口抱怨——耐心的沉默和「tut」是真实的社交信息，不是没有反应。",
+      "oQueVoceFaz": "把它当作有用的信息接收下来——加快一点速度，如果是自己的原因就简短道个歉——不用小题大做，也不要完全无视。",
+      "oQueMelhora": "你能及时化解这个局面，而不是等到它变成更少见、也更严重的正面抱怨。",
+      "ondeNaoVale": "如果有人已经清楚直接地大声表达了不满，就不适用了——那已经超出了含蓄的范畴，也需要一个直接的回应。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-a07-n06"]
+    }
+  ]
+}

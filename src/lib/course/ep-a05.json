@@ -1,0 +1,259 @@
+{
+  "id": "a05",
+  "slot": "A05",
+  "nivel": "avancado",
+  "numero": 33,
+  "parte": "A05",
+  "titulo": "另一种语言",
+  "subtitulo": "威尔士语在威尔士是官方语言之一，苏格兰盖尔语在高地依然活着，而六个小词几乎能买下整个国家的好感",
+  "cena": "在加的夫，店员在你开口之前就先说了句「Bore da」，接着毫不犹豫地切换回英语。",
+  "moldura": "ganha",
+  "frasePiso": "在对的场合，小心翼翼地说一个地方词汇，不装腔作势。这就是全部的技巧，也已经足够了。",
+  "fatosDatados": [
+    {
+      "id": "gb-galles-bilingue",
+      "afirmacao": "Welsh has official status alongside English in Wales: road signs, official documents and many shop greetings appear in both languages, and around a fifth of the population speaks Welsh, with the proportion much higher in parts of the North and West.",
+      "fonte": "Welsh Government / Census — Welsh language statistics",
+      "ano": 2026,
+      "revisarAte": "2029-08-20",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": ["gb-a05-n03"]
+    },
+    {
+      "id": "gb-palavras-cortesia",
+      "afirmacao": "A handful of small courtesy words carry most of the warmth in everyday British speech and vary by region: cheers and ta both mean thanks, mate is a friendly form of address almost everywhere, while love, pet and duck are regional terms of endearment used by strangers — a shopkeeper calling a customer 'love' or 'pet' with no romantic meaning at all.",
+      "fonte": "Consenso de fontes linguísticas e culturais sobre registros de cortesia regionais no Reino Unido",
+      "ano": 2026,
+      "revisarAte": "2029-08-20",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["gb-a05-n07"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a05-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "英语不是这个国家唯一的声音。今天主要是听，最后再加一小步开口。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a05-n02",
+      "bloco": "callback",
+      "pt": "回顾一下昨天。有人想把你拉进一场地域恩怨。像昨天那样退出来。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a05-p01",
+      "promptPt": "现在请说。",
+      "audioKey": "gb-a05-t01",
+      "es": "I'll stay out of that one.",
+      "tts": "I'll stay out of that one.",
+      "pinyin": "ail stei aut of that wan",
+      "pt": "这个我可不掺和。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a05-n03",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "在加的夫的一家店里，你还没开口，店员就先说了句「Bore da」，接着毫不犹豫地切换回英语。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a05-o01",
+      "es": "Bore da! Just you today, or can I help with anything?",
+      "tts": "Bore da! Just you today, or can I help with anything?",
+      "pinyin": "bo-re da! jast yu tu-DEI, or kn ai HELP with EN-i-sing",
+      "pt": "👂 「早上好！」是威尔士语，接着直接切换成英语。这是一种友善，不是在考你。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a05-n04",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "威尔士语在威尔士是官方语言之一：路牌、文件、问候语——两种语言并排出现。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a05-p02",
+      "promptPt": "你想继续练习英语。热情地说出来，不要显得像是在拒绝。现在请说。",
+      "audioKey": "gb-a05-t02",
+      "es": "English is great, thanks — I'm actually trying to practise.",
+      "tts": "English is great, thanks — I'm actually trying to practise.",
+      "pinyin": "ING-lish iz greit, sanks — aim AK-tyu-a-li trai-ing tu PRAK-tis",
+      "pt": "英语挺好的，谢谢——其实我正想练习英语。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a05-o02",
+      "es": "No worries, happy to help either way.",
+      "tts": "No worries, happy to help either way.",
+      "pinyin": "noh WER-riz, HAP-i tu help AI-ther wei",
+      "pt": "没关系，哪种都乐意帮你。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a05-n05",
+      "pt": "接下来说说口音。盖尔语在高地依然活着，纽卡斯尔、格拉斯哥、利物浦的口音听起来也很不一样。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a05-o03",
+      "receptivo": true,
+      "es": "You alright there, pet? Cold one, eh.",
+      "tts": "You alright there, pet? Cold one, eh.",
+      "pinyin": "yu ol-RAIT dehr, pet? kohld wan, eh",
+      "pt": "👂 纽卡斯尔口音。这里的「pet」没有任何暧昧含义——这是对陌生人的一种亲切称呼。不用你自己说，听懂就好。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a05-p03",
+      "promptPt": "对方在问你是不是也觉得冷。回应他。现在请说。",
+      "audioKey": "gb-a05-t03",
+      "es": "It really is.",
+      "tts": "It really is.",
+      "pinyin": "it RIL-i iz",
+      "pt": "确实挺冷的。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a05-n06",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "今天唯一需要开口说的：一个地方性的礼貌用语。在北方，人们常常用「ta」代替「thanks」。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a05-p04",
+      "promptPt": "你在北方，付完款，用当地人的说法谢谢店员。现在请说。",
+      "audioKey": "gb-a05-t04",
+      "es": "Ta very much.",
+      "tts": "Ta very much.",
+      "pinyin": "ta VE-ri mach",
+      "pt": "非常感谢——本地说法。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a05-o04",
+      "es": "Aw, look at you, picking up the lingo!",
+      "tts": "Aw, look at you, picking up the lingo!",
+      "pinyin": "aw, luk at yu, PIK-ing ap the LING-goh",
+      "pt": "哎呀，看看你，都学会本地说法了！"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a05-n07",
+      "pt": "诚实地回答。一个词就是一个词——说得比实际多，反而会让一个好瞬间变得别扭。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a05-p05",
+      "promptPt": "温和地纠正一下这句夸奖。现在请说。",
+      "audioKey": "gb-a05-t05",
+      "es": "Just the one word, but I wanted to get it right.",
+      "tts": "Just the one word, but I wanted to get it right.",
+      "pinyin": "jast the wan werd, bat ai WON-tid tu get it rait",
+      "pt": "就这一个词，不过我想把它说对。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a05-p06",
+      "promptPt": "请他再教你一个词。现在请说。",
+      "audioKey": "gb-a05-t06",
+      "es": "Teach me another one?",
+      "tts": "Teach me another one?",
+      "pinyin": "tich mi e-NA-ther wan",
+      "pt": "再教我一个呗？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a05-s01",
+      "es": "English is great, thanks. Ta very much. Just the one word, but I wanted to get it right.",
+      "tts": "English is great, thanks. Ta very much. Just the one word, but I wanted to get it right.",
+      "pinyin": "ING-lish iz greit, sanks. ta VE-ri mach. jast the wan werd, bat ai WON-tid tu get it rait",
+      "pt": "跟读这几句：热情地接受、说出那个地方词汇、对自己会的东西保持诚实。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a05-n08",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "A05 完成。威尔士语与英语并排存在，口音每隔百来公里就变一次，一个地方词汇要诚实地说出来。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一个词，放对地方",
+    "secoes": [
+      {
+        "titulo": "威尔士语不是遗迹，而是官方语言",
+        "corpo": "威尔士大约五分之一的人口会说威尔士语，在北部和西部的比例更高。路牌、官方文件、广播通知——两种语言以同等地位并排出现。有人用威尔士语向你问好，一点都不特别，那只是这个国家正常运作的样子。"
+      },
+      {
+        "titulo": "六个能买下好感的词",
+        "corpo": "Cheers 和 ta 都是「谢谢」；mate 几乎能用来称呼任何人；love、pet、duck 是店家对陌生顾客使用的地方性亲昵称呼，完全没有任何暧昧意味——具体用哪个词因地区而异，但它们传递的那份亲切感是一样的。"
+      },
+      {
+        "titulo": "口音每隔百来公里就变一次",
+        "corpo": "纽卡斯尔、格拉斯哥、利物浦、加的夫：每个地方的口音都截然不同，也没有哪一个比另一个更「正宗」。承认某种口音的存在，而不去刻意模仿它，就已经是访客该做的全部功课。"
+      },
+      {
+        "titulo": "说得少一点，但要说得真",
+        "corpo": "一个词之所以管用，正是因为它不要求什么。一旦你顺着夸奖装出自己会讲整个方言的样子，就是在一个美好的瞬间里掺进了一个小小的谎言——所以诚实地回应，这个瞬间才能保住全部的价值。"
+      }
+    ]
+  },
+  "permissao": "你完全有权只说一个词，然后就停在那里。没有人指望你说得像北方人或格拉斯哥人，在这里，一个说得用心的地方词汇，比三句完美的课本句子更值钱。",
+  "permissaoAudioKey": "gb-a05-n07",
+  "espelho": "你早就知道，当一个访客哪怕笨拙，也真心用你自己语言里的一个词做出努力时是什么感觉——那听起来不会像是装腔作势，而像是一份心意，会让当下的气氛都不一样。这里发生的是完全相同的事，只是方向反过来了。",
+  "fichasCulturais": [
+    {
+      "sinal": "你还没说话，有人就用一种你听不出来的语言向你问好——威尔士语、苏格兰盖尔语。",
+      "suaLeitura": "我是不是走错地方了，还是接下来要听懂一整门语言。",
+      "oQueEAli": "在威尔士语或盖尔语真正占有一席之地的地区，本地问候语出于习惯会先说出口，一旦对话继续，几乎立刻就会切换回英语——这从来不是在考你，只是这个国家本身就是双语运作的。",
+      "oQueVoceFaz": "微笑，等接下来的英语——它几乎总会在下一句自然而然地出现。",
+      "oQueMelhora": "你体验到的是这个国家真实的双语状态，而不是被头五个词吓得僵在原地。",
+      "ondeNaoVale": "在英格兰的大部分地区不适用，那里英语始终是唯一被默认使用的语言——双语切换是威尔士和苏格兰部分地区特有的现象。",
+      "evidencia": "FATO",
+      "audioKeys": ["gb-a05-n04"]
+    },
+    {
+      "sinal": "你说出了自己学会的第一个地方词汇，对方说「看看你，都学会本地说法了！」，纠正这句夸奖让你觉得有点小家子气。",
+      "suaLeitura": "让这句夸奖过去会显得更得体；纠正它反而像是假谦虚。",
+      "oQueEAli": "这句夸奖是对你努力的真心温暖，不是一个真正的评估——如果你顺着它不说清楚，就是把一个真实的小举动，变成了一个你兑现不了的承诺，而这一点会在下一句你听不懂的地方话出现时立刻露馅。",
+      "oQueVoceFaz": "平静地说明那只是这一个词，但你想把它说对。这样既保住了那份努力，也保住了诚实。",
+      "oQueMelhora": "这一刻依然温暖，而且几乎总会变成再学一个词的机会——比礼貌地退缩效果更好。",
+      "ondeNaoVale": "这不是说要拒绝别人对你英语整体水平的每一句夸奖——那种情况下你是真的在进步，接受鼓励本身就是准确的。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-a05-n07"]
+    }
+  ]
+}

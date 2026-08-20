@@ -1,0 +1,100 @@
+{
+  "id": "q-b09",
+  "nivel": "basico",
+  "titulo": "问答 — 进站和出站，用同一张卡",
+  "subtitulo": "黄色读卡器、确认好的目的地，以及那条不能通融的规则",
+  "introAudioKey": "gb-b09-q-i",
+  "introPt": "地铁闸机前没人排队买票。听完对话，找出决定当天费用能不能封顶的那一条规则。",
+  "cenario": "先是在地铁闸机前，接着是在站台上。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b09-q01",
+      "voz": "target_en_gb_f",
+      "es": "Does this train go to Oxford Circus?",
+      "tts": "Does this train go to Oxford Circus?",
+      "pinyin": "daz this trein goh tu OKS-ferd SER-kes",
+      "pt": "这趟车到牛津广场吗？"
+    },
+    {
+      "audioKey": "gb-b09-q02",
+      "voz": "target_en_gb_m",
+      "es": "Yes, but you'll need to change once.",
+      "tts": "Yes, but you'll need to change once.",
+      "pinyin": "yes, bat yul nid tu cheinj wans",
+      "pt": "到，不过你需要换乘一次。"
+    },
+    {
+      "audioKey": "gb-b09-q03",
+      "voz": "target_en_gb_f",
+      "es": "Same card, in and out — every time?",
+      "tts": "Same card, in and out — every time?",
+      "pinyin": "seim kard, in and aut — EV-ri taim",
+      "pt": "进站出站都用同一张卡，每次都是吗？"
+    },
+    {
+      "audioKey": "gb-b09-q04",
+      "voz": "target_en_gb_m",
+      "es": "Exactly. Otherwise the cap won't work.",
+      "tts": "Exactly. Otherwise the cap won't work.",
+      "pinyin": "ig-ZAKT-li. AH-ther-waiz the kap wohnt werk",
+      "pt": "没错。不然费用封顶就不管用了。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在伦敦地铁闸机前，大多数人是怎么做的？",
+      "opcoes": [
+        "在窗口买纸质车票",
+        "把免接触卡或手机贴到黄色的读卡器上",
+        "先把人民币换成英镑",
+        "出示护照"
+      ],
+      "correta": 1,
+      "explica": "自 2023 年 1 月起就没有纸质车票了：读卡器会根据贴上去的卡或手机自动计算一切。"
+    },
+    {
+      "pergunta": "在伦敦的公共交通里，哪一条规则不能通融？",
+      "opcoes": [
+        "必须结伴出行",
+        "进站和出站都用同一张卡或同一部手机",
+        "必须提前一天买票",
+        "必须避开高峰时段"
+      ],
+      "correta": 1,
+      "explica": "路上换了卡或换了设备，会在你不知情的情况下打乱当天和当周的费用封顶。"
+    },
+    {
+      "pergunta": "你的中国银行卡在这些闸机上能直接用吗？",
+      "opcoes": [
+        "不行，必须用本地卡",
+        "可以，跟前往荷兰要面对的情况不同——但要注意每笔交易的手续费",
+        "只有提前激活才能用",
+        "只能用现金"
+      ],
+      "correta": 1,
+      "explica": "带 Visa 或 Mastercard 标志的中国银行卡可以直接使用；要留意的是银行可能收取的每笔交易手续费。"
+    },
+    {
+      "pergunta": "为什么这门课从不说出具体的每日封顶金额？",
+      "opcoes": [
+        "因为这不重要",
+        "因为它每年一月都会变，还跟经过的区域有关",
+        "因为封顶机制已经取消了",
+        "因为这是保密信息"
+      ],
+      "correta": 1,
+      "explica": "这个金额变化太频繁，写进课程里不可靠；只有软件或 TfL 官网上的信息才是最新的。"
+    },
+    {
+      "pergunta": "上车之前，最后应该确认什么？",
+      "opcoes": [
+        "什么都不用确认，线路编号就够了",
+        "哪怕线路编号已经显示出来，也最后再确认一次目的地",
+        "问一下票价",
+        "确认精确的到站时间"
+      ],
+      "correta": 1,
+      "explica": "在车门口最后再确认一次目的地，能避免只靠之前看到的一个编号就上车。"
+    }
+  ]
+}

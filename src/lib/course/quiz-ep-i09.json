@@ -1,0 +1,72 @@
+{
+  "id": "q-i09",
+  "nivel": "intermediario",
+  "titulo": "问答 — 一个下午，做他们在做的事",
+  "subtitulo": "找到本地的真实计划，加入其中",
+  "introAudioKey": "gb-i09-q-i",
+  "introPt": "有人问你这个周末打算做什么。听听这位旅行者是怎么找到本地真实计划的。",
+  "cenario": "英国的一次轻松闲聊，周五。",
+  "dialogo": [
+    {
+      "audioKey": "gb-i09-q01",
+      "voz": "target_en_gb_m",
+      "es": "So what are you guys up to this weekend?",
+      "tts": "So what are you guys up to this weekend?",
+      "pinyin": "soh wot ar yu gaiz ap tu this WIK-end",
+      "pt": "那你们这个周末打算做什么？"
+    },
+    {
+      "audioKey": "gb-i09-q02",
+      "voz": "target_en_gb_f",
+      "es": "Do you have anything going on at the park this weekend?",
+      "tts": "Do you have anything going on at the park this weekend?",
+      "pinyin": "du yu hav EN-i-sing GOH-ing on at the park this WIK-end",
+      "pt": "这个周末公园里有什么活动吗？"
+    },
+    {
+      "audioKey": "gb-i09-q03",
+      "voz": "target_en_gb_m",
+      "es": "Yeah, there's a farmers' market on Saturday morning.",
+      "tts": "Yeah, there's a farmers' market on Saturday morning.",
+      "pinyin": "ye, thehrz e FAR-merz MAR-ket on SA-ter-dei MOR-ning",
+      "pt": "有的，周六早上有个农夫市集。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "为什么值得开口问一下农夫市集的时间？",
+      "opcoes": ["它一整周都开着", "它只在固定的一天、特定的地点出现，然后就消失了", "它只在冬天存在", "这是一家常设商店"],
+      "correta": 1,
+      "explica": "跟一家固定的商店不同，这些市集本质上是临时的。"
+    },
+    {
+      "pergunta": "哪个框架用来问一个活动存不存在，而不只是问物品？",
+      "opcoes": ["Where's the market?", "Do you have anything going on at the park?", "How much is it?", "What time is it?"],
+      "correta": 1,
+      "explica": "Do you have 既能问物品，也能问活动。"
+    },
+    {
+      "pergunta": "怎么把一条关于周末的信息变成一份邀请？",
+      "opcoes": ["什么都不说，悄悄跟着", "Can I come with you guys?", "What time is it?", "I really like this."],
+      "correta": 1,
+      "explica": "这就是能把本地计划变成邀请的那个问题。"
+    },
+    {
+      "pergunta": "两个摊位分别卖司康饼和派。你会怎么把决定交还给卖家？",
+      "opcoes": [
+        "I prefer the scones.",
+        "Which do you recommend: the scones or the pies?",
+        "Do you have scones?",
+        "Where are the scones?"
+      ],
+      "correta": 1,
+      "explica": "这是从 I03 就学过的 ESCOLHA 框架。"
+    },
+    {
+      "pergunta": "问一个才刚认识的人能不能加入他，在这里算冒犯吗？",
+      "opcoes": ["是的，永远算", "不算，大多数人都乐意分享自己的计划", "只有平日才不算", "只有对方先提议才不算"],
+      "correta": 1,
+      "explica": "这是一个正常又受欢迎的问题，不是不懂事的表现。"
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "id": "b11",
+  "slot": "B11",
+  "nivel": "basico",
+  "numero": 11,
+  "parte": "4A",
+  "titulo": "先坐下，再自己去吧台点单",
+  "subtitulo": "在柜台前说「Could I have ___?」、那条看不见的队伍，以及为什么在酒吧不用给小费",
+  "cena": "差十分两点，吧台前已经排了三层人，酒保看了你一秒半，就已经转向下一位客人了。",
+  "moldura": "ganha",
+  "frasePiso": "点饮料和点餐，你不需要每种场合都背一句不同的话。大多数游客只会坐着干等，指望有人主动过来招呼。",
+  "moldes": ["GET"],
+  "clique": {
+    "contagem": [
+      "酒吧吧台",
+      "餐厅的桌子",
+      "咖啡馆柜台",
+      "用餐结束时"
+    ],
+    "desconto": "没有人给过你一句专门点啤酒的话、一句专门要桌子的话、再一句专门结账的话。你是用「Could I have」加上你需要的东西，把这三句都搭出来的。",
+    "piso": "下次你坐进一家英国酒吧或餐厅，你不会干等着有人来问你想要什么：你会自己主动开口，用一个你早就会用的框架。"
+  },
+  "permissao": "你不需要一次性把所有东西都点完，也不需要记住整张菜单。「Could I have」加一样东西，就已经是一句完整的话，你可以想说几次就说几次。",
+  "permissaoAudioKey": "gb-b11-n10",
+  "espelho": "在你自己的国家，你也是自己选时机要账单的；这里唯一真正新鲜的地方是，在酒吧吧台前，从来没有人会主动走到你桌边——每一次都是你自己走去吧台。",
+  "fichasCulturais": [
+    {
+      "sinal": "你坐在酒吧的一张桌子前，饮料已经喝完了，却始终没有人过来给你点单。",
+      "suaLeitura": "是不是把我忘了，还是这里服务不好。",
+      "oQueEAli": "在传统酒吧里，没有桌边点单服务：你可以随便找位置坐，但点单和付款都要在吧台前完成。这跟法式咖啡馆服务员主动走到你桌边的习惯完全不同。",
+      "oQueVoceFaz": "你自己起身走到吧台前；就算地上没有画队伍线，酒保心里也清楚谁先来后到，所以你用眼神示意排队就好，不用挤别人。",
+      "oQueMelhora": "轮到你的时候你马上就能被招呼，而不是无限期地等一个根本不会来的服务员。",
+      "ondeNaoVale": "一些新式的美食酒吧（gastropub）确实有桌边服务或者用软件点单——起身之前先看看桌上有没有放菜单。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-b11-n08"]
+    }
+  ],
+  "fatosDatados": [
+    {
+      "id": "pub-pas-de-pourboire-au-comptoir",
+      "afirmacao": "In a traditional pub, when you order at the bar, you do not leave a tip. The equivalent gesture is offering the barman a drink for himself — 'and one for yourself.'",
+      "fonte": "Praxe do setor, amplamente documentada",
+      "ano": 2026,
+      "revisarAte": "2027-06-30",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["gb-b11-n09"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b11-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "第十一部分。拳头打在重读音节上：hav、TEI-bl、bil。每个词都有自己的位置。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b11-p00",
+      "promptPt": "跟昨天在机场走廊一样，你不知道要找的东西确切的英语单词。说出来。现在请说。",
+      "bloco": "callback",
+      "molde": "LOOKING",
+      "audioKey": "gb-b11-t00",
+      "es": "I'm looking for the lift.",
+      "tts": "I'm looking for the lift.",
+      "pinyin": "aim LUK-ing for the lift",
+      "pt": "我在找电梯。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b11-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "差十分两点，吧台前排了三层人。酒保看了你一秒半，就转向下一位了。"
+    },
+    {
+      "consulta": ["chegar/entrar"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "EXCUSE",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b11-p01",
+      "promptPt": "酒吧很满，没人注意到你走到了吧台前。趁轮到你之前引起注意。现在请说。",
+      "audioKey": "gb-b11-t01",
+      "es": "Excuse me!",
+      "tts": "Excuse me!",
+      "pinyin": "eks-KYUZ mi",
+      "pt": "不好意思！"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b11-n03",
+      "bloco": "molde",
+      "tom": "ganha",
+      "pt": "这是今天的框架：「Could I have」加上你想要的东西。桌子、饮料、菜、账单——外壳始终一样。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b11-t02",
+      "es": "Could I have a table for two?",
+      "tts": "Could I have a table for two?",
+      "pinyin": "kud ai hav e TEI-bl for tu",
+      "pt": "能给我们一张两人桌吗？"
+    },
+    {
+      "consulta": ["mesa/mesa"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "GET",
+      "encaixe": "a table for two",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b11-p02",
+      "promptPt": "你和旅伴走进一家没有预约的餐厅。要一张两人桌。现在请说。",
+      "audioKey": "gb-b11-t02",
+      "es": "Could I have a table for two?",
+      "tts": "Could I have a table for two?",
+      "pinyin": "kud ai hav e TEI-bl for tu",
+      "pt": "能给我们一张两人桌吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b11-r01",
+      "es": "Sure, right this way.",
+      "tts": "Sure, right this way.",
+      "pinyin": "shur, rait this wei",
+      "pt": "没问题，这边请。"
+    },
+    {
+      "consulta": ["mesa/bebida"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "GET",
+      "encaixe": "a pint of lager",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b11-p03",
+      "promptPt": "在吧台前，终于轮到你了。点一品脱拉格啤酒。现在请说。",
+      "audioKey": "gb-b11-t03",
+      "es": "Could I have a pint of lager?",
+      "tts": "Could I have a pint of lager?",
+      "pinyin": "kud ai hav e paint of LA-ger",
+      "pt": "能来一品脱拉格啤酒吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b11-r02",
+      "es": "Anything else?",
+      "tts": "Anything else?",
+      "pinyin": "EN-i-sing els",
+      "pt": "还要别的吗？"
+    },
+    {
+      "consulta": ["mesa/bebida"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "GET",
+      "encaixe": "a flat white",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b11-p04",
+      "promptPt": "第二天，在街角的咖啡馆，你想要一款特定的拿铁。用它的英式名字点单。现在请说。",
+      "audioKey": "gb-b11-t04",
+      "es": "Could I have a flat white?",
+      "tts": "Could I have a flat white?",
+      "pinyin": "kud ai hav e flat wait",
+      "pt": "能来一杯 flat white 吗？"
+    },
+    {
+      "consulta": ["mesa/comida"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "GET",
+      "encaixe": "the fish and chips",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b11-p05",
+      "promptPt": "你已经选好了要吃什么。点炸鱼薯条。现在请说。",
+      "audioKey": "gb-b11-t05",
+      "es": "Could I have the fish and chips?",
+      "tts": "Could I have the fish and chips?",
+      "pinyin": "kud ai hav the fish and chips",
+      "pt": "能来一份炸鱼薯条吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b11-n04",
+      "pt": "还有一种常见的说法：「I'd like」，直接对应「我想要」。这句同样很好用。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b11-t06",
+      "es": "I'd like the fish and chips, please.",
+      "tts": "I'd like the fish and chips, please.",
+      "pinyin": "aid laik the fish and chips, pliz",
+      "pt": "我想要一份炸鱼薯条，麻烦了。"
+    },
+    {
+      "consulta": ["mesa/errado"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "GET",
+      "encaixe": "the bill",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b11-p06",
+      "promptPt": "你们吃完了，没有人主动过来结账。要账单。现在请说。",
+      "audioKey": "gb-b11-t07",
+      "es": "Could I have the bill, please?",
+      "tts": "Could I have the bill, please?",
+      "pinyin": "kud ai hav the bil, pliz",
+      "pt": "能结一下账吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b11-n05",
+      "pt": "账单不会自己来：要靠你主动去要。记住：是 the bill，绝不是 the check——那是美式说法。"
+    },
+    {
+      "consulta": ["quarto/pedir"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "a highchair",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b11-p07",
+      "promptPt": "你带着小孩出门，需要一张儿童高脚椅。问他们有没有。现在请说。",
+      "audioKey": "gb-b11-t08",
+      "es": "Do you have a highchair?",
+      "tts": "Do you have a highchair?",
+      "pinyin": "du yu hav e HAI-chehr",
+      "pt": "你们有儿童高脚椅吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b11-n06",
+      "bloco": "capsula",
+      "tom": "protege",
+      "pt": "如果你在吧台点单，有一条规则会改变一切：没有桌边服务。点单和付款都在柜台，永远不是坐着完成的。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b11-n07",
+      "tom": "ganha",
+      "pt": "临近打烊，酒保会喊「last orders」——最后一次点单的机会——然后是「time」，酒吧就打烊了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b11-n08",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "如果没有人来你的桌边，那不是把你忘了：在酒吧，永远是你自己走到吧台前，从来不是反过来。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b11-n09",
+      "tom": "ganha",
+      "pt": "在吧台点单不用给小费。等价的心意是请酒保喝一杯：「and one for yourself」。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b11-n10",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "你不需要一次性把所有东西都点完。「Could I have」加一样东西，已经是一句完整的话。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b11-n11",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "桌子、啤酒、咖啡、菜、账单。没有人给过你五句不同的话：全都是你自己用「Could I have」搭出来的。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "GET",
+      "audioKey": "gb-b11-s01",
+      "es": "Could I have a table for two? Could I have a pint of lager? Could I have the bill, please?",
+      "tts": "Could I have a table for two? Could I have a pint of lager? Could I have the bill, please?",
+      "pinyin": "kud ai hav e TEI-bl for tu? kud ai hav e paint of LA-ger? kud ai hav the bil, pliz?",
+      "pt": "同一个开头，三样不同的东西。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b11-n12",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "第十一部分完成。桌子、饮料、菜、账单：一个框架就够了，在酒吧，是你自己走到吧台前。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "柜台前的常胜句型",
+    "secoes": [
+      {
+        "titulo": "为什么是「Could I have」而不是「Can I get」",
+        "corpo": "「Can I get a coffee」是英式柜台前最容易听出来的美式说法——能用，但会显得不地道。「Could I have」不管在酒吧还是博物馆都很中性，而且能清楚地把「要一样东西」和「请求许可」（也就是「Can I ___?」）分开。"
+      },
+      {
+        "titulo": "「I'd like」同样管用",
+        "corpo": "如果「Could I have」一时说不顺口，「I'd like ___」能起到同样的作用——很多学习者会本能地先想到这句，因为它直接对应「我想要」。"
+      },
+      {
+        "titulo": "The bill，绝不是 the check",
+        "corpo": "英国餐厅的账单永远叫「the bill」。「The check」是美式说法，一开口就会被立刻认出来。"
+      },
+      {
+        "titulo": "酒吧：在柜台点单",
+        "corpo": "传统酒吧没有桌边服务：你可以坐下，但点单和付款都要去吧台完成。这跟法式咖啡馆的习惯完全相反。临近打烊时，记住「last orders」（最后点单）和接下来的「time」（打烊）。"
+      }
+    ]
+  }
+}

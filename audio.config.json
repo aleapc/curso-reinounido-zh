@@ -1,0 +1,18 @@
+{
+  "_comentario": "curso-reinounido-zh (survival English BRITÂNICO → Reino Unido, guia mandarim): voz-GUIA MANDARIM (Susan/Zack, as mesmas do curso-italia-zh, curso-espanha-zh, curso-japao-zh); fala-ALVO em INGLÊS BRITÂNICO (Alice/George), 100% REUSADA do curso-reinounido-fr. INV-5: guia nunca fala inglês, nativa nunca fala mandarim. DERIVAÇÃO barata: sem Fase 1, só tradução da narração-guia.",
+  "_fonetica_do_par": "Mandarim → inglês. Par de maior distância estrutural desta onda: o mandarim é isolante/tonal, sem flexão, sílabas fechadas em consoante nasal só (-n/-ng). PRECISA APRENDER: (1) consoante final em geral — o mandarim quase não tem coda consonantal, o aluno tende a apagar ou inserir vogal ('worke' por work, como o italiano); (2) o ⟨th⟩ não existe, vira 's'/'z' ou 'f'/'v'; (3) clusters consonantais (str-, -sts) são difíceis, o mandarim quase não os tem; (4) o inglês não é tonal — risco de aplicar contorno tonal à entoação inglesa (mesmo padrão do par mandarim→japonês já mapeado no curso-japao-zh); (5) artigos a/an/the não existem em mandarim (mesma lacuna do par espanhol/francês→inglês, mas aqui SEM nenhuma pista morfológica prévia). Falsos amigos são raros por não haver cognato latino — o risco maior é semântico/pragmático (registro de polidez), não lexical. Detalhe a autorar/confirmar em docs/FUNDACAO.md se a tradução achar necessário.",
+  "guideModel": "eleven_flash_v2_5",
+  "targetModel": "eleven_multilingual_v2",
+  "roles": {
+    "guide_zh_f": { "voiceId": "0H4ruoQ81Ei2FCwjW5j1", "languageCode": "zh", "name": "Susan" },
+    "guide_zh_m": { "voiceId": "DSyEP4HEaCKur8rFFOri", "languageCode": "zh", "name": "Zack" },
+    "target_en_gb_f": { "voiceId": "Xb7hH8MSUJpSbSDYk0k2", "languageCode": "en", "name": "Alice" },
+    "target_en_gb_m": { "voiceId": "JBFqnCBsd6RMkjVDRZzb", "languageCode": "en", "name": "George" }
+  },
+  "_g14": {
+    "guia": ["guide_zh_f", "guide_zh_m"],
+    "guiaLingua": "zh",
+    "alvo": ["target_en_gb_f", "target_en_gb_m"],
+    "alvoLingua": "en"
+  }
+}

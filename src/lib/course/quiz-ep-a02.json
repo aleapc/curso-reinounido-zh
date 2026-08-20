@@ -1,0 +1,89 @@
+{
+  "id": "q-a02",
+  "nivel": "avancado",
+  "titulo": "问答 — 他们在笑什么",
+  "subtitulo": "听懂轻描淡写，知道在陌生人面前该避开什么",
+  "introAudioKey": "gb-a02-q-i",
+  "introPt": "有人把鸡肉在烤架上烤糊了，还一本正经地说这刚刚好。听完对话，回答问题。",
+  "cenario": "花园里的烧烤聚会。",
+  "dialogo": [
+    {
+      "audioKey": "gb-a02-q01",
+      "voz": "target_en_gb_m",
+      "es": "Yeah, exactly how I planned it. Beautifully charred.",
+      "tts": "Yeah, exactly how I planned it. Beautifully charred.",
+      "pt": "对啊，完全按计划来的。烤得漂亮极了。"
+    },
+    {
+      "audioKey": "gb-a02-q02",
+      "voz": "target_en_gb_f",
+      "es": "Wait, was that a joke?",
+      "tts": "Wait, was that a joke?",
+      "pt": "等等，那是个笑话吗？"
+    },
+    {
+      "audioKey": "gb-a02-q03",
+      "voz": "target_en_gb_m",
+      "es": "Yeah, sorry, it's a bit more than beautifully charred.",
+      "tts": "Yeah, sorry, it's a bit more than beautifully charred.",
+      "pt": "是的，抱歉，这已经不只是「烤得漂亮」了。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在随意的英式幽默里，「understatement」（轻描淡写）是什么？",
+      "opcoes": [
+        "用平淡或严肃的语气，说得比心里想的轻得多",
+        "开玩笑之前一定会先预告",
+        "一种直接的侮辱",
+        "只在电视上才用的说法"
+      ],
+      "correta": 0,
+      "explica": "轻描淡写是用平淡或严肃的语气，说得比真实想法轻得多。"
+    },
+    {
+      "pergunta": "你没听懂一个笑话。你可以怎么做？",
+      "opcoes": [
+        "保持沉默，免得破坏气氛",
+        "轻松地问一句那是不是个笑话",
+        "立刻转移话题",
+        "没听懂也大声笑"
+      ],
+      "correta": 1,
+      "explica": "问一句「was that a joke?」几乎总是会让笑话继续下去，而不是破坏它。"
+    },
+    {
+      "pergunta": "哪种笑话几乎在任何场合、对任何人都管用？",
+      "opcoes": [
+        "拿政治开玩笑",
+        "拿别人的家人开玩笑",
+        "自嘲",
+        "拿宗教开玩笑"
+      ],
+      "correta": 2,
+      "explica": "自嘲式幽默是最安全的方式：不需要任何共享的背景知识，也不会冒犯到别人。"
+    },
+    {
+      "pergunta": "朋友善意地取笑你，说「he's just taking the piss」是什么意思？",
+      "opcoes": [
+        "他真的在生你的气",
+        "这是善意的取笑，是关系亲近的表现",
+        "他想跟你绝交",
+        "这是很严重的侮辱"
+      ],
+      "correta": 1,
+      "explica": "在英国朋友之间，「taking the piss」是友好的取笑，不是攻击——是一种伪装过的夸奖。"
+    },
+    {
+      "pergunta": "两个人在餐桌上开始聊政治。怎么退出比较合适？",
+      "opcoes": [
+        "明确表明自己的立场",
+        "说「I'll leave you two to it」",
+        "直接起身离开餐桌",
+        "生硬地转移话题"
+      ],
+      "correta": 1,
+      "explica": "轻松地退出话题、不表明立场，能让你在双方看来都显得友好。"
+    }
+  ]
+}

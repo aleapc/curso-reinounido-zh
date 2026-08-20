@@ -1,0 +1,229 @@
+{
+  "id": "b01",
+  "slot": "B01",
+  "nivel": "basico",
+  "numero": 1,
+  "parte": "1A",
+  "titulo": "服务生一听就懂的那个词",
+  "subtitulo": "拳头打在重音节上，从柜台一路打到房间门口",
+  "cena": "服务生刚把你的行李箱放在床边，站在门口等着一个英文词——告诉他这样就行了，还是你还需要点什么。",
+  "moldura": "ganha",
+  "frasePiso": "你要用一个动作，而不是一条规则，来结束你在英语里的第一次交流。大多数人从来学不会这个动作，这也是为什么他们说的话只能被听懂一半。",
+  "permissao": "说英语时保留自己的口音是完全正常的。没有人会给你的发音打分；唯一需要做到的，是让重读音节清楚地跳出来。",
+  "permissaoAudioKey": "gb-b01-n07",
+  "espelho": "在中文里，语速快时吞掉一个音几乎不会被注意到，因为耳朵会自动补上那个空缺。而在英语里，把一个对方早就认识的词的重音挪了位置，整个词的样子就完全变了：「hoTEL」要是说成「HOtel」，听起来就不再像酒店，而是变成了什么都不像的声音。",
+  "fichasCulturais": [
+    {
+      "sinal": "你说出一个你们俩都认识的词——「hotel」「information」——对方却愣了一下，才让你再说一遍。",
+      "suaLeitura": "我的英语太差了，连这么简单的词都说不明白。",
+      "oQueEAli": "这个词在对方耳朵里本来就长这个样子；让它变得认不出来的，是英语按词来移动重音、并且几乎把其他所有音节都压扁——这不是你说得不好，而是那记重拳落在了错的地方。",
+      "oQueVoceFaz": "稍微放慢速度重说一遍，把重读音节打得清清楚楚，其他音节压下去：hoTEL，不是 HOtel。",
+      "oQueMelhora": "那些你本来就认识的词——从机场到酒店，这样的词还真不少——不再是第一批听不懂的词。",
+      "ondeNaoVale": "对习惯了各国口音的国际化柜台人员不适用；那种场合，不管你怎么说，对方一听就懂。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-b01-n01", "gb-b01-n02"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b01-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "第一部分。一个动作：拳头打在重读音节上。这个重音的位置因词而异，不是固定在同一个地方。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b01-n02",
+      "bloco": "cena",
+      "pt": "服务生在等一个英文词。先从一个你本来就认识的词开始：information。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b01-t01",
+      "gesto": 3,
+      "es": "Information.",
+      "tts": "Information.",
+      "pinyin": "in-for-MEI-shen",
+      "pt": "Information。拳头落在 MA 这个音节上，不是第一个音节。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b01-p01",
+      "promptPt": "服务生给你看一份宣传册，问你是不是要找什么信息。就用这一个词回答，拳头稳稳落在第三个音节上。现在请说。",
+      "audioKey": "gb-b01-t01",
+      "es": "Information.",
+      "tts": "Information.",
+      "pinyin": "in-for-MEI-shen",
+      "pt": "问一下信息。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b01-n03",
+      "bloco": "corpo",
+      "pt": "hotel 的原理一样。拳头落在最后一个音节：hoTEL。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b01-t02",
+      "gesto": 3,
+      "es": "The hotel receipt, please.",
+      "tts": "The hotel receipt, please.",
+      "pinyin": "the hoh-TEL ri-SIT, pliz",
+      "pt": "酒店的收据，麻烦了。hoTEL 和 riCEIPT：两个词的拳头都落在最后一个音节上。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b01-p02",
+      "promptPt": "你付了出租车费，想留下这笔开销的凭证。要一张酒店的收据，把两个词的最后一个音节打清楚。现在请说。",
+      "audioKey": "gb-b01-t02",
+      "es": "The hotel receipt, please.",
+      "tts": "The hotel receipt, please.",
+      "pinyin": "the hoh-TEL ri-SIT, pliz",
+      "pt": "酒店的收据，麻烦了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b01-n04",
+      "pt": "Photograph、chocolate：同一条规则，但每个词的拳头落在不同的地方。没有固定公式，每个词都有自己的重音节。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b01-t03",
+      "gesto": 3,
+      "es": "Could I take a photograph?",
+      "tts": "Could I take a photograph?",
+      "pinyin": "kud ai teik e FOH-toh-graf",
+      "pt": "我能拍张照吗？这次拳头落在开头的 PHO 上。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b01-p03",
+      "promptPt": "从房间窗户看出去的景色美极了。问能不能拍张照，拳头落在第一个音节。现在请说。",
+      "audioKey": "gb-b01-t03",
+      "es": "Could I take a photograph?",
+      "tts": "Could I take a photograph?",
+      "pinyin": "kud ai teik e FOH-toh-graf",
+      "pt": "我能拍张照吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b01-p04",
+      "promptPt": "服务生按英式习惯给你放了一块枕头巧克力。说出这样东西的名字，把拳头打在第二个音节上：choco-LATE。现在请说。",
+      "audioKey": "gb-b01-t04",
+      "es": "Chocolate, thanks.",
+      "tts": "Chocolate, thanks.",
+      "pinyin": "CHOK-let, sanks",
+      "pt": "巧克力，谢谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b01-n05",
+      "bloco": "capsula",
+      "pt": "最后一件事：have 里的这个 H 永远不能吞掉。要吐出这口气，别把它咽下去。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b01-t05",
+      "gesto": 3,
+      "es": "Do you have a lift?",
+      "tts": "Do you have a lift?",
+      "pinyin": "du yu HAV e lift",
+      "pt": "你们有电梯吗？have 里的 H 是吐出来的一口气，不是被吞掉的。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b01-p05",
+      "promptPt": "你的两个行李箱太重了，走不了楼梯。问有没有电梯，把 have 里的 H 那口气吐清楚。现在请说。",
+      "audioKey": "gb-b01-t05",
+      "es": "Do you have a lift?",
+      "tts": "Do you have a lift?",
+      "pinyin": "du yu HAV e lift",
+      "pt": "你们有电梯吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b01-p06",
+      "promptPt": "服务生问你走之前还需不需要点别的。用这里随处能听到的随意说法告诉他不用了，谢谢。现在请说。",
+      "audioKey": "gb-b01-x1",
+      "es": "No, cheers.",
+      "tts": "No, cheers.",
+      "pinyin": "noh, chirz",
+      "pt": "不用了，谢谢。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b01-p07",
+      "promptPt": "他关上门之前祝你在这里玩得开心。用一句简短的话回应他同样的祝福。现在请说。",
+      "audioKey": "gb-b01-x2",
+      "es": "Enjoy your stay.",
+      "tts": "Enjoy your stay.",
+      "pinyin": "in-JOI yor stei",
+      "pt": "祝你入住愉快。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b01-s01",
+      "es": "Information. The hotel receipt, please. Could I take a photograph?",
+      "tts": "Information. The hotel receipt, please. Could I take a photograph?",
+      "pinyin": "in-for-MEI-shen. the hoh-TEL ri-SIT, pliz. kud ai teik e FOH-toh-graf",
+      "pt": "跟读这三句，每次拳头落在不同的音节上——从来不会两次落在同一个位置。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b01-n06",
+      "bloco": "recap",
+      "pt": "第一部分完成。一个动作，拳头打在重读音节上：这个动作会在每一部分反复出现。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "为什么英语会把自己的词压扁",
+    "secoes": [
+      {
+        "titulo": "按重音计时，不是按音节计时",
+        "corpo": "中文里每个字大致占用差不多的时间；英语则是按重音来分配时间的，而且重音的位置因词而异。如果按中文那种均匀的节奏去说一句英语，听起来会很生硬，有时候甚至会听不懂，因为讲英语的耳朵默认弱读音节会被压扁、一带而过。",
+        "exemplos": [
+          { "es": "Information.", "pt": "in-for-MEI-shen——拳头落在第三个音节，不是第一个" },
+          { "es": "Could I take a photograph?", "pt": "这次拳头落在 PHO 上，是开头——每个词的重音位置都是自己的" }
+        ]
+      },
+      {
+        "titulo": "眼熟的词，嘴上的代价",
+        "corpo": "Information、hotel、photograph、chocolate 这些词，很多你在基础英语学习里早就见过、认识它们的写法。真正的代价不在眼睛，而在嘴上——是重读音节决定了这个词在耳朵听来还认不认得出来。"
+      },
+      {
+        "titulo": "永远不能吞掉的那个 H",
+        "corpo": "中文里没有对应这个吐气音的习惯，容易把它整个略过——把 hotel 说成「otel」，happy 说成「appy」。在英语里，哪怕这个音节不是重音，H 也要被吐出来：是「do you Have」，不是「do you ave」。这只是一口气，不是什么新的音，记住吐这口气就够了。"
+      },
+      {
+        "titulo": "允许保留口音",
+        "corpo": "这部分的目标不是抹去你的口音：而是让重读音节清楚地跳出来。做到这一点，就足以让人一听就懂了。"
+      }
+    ]
+  }
+}

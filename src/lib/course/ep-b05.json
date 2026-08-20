@@ -1,0 +1,245 @@
+{
+  "id": "b05",
+  "slot": "B05",
+  "nivel": "basico",
+  "numero": 5,
+  "parte": "2A",
+  "titulo": "三个回答，说完就停",
+  "subtitulo": "在边检官员面前，事由、时长、住处：简短、真实，背后有凭证撑着",
+  "cena": "边检官员的目光已经落在你的护照上，你和那个盖章动作之间，只差三句简短又真实的话。",
+  "moldura": "protege",
+  "frasePiso": "只回答对方问的那件事；已经登记好的预订会承担剩下的一切。",
+  "permissao": "你完全有权用三个词回答，然后就停在那里。简短又真实的回答在这里不会显得可疑；反而是加上没人问过的细节，才是真正拖慢柜台节奏的原因。",
+  "permissaoAudioKey": "gb-b05-n01",
+  "fichasCulturais": [
+    {
+      "sinal": "官员问了一个简短的问题，你却发现自己补充起了没人要求的解释：为什么选这次旅行、上次做了什么、自己有多期待。",
+      "suaLeitura": "多说一点会显得更友好，或者能证明我没什么可隐瞒的。",
+      "oQueEAli": "柜台一整天处理的都是简短、贴合问题的回答；一个超出所问范围的回答，读起来更像是需要被重新核实的东西，而不是人情味。",
+      "oQueVoceFaz": "只回答被问到的内容，然后停下来，等下一个问题。",
+      "oQueMelhora": "交流会按官员心里已有的节奏推进，你离开柜台的速度会更快，而不是更慢。",
+      "ondeNaoVale": "如果官员明确问了一个包含好几个部分的问题，或者主动请你展开说说——那时候把问到的每一部分都回答清楚才是对的做法，而不是例外。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "gb-b05-n01"
+      ]
+    }
+  ],
+  "fatosDatados": [
+    {
+      "id": "gb-livre-pas-euro",
+      "afirmacao": "O Reino Unido não está na zona do euro: a moeda é a libra esterlina, e o comércio não aceita euros — quando aceita, o câmbio é ruim. Como o país é amplamente cashless, o cartão resolve a questão na prática.",
+      "fonte": "Fato monetário básico (fora da zona do euro); o grau de cashless é uma constatação de campo amplamente documentada, não uma norma escrita.",
+      "ano": 2026,
+      "revisarAte": "2027-06-30",
+      "evidencia": "CONSENSO",
+      "risco": "baixo"
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b05-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "这不是英语考试。官员决定的是你能停留多久。三个任务：为什么、多久、住哪里。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b05-r01",
+      "es": "What's the purpose of your visit?",
+      "tts": "What's the purpose of your visit?",
+      "pinyin": "wots the PER-pos of yor VIZ-it",
+      "pt": "您此行的目的是什么？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b05-p01",
+      "promptPt": "官员在问你此行的目的。你是来度假的。用一句简短的话回答。现在请说。",
+      "audioKey": "gb-b05-t01",
+      "es": "I'm here on holiday.",
+      "tts": "I'm here on holiday.",
+      "pinyin": "aim hir on HOL-i-dei",
+      "pt": "我是来度假的。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b05-r02",
+      "es": "How many days will you be staying?",
+      "tts": "How many days will you be staying?",
+      "pinyin": "hau MEN-i deiz wil yu bi STEI-ing",
+      "pt": "您会待多少天？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b05-n02",
+      "bloco": "corpo",
+      "pt": "用你真实的天数，不要照抄这里的例子。官员会拿它和你的预订比对。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b05-p02",
+      "promptPt": "你实际的行程是十天。只回答天数。现在请说。",
+      "audioKey": "gb-b05-t02",
+      "es": "Ten days.",
+      "tts": "Ten days.",
+      "pinyin": "ten deiz",
+      "pt": "十天。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b05-r03",
+      "es": "Where will you be staying?",
+      "tts": "Where will you be staying?",
+      "pinyin": "wehr wil yu bi STEI-ing",
+      "pt": "您会住在哪里？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b05-n03",
+      "pt": "跳过关于酒店的故事：只说名字就好。地址已经在你的预订信息里了。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b05-p03",
+      "promptPt": "官员问你会住在哪里。你已确认的住处就是预订里登记的那家酒店。简短回答。现在请说。",
+      "audioKey": "gb-b05-t03",
+      "es": "I'm staying at this hotel.",
+      "tts": "I'm staying at this hotel.",
+      "pinyin": "aim STEI-ing at this hoh-TEL",
+      "pt": "我住在这家酒店。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b05-r04",
+      "es": "Do you have the booking confirmation?",
+      "tts": "Do you have the booking confirmation?",
+      "pinyin": "du yu hav the BUK-ing kon-fer-MEI-shen",
+      "pt": "您有预订确认信息吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b05-p04",
+      "promptPt": "官员要凭证。递上已经准备好的确认信息，不用再加解释。现在请说。",
+      "audioKey": "gb-b05-t04",
+      "es": "Yes. Here it is.",
+      "tts": "Yes. Here it is.",
+      "pinyin": "yes. hir it iz",
+      "pt": "有的，在这里。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b05-n05",
+      "bloco": "capsula",
+      "pt": "章盖下去的那一刻：你已经不在用欧元的地方了。英镑从这里开始，银行卡几乎能解决一切。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b05-r05",
+      "es": "Thank you. Welcome to the UK.",
+      "tts": "Thank you. Welcome to the UK.",
+      "pinyin": "sank yu. wel-KAM tu the yu-KEI",
+      "pt": "谢谢。欢迎来到英国。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b05-px1",
+      "promptPt": "你没听清楚官员问的是什么。干净利落地请他再说一遍，不用过度道歉。现在请说。",
+      "audioKey": "gb-b05-x1",
+      "es": "Could you repeat the question, please?",
+      "tts": "Could you repeat the question, please?",
+      "pinyin": "kud yu ri-PIT the KWES-chen, pliz",
+      "pt": "能麻烦您再说一遍这个问题吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b05-px2",
+      "promptPt": "你需要几秒钟在手机里找到预订信息。请对方稍等片刻。现在请说。",
+      "audioKey": "gb-b05-x2",
+      "es": "One moment, please.",
+      "tts": "One moment, please.",
+      "pinyin": "wan MOH-ment, pliz",
+      "pt": "稍等一下，麻烦了。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b05-px3",
+      "promptPt": "官员问是否有人和你一起旅行。简短回答：你是一个人旅行。现在请说。",
+      "audioKey": "gb-b05-x3",
+      "es": "I'm travelling alone.",
+      "tts": "I'm travelling alone.",
+      "pinyin": "aim TRAV-el-ing e-LOHN",
+      "pt": "我是一个人来的。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b05-s01",
+      "es": "I'm here on holiday. Ten days. I'm staying at this hotel.",
+      "tts": "I'm here on holiday. Ten days. I'm staying at this hotel.",
+      "pinyin": "aim hir on HOL-i-dei. ten deiz. aim STEI-ing at this hoh-TEL",
+      "pt": "跟读这三句回答，每句说完后都干脆地停顿一下。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b05-n04",
+      "bloco": "recap",
+      "pt": "第五部分完成。事由、时长、住处、凭证：三句简短的回答。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "边检柜台是一场对答练习",
+    "secoes": [
+      {
+        "titulo": "真实胜过流畅",
+        "corpo": "如果你的实际行程和这门课里的数字不一样，千万不要照抄这里的数字。把数字换成真实的；句子结构保持不变就好。"
+      },
+      {
+        "titulo": "一个问题，一个回答",
+        "corpo": "事由、时长和住处是三条各自独立的信息。除非官员一起问，否则不要把它们打包成一句话说出来。"
+      },
+      {
+        "titulo": "让文件替你说话",
+        "corpo": "当对方要凭证时，一句「Yes. Here it is」能把交流的重心从记忆转移到实实在在的证据上。",
+        "exemplos": [
+          {
+            "es": "Do you have the booking confirmation?",
+            "pt": "您有预订确认信息吗？"
+          },
+          {
+            "es": "Yes. Here it is.",
+            "pt": "有的，在这里。"
+          }
+        ]
+      },
+      {
+        "titulo": "英镑从边境就开始了",
+        "corpo": "英国不在欧元区，商家也不接受欧元。因为几乎所有消费都能刷卡完成，这个问题通常自然而然就解决了——取款机是一道保险，不是必须走的一步。"
+      }
+    ]
+  }
+}

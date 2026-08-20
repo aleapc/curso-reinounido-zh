@@ -1,0 +1,257 @@
+{
+  "id": "a03",
+  "slot": "A03",
+  "nivel": "avancado",
+  "numero": 31,
+  "parte": "A03",
+  "titulo": "他们认为自己是谁",
+  "subtitulo": "比赛之夜的酒吧里，你对着一群人说了句「you're all English」，立刻被一句话纠正了，但对方并没有生气",
+  "cena": "在酒吧里，你刚对周围一群人说了句「you're all English」，有人语气坚定但并不恼火地回答：他是苏格兰人——不是英格兰人，从来都不是。",
+  "moldura": "ganha",
+  "frasePiso": "你不需要一套关于英国的理论。你需要的是一句诚恳的提问，以及愿意听一段比预想更长的回答的耐心。",
+  "fatosDatados": [
+    {
+      "id": "gb-quatre-nations",
+      "afirmacao": "The United Kingdom is made up of four nations — England, Scotland, Wales and Northern Ireland — each with its own national identity, its own football and rugby teams, and for Scotland and Wales, its own devolved parliament. Calling a Scottish, Welsh or Northern Irish person 'English' is a common and noticeable mistake that most correct politely but firmly.",
+      "fonte": "Fato constitucional de base (Reino Unido, Estado composto de quatro nações)",
+      "ano": 2026,
+      "revisarAte": "2029-08-20",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": ["gb-a03-n03"]
+    },
+    {
+      "id": "gb-autodesvalorizacao",
+      "afirmacao": "British national pride is often expressed sideways, through self-deprecation rather than boasting — supporters saying their own team is going to lose on penalties, or a whole country joking about its own weather and its own trains, while still turning out to support it.",
+      "fonte": "Consenso de fontes culturais britânicas",
+      "ano": 2026,
+      "revisarAte": "2029-08-20",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["gb-a03-n05"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a03-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "今天要练的是不再用游客的方式聊天，而是问出更好的问题。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a03-n02",
+      "bloco": "callback",
+      "pt": "回顾一下昨天。飞行很辛苦，有人问你还好吗。带点幽默地回答。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a03-p01",
+      "promptPt": "现在请说。",
+      "audioKey": "gb-a03-t01",
+      "es": "I'm surviving.",
+      "tts": "I'm surviving.",
+      "pinyin": "aim ser-VAI-ving",
+      "pt": "还活着。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a03-n03",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "比赛之夜的酒吧里。你对一群人说了「you're all English」。一个声音回应了，语气坚定但没有生气。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a03-o01",
+      "es": "I'm Scottish, actually. Not English.",
+      "tts": "I'm Scottish, actually. Not English.",
+      "pinyin": "aim SKO-tish, AK-tyu-a-li. not ING-lish",
+      "pt": "其实我是苏格兰人。不是英格兰人。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a03-n04",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "这不是小题大做：英国由四个国家组成，而「English」只指其中一个。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a03-p02",
+      "promptPt": "不要匆匆带过，打开话题。问他具体是哪里人。现在请说。",
+      "audioKey": "gb-a03-t02",
+      "es": "Sorry, whereabouts in Scotland?",
+      "tts": "Sorry, whereabouts in Scotland?",
+      "pinyin": "SO-ri, WEHR-e-bauts in SKOT-land",
+      "pt": "不好意思，苏格兰的哪个地方？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a03-o02",
+      "es": "Glasgow, born and raised.",
+      "tts": "Glasgow, born and raised.",
+      "pinyin": "GLAZ-goh, born and REIZD",
+      "pt": "格拉斯哥，土生土长。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a03-n05",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "注意你没有做的事：你没有说这很奇怪或反应过度。这不是你该去评判的。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a03-p03",
+      "promptPt": "你确实不知道这件事。简单说出来，不要过度道歉。现在请说。",
+      "audioKey": "gb-a03-t03",
+      "es": "Sorry, I didn't realise it worked that way.",
+      "tts": "Sorry, I didn't realise it worked that way.",
+      "pinyin": "SO-ri, ai DID-ent RIE-a-laiz it WERKT that wei",
+      "pt": "不好意思，我不知道这是这样的。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a03-o03",
+      "es": "No worries. Half the tourists get it wrong.",
+      "tts": "No worries. Half the tourists get it wrong.",
+      "pinyin": "noh WER-riz. haf the TU-rists get it rong",
+      "pt": "没关系。一半的游客都会搞错。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a03-n06",
+      "pt": "还有一件事：这里的自豪感常常通过自嘲表达——拿自己支持的球队要输球开玩笑。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a03-o04",
+      "es": "We'll lose on penalties, we always do.",
+      "tts": "We'll lose on penalties, we always do.",
+      "pinyin": "wil luz on PEN-al-tiz, wi OL-weiz du",
+      "pt": "👂 「我们肯定要输点球大战，一直都这样。」他在同一句话里，既爱着自己的球队，又在调侃它。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a03-p04",
+      "promptPt": "问一个具体的问题，而不是抛出理论：问他在这里住了多久。现在请说。",
+      "audioKey": "gb-a03-t04",
+      "es": "So how long have you lived down here?",
+      "tts": "So how long have you lived down here?",
+      "pinyin": "soh hau long hav yu livd daun hier",
+      "pt": "那你在这边（南部）住了多久了？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a03-o05",
+      "es": "About six years now. Still say I'm going home when I go north, though.",
+      "tts": "About six years now. Still say I'm going home when I go north, though.",
+      "pinyin": "e-BAUT six yirz nau. stil sei aim GOH-ing hohm wen ai goh norz, doh",
+      "pt": "大概六年了。不过每次北上，我还是会说「回家」。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a03-p05",
+      "promptPt": "简单地分享一点自己的情况。现在请说。",
+      "audioKey": "gb-a03-t05",
+      "es": "My family's from Brittany, actually.",
+      "tts": "My family's from Brittany, actually.",
+      "pinyin": "mai FA-mi-liz from BRIT-a-ni, AK-tyu-a-li",
+      "pt": "其实我家是布列塔尼那边的。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a03-p06",
+      "promptPt": "请他接着说下去，别的都不用多说。现在请说。",
+      "audioKey": "gb-a03-t06",
+      "es": "Tell me more about that.",
+      "tts": "Tell me more about that.",
+      "pinyin": "tel mi mor e-BAUT that",
+      "pt": "多跟我说说这个吧。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a03-s01",
+      "es": "Sorry, whereabouts in Scotland? Sorry, I didn't realise it worked that way. So how long have you lived down here?",
+      "tts": "Sorry, whereabouts in Scotland? Sorry, I didn't realise it worked that way. So how long have you lived down here?",
+      "pinyin": "SO-ri, WEHR-e-bauts in SKOT-land. SO-ri, ai DID-ent RIE-a-laiz it WERKT that wei. soh hau long hav yu livd daun hier",
+      "pt": "跟读这三句话，它们能打开对话而不会带偏方向。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a03-n07",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "A03 完成。问对方具体是哪里人，说自己不知道，问他住了多久。不需要下结论。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "四个国家，一个词并不适合所有人",
+    "secoes": [
+      {
+        "titulo": "「British」不等于「English」",
+        "corpo": "英国由四个国家组成：英格兰、苏格兰、威尔士和北爱尔兰，各自有独立的身份认同、独立的足球和橄榄球队，苏格兰和威尔士还各自拥有自己的地方议会。「British」涵盖这四者；「English」只指其中一个。把两者混为一谈，是访客最常犯的错误之一。"
+      },
+      {
+        "titulo": "通过自嘲表达的自豪感",
+        "corpo": "说自己支持的球队肯定要输，调侃天气或晚点的火车，却依然场场都到、依然真心相信——这是一种很常见的、不靠吹嘘来表达归属感的方式。这不是悲观，而是一种风格。"
+      },
+      {
+        "titulo": "为什么问「具体是哪里」是最安全的路",
+        "corpo": "问对方具体来自哪里，或者在现在住的地方住了多久，是一个所有人都能回答、又不需要在任何立场上表态的问题。它能换来一段真实的故事，而不会逼着任何人在陌生人面前捍卫一套理论。"
+      }
+    ]
+  },
+  "permissao": "你完全有权对这一切一无所知，并且大方承认。「不好意思，我不知道是这样的」是一句完整而得体的话——远好过对一个每天都在经历这种身份认同的人，硬塞给他一套关于英国身份的总结，而这正是这部分帮你避开的错误。",
+  "permissaoAudioKey": "gb-a03-n05",
+  "espelho": "任何来自一个存在地区身份认同讨论的国家的人——谁才算真正的本地人，学校里怎么讲某个地区的历史——都对这种形式并不陌生。这里唯一的不同是，这次你是以客人的身份在听，所以派得上用场的是一个问题，而不是一个结论。",
+  "fichasCulturais": [
+    {
+      "sinal": "你在酒吧里对一群人说了句「you're all English」，有人语气坚定但并不恼火地回答说他是苏格兰人。",
+      "suaLeitura": "他反应过度了，或者是在小题大做。",
+      "oQueEAli": "英国是由四个不同国家组成的国家；把苏格兰人、威尔士人或北爱尔兰人称为「English」，抹去的是一个真实的民族身份，不只是行政上的细微差别。这种纠正是常见反应，不是个别人的敏感。",
+      "oQueVoceFaz": "简短道个歉，问对方具体是哪里人——这个问题会把对话引向具体又有意思的方向。",
+      "oQueMelhora": "你会听到一段真实又具体的故事，几乎总是比你原本准备说的那句安慰或纠正更有意思。",
+      "ondeNaoVale": "在纯粹的行政或法律场合，「UK」和「British」才是正确且被期待使用的说法——这种细微差别只适用于面对面的对话。",
+      "evidencia": "FATO",
+      "audioKeys": ["gb-a03-n04"]
+    },
+    {
+      "sinal": "有人在一场他满怀热情要看的重要比赛前，开玩笑说自己支持的国家队肯定要输。",
+      "suaLeitura": "他其实并不真的相信自己的球队，或者是在提前给自己找台阶下。",
+      "oQueEAli": "提前调侃自己支持的球队、天气或火车，是一种常见的、不靠吹嘘表达归属感的方式——自嘲和自豪在同一句话里并存，并不矛盾。",
+      "oQueVoceFaz": "和他一起笑，而不是一本正经地安慰他——安慰会破坏这个笑点。",
+      "oQueMelhora": "你分享了这个瞬间，而不是站在外面纠结要不要去安慰他。",
+      "ondeNaoVale": "如果是你自己先开口调侃他的球队，而不是等他自己先说，就不适用——自嘲只能由本人来说，不能由外人代劳。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-a03-n06"]
+    }
+  ]
+}

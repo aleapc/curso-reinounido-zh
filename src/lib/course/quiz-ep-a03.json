@@ -1,0 +1,89 @@
+{
+  "id": "q-a03",
+  "nivel": "avancado",
+  "titulo": "问答 — 他们认为自己是谁",
+  "subtitulo": "问对方具体是哪里人，而不是下结论",
+  "introAudioKey": "gb-a03-q-i",
+  "introPt": "你刚对酒吧里的一群人说了「you're all English」，有人纠正了你。听完对话，回答问题。",
+  "cenario": "比赛之夜的酒吧。",
+  "dialogo": [
+    {
+      "audioKey": "gb-a03-q01",
+      "voz": "target_en_gb_m",
+      "es": "I'm Scottish, actually. Not English.",
+      "tts": "I'm Scottish, actually. Not English.",
+      "pt": "其实我是苏格兰人。不是英格兰人。"
+    },
+    {
+      "audioKey": "gb-a03-q02",
+      "voz": "target_en_gb_f",
+      "es": "Sorry, whereabouts in Scotland?",
+      "tts": "Sorry, whereabouts in Scotland?",
+      "pt": "不好意思，苏格兰的哪个地方？"
+    },
+    {
+      "audioKey": "gb-a03-q03",
+      "voz": "target_en_gb_m",
+      "es": "Glasgow, born and raised.",
+      "tts": "Glasgow, born and raised.",
+      "pt": "格拉斯哥，土生土长。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "为什么把苏格兰人叫作「English」是个真正的错误，而不只是细微差别？",
+      "opcoes": [
+        "英国由四个各有独立身份认同的国家组成",
+        "「English」和「British」的意思完全一样",
+        "这只是个无伤大雅的地方笑话",
+        "这只跟足球有关"
+      ],
+      "correta": 0,
+      "explica": "英国是由四个国家组成的：英格兰、苏格兰、威尔士和北爱尔兰。"
+    },
+    {
+      "pergunta": "有人语气坚定地纠正了你说的国籍。最好避免做什么？",
+      "opcoes": [
+        "问他具体来自哪里",
+        "坚持说这几乎是同一回事",
+        "简短地道个歉",
+        "问他在现在住的地方住了多久"
+      ],
+      "correta": 1,
+      "explica": "淡化一个真实的民族身份不是你该做的事——提问能打开对话，坚持己见只会把话说死。"
+    },
+    {
+      "pergunta": "有人在重要比赛前开玩笑说自己的球队要输了。这是什么信号？",
+      "opcoes": [
+        "他其实并不喜欢自己的球队",
+        "这是自嘲——一种常见的、不靠吹嘘表达归属感的方式",
+        "他想让你认真安慰他",
+        "他心情不好"
+      ],
+      "correta": 1,
+      "explica": "自嘲和自豪在同一句话里并存，并不矛盾——这是一种风格，不是悲观。"
+    },
+    {
+      "pergunta": "打开这段对话最安全的问题是什么？",
+      "opcoes": [
+        "你真的这么认为自己吗？",
+        "具体是哪里？",
+        "被人当成英格兰人你不介意吗？",
+        "你们为什么对这个这么敏感？"
+      ],
+      "correta": 1,
+      "explica": "问具体是哪里，能让对方讲述自己的故事，而不需要为任何立场辩护。"
+    },
+    {
+      "pergunta": "你不知道「British」和「English」不是一回事。你可以怎么说？",
+      "opcoes": [
+        "什么都不说，保持沉默比较好",
+        "「Sorry, I didn't realise it worked that way」",
+        "「That's a strange way to think about it」",
+        "「That doesn't really make sense」"
+      ],
+      "correta": 1,
+      "explica": "不带评判地说自己不知道，是一句完整又得体的话。"
+    }
+  ]
+}

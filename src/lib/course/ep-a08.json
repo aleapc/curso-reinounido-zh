@@ -1,0 +1,262 @@
+{
+  "id": "a08",
+  "slot": "A08",
+  "nivel": "avancado",
+  "numero": 36,
+  "parte": "A08",
+  "titulo": "道别",
+  "subtitulo": "怎么告别才能让人再邀你一次——以及一份救命清单，用来应对其他一切都想不起来的时候",
+  "cena": "你已经把包背上肩，门就在眼前，看到半桌人只是抬手挥了挥，没有起身一个个道别。",
+  "moldura": "ganha",
+  "frasePiso": "不慌不忙地离开，说出一件具体的事，最后再说一句真心的「cheers」。这就是「来过」和「交上朋友」之间的区别。",
+  "fatosDatados": [
+    {
+      "id": "gb-adeus-informal",
+      "afirmacao": "In casual British gatherings, a general wave or a shouted 'cheers, thanks for having me!' toward the room is a widely accepted way to leave, especially among friends of friends — it doesn't require an individual goodbye to every person, the same relaxed norm found across much of the English-speaking world.",
+      "fonte": "Consenso de fontes de etiqueta social britânica",
+      "ano": 2026,
+      "revisarAte": "2029-08-20",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": ["gb-a08-n04"]
+    },
+    {
+      "id": "gb-mensagem-agradecimento",
+      "afirmacao": "Sending a short thank-you text the same day or the next day after being hosted for a meal is a common and appreciated gesture in British social etiquette, even when a verbal thank-you was already given on the way out.",
+      "fonte": "Consenso de fontes de etiqueta social britânica",
+      "ano": 2026,
+      "revisarAte": "2029-08-20",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["gb-a08-n08"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a08-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "最后一部分。道别决定了有没有下一次，而且比你想象的更快就见分晓。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a08-n02",
+      "bloco": "callback",
+      "pt": "回顾一下昨天。有人跟你说改天要再聚聚，没提具体日期。像昨天一样热情地回应。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a08-p01",
+      "promptPt": "现在请说。",
+      "audioKey": "gb-a08-t01",
+      "es": "Yeah, that'd be great!",
+      "tts": "Yeah, that'd be great!",
+      "pinyin": "ye, thatd greit",
+      "pt": "好啊，那太好了！"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a08-n03",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "包已经背上肩，门就在眼前。半桌人只是抬手挥了挥，继续聊天，没有起身。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a08-o01",
+      "es": "Cheers for coming!",
+      "tts": "Cheers for coming!",
+      "pinyin": "chirz for KAM-ing",
+      "pt": "谢谢你能来！"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a08-n04",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "跟一个个郑重道别不同，在这里，对着全桌打一个招呼就完全够了。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a08-p02",
+      "promptPt": "热情但不夸张地跟主人道别。现在请说。",
+      "audioKey": "gb-a08-t02",
+      "es": "I should get going, but thank you so much.",
+      "tts": "I should get going, but thank you so much.",
+      "pinyin": "ai shud get GOH-ing, bat sank yu soh mach",
+      "pt": "我该走了，真的非常感谢。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a08-o02",
+      "es": "Of course! So glad you could make it.",
+      "tts": "Of course! So glad you could make it.",
+      "pinyin": "of KORS! soh glad yu kud meik it",
+      "pt": "当然啦！很高兴你能来。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a08-n05",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "这一步能为你换来下一次邀请：说出一件具体的事。不是「挺好的」——要说出具体是什么好。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a08-p03",
+      "promptPt": "说出今晚你真正会记住的东西。现在请说。",
+      "audioKey": "gb-a08-t03",
+      "es": "Your shepherd's pie was seriously the best I've had.",
+      "tts": "Your shepherd's pie was seriously the best I've had.",
+      "pinyin": "yor SHEP-erdz pai woz SIR-i-as-li the best aiv had",
+      "pt": "你做的牧羊人派真的是我吃过最好吃的。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a08-o03",
+      "es": "Aw, I'll tell my mum, she'll be made up.",
+      "tts": "Aw, I'll tell my mum, she'll be made up.",
+      "pinyin": "aw, ail tel mai mam, shil bi meid ap",
+      "pt": "哎呀，我要告诉我妈，她肯定超开心。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a08-n06",
+      "pt": "这句话刚刚传到了一个不在场的人那里。具体的夸奖会被传开；泛泛的夸奖只会留在原地。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a08-p04",
+      "promptPt": "提议保持联系，但不要让它听起来只是客套。现在请说。",
+      "audioKey": "gb-a08-t04",
+      "es": "We should definitely keep in touch — can I get your number?",
+      "tts": "We should definitely keep in touch — can I get your number?",
+      "pinyin": "wi shud DEF-i-nit-li kip in tach — kn ai get yor NAM-ber",
+      "pt": "我们真该保持联系——能要个你的电话吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a08-o04",
+      "es": "For sure, here you go.",
+      "tts": "For sure, here you go.",
+      "pinyin": "for shur, hir yu goh",
+      "pt": "当然，给你。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a08-n07",
+      "pt": "最后一个细节：当天再发一条感谢短信，哪怕临走时已经当面说过谢谢，效果一直都很好。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a08-n08",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "不需要写很长。一句「今晚很开心」就已经足够。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a08-p05",
+      "promptPt": "面对面地，用最后一句感谢结束这个晚上。现在请说。",
+      "audioKey": "gb-a08-t05",
+      "es": "Thanks again, this was really great.",
+      "tts": "Thanks again, this was really great.",
+      "pinyin": "sanks e-GEN, this woz RIL-i greit",
+      "pt": "再次感谢，今晚真的很棒。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a08-n09",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "如果其他一切都想不起来了，这份救命清单还在：do you have、can I、where's the、could I have、no ___ please、how much is。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a08-s01",
+      "es": "I should get going, but thank you so much. Your shepherd's pie was seriously the best. We should definitely keep in touch.",
+      "tts": "I should get going, but thank you so much. Your shepherd's pie was seriously the best. We should definitely keep in touch.",
+      "pinyin": "ai shud get GOH-ing, bat sank yu soh mach. yor SHEP-erdz pai woz SIR-i-as-li the best. wi shud DEF-i-nit-li kip in tach",
+      "pt": "跟读完整的告别流程：感谢、具体的夸奖、提议保持联系。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a08-n10",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "A08 完成，这门课也一起完成了。对全场打个招呼、说一件具体的事、提议保持联系：这就是能让人想再邀你一次的告别。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "怎么离开，决定了有没有下一次",
+    "secoes": [
+      {
+        "titulo": "对全场打个招呼就够了",
+        "corpo": "和那些期待每个人都被单独道别的文化不同，在英国，对着整个房间打一个招呼就完全够用了，尤其是在朋友的朋友聚在一起的这种随意场合。这不是不礼貌：只是另一种习惯而已。"
+      },
+      {
+        "titulo": "具体的夸奖会被传开",
+        "corpo": "「今晚挺好的」只会留在你说给的那个人身上。「你做的牧羊人派」会一路传到厨房里。说出一件具体的事，就是「一个礼貌的客人」和「一个真心想再邀请的客人」之间的差别。"
+      },
+      {
+        "titulo": "事后的那条短信",
+        "corpo": "当天再发一条简短的感谢短信，哪怕临走时已经当面道过谢，也是一个很小、却很容易被注意到、也很讨人喜欢的举动——只需要一句话，却能留下一个很好的最终印象。"
+      },
+      {
+        "titulo": "救命清单",
+        "corpo": "如果这门课的内容在飞机上全都想不起来了，还有六个框架能留下来，足够让你在任何地方都被好好对待：do you have ___ 用来问需要的东西，can I ___ 用来问能不能做某事，where's the ___ 用来找地方，could I have ___ 用来点单，no ___ please 用来去掉某样东西，how much is ___ 用来在下决定之前问价钱。"
+      }
+    ]
+  },
+  "permissao": "你完全有权花几分钟好好道别，也完全有权只是抬手挥一挥，对整个房间说再见——这两种方式在这里都是对的，不会因为没有一个个道别而显得失礼。",
+  "permissaoAudioKey": "gb-a08-n04",
+  "espelho": "任何当过主人的人，都能分辨出从门口挥手道别的客人，和特意过来、具体地感谢那份牧羊人派的客人之间的区别。你自己也当过主人这一边；A08 只是让你现在换成用英语，成为后面那种客人。",
+  "fichasCulturais": [
+    {
+      "sinal": "你正准备一个个跟桌上的人道别，却发现大多数人只是朝整桌挥了挥手。",
+      "suaLeitura": "只有我一个人这么正式，或者我花的时间比预想的更久。",
+      "oQueEAli": "一个个郑重道别在别的地方是常见的习惯；在英国，对全场打一个招呼同样是完全恰当的方式，尤其是在随意的聚会上。这两种方式都不算错——只是不同的习惯而已。",
+      "oQueVoceFaz": "做你觉得自然的事：直接向主人道别，如果气氛随意，对其他人挥手打个招呼就好。",
+      "oQueMelhora": "你能安心离开，不会觉得自己违反了某条其实屋里没人真的在遵守的规则。",
+      "ondeNaoVale": "在客人不多的正式晚宴或小型聚会上不适用——那种场合，最好还是像在自己家一样，直接一个个道别。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-a08-n04"]
+    },
+    {
+      "sinal": "你刚在临走时当面道过谢，不确定事后再发条消息会不会显得多余。",
+      "suaLeitura": "我已经当面说过谢谢了，事后再发消息会显得没必要地过于殷勤。",
+      "oQueEAli": "当天再发一条简短的感谢短信，是一个受欢迎的额外举动，不是没必要的重复——它强化了当面说的那句谢谢，也留下了一个主人常常会很开心记住的最终印象。",
+      "oQueVoceFaz": "发一句简短真诚的话，不需要为什么要发这条消息找理由。",
+      "oQueMelhora": "你几乎不费什么力气，就为下一次的邀请保住了这段关系。",
+      "ondeNaoVale": "对于非常随意的场合——比如跟刚认识、还不算熟的人吃顿便饭——就没那么必要了，当面说的那句谢谢已经足够为这一刻画上句号。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-a08-n08"]
+    }
+  ]
+}

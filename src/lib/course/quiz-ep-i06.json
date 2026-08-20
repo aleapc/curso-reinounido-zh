@@ -1,0 +1,67 @@
+{
+  "id": "q-i06",
+  "nivel": "intermediario",
+  "titulo": "问答 — 你昨天做了什么",
+  "subtitulo": "三块固定拼图，讲述一整天",
+  "introAudioKey": "gb-i06-q-i",
+  "introPt": "有人问你昨天做了什么。听听这位旅行者是怎么用三块固定拼图搭出故事的。",
+  "cenario": "英国的一次轻松闲聊，出去玩的第二天。",
+  "dialogo": [
+    {
+      "audioKey": "gb-i06-q01",
+      "voz": "target_en_gb_m",
+      "es": "So what did you do yesterday?",
+      "tts": "So what did you do yesterday?",
+      "pinyin": "soh wot did yu du YES-ter-dei",
+      "pt": "那你昨天做了什么？"
+    },
+    {
+      "audioKey": "gb-i06-q02",
+      "voz": "target_en_gb_f",
+      "es": "I went to a pub in the centre. I had a pie and chips.",
+      "tts": "I went to a pub in the centre. I had a pie and chips.",
+      "pinyin": "ai went tu e pab in the SEN-ter. ai had e pai and chips",
+      "pt": "我去了市中心的一家酒吧。吃了一份派配薯条。"
+    },
+    {
+      "audioKey": "gb-i06-q03",
+      "voz": "target_en_gb_m",
+      "es": "Nice, sounds like a good day.",
+      "tts": "Nice, sounds like a good day.",
+      "pinyin": "nais, saundz laik e gud dei",
+      "pt": "不错，听起来是美好的一天。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "讲述昨天的三块固定拼图是什么？",
+      "opcoes": ["I go, I have, I love it", "I went, I had, I loved it", "I'm going, I'm having, I'm loving it", "I will go, I will have, I will love it"],
+      "correta": 1,
+      "explica": "这是三块整个记下来的拼图，不是每次都要重新计算的语法规则。"
+    },
+    {
+      "pergunta": "用「I went」时，撑起整句话的是什么？",
+      "opcoes": ["单独的动词", "你去了哪里", "具体的时间", "价格"],
+      "correta": 1,
+      "explica": "I went to ___ 撑起的是你去过的那个地方。"
+    },
+    {
+      "pergunta": "怎么把「手机丢了」讲成一段已经解决的趣闻？",
+      "opcoes": ["What time did you lose it?", "I've lost my phone, actually.", "Do you have my phone?", "Where's my phone?"],
+      "correta": 1,
+      "explica": "这是第十六部分的 WENT-WRONG 框架，换了一种趣闻的语气重新使用，而不是紧急的语气。"
+    },
+    {
+      "pergunta": "「I've lost my phone」作为紧急情况（第十六部分）和作为趣闻（I06）之间，变化的是什么？",
+      "opcoes": ["句子的形式", "什么都没变，只是语气变了", "语法时态", "「lost」这个词"],
+      "correta": 1,
+      "explica": "句子的形式完全一样；只是场合把紧急情况变成了一段已经解决的故事。"
+    },
+    {
+      "pergunta": "不学新的时态，怎么说今天的计划？",
+      "opcoes": ["I went to", "I'm going to", "I had", "I loved"],
+      "correta": 1,
+      "explica": "I'm going to 加上一个简单动词，几乎能应对任何想讲的计划。"
+    }
+  ]
+}

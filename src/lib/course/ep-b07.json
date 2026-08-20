@@ -1,0 +1,274 @@
+{
+  "id": "b07",
+  "slot": "B07",
+  "nivel": "basico",
+  "numero": 7,
+  "parte": "2C",
+  "titulo": "六个司机同时朝你喊的那段人行道",
+  "subtitulo": "上车之前先找对通道，问价格、要收据——还有过马路前先看对方向的那只眼睛",
+  "cena": "你还没迈出一步，就有六七个司机已经在到达大厅外的人行道上招揽生意了，而唯一重要的那个人，是你还没找到的那个：官方认可的通道。",
+  "moldura": "ganha",
+  "frasePiso": "第一个上前搭话的司机，不代表就是你的车。",
+  "moldes": [
+    "CAN-I"
+  ],
+  "clique": {
+    "contagem": [
+      "官方交通柜台",
+      "软件确认过的司机",
+      "酒店前台"
+    ],
+    "desconto": "没有人给过你一句专门问刷卡的话、一句专门要收据的话、再一句专门要求停车的话。你是用同一个框架，只换掉想做的那件事，把这三句都搭出来的。",
+    "piso": "下次坐上一种你不熟悉的交通工具，你不会临场瞎猜。你会用两个词请求许可，剩下的事情自然会顺下去。"
+  },
+  "permissao": "哪怕身后一群司机在冲你喊，你也完全有权多花一分钟去找官方认可的通道。无视一个非正规的招揽，转而去问一个身份明确的人，这既不是不礼貌，也不是过度紧张：这是落地第一个小时里，唯一一个值得你冷静下来做的决定。",
+  "permissaoAudioKey": "gb-b07-n05",
+  "fichasCulturais": [
+    {
+      "sinal": "你刚走出到达区，还没问官方交通在哪里，就有人主动凑上来问你要不要坐车。",
+      "suaLeitura": "这里的人是不是都盯着游客下手，或者我得赶紧选一个人，免得显得很茫然。",
+      "oQueEAli": "在大多数英国机场，软件叫车的接车点和官方出租车的排队处是分开的，而且两者往往都离到达口有一段距离；在你到那里之前主动上来搭话的人，几乎从来都不是官方认可的通道。",
+      "oQueVoceFaz": "无视这个招揽，先去找身份明确的工作人员，或者带着标识的柜台，然后再回应别人。",
+      "oQueMelhora": "你的行程从一个固定价格或软件确认过的司机开始，而不是一场你根本没打算参与的讨价还价。",
+      "ondeNaoVale": "这不是说接下来整趟行程都要提防每一个司机：这份谨慎，只针对这第一个未经核实的招揽，出现在你最容易迷失方向的那个时刻。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "gb-b07-n04"
+      ]
+    },
+    {
+      "sinal": "你走下人行道准备过马路，下意识地先往左看，跟在家里一样——结果一辆公交车从右边冲了过来。",
+      "suaLeitura": "我看过了，应该没问题，可以走了。",
+      "oQueEAli": "在英国，车辆是从右边开过来的。伦敦的一些人行横道上专门刷了 LOOK RIGHT 和 LOOK LEFT 的字样，正是因为这种下意识的反应会在一开始骗过所有人。",
+      "oQueVoceFaz": "过一条单行道之前，先往右看——先读一读地上写的字，再相信自己的本能反应。",
+      "oQueMelhora": "你能顺利通过马路，不会因为那零点几秒的迟疑，在车从另一侧冲过来的地方吃亏。",
+      "ondeNaoVale": "这种地面标识并不是覆盖全国每一条街道、每一个城市；标识本身的存在是被广泛记录的实地观察，不是一条统一的成文规定——如果拿不准，动身前先两边都看看。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "gb-b07-n02"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b07-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "第七部分。拳头打在 CAN 上：CAN I。这个框架，从这里到酒店会用上三次。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b07-n02",
+      "bloco": "cena",
+      "tom": "protege",
+      "pt": "六七个司机在这段人行道上招揽生意。过马路之前：这里的车是从右边开过来的。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b07-n03",
+      "bloco": "molde",
+      "tom": "ganha",
+      "pt": "今天的框架：Can I 加上一个动作。开头不变，变的只是那个动作。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b07-t01",
+      "es": "Can I pay by card?",
+      "tts": "Can I pay by card?",
+      "pinyin": "kn ai pei bai kard",
+      "pt": "我能刷卡付款吗？"
+    },
+    {
+      "consulta": [
+        "taxi/pagamento"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "CAN-I",
+      "encaixe": "pay by card",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b07-p01",
+      "promptPt": "在官方交通柜台，上车之前，真正该问的问题不是收不收卡——而是收不收现金。问能不能刷卡付款。现在请说。",
+      "audioKey": "gb-b07-t01",
+      "es": "Can I pay by card?",
+      "tts": "Can I pay by card?",
+      "pinyin": "kn ai pei bai kard",
+      "pt": "我能刷卡付款吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b07-r01",
+      "es": "Yes, card or contactless, either works.",
+      "tts": "Yes, card or contactless, either works.",
+      "pinyin": "yes, kard or kon-TAKT-les, AI-ther werks",
+      "pt": "可以，刷卡或者感应支付都行。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b07-n06",
+      "bloco": "corpo",
+      "pt": "遇到软件确认过的司机，问清楚具体的上车点。"
+    },
+    {
+      "consulta": [
+        "taxi/destino"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "CAN-I",
+      "encaixe": "get a receipt",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b07-p02",
+      "promptPt": "你已经上了官方认可的车，想留个消费凭证。问能不能要一张收据。现在请说。",
+      "audioKey": "gb-b07-t02",
+      "es": "Can I get a receipt?",
+      "tts": "Can I get a receipt?",
+      "pinyin": "kn ai get e ri-SIT",
+      "pt": "能给我一张收据吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b07-r02",
+      "es": "Sure, I'll send it to your email.",
+      "tts": "Sure, I'll send it to your email.",
+      "pinyin": "shur, ail send it tu yor I-meil",
+      "pt": "没问题，我发到您邮箱。"
+    },
+    {
+      "consulta": [
+        "taxi/destino"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "CAN-I",
+      "encaixe": "leave my bag here",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b07-p03",
+      "promptPt": "去酒店的路上，你要临时下车去一家店一趟。问能不能把行李箱留在车里。现在请说。",
+      "audioKey": "gb-b07-t03",
+      "es": "Can I leave my bag here?",
+      "tts": "Can I leave my bag here?",
+      "pinyin": "kn ai liv mai bag hir",
+      "pt": "我能把包留在这里吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b07-n07",
+      "bloco": "capsula",
+      "pt": "到酒店后，先结束这段行程：说清楚在哪里停车，再要收据。"
+    },
+    {
+      "consulta": [
+        "taxi/destino"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "CAN-I",
+      "encaixe": "stop right here",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b07-p04",
+      "promptPt": "车到了酒店门口。要求就在这里停车。现在请说。",
+      "audioKey": "gb-b07-t04",
+      "es": "Can I stop right here?",
+      "tts": "Can I stop right here?",
+      "pinyin": "kn ai stop rait hir",
+      "pt": "能就停在这里吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b07-r03",
+      "es": "Sure thing. Enjoy your stay.",
+      "tts": "Sure thing. Enjoy your stay.",
+      "pinyin": "shur sing. in-JOI yor stei",
+      "pt": "没问题。祝您入住愉快。"
+    },
+    {
+      "consulta": [
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "CAN-I",
+      "encaixe": "check in early",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b07-px1",
+      "promptPt": "在酒店前台，你比正常入住时间来得早。问能不能提前办理入住。现在请说。",
+      "audioKey": "gb-b07-x1",
+      "es": "Can I check in early?",
+      "tts": "Can I check in early?",
+      "pinyin": "kn ai chek in ER-li",
+      "pt": "我能提前办理入住吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "CAN-I",
+      "encaixe": "sit here",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b07-px2",
+      "promptPt": "大厅的等候区里，插座旁边正好有个空位。问能不能坐在这里等。现在请说。",
+      "audioKey": "gb-b07-x2",
+      "es": "Can I sit here?",
+      "tts": "Can I sit here?",
+      "pinyin": "kn ai sit hir",
+      "pt": "我能坐在这里吗？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b07-s01",
+      "es": "Can I pay by card? Can I get a receipt? Can I stop right here?",
+      "tts": "Can I pay by card? Can I get a receipt? Can I stop right here?",
+      "pinyin": "kn ai pei bai kard? kn ai get e ri-SIT? kn ai stop rait hir",
+      "pt": "跟读同一个框架，配上三个不同的动作。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b07-n08",
+      "bloco": "recap",
+      "pt": "第七部分完成。上车之前先找对通道，用 Can I 加动作，过马路先看右边。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "通道、目的地、往右看",
+    "secoes": [
+      {
+        "titulo": "不要死记某一套本地系统",
+        "corpo": "接机的规则因机场而异。永远管用的做法是，向身份明确的工作人员打听官方认可的通道，或者软件叫车的接车点在哪里。"
+      },
+      {
+        "titulo": "Can I，变的只有那个动作",
+        "corpo": "框架的外壳不变；变的只有你想做的那件事。",
+        "exemplos": [
+          {
+            "es": "Can I pay by card?",
+            "pt": "我能刷卡付款吗？"
+          },
+          {
+            "es": "Can I get a receipt?",
+            "pt": "能给我一张收据吗？"
+          }
+        ]
+      },
+      {
+        "titulo": "最容易骗过所有人的那个本能反应",
+        "corpo": "走下人行道时，身体的本能会先往左看。在英国，车是从右边开过来的，一些人行横道地上刷的 LOOK RIGHT 字样，正是为了打破这种下意识的反应而存在的。"
+      },
+      {
+        "titulo": "一张收据能给这段行程画上句号",
+        "corpo": "进酒店之前先要收据。这是完成这趟行程的凭证，不是在起争执。"
+      }
+    ]
+  }
+}

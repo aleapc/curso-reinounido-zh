@@ -1,0 +1,73 @@
+{
+  "id": "q-b13",
+  "nivel": "basico",
+  "titulo": "问答 — 永远不能说一半的那句话",
+  "subtitulo": "「I'm allergic to ___」永远整句说，以及服务员反应背后的英国法规",
+  "introAudioKey": "gb-b13-q-i",
+  "introPt": "菜已经在送来的路上了，你不确定里面有没有花生。找出那句永远不能缩短的话，以及为什么工作人员反应这么快。",
+  "cenario": "餐桌前，点单送去厨房之前。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b13-q01",
+      "voz": "target_en_gb_f",
+      "es": "I'm allergic to peanuts.",
+      "tts": "I'm allergic to peanuts.",
+      "pinyin": "aim e-LER-jik tu PI-natz",
+      "pt": "我对花生过敏。"
+    },
+    {
+      "audioKey": "gb-b13-q02",
+      "voz": "target_en_gb_m",
+      "es": "Got it, I'll let the kitchen know.",
+      "tts": "Got it, I'll let the kitchen know.",
+      "pinyin": "got it, ail let the KICH-en noh",
+      "pt": "记下了，我会告诉厨房。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "「I'm allergic to ___」每次要怎么说？",
+      "opcoes": [
+        "可以根据场合缩短",
+        "永远整句、以同样的方式说",
+        "只有第一次点单时才需要说",
+        "根据服务员不同而变化"
+      ],
+      "correta": 1,
+      "explica": "和「Could I have ___?」不同，这句话是一把锤子，不是一个框架：永远整句说，不能随意调整语气。"
+    },
+    {
+      "pergunta": "服务员没等你说完剩下的点单就直接跑进厨房了。为什么？",
+      "opcoes": [
+        "他对任何事都反应过度",
+        "英国法律把声明过的过敏当作至关重要的信息来对待",
+        "这是服务不周到的表现",
+        "他听错了你的点单"
+      ],
+      "correta": 1,
+      "explica": "自 2021 年起，英国法律要求清楚标示十四种主要过敏原，很多餐厅也训练员工立刻和厨房核实。"
+    },
+    {
+      "pergunta": "除了说出来，你还应该随身带一个什么备用工具？",
+      "opcoes": [
+        "一个翻译软件",
+        "一张写好过敏情况的卡片",
+        "一本口袋字典",
+        "什么都不用，说出来就够了"
+      ],
+      "correta": 1,
+      "explica": "在紧张的时刻，声音可能会掉链子。一张用英语写好的卡片不用依赖发音，也不用指望一次就被听懂。"
+    },
+    {
+      "pergunta": "第十二部分和第十三部分的区别是什么？",
+      "opcoes": [
+        "没有区别，是同一回事",
+        "第十二部分去掉的是偏好，第十三部分传达的是健康风险",
+        "第十二部分是关于饮料的，第十三部分是关于食物的",
+        "第十三部分只是更正式一些而已"
+      ],
+      "correta": 1,
+      "explica": "第十二部分去掉的是一种偏好——不要洋葱、不要冰。第十三部分传达的是健康风险。厨房对待这两者的方式不同，你自己也该区别对待。"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "id": "i09",
+  "slot": "I09",
+  "nivel": "intermediario",
+  "numero": 9,
+  "parte": "I09",
+  "titulo": "一个下午，做他们在做的事",
+  "subtitulo": "周六的农夫市集，不是攻略上早就看过的景点——一个问题，就能换来一份邀请",
+  "cena": "你的攻略上只有一个下午的计划。坐在你旁边的人，才是真正住在这里的人，他有一个完全不同、也更好的计划。",
+  "decisao": "怎么打发这个空闲的下午——是照着已经花钱做好的攻略走，还是问问真实的安排、顺口提议一起去，这只需要一个问句而已",
+  "emJogo": "tempo",
+  "moldura": "ganha",
+  "frasePiso": "下午最好的安排，几乎从来都不在攻略里。它藏在这个周末公园里真正发生的事情里。",
+  "fichasCulturais": [],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i09-n01",
+      "gesto": 4,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "又是那个结尾手势：can I trY，try 词尾的辅音要清楚发出来。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i09-p01",
+      "promptPt": "昨晚你主动提出帮忙收拾桌子。今天你用同一个框架，提出另一种帮忙。现在请说。",
+      "bloco": "callback",
+      "audioKey": "gb-i09-t01",
+      "es": "Can I help with anything?",
+      "tts": "Can I help with anything?",
+      "pinyin": "kn ai help with EN-i-sing",
+      "pt": "有什么需要帮忙的吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i09-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "你的攻略上今天有一个计划。坐在你旁边的人，住在这里，有一个完全不同的计划。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i09-r01",
+      "es": "So what are you guys up to this weekend?",
+      "tts": "So what are you guys up to this weekend?",
+      "pinyin": "soh wot ar yu gaiz ap tu this WIK-end",
+      "pt": "那你们这个周末打算做什么？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i09-n03",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "把问题反问回去——用那个老框架，问一下有没有某样东西存在，这次是关于公园的。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i09-p02",
+      "promptPt": "问这个周末公园里有没有什么活动。现在请说。",
+      "molde": "HAVE",
+      "encaixe": "anything going on at the park",
+      "audioKey": "gb-i09-t02",
+      "es": "Do you have anything going on at the park this weekend?",
+      "tts": "Do you have anything going on at the park this weekend?",
+      "pinyin": "du yu hav EN-i-sing GOH-ing on at the park this WIK-end",
+      "pt": "这个周末公园里有什么活动吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i09-r02",
+      "es": "Yeah, there's a farmers' market on Saturday morning.",
+      "tts": "Yeah, there's a farmers' market on Saturday morning.",
+      "pinyin": "ye, thehrz e FAR-merz MAR-ket on SA-ter-dei MOR-ning",
+      "pt": "有的，周六早上有个农夫市集。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i09-n04",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "农夫市集只在特定的这一天、这个地点出现——跟固定的商店不一样。问开始时间，提议一起去。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i09-p03",
+      "promptPt": "问市集几点开始。现在请说。",
+      "molde": "WHAT-TIME",
+      "encaixe": "does the market start",
+      "audioKey": "gb-i09-t03",
+      "es": "What time does the market start?",
+      "tts": "What time does the market start?",
+      "pinyin": "wot taim daz the MAR-ket start",
+      "pt": "市集几点开始？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i09-r03",
+      "es": "Eight, but it gets busy by nine.",
+      "tts": "Eight, but it gets busy by nine.",
+      "pinyin": "eit, bat it gets BIZ-i bai nain",
+      "pt": "八点，不过九点左右就会很热闹。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i09-p04",
+      "promptPt": "问能不能跟他们一起去。现在请说。",
+      "molde": "CAN-I",
+      "encaixe": "come with you guys",
+      "audioKey": "gb-i09-t04",
+      "es": "Can I come with you guys?",
+      "tts": "Can I come with you guys?",
+      "pinyin": "kn ai kam with yu gaiz",
+      "pt": "我能跟你们一起去吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i09-r04",
+      "es": "Of course, we'll swing by around quarter to eight.",
+      "tts": "Of course, we'll swing by around quarter to eight.",
+      "pinyin": "of kors, wil swing bai e-RAUND KWOR-ter tu eit",
+      "pt": "当然可以，我们大概七点四十五分过来接你。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i09-p05",
+      "promptPt": "感谢对方把自己的计划分给你一份。现在请说。",
+      "audioKey": "gb-i09-t05",
+      "es": "That's so nice, thank you.",
+      "tts": "That's so nice, thank you.",
+      "pinyin": "thats soh nais, sank yu",
+      "pt": "你们太好了，谢谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i09-n05",
+      "pt": "到了市集之后，你不用表现得像个游客——你只是又一位普通顾客，用一直以来那个框架就好。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i09-p06",
+      "promptPt": "像任何一位顾客一样，问能不能在摊位上尝一口。现在请说。",
+      "molde": "CAN-I",
+      "encaixe": "try that",
+      "audioKey": "gb-i09-t06",
+      "es": "Can I try that?",
+      "tts": "Can I try that?",
+      "pinyin": "kn ai trai that",
+      "pt": "我能尝一下这个吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i09-p07",
+      "promptPt": "你正要走向另一个摊位，想知道明天他们开不开门。问他们周日几点开始营业。现在请说。",
+      "molde": "WHAT-TIME",
+      "encaixe": "do you open on Sundays",
+      "audioKey": "gb-i09-t07",
+      "es": "What time do you open on Sundays?",
+      "tts": "What time do you open on Sundays?",
+      "pinyin": "wot taim du yu OH-pen on SAN-deiz",
+      "pt": "你们周日几点开始营业？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i09-p08",
+      "promptPt": "一个摊位卖司康饼，另一个卖派，你不知道该尝哪个。把决定交给卖家。现在请说。",
+      "molde": "ESCOLHA",
+      "encaixe": "the scones or the pies",
+      "audioKey": "gb-i09-t08",
+      "es": "Which do you recommend: the scones or the pies?",
+      "tts": "Which do you recommend: the scones or the pies?",
+      "pinyin": "wich du yu rek-o-MEND: the skohnz or the paiz",
+      "pt": "您推荐哪个：司康饼还是派？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i09-n06",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "问一个你才刚认识的人能不能跟他一起去，在这里不算冒犯——几乎总能换来对方乐意分享自己计划的开心。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-i09-s01",
+      "es": "Do you have anything going on at the park this weekend? Can I come with you guys?",
+      "tts": "Do you have anything going on at the park this weekend? Can I come with you guys?",
+      "pinyin": "du yu hav EN-i-sing GOH-ing on at the park this WIK-end? kn ai kam with yu gaiz",
+      "pt": "跟读问有什么活动，以及问能不能一起去。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i09-n07",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "I09 完成。Do you have anything going on 找出真实的计划，can I come with you guys 把它变成一份邀请。"
+    }
+  ],
+  "permissao": "你可以问一个才刚认识的人，能不能跟他一起去。Can I come with you guys 在这里是一个正常又受欢迎的问题——大多数人都乐意带你看看自己真实的周末，而不是攻略里的那个。",
+  "permissaoAudioKey": "gb-i09-n06",
+  "espelho": "问一个当地朋友「你们这周末打算做什么，我能一起去吗？」，在自己的城市里，大多数人也会乐意这么做；这里不同的地方，是要用另一种语言开口，而不是开口这件事本身的风险。",
+  "aprofundar": {
+    "titulo": "本地的节奏，而不是固定的景点",
+    "secoes": [
+      {
+        "titulo": "农夫市集本质上是临时的",
+        "corpo": "这些市集只在一周里固定的某一天、在特定的地点出现，然后就消失了——跟一家常设的商店完全不同，值得开口问一句，因为时间因地区而异。"
+      },
+      {
+        "titulo": "Do you have 也能用来问活动",
+        "corpo": "第六部分那个框架——Do you have——不只能用来问东西存不存在，也能用来问活动：一个市集、一项活动、一个周末的安排。"
+      },
+      {
+        "titulo": "加入比旁观更好",
+        "corpo": "Can I come with you guys 能把一条信息变成一份邀请。大多数人都很乐意你加入，尤其是在你主动问过、而不是只在远处看着的情况下。"
+      }
+    ]
+  }
+}

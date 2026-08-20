@@ -1,0 +1,248 @@
+{
+  "id": "b02",
+  "slot": "B02",
+  "nivel": "basico",
+  "numero": 2,
+  "parte": "1B",
+  "titulo": "店员抬眼看向你的那一秒",
+  "subtitulo": "五个简短的动作，能打开一个柜台、让你顺利通过、也能体面地结束一次交流",
+  "cena": "你一进门店员就注意到你了，你还没碰到第一排货架，她的目光就已经落在你身上——就这三秒钟，是这一课的全部内容。",
+  "moldura": "ganha",
+  "permissao": "这些都不需要长句子。Hi、please、thanks 和 cheers 是四块简短的拼图，总是比你中文的直觉反应早一步出现。",
+  "permissaoAudioKey": "gb-b02-n03",
+  "fichasCulturais": [
+    {
+      "sinal": "一个陌生人在排队或柜台后跟你对上目光，随口说了句「You alright?」，并没有真的停下来。",
+      "suaLeitura": "他看出我哪里不对劲了，或者他在等我认真回答自己的状态。",
+      "oQueEAli": "「You alright?」（或「You all right?」）是英国柜台前最常见的问候语——功能上等同于「你好」。这不是在问你的身体状况，也没有人期待一份真实的汇报。",
+      "oQueVoceFaz": "同样简短地回应：「Yeah, you alright?」，把同样的说法送回去——这是一秒钟内就能结束的交流，不是要打开一段对话。",
+      "oQueMelhora": "你不再纠结要给出什么真实的回答，柜台前的节奏也能和对待任何一位本地顾客一样顺畅推进。",
+      "ondeNaoVale": "如果是医生、安保人员，或者刚看到你被绊倒的人问出同样的话，那就是真心在问——这时候需要的是一句完整的回答，而不是条件反射式的重复。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "gb-b02-n01"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b02-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "第二部分。拳头打在 RIGHT 上：you al-RIGHT。先打招呼，再去看货架。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b02-t01",
+      "es": "You alright?",
+      "tts": "You alright?",
+      "pinyin": "yu al-RAIT",
+      "pt": "你好呀？这是一句问候，不是真的在问你身体怎么样。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b02-p01",
+      "promptPt": "早上你走进一家小店。在看货架之前，先把同样的问候送还给店员。现在请说。",
+      "audioKey": "gb-b02-t01",
+      "es": "You alright?",
+      "tts": "You alright?",
+      "pinyin": "yu al-RAIT",
+      "pt": "你好呀？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b02-r01",
+      "es": "Yeah, cheers. Let me know if you need anything.",
+      "tts": "Yeah, cheers. Let me know if you need anything.",
+      "pinyin": "ye, chirz. let mi noh if yu nid EN-i-sing",
+      "pt": "挺好，谢谢。有需要就叫我。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b02-n02",
+      "pt": "「Let me know」不是在盘问你，而是敞开一扇门，让你想说话的时候随时可以开口。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b02-p02",
+      "promptPt": "店员说有需要就叫她，但你只是想随便看看。告诉她你只是看看，并道个谢。现在请说。",
+      "audioKey": "gb-b02-t02",
+      "es": "Just looking, thanks.",
+      "tts": "Just looking, thanks.",
+      "pinyin": "jast LUK-ing, sanks",
+      "pt": "先随便看看，谢谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b02-n03",
+      "bloco": "permissao",
+      "pt": "Hi、please、thanks、cheers：四块简短的拼图，总比你的条件反射早一步。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b02-n04",
+      "bloco": "corpo",
+      "pt": "拥挤的电梯里：先说 excuse me 再移动，这是一个信号，不是道歉。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b02-t03",
+      "es": "Excuse me, coming through.",
+      "tts": "Excuse me, coming through.",
+      "pinyin": "eks-KYUZ mi, KAM-ing sru",
+      "pt": "借过一下，我要过去。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b02-p03",
+      "promptPt": "电梯门开了，有人挡在出口，没注意到你。在移动之前先说一声你要过去。现在请说。",
+      "audioKey": "gb-b02-t03",
+      "es": "Excuse me, coming through.",
+      "tts": "Excuse me, coming through.",
+      "pinyin": "eks-KYUZ mi, KAM-ing sru",
+      "pt": "借过一下，我要过去。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b02-r02",
+      "es": "Oh, sorry, go ahead.",
+      "tts": "Oh, sorry, go ahead.",
+      "pinyin": "oh, SO-ri, goh e-HED",
+      "pt": "哦，不好意思，你先请。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b02-p04",
+      "promptPt": "对方让开了，让你先过去。经过时向他道谢。现在请说。",
+      "audioKey": "gb-b02-t04",
+      "es": "Cheers.",
+      "tts": "Cheers.",
+      "pinyin": "chirz",
+      "pt": "谢啦。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b02-n05",
+      "bloco": "capsula",
+      "pt": "Cheers 能结束一次交流：谢谢、再见、没问题了，具体是哪个意思看当下的场合。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b02-p05",
+      "promptPt": "你在一家小咖啡馆付完款，正要走出门。趁门还没关上，道谢并告别。现在请说。",
+      "audioKey": "gb-b02-t05",
+      "es": "Cheers, have a good one.",
+      "tts": "Cheers, have a good one.",
+      "pinyin": "chirz, hav e gud wan",
+      "pt": "谢谢，祝你今天顺利。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b02-r03",
+      "es": "You too, take care.",
+      "tts": "You too, take care.",
+      "pinyin": "yu tu, teik kehr",
+      "pt": "你也是，保重。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b02-p06",
+      "promptPt": "对方回了句「you too, take care」。用一个词把祝福送回去。现在请说。",
+      "audioKey": "gb-b02-x1",
+      "es": "You too.",
+      "tts": "You too.",
+      "pinyin": "yu tu",
+      "pt": "你也是。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b02-p07",
+      "promptPt": "你走进一家咖啡馆时，有人替你扶着门。不停下脚步，用一个词道谢。现在请说。",
+      "audioKey": "gb-b02-x2",
+      "es": "Cheers.",
+      "tts": "Cheers.",
+      "pinyin": "chirz",
+      "pt": "谢啦。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b02-p08",
+      "promptPt": "你刚在收银台付完款，手上没有袋子。要一个袋子，句尾记得加 please。现在请说。",
+      "audioKey": "gb-b02-x3",
+      "es": "Could I have a bag, please?",
+      "tts": "Could I have a bag, please?",
+      "pinyin": "kud ai hav e bag, pliz",
+      "pt": "能给我一个袋子吗，麻烦了？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b02-s01",
+      "es": "You alright? Excuse me, coming through. Cheers, have a good one.",
+      "tts": "You alright? Excuse me, coming through. Cheers, have a good one.",
+      "pinyin": "yu al-RAIT? eks-KYUZ mi, KAM-ing sru. chirz, hav e gud wan",
+      "pt": "跟读这三块简短的拼图，从进门到出门。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b02-n06",
+      "bloco": "recap",
+      "pt": "第二部分完成。You alright 用来打招呼，excuse me 在移动前说，cheers 用在离开的时候。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "简短的礼貌，用在对的时刻",
+    "secoes": [
+      {
+        "titulo": "「You alright?」不是在等一份健康报告",
+        "corpo": "这是英国柜台前最常见的问候语。预期的回答和这句问话一样简短：「Yeah, you alright?」就完全够用了，双方都是如此。"
+      },
+      {
+        "titulo": "Excuse me 是预告，sorry 是补救",
+        "corpo": "在穿过一个空间之前——走廊、电梯——用 excuse me 来预告你要移动。Sorry 则用在你已经碰到别人，或者做错了什么事情之后。",
+        "exemplos": [
+          {
+            "es": "Excuse me, coming through.",
+            "pt": "借过一下，我要过去。"
+          },
+          {
+            "es": "Oh, sorry, go ahead.",
+            "pt": "哦，不好意思，你先请。"
+          }
+        ]
+      },
+      {
+        "titulo": "Cheers 一个词能顶好几个中文词",
+        "corpo": "根据场合的不同，cheers 可以是谢谢、再见，或者没问题了——在这种语境下从来不是在敬酒。你一天里会听到它几十次；现在只需要能听懂它、并把它送回去就够了。"
+      }
+    ]
+  }
+}

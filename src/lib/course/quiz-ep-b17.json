@@ -1,0 +1,63 @@
+{
+  "id": "q-b17",
+  "nivel": "basico",
+  "titulo": "问答 — 决定去药店还是去医院的那种疼痛",
+  "subtitulo": "999、112、111，以及关于医疗保障的纠正",
+  "introAudioKey": "gb-b17-q-i",
+  "introPt": "从昨晚开始就肚子疼，时间还在一分一秒过去。找出该按严重程度拨打哪个号码，以及该靠什么保障自己。",
+  "cenario": "先是在药店，接着是紧急情况下打电话。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b17-q01",
+      "voz": "target_en_gb_f",
+      "es": "Do you have something for a stomachache?",
+      "tts": "Do you have something for a stomachache?",
+      "pinyin": "du yu hav SAM-sing for e STAM-ek-eik",
+      "pt": "你们有治肚子疼的药吗？"
+    },
+    {
+      "audioKey": "gb-b17-q02",
+      "voz": "target_en_gb_m",
+      "es": "This should help. Take it with food.",
+      "tts": "This should help. Take it with food.",
+      "pinyin": "this shud help. teik it with fud",
+      "pt": "这个应该有用。要跟食物一起吃。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "遇到真正危及生命的紧急情况，你应该拨打哪个号码？",
+      "opcoes": ["111", "999", "120", "110"],
+      "correta": 1,
+      "explica": "999 是全国紧急号码。欧洲统一号码 112 也能接通同一条线路。"
+    },
+    {
+      "pergunta": "遇到紧急但不危及生命的情况，你应该拨打哪个号码？",
+      "opcoes": ["999", "112", "111", "101"],
+      "correta": 2,
+      "explica": "111（NHS 提供，全天候免费）用于紧急但不危及生命的情况——这是能让你在不需要的时候不用跑急诊的号码。"
+    },
+    {
+      "pergunta": "作为中国游客，在英国生病该靠什么来保障自己？",
+      "opcoes": [
+        "英国的 GHIC 卡",
+        "带医疗保障的旅行保险",
+        "什么都不用，一切都是免费的",
+        "到当地再买一张互惠医保卡"
+      ],
+      "correta": 1,
+      "explica": "GHIC 和 EHIC 都不适用于中国游客，中国和英国之间也没有互惠医保协议。出发前买好带医疗保障的旅行保险才是关键。"
+    },
+    {
+      "pergunta": "在英国，急诊和全科医生的诊疗是收费的吗？",
+      "opcoes": [
+        "是的，跟美国一样",
+        "急诊治疗对任何人当场都是免费的，但其他治疗通常要收费",
+        "只有本地居民才免费",
+        "只有买了私人保险才免费"
+      ],
+      "correta": 1,
+      "explica": "急诊治疗对任何人当场都是免费的，不管国籍或有没有保险；但非紧急的治疗、住院和处方药，中国游客通常需要自费，所以旅行保险很重要。"
+    }
+  ]
+}

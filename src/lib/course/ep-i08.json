@@ -1,0 +1,259 @@
+{
+  "id": "i08",
+  "slot": "I08",
+  "nivel": "intermediario",
+  "numero": 8,
+  "parte": "I08",
+  "titulo": "有人邀请你去家里做客",
+  "subtitulo": "直接问该带点什么是常态，不是不懂事——迟到十分钟在这里完全不会伤感情",
+  "cena": "你刚答应了今晚去别人家吃晚饭，接下来三十秒你做的决定，会定下整个晚上的基调。",
+  "decisao": "该带什么、几点到——直接问对方欢迎带什么，而不是死盯着准点到达，这才是这里的常态",
+  "emJogo": "ambos",
+  "moldura": "ganha",
+  "frasePiso": "你要能不猜不蒙、双手带着东西到场，就因为你直接问了对方欢迎什么。",
+  "fichasCulturais": [
+    {
+      "sinal": "有人邀你去家里吃晚饭，你不知道该不该带点什么，于是空着手去了，怕带错东西反而失礼。",
+      "suaLeitura": "什么都不带，总比带错东西冒犯到别人安全。",
+      "oQueEAli": "在英国，受邀去别人家吃晚饭时带一瓶酒、一份甜点或什么饮料是常态——而直接问该带什么，会被看作是体贴，而不是奇怪。",
+      "oQueVoceFaz": "接受邀请的时候就问一句「What can I bring?」，然后带上对方说的东西，如果对方说不用带，就带点简单的小礼物。",
+      "oQueMelhora": "你能带着确定感赴约，清楚知道该准备什么，而不是靠猜、心里一直七上八下。",
+      "ondeNaoVale": "对于更正式的商务晚宴或者更讲究礼节的场合不适用，那种情况下直接问可能会显得不太合适——这时候带一份中性的礼物，比如鲜花或巧克力，是更保险的选择。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-i08-n02"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i08-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "拳头打在 what CAN i bring 上：这个问题几乎能解决今晚所有的不确定。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i08-p01",
+      "promptPt": "昨天你用夸厨师的那个框架夸了一道菜。今天用同一个框架，夸夸朋友家端上来的东西。现在请说。",
+      "bloco": "callback",
+      "molde": "APRECIACAO",
+      "encaixe": "this",
+      "audioKey": "gb-i08-t01",
+      "es": "I really like this, it's brilliant.",
+      "tts": "I really like this, it's brilliant.",
+      "pinyin": "ai RIL-i laik this, its BRIL-yant",
+      "pt": "我真的很喜欢这个，太棒了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i08-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "你刚答应了今晚去别人家吃晚饭，接下来三十秒你做的事，会定下整个晚上的基调。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i08-r01",
+      "es": "Would you like to come round for dinner on Friday?",
+      "tts": "Would you like to come round for dinner on Friday?",
+      "pinyin": "wud yu laik tu kam raund for DIN-er on FRAI-dei",
+      "pt": "周五要不要来我家吃晚饭？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i08-n03",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "答应下来，同时顺口问该带点什么——这是常态，不是不懂事。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i08-p02",
+      "promptPt": "开心地接受这个邀请。现在请说。",
+      "audioKey": "gb-i08-t02",
+      "es": "I'd love to, thank you.",
+      "tts": "I'd love to, thank you.",
+      "pinyin": "aid lav tu, sank yu",
+      "pt": "非常乐意，谢谢。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i08-p03",
+      "promptPt": "现在直接问该带什么。现在请说。",
+      "audioKey": "gb-i08-t03",
+      "es": "What can I bring?",
+      "tts": "What can I bring?",
+      "pinyin": "wot kn ai bring",
+      "pt": "我该带点什么？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i08-r02",
+      "es": "Just bring yourself, but a bottle of wine is always welcome.",
+      "tts": "Just bring yourself, but a bottle of wine is always welcome.",
+      "pinyin": "jast bring yor-SELF, bat e BOT-el of wain iz OL-weiz WEL-kam",
+      "pt": "人来就行，不过带瓶酒总是受欢迎的。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i08-n04",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "比约定时间晚到十到十五分钟，对朋友间的晚餐来说是正常的——这是被预期的余量。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-i08-r03",
+      "es": "Come on in, make yourself at home.",
+      "tts": "Come on in, make yourself at home.",
+      "pinyin": "kam on in, meik yor-SELF at hohm",
+      "pt": "快进来，别客气。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i08-p04",
+      "promptPt": "递上你带来的酒。现在请说。",
+      "audioKey": "gb-i08-t04",
+      "es": "I brought this for you.",
+      "tts": "I brought this for you.",
+      "pinyin": "ai brot this for yu",
+      "pt": "这个是带给你的。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i08-r04",
+      "es": "You didn't have to, thank you so much.",
+      "tts": "You didn't have to, thank you so much.",
+      "pinyin": "yu DID-ent hav tu, sank yu soh mach",
+      "pt": "你太客气了，非常感谢。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i08-p05",
+      "promptPt": "你看到主人在摆桌子，人手不够。主动提出帮忙。现在请说。",
+      "audioKey": "gb-i08-t05",
+      "es": "Can I help with anything?",
+      "tts": "Can I help with anything?",
+      "pinyin": "kn ai help with EN-i-sing",
+      "pt": "有什么需要帮忙的吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i08-r05",
+      "es": "You could grab the plates from the side, if you don't mind.",
+      "tts": "You could grab the plates from the side, if you don't mind.",
+      "pinyin": "yu kud grab the pleits from the said, if yu dont maind",
+      "pt": "如果你不介意的话，能帮忙把台面上的盘子拿过来吗。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i08-p06",
+      "promptPt": "坐下之前，感谢对方的邀请。现在请说。",
+      "audioKey": "gb-i08-t06",
+      "es": "Thanks so much for having me.",
+      "tts": "Thanks so much for having me.",
+      "pinyin": "sanks soh mach for HAV-ing mi",
+      "pt": "非常感谢你邀请我来。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i08-p07",
+      "promptPt": "离开前，问能不能帮忙收拾。现在请说。",
+      "audioKey": "gb-i08-t07",
+      "es": "Can I help clear up?",
+      "tts": "Can I help clear up?",
+      "pinyin": "kn ai help klir ap",
+      "pt": "我能帮忙收拾吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i08-r06",
+      "es": "No need, I've got it. Thanks for coming.",
+      "tts": "No need, I've got it. Thanks for coming.",
+      "pinyin": "noh nid, aiv got it. sanks for KAM-ing",
+      "pt": "不用了，我来就行。谢谢你能来。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i08-p08",
+      "promptPt": "接受对方说不用帮忙，热情地告别。现在请说。",
+      "audioKey": "gb-i08-t08",
+      "es": "This was a great night, thank you.",
+      "tts": "This was a great night, thank you.",
+      "pinyin": "this woz e greit nait, sank yu",
+      "pt": "今晚真的很愉快，谢谢你。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i08-n05",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "你不需要去猜该带什么，也不需要卡着点准时到达。直接问，才是这里期待的做法。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-i08-s01",
+      "es": "What can I bring? I brought this for you. Thanks so much for having me.",
+      "tts": "What can I bring? I brought this for you. Thanks so much for having me.",
+      "pinyin": "wot kn ai bring? ai brot this for yu. sanks soh mach for HAV-ing mi",
+      "pt": "跟读发问、递上礼物、道谢，一句接一句。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i08-n06",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "I08 完成。What can I bring 解决了带什么礼物的问题，晚到十到十五分钟是正常的，主动提出帮忙能让这个晚上体面收尾。"
+    }
+  ],
+  "permissao": "你不需要卡着点准时到达，也不需要去猜该带什么。问一句「what can I bring?」，比约定时间晚几分钟到——这正是这里朋友间聚餐时被期待的做法。",
+  "permissaoAudioKey": "gb-i08-n05",
+  "espelho": "去别人家吃饭永远不空手，这条规矩你在自己国家早就不假思索地遵守着；这里不同的地方是，直接问该带什么会被认为是体贴，而不是要你自己去猜——虽然中国的聚餐习惯往往更看重准时甚至提前到，这里十到十五分钟的余量反而是被接受的常态。",
+  "aprofundar": {
+    "titulo": "直接问，而不是靠猜",
+    "secoes": [
+      {
+        "titulo": "What can I bring 是常态，不是例外",
+        "corpo": "跟一些直接问会显得笨拙的场合不同，在英国朋友间的非正式晚餐上，问该带什么正是被期待的做法——主人几乎总有现成的答案。"
+      },
+      {
+        "titulo": "十到十五分钟的余量是正常的",
+        "corpo": "对于去别人家的非正式晚餐，比约定时间晚到零到十五分钟是被接受的余量，这跟商务约会里分秒必较的守时要求完全不同。"
+      },
+      {
+        "titulo": "主动提出帮忙是这套礼节的一部分",
+        "corpo": "不管是刚到时还是晚会快结束时，说一句 Can I help with anything 都是被期待的说法——主人可能会婉拒，但主动提出这件事本身，就是做一个好客人的一部分。"
+      }
+    ]
+  }
+}

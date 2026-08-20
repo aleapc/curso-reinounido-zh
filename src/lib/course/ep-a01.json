@@ -1,0 +1,244 @@
+{
+  "id": "a01",
+  "slot": "A01",
+  "nivel": "avancado",
+  "numero": 29,
+  "parte": "A01",
+  "titulo": "不是对你说话时，他们是怎么说的",
+  "subtitulo": "周六早上的咖啡馆柜台，语速是真实的，而里面一半的词你其实早就认识",
+  "cena": "咖啡师用一秒钟就把你前面那位客人的点单复述了一遍，一个完整的词都没有，而且什么都不会为你放慢。",
+  "moldura": "ganha",
+  "frasePiso": "如果这部分你只记住一件事——「want to」会说成「wanna」——你就已经比十个游客里九个更能听懂这里的英语了。",
+  "fatosDatados": [
+    {
+      "id": "gb-reducoes-informais",
+      "afirmacao": "In fast, informal British English, function words fuse much like in American English, but not identically: want to becomes wanna, going to becomes gonna, don't know becomes dunno, give me becomes gimme. On top of that, many British accents soften the middle consonant t to a glottal stop, so water and better sound closer to wa'er and be'er.",
+      "fonte": "Consenso de fontes linguísticas (J. C. Wells, Accents of English; British Council)",
+      "ano": 2026,
+      "revisarAte": "2030-01-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["gb-a01-n07", "gb-a01-n10"]
+    },
+    {
+      "id": "gb-you-alright",
+      "afirmacao": "'You alright?' or simply 'Alright?' is one of the most common greetings across Britain. It works exactly like 'hello', not like a real question about your health — the expected answer is another 'alright' or 'good, you?', never an actual account of how you feel.",
+      "fonte": "Consenso de fontes de etiqueta social britânica",
+      "ano": 2026,
+      "revisarAte": "2029-08-20",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["gb-a01-n13"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a01-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "第二十九部分。今天你不用说话，只需要听。拳头照样打着节拍，好让耳朵保持在线。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a01-n02",
+      "pt": "你将听到真实的、快速的英语，不会为你停顿。不需要听懂每一个词。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a01-n03",
+      "bloco": "cena",
+      "pt": "周六早上，咖啡馆排队。咖啡师用一秒钟复述了你前面那位客人的一长串点单。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a01-o01",
+      "es": "Can I get a flat white, oat milk, extra shot, to go?",
+      "tts": "Can I get a flat white, oat milk, extra shot, to go?",
+      "pinyin": "kn ai get e FLAT wait, oht milk, EX-tra shot, tu go",
+      "pt": "👂 这不是对你说的。没什么要解决的——让它过去。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a01-o02",
+      "es": "You alright, love? That's three eighty.",
+      "tts": "You alright, love? That's three eighty.",
+      "pinyin": "yu ol-RAIT, lav? dats sri AI-ti",
+      "pt": "👂 还是不是对你说的。「You alright」不需要真正的回答。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a01-n04",
+      "pt": "你什么都没抓住，你的耳朵完全没问题。每个模式接下来都会放慢重来一遍。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a01-n05",
+      "bloco": "corpo",
+      "pt": "第一个模式，也是最常见的：「want to」缩成「wanna」。先听完整版，就是你学过的那个。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a01-o03",
+      "es": "I want to get a coffee.",
+      "tts": "I want to get a coffee.",
+      "pinyin": "ai WONT tu get e KO-fi",
+      "pt": "👂 「我想买杯咖啡。」每个音节都在原位。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a01-o04",
+      "es": "I wanna get a coffee.",
+      "tts": "I wanna get a coffee.",
+      "pinyin": "ai WO-na get e KO-fi",
+      "pt": "👂 同一句话，同一杯咖啡。「want to」丢了一半，没人注意到，除了你。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a01-n06",
+      "pt": "第二个：一个词中间的那个 T，英语里常常会消失。「water」听起来快变成「wa'er」了。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a01-o05",
+      "es": "Can I get some water, please?",
+      "tts": "Can I get some water, please?",
+      "pinyin": "kn ai get som WOH-ter, pliz",
+      "pt": "👂 完整版，每个 T 都发出声音。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a01-o06",
+      "es": "Can I get some wa'er, please?",
+      "tts": "Can I get some water, please?",
+      "pinyin": "kn ai get som WOH-er, pliz",
+      "pt": "👂 还是那杯水。中间的 T 消失了——听听它留下的那个停顿。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a01-n07",
+      "bloco": "capsula",
+      "pt": "第三种缩减，和「wanna」是同一家族：「don't know」变成「dunno」，「give me」变成「gimme」。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a01-o07",
+      "es": "Dunno, mate, gimme a sec.",
+      "tts": "Dunno, mate, gimme a sec.",
+      "pinyin": "de-NO, meit, GHI-mi e sek",
+      "pt": "👂 「不知道，等我一下。」一句话里有两处缩减。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a01-n08",
+      "pt": "这些说法没有一个是错的。这就是这里随意场合的英语听起来的样子，不是懒散。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a01-n09",
+      "pt": "还有一个小标记会不断出现在句尾：「innit」，是「isn't it」的缩写，只是邀请你表示同意。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a01-o08",
+      "es": "Cold one today, innit.",
+      "tts": "Cold one today, innit.",
+      "pinyin": "KOHL-de wan tu-DEI, I-nit",
+      "pt": "👂 「今天真冷，是吧。」「innit」不能逐字翻译。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a01-n10",
+      "bloco": "capsula",
+      "pt": "回到开头那句「you alright」：在这里它是打招呼，从来不是真的在问你身体怎么样。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a01-o09",
+      "es": "Alright? Cheers, mate.",
+      "tts": "Alright? Cheers, mate.",
+      "pinyin": "ol-RAIT? chiez, meit",
+      "pt": "👂 「你好。谢啦。」你早就认识的「Cheers」又出现了一次。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a01-n11",
+      "pt": "回到柜台：还是最开始那句话，这次你的耳朵里已经装好了这些缩减。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a01-o01",
+      "es": "Can I get a flat white, oat milk, extra shot, to go?",
+      "tts": "Can I get a flat white, oat milk, extra shot, to go?",
+      "pinyin": "kn ai get e FLAT wait, oht milk, EX-tra shot, tu go",
+      "pt": "👂 一杯拿铁、燕麦奶、加一份浓缩、外带。很快——但已经不再是噪音了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a01-n12",
+      "bloco": "permissao",
+      "pt": "五个词里抓住一个还能继续听下去，已经很棒了。没有人在给你的耳朵打分。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a01-n13",
+      "bloco": "recap",
+      "pt": "A01 完成。Wanna、wa'er、dunno、innit、alright：五处磨损，出现在你早就认识的句子里。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "听力单元：为什么这里你不用开口",
+    "secoes": [
+      {
+        "titulo": "识别和产出是两种不同的能力",
+        "corpo": "你已经会把「want to」「don't know」「give me」和「water」说得完整清楚。这部分训练的是另一种独立的能力——在真实对话里、以真实语速识别出它们磨损后的样子，所以这里全部是听力练习。"
+      },
+      {
+        "titulo": "这些缩减是常态，不是例外",
+        "corpo": "Wanna、dunno、gimme，以及词中间消失的那个 T，既不是俚语也不是地方性的懒散：在英国，几乎所有人在非正式场合都是这样说话的。一个只听过标准发音的旅行者，从头到尾都会被当成游客对待。"
+      },
+      {
+        "titulo": "口音因地而异，差别很大",
+        "corpo": "你刚才听到的是大多数英国口音共有的基础版本。真正的地域差异——伦敦、格拉斯哥、利物浦、纽卡斯尔——这门课后面有专门的部分讲；这里的目标只是打好共同的地基。"
+      }
+    ]
+  },
+  "permissao": "五个词里抓住一个还能继续听下去，已经很好了；记住那一个词，让其余的过去。你永远不需要去纠正任何人这样说话——这不是懒散，只是语言真实的速度。而你自己，也永远不需要说得这么快：今天的全部任务就是听懂。",
+  "permissaoAudioKey": "gb-a01-n12",
+  "espelho": "在你说完一句话后留下完全的沉默，这在他们听来可能会显得奇怪——你刚才听到的对话里从来没有这样的空当，这么大的一个停顿通常意味着话题已经结束，轮到对方开口了。",
+  "fichasCulturais": [
+    {
+      "sinal": "咖啡师对你说话时又慢又清楚，接着用两倍快的速度对下一位客人说了同一句话——那是个他叫得出名字的熟客。",
+      "suaLeitura": "刚才我还听得懂，现在什么都听不懂了——我的英语只在对方有耐心的时候才管用。",
+      "oQueEAli": "对访客说的话自然会更慢、更完整；对熟客说的话则不会。这一秒里变化的是听众，不是你的英语水平。",
+      "oQueVoceFaz": "留在这段对话里。数节奏而不是追每个辅音，牢牢抓住你真正听懂的那个词。",
+      "oQueMelhora": "你能继续跟上对话里语速快的那一半，而不是一掉队就直接放弃——真正有用的推荐信息，往往就藏在语速快的那一半里。",
+      "ondeNaoVale": "不适用于酒店前台、机场柜台，或任何专门为游客设计的地方——那里全天候只有一种语速，就是对访客说话的语速。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-a01-n04"]
+    }
+  ]
+}

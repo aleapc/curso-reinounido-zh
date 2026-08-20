@@ -1,0 +1,103 @@
+{
+  "id": "q-b02",
+  "nivel": "basico",
+  "titulo": "问答 — 店员抬眼看向你的那一秒",
+  "subtitulo": "You alright、excuse me 和 cheers 贯穿一次逛店的全程",
+  "introAudioKey": "gb-b02-q-i",
+  "introPt": "你走进一家小店。听完从问候到离开的完整对话，找出每块简短的拼图分别出现在什么时候。",
+  "cenario": "社区小店里，从进门到收银台。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b02-q01",
+      "voz": "target_en_gb_m",
+      "es": "You alright?",
+      "tts": "You alright?",
+      "pinyin": "yu al-RAIT",
+      "pt": "你好呀？"
+    },
+    {
+      "audioKey": "gb-b02-q02",
+      "voz": "target_en_gb_f",
+      "es": "Yeah, cheers. Just looking, thanks.",
+      "tts": "Yeah, cheers. Just looking, thanks.",
+      "pinyin": "ye, chirz. jast LUK-ing, sanks",
+      "pt": "挺好，谢谢。先随便看看。"
+    },
+    {
+      "audioKey": "gb-b02-q03",
+      "voz": "target_en_gb_m",
+      "es": "Let me know if you need anything.",
+      "tts": "Let me know if you need anything.",
+      "pinyin": "let mi noh if yu nid EN-i-sing",
+      "pt": "有需要就叫我。"
+    },
+    {
+      "audioKey": "gb-b02-q04",
+      "voz": "target_en_gb_f",
+      "es": "Could I have a bag, please?",
+      "tts": "Could I have a bag, please?",
+      "pinyin": "kud ai hav e bag, pliz",
+      "pt": "能给我一个袋子吗，麻烦了？"
+    },
+    {
+      "audioKey": "gb-b02-q05",
+      "voz": "target_en_gb_m",
+      "es": "Sure. Cheers, have a good one.",
+      "tts": "Sure. Cheers, have a good one.",
+      "pinyin": "shur. chirz, hav e gud wan",
+      "pt": "没问题。谢谢，祝你今天顺利。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "走进一家店时，你应该什么时候打招呼？",
+      "opcoes": ["找到要买的东西之后", "在看货架之前", "只有对方先开口才需要", "从不需要打招呼"],
+      "correta": 1,
+      "explica": "英语里的礼貌是一个时机问题：要先打招呼再去看货架，这一步不能跳过。"
+    },
+    {
+      "pergunta": "陌生人随口说的「You alright?」真正的意思是什么？",
+      "opcoes": [
+        "他注意到你哪里不对劲了",
+        "这是一句问候，不是真的在问你的身体状况",
+        "他在征求你的同意，想开启一段对话",
+        "这是一种告别的方式"
+      ],
+      "correta": 1,
+      "explica": "这是英国柜台前最常见的问候语——功能上等同于「你好」。"
+    },
+    {
+      "pergunta": "「let me know if you need anything」是什么意思？",
+      "opcoes": [
+        "要求你立刻回答",
+        "敞开一扇门，让你想说话时随时可以开口",
+        "一种委婉地让你离开的说法",
+        "在问你的预算"
+      ],
+      "correta": 1,
+      "explica": "这不是在盘问你：而是敞开一扇门，让你自己决定什么时候开口说话。"
+    },
+    {
+      "pergunta": "什么时候用「excuse me」而不是「sorry」？",
+      "opcoes": [
+        "撞到别人之后",
+        "在一个空间里移动之前，用来预告你要过去",
+        "两者完全可以互换",
+        "只在非常正式的场合使用"
+      ],
+      "correta": 1,
+      "explica": "Excuse me 是移动之前的预告；sorry 是事情已经发生之后的补救。"
+    },
+    {
+      "pergunta": "在咖啡馆门口说的「cheers」，在这里是什么意思？",
+      "opcoes": [
+        "像碰杯时说的敬酒词",
+        "谢谢、再见，或者没问题了，看具体场合",
+        "一种点啤酒的说法",
+        "一个疑问句"
+      ],
+      "correta": 1,
+      "explica": "根据场合不同，cheers 能顶好几个中文词——在这种柜台场景里，从来不是在敬酒。"
+    }
+  ]
+}

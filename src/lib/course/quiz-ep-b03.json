@@ -1,0 +1,98 @@
+{
+  "id": "q-b03",
+  "nivel": "basico",
+  "titulo": "问答 — 紧急按钮",
+  "subtitulo": "Excuse me、Sorry，以及机场柜台前的救急阶梯",
+  "introAudioKey": "gb-b03-q-i",
+  "introPt": "在航空公司柜台前，工作人员语速很快，你身后的队伍越来越长。听完对话，找出沟通卡壳时的每一级阶梯。",
+  "cenario": "登机柜台前，身后的队伍越排越长。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b03-q01",
+      "voz": "target_en_gb_f",
+      "es": "Excuse me?",
+      "tts": "Excuse me?",
+      "pinyin": "eks-KYUZ mi",
+      "pt": "不好意思？"
+    },
+    {
+      "audioKey": "gb-b03-q02",
+      "voz": "target_en_gb_m",
+      "es": "Yes? What can I do for you?",
+      "tts": "Yes? What can I do for you?",
+      "pinyin": "yes? wot kn ai du for yu",
+      "pt": "怎么了？有什么能帮您的？"
+    },
+    {
+      "audioKey": "gb-b03-q03",
+      "voz": "target_en_gb_f",
+      "es": "Sorry, I didn't catch that. Could you speak more slowly, please?",
+      "tts": "Sorry, I didn't catch that. Could you speak more slowly, please?",
+      "pinyin": "SO-ri, ai DID-ent kach that. kud yu spik mor SLOH-li, pliz",
+      "pt": "不好意思，我没听清楚。您能说慢一点吗，麻烦了？"
+    },
+    {
+      "audioKey": "gb-b03-q04",
+      "voz": "target_en_gb_m",
+      "es": "Of course. Boarding starts at four fifteen.",
+      "tts": "Of course. Boarding starts at four fifteen.",
+      "pinyin": "of kors. BOR-ding starts at for fif-TIN",
+      "pt": "当然。登机四点十五分开始。"
+    },
+    {
+      "audioKey": "gb-b03-q05",
+      "voz": "target_en_gb_f",
+      "es": "Can you write that down for me?",
+      "tts": "Can you write that down for me?",
+      "pinyin": "kn yu rait that daun for mi",
+      "pt": "能麻烦您帮我写下来吗？"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在这段对话里，「excuse me?」起什么作用？",
+      "opcoes": ["补救一个已经发生的错误", "重新唤回对方的注意", "结束这段对话", "要求打折"],
+      "correta": 1,
+      "explica": "Excuse me 用来叫住或重新唤回对方的注意——这个词几乎能打开所有的门。"
+    },
+    {
+      "pergunta": "说完「Sorry, I didn't catch that」之后，如果还是没听懂，下一级合理的做法是什么？",
+      "opcoes": [
+        "点点头，凭猜测继续下去",
+        "请对方说慢一点",
+        "一字不差地重复同一个问题",
+        "彻底换个话题"
+      ],
+      "correta": 1,
+      "explica": "这套阶梯是一级一级往上爬的：先表示没听懂，再请对方放慢速度——不跳过任何一步。"
+    },
+    {
+      "pergunta": "为什么请对方把一个数字或名字写下来，比第三次尝试去听更好？",
+      "opcoes": [
+        "因为这样更礼貌",
+        "因为第三次去听结果往往不会有什么不同，而写下来能给出一个可以核对的东西",
+        "因为书面英语更容易翻译",
+        "这从来都没有必要"
+      ],
+      "correta": 1,
+      "explica": "写下来能给双方一个可以一起核对的东西，这是第三次凭耳朵去听做不到的。"
+    },
+    {
+      "pergunta": "如果你对一句没听懂的回答点了点头，会发生什么？",
+      "opcoes": [
+        "没什么，情况总会自己解决",
+        "问题会在之后完整地回到你身上，那时候懂答案的人可能已经不在了",
+        "这显示出你很礼貌、很专注",
+        "这总能让队伍走得更快"
+      ],
+      "correta": 1,
+      "explica": "点头能让对话在这一秒顺利过去，但问题会原封不动地留到之后——而且往往是最糟糕的时机。"
+    },
+    {
+      "pergunta": "EXCUSE 的第二种英式说法是什么，可以用来开口提问，或者确认自己在队伍里的位置？",
+      "opcoes": ["Please", "Cheers", "Sorry", "Alright"],
+      "correta": 2,
+      "explica": "在英国，「sorry」不只是道歉：它也是叫人、或者确认排队位置的标准开场词，包括酒吧柜台前那条隐形的队伍。"
+    }
+  ]
+}

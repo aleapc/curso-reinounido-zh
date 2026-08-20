@@ -1,0 +1,265 @@
+{
+  "id": "i02",
+  "slot": "I02",
+  "nivel": "intermediario",
+  "numero": 2,
+  "parte": "I02",
+  "titulo": "那条不存在、却依然算数的队伍",
+  "subtitulo": "在这里，酒吧柜台前不是坐着等人服务——你要站在吧台边，那条隐形的队伍，酒保心里门儿清",
+  "cena": "酒吧柜台前站了三层人，没人坐着，你下意识地想直接凑上去、抬手示意，就像在国内挤满人的柜台前那样。",
+  "decisao": "你站在哪里、怎么点单——在酒吧柜台前没有桌边服务：要在一条隐形的队伍里排队等候，不用提高音量",
+  "emJogo": "tempo",
+  "moldura": "ganha",
+  "frasePiso": "你要站对位置，不慌不忙地点单，离开柜台时也不会多说一句废话。",
+  "fichasCulturais": [
+    {
+      "sinal": "你在高峰时段走进一家酒吧，柜台前站了三层人，没有拉绳也没有号码牌，但没有人往前挤。",
+      "suaLeitura": "如果我不往前凑或者不举手，就永远轮不到我。",
+      "oQueEAli": "传统酒吧没有桌边服务：点单和付款都在柜台完成。地上没有队伍线，但确实存在一个真实的到达顺序，酒保心里清楚——他会看谁等得最久。",
+      "oQueVoceFaz": "站到柜台前，不挤任何人，等酒保看向你，那时候才开口。",
+      "oQueMelhora": "你能按正确的顺序被服务，不会碰到任何人，还能利用等待的时间冷静地想好要点什么。",
+      "ondeNaoVale": "在一些新式美食酒吧不一定适用，那里有时会有桌边服务或者软件点单——先看看有没有人在桌边点单。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-i02-n02"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i02-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "还是拳头，现在打在点单上：could I HAVE，不是 COULD i have。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i02-p01",
+      "promptPt": "昨天你问了厨房几点关门。今天用同一个框架问酒吧。问他们几点开门。现在请说。",
+      "bloco": "callback",
+      "molde": "WHAT-TIME",
+      "encaixe": "do you open",
+      "audioKey": "gb-i02-t01",
+      "es": "What time do you open?",
+      "tts": "What time do you open?",
+      "pinyin": "wot taim du yu OH-pen",
+      "pt": "你们几点开门？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i02-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "柜台前三个人，没人坐着，也没人大声说话。没有拉绳，没有号码牌——但确实存在一种秩序。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i02-n03",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "在这里点单和付款都在柜台完成，从来不在桌边。Sorry 用来提示自己的存在，从来不是用来插队的。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i02-r01",
+      "es": "Sorry mate, I was here first.",
+      "tts": "Sorry mate, I was here first.",
+      "pinyin": "SO-ri meit, ai woz hir ferst",
+      "pt": "不好意思，我比你先到。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i02-p02",
+      "promptPt": "你往前凑了，没注意到已经有人在等。道个歉，用 EXCUSE 这个框架让出位置。现在请说。",
+      "molde": "EXCUSE",
+      "encaixe": "",
+      "audioKey": "gb-i02-t02",
+      "es": "Sorry, are you in the queue?",
+      "tts": "Sorry, are you in the queue?",
+      "pinyin": "SO-ri, ar yu in the kyu",
+      "pt": "不好意思，你在排队吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i02-r02",
+      "es": "Yep, right behind me.",
+      "tts": "Yep, right behind me.",
+      "pinyin": "yep, rait bi-HAIND mi",
+      "pt": "是的，就跟在我后面。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i02-n04",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "酒保终于看向你了。这是第十一部分的框架：Could I have，加上要点的东西。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-i02-r03",
+      "es": "What can I get you?",
+      "tts": "What can I get you?",
+      "pinyin": "wot kn ai get yu",
+      "pt": "您要点什么？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i02-p03",
+      "promptPt": "轮到你了。不犹豫地点你的饮料。现在请说。",
+      "audioKey": "gb-i02-t03",
+      "es": "Could I have a pint of lager, please?",
+      "tts": "Could I have a pint of lager, please?",
+      "pinyin": "kud ai hav e paint of LA-ger, pliz",
+      "pt": "能来一品脱拉格啤酒吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i02-r04",
+      "es": "Anything else?",
+      "tts": "Anything else?",
+      "pinyin": "EN-i-sing els",
+      "pt": "还要别的吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i02-p04",
+      "promptPt": "你的汽水不想加冰。用你从第十二部分就学会的框架要求不加冰。现在请说。",
+      "molde": "WITHOUT",
+      "encaixe": "ice, please",
+      "audioKey": "gb-i02-t04",
+      "es": "No ice, please.",
+      "tts": "No ice, please.",
+      "pinyin": "noh ais, pliz",
+      "pt": "不要冰，谢谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i02-n05",
+      "pt": "你会当场付款，递上银行卡——没有账单，不用等，就在柜台这里结清。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-i02-r05",
+      "es": "That's six eighty, whenever you're ready.",
+      "tts": "That's six eighty, whenever you're ready.",
+      "pinyin": "thats siks EI-ti, wen-EV-er yor RED-i",
+      "pt": "一共六镑八十，您准备好了就付。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i02-p05",
+      "promptPt": "递上银行卡，不用多说别的。现在请说。",
+      "audioKey": "gb-i02-t05",
+      "es": "Card, please.",
+      "tts": "Card, please.",
+      "pinyin": "kard, pliz",
+      "pt": "刷卡，谢谢。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i02-p05b",
+      "promptPt": "你还想要一包薯片当下酒小食。加进你的点单里。现在请说。",
+      "molde": "GET",
+      "encaixe": "a bag of crisps",
+      "audioKey": "gb-i02-t05b",
+      "es": "Could I have a bag of crisps as well?",
+      "tts": "Could I have a bag of crisps as well?",
+      "pinyin": "kud ai hav e bag of krisps az wel",
+      "pt": "能再来一包薯片吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i02-p06",
+      "promptPt": "第二天你到了，看不出队伍在哪里结束。用 EXCUSE 这个框架，在另一个场合再问一次。现在请说。",
+      "molde": "EXCUSE",
+      "encaixe": "",
+      "audioKey": "gb-i02-t06",
+      "es": "Excuse me, is this the end of the queue?",
+      "tts": "Excuse me, is this the end of the queue?",
+      "pinyin": "eks-KYUZ mi, iz this the end of the kyu",
+      "pt": "不好意思，队尾是这里吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i02-p07",
+      "promptPt": "啤酒不错，离开前道个谢。现在请说。",
+      "audioKey": "gb-i02-t07",
+      "es": "Cheers, thanks a lot.",
+      "tts": "Cheers, thanks a lot.",
+      "pinyin": "chirz, sanks e lot",
+      "pt": "谢啦，非常感谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i02-n06",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "点单不需要长长的问候，也不需要过度道歉。直接、语气正常，这才是这里期待的做法，不是不礼貌。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "EXCUSE",
+      "audioKey": "gb-i02-s01",
+      "es": "Sorry, are you in the queue? Could I have a pint of lager, please? No ice, please.",
+      "tts": "Sorry, are you in the queue? Could I have a pint of lager, please? No ice, please.",
+      "pinyin": "SO-ri, ar yu in the kyu? kud ai hav e paint of LA-ger, pliz? noh ais, pliz",
+      "pt": "跟读站位、点单、调整点单，一连串下来。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i02-n07",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "I02 完成。Sorry 确认排队位置，could I have 用来点单，no ___ please 去掉你不想要的东西——没有新东西，只是排对了顺序。"
+    }
+  ],
+  "permissao": "你不需要大声说话，也不需要在轮到你之前就凑近柜台。站好位置、安静等待，正是这里期待你做的事——这是一种主动的行为，不是被动。",
+  "permissaoAudioKey": "gb-i02-n06",
+  "espelho": "任何在自己国家排过一条整整齐齐的队的人，早就下意识地会做这件事；这里唯一不同的地方是，这条队伍可能没有拉绳、没有任何看得见的标记——但它依然存在。",
+  "aprofundar": {
+    "titulo": "柜台前那条看不见的队伍",
+    "secoes": [
+      {
+        "titulo": "没有拉绳，但有秩序",
+        "corpo": "英国酒吧的柜台前几乎从来没有拉绳或号码牌，但到达的先后顺序依然被遵守——酒保心里清楚，哪怕他不说出来。问一句「is this the queue?」能打消疑虑，也不会插到任何人前面。"
+      },
+      {
+        "titulo": "Could I have 仍然是这个框架",
+        "corpo": "点单用的框架就是第十一部分那个——Could I have，加上要点的东西。没有专门给酒吧用的特殊版本；变的只是你点的东西。"
+      },
+      {
+        "titulo": "当场付款，就在柜台",
+        "corpo": "跟很多餐厅最后才结账的习惯不同，这里没有最后的账单：你点一样、付一样，就在点单的那一刻，在吧台前完成。"
+      }
+    ]
+  }
+}

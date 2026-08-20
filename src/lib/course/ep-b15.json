@@ -1,0 +1,312 @@
+{
+  "id": "b15",
+  "slot": "B15",
+  "nivel": "basico",
+  "numero": 15,
+  "parte": "15A",
+  "titulo": "价格从不在你以为的那个尺码上",
+  "subtitulo": "「How much is ___?」、试穿、换个尺码，以及为什么数字是英镑不是人民币",
+  "cena": "你拿起的这件毛衣看不到明显的尺码标签，价格标签又从打折桌上掉了下来，店员正在两米开外整理衣服。",
+  "moldura": "ganha",
+  "frasePiso": "你要能在英国商店买衣服，不用去猜价格也不用去猜尺码，用同一个框架就能问出这两件事。",
+  "moldes": ["HOW-MUCH"],
+  "clique": {
+    "contagem": [
+      "打折桌",
+      "试衣间",
+      "收银台",
+      "礼品柜台"
+    ],
+    "desconto": "没有人给过你一句专门问毛衣价格的话，再一句专门问整个购物袋总价的话。你是用「How much is」加上你要问的东西，把这两种都搭出来的。",
+    "piso": "下次你拿起一件看不到价格的东西，你不会因为不好意思而默默放回去：你会用一句你早就会说的话，问出那个数字。"
+  },
+  "permissao": "进店之前，你不需要提前知道自己在英国尺码体系里穿多大。你可以试好几件都不买；没有人指望你第一次就选对。",
+  "permissaoAudioKey": "gb-b15-n10",
+  "espelho": "在你自己的国家，你也是先问价格再决定，也会试好几个尺码而不一定买；这里不同的地方是尺码体系——还有最后那个数字是英镑，不是人民币。",
+  "fichasCulturais": [
+    {
+      "sinal": "这件衣服上标着「UK 10」，这既不是你熟悉的中国尺码，光看数字也完全没概念。",
+      "suaLeitura": "这跟我平时的尺码差不多，我可以直接换算。",
+      "oQueEAli": "英国的服装尺码体系和中国的常见尺码（S/M/L 或者国标号型）并不是直接对应的关系，不同品牌之间差异还会更大。",
+      "oQueVoceFaz": "与其计算，不如直接试穿——「Can I try this on?」比在心里换算更快解决问题。",
+      "oQueMelhora": "你能一次就带走合适的尺码，不用等到回酒店才发现衣服太紧的尴尬时刻。",
+      "ondeNaoVale": "鞋码不适用这个说法，鞋子用的是另一套完全不同的数字系统——同样的道理，试穿总比猜测靠谱。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-b15-n04"]
+    }
+  ],
+  "fatosDatados": [
+    {
+      "id": "livre-pas-euro",
+      "afirmacao": "The United Kingdom does not use the euro. Shops do not accept euros, and where they do, the exchange rate is poor. As the country is heavily card-based, this rarely becomes a real obstacle.",
+      "fonte": "Fato monetário básico (fora da zona do euro)",
+      "ano": 2026,
+      "revisarAte": "2027-06-30",
+      "evidencia": "FATO",
+      "risco": "baixo"
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b15-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "第十五部分。拳头打在数字上：FOR-ti、SIKS-ti、EI-ti。重读音节在最前面。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b15-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "毛衣看不到尺码，价格标签又从打折桌上掉了。店员在两米开外。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b15-p01",
+      "promptPt": "像上一部分对着账单那样，要求再看一眼。现在请说。",
+      "bloco": "callback",
+      "molde": "CAN-I",
+      "audioKey": "gb-b15-t01",
+      "es": "Can I see that again?",
+      "tts": "Can I see that again?",
+      "pinyin": "kn ai si that e-GEN",
+      "pt": "能再给我看一下吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b15-n03",
+      "bloco": "molde",
+      "tom": "ganha",
+      "pt": "今天的框架：「How much is」加上要问的东西。问一件毛衣，或者问一整袋东西的总价，都能用。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b15-t02",
+      "es": "How much is this?",
+      "tts": "How much is this?",
+      "pinyin": "hau mach iz this",
+      "pt": "这个多少钱？"
+    },
+    {
+      "consulta": ["compras/preco"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HOW-MUCH",
+      "encaixe": "this",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b15-p02",
+      "promptPt": "价格标签不见了。问店员这件毛衣多少钱。现在请说。",
+      "audioKey": "gb-b15-t02",
+      "es": "How much is this?",
+      "tts": "How much is this?",
+      "pinyin": "hau mach iz this",
+      "pt": "这个多少钱？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b15-r01",
+      "es": "That one's eighteen pounds.",
+      "tts": "That one's eighteen pounds.",
+      "pinyin": "that wanz EI-tin paundz",
+      "pt": "这件是十八英镑。"
+    },
+    {
+      "consulta": ["compras/talla"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "this in a medium",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b15-p03",
+      "promptPt": "你喜欢这件，但打折桌上没看到你的尺码。问他们有没有中号的。现在请说。",
+      "audioKey": "gb-b15-t03",
+      "es": "Do you have this in a medium?",
+      "tts": "Do you have this in a medium?",
+      "pinyin": "du yu hav this in e MI-di-am",
+      "pt": "这个有中号吗？"
+    },
+    {
+      "consulta": ["compras/probador"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "CAN-I",
+      "encaixe": "try this on",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b15-p04",
+      "promptPt": "你手上已经拿到了合适的尺码。要求在决定之前先试穿一下。现在请说。",
+      "audioKey": "gb-b15-t04",
+      "es": "Can I try this on?",
+      "tts": "Can I try this on?",
+      "pinyin": "kn ai trai this on",
+      "pt": "我能试穿一下吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b15-n04",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "Small、medium、large 和你熟悉的中国尺码并不是直接对应的关系。试穿比在心里换算更能解决问题。"
+    },
+    {
+      "consulta": ["compras/probador"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "LOOKING",
+      "encaixe": "a bigger size",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b15-p05",
+      "promptPt": "你试穿了，太小了。告诉店员你现在要找的是什么。现在请说。",
+      "audioKey": "gb-b15-t05",
+      "es": "I'm looking for a bigger size.",
+      "tts": "I'm looking for a bigger size.",
+      "pinyin": "aim LUK-ing for e BIG-ger saiz",
+      "pt": "我在找大一号的。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b15-r02",
+      "es": "Let me check out the back.",
+      "tts": "Let me check out the back.",
+      "pinyin": "let mi chek aut the bak",
+      "pt": "我去后面库房看看。"
+    },
+    {
+      "consulta": ["compras/preco"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HOW-MUCH",
+      "encaixe": "it all together",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b15-p06",
+      "promptPt": "你选好了毛衣和一双袜子。问一共多少钱。现在请说。",
+      "audioKey": "gb-b15-t06",
+      "es": "How much is it all together?",
+      "tts": "How much is it all together?",
+      "pinyin": "hau mach iz it ol tu-GE-ther",
+      "pt": "一共多少钱？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b15-n05",
+      "pt": "这个数字就是最终价格：跟第十四部分讲的一样，增值税已经包含在里面了。收银台不会有意外。"
+    },
+    {
+      "consulta": ["compras/pagar"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "GET",
+      "encaixe": "a receipt",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b15-p07",
+      "promptPt": "你刚付完款。要一张收据，万一以后想换货用得上。现在请说。",
+      "audioKey": "gb-b15-t07",
+      "es": "Could I have a receipt?",
+      "tts": "Could I have a receipt?",
+      "pinyin": "kud ai hav e ri-SIT",
+      "pt": "能给我一张收据吗？"
+    },
+    {
+      "consulta": ["compras/pagar"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "GET",
+      "encaixe": "a bag",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b15-p08",
+      "promptPt": "在英格兰，塑料购物袋几乎从来都不是免费的。如果你需要一个，就开口要。现在请说。",
+      "audioKey": "gb-b15-x1",
+      "es": "Could I have a bag?",
+      "tts": "Could I have a bag?",
+      "pinyin": "kud ai hav e bag",
+      "pt": "能给我一个袋子吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b15-n06",
+      "pt": "记住：英镑不是人民币。商店不接受人民币，就算接受汇率也很差——刷卡能解决一切。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b15-n07",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "留好收据。很多商店在购买后好几周内都接受退货，不管有没有吊牌。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b15-n08",
+      "tom": "ganha",
+      "pt": "这不是某家店特别通融：这是这里的标准政策。收据几乎总是唯一需要出示的东西。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b15-n09",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "毛衣的价格，总价。没有人给过你两句不同的话：都是你用同一个框架搭出来的。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b15-n10",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "进店之前你不需要先知道自己的英国尺码。你可以试好几件，一件都不买也没关系。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "HOW-MUCH",
+      "audioKey": "gb-b15-s01",
+      "es": "How much is this? How much is it all together?",
+      "tts": "How much is this? How much is it all together?",
+      "pinyin": "hau mach iz this? hau mach iz it ol tu-GE-ther?",
+      "pt": "跟读同一个框架，问两个不同的问题。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b15-n11",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "第十五部分完成。价格、尺码、试衣间、收据：一个框架，数字永远是英镑。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "买东西不用猜数字",
+    "secoes": [
+      {
+        "titulo": "那个开放的框架",
+        "corpo": "「How much is」加上任何东西，不管是问一件单品，还是问一整袋商品的总价，都能用。它不会变形；变的只是你问的那样东西。"
+      },
+      {
+        "titulo": "Small、medium、large 不是你的中国尺码",
+        "corpo": "英国的尺码体系和中国常见的尺码并不是直接对应的关系，不同品牌之间差异还会更大。试穿比尝试换算更能快速解决问题。"
+      },
+      {
+        "titulo": "标出来的价格就是最终价格",
+        "corpo": "跟第十四部分讲的一样，英国的增值税已经包含在标出来的价格里。你在店里看到的数字，就是你要付的数字，收银台不会有意外。"
+      },
+      {
+        "titulo": "是英镑，不是人民币",
+        "corpo": "英国不在欧元区，也不使用人民币。商家不接受人民币，就算接受汇率也很差。因为这个国家几乎全面无现金化，实际操作中刷卡能解决几乎一切问题。"
+      }
+    ]
+  }
+}

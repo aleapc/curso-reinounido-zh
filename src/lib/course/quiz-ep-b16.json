@@ -1,0 +1,81 @@
+{
+  "id": "q-b16",
+  "nivel": "basico",
+  "titulo": "问答 — 在拿到房间号码之前",
+  "subtitulo": "先主动争取更好的条件，再学会用「My ___ isn't working」应对故障",
+  "introAudioKey": "gb-b16-q-i",
+  "introPt": "前台身后的队伍越来越长。找出拿到钥匙前该问什么，以及东西之后坏了该用哪个框架。",
+  "cenario": "先是酒店前台，接着是在房间里。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b16-q01",
+      "voz": "target_en_gb_m",
+      "es": "Could I have a late check-out?",
+      "tts": "Could I have a late check-out?",
+      "pinyin": "kud ai hav e leit chek-aut",
+      "pt": "能延迟退房吗？"
+    },
+    {
+      "audioKey": "gb-b16-q02",
+      "voz": "target_en_gb_f",
+      "es": "Sure, that's no problem.",
+      "tts": "Sure, that's no problem.",
+      "pinyin": "shur, thats noh PROB-lem",
+      "pt": "没问题。"
+    },
+    {
+      "audioKey": "gb-b16-q03",
+      "voz": "target_en_gb_m",
+      "es": "My key card isn't working.",
+      "tts": "My key card isn't working.",
+      "pinyin": "mai ki kard IZ-ent WER-king",
+      "pt": "我的房卡打不开门。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "第十六部分的顺序是怎样的？",
+      "opcoes": [
+        "先反映问题，再争取更好的条件",
+        "先问出能改善住宿的条件，再反映故障",
+        "只反映问题",
+        "只争取更好的条件"
+      ],
+      "correta": 1,
+      "explica": "第十六部分先讲的是主动问出能改善住宿的条件——安静的房间、延迟退房——然后才讲反映故障。"
+    },
+    {
+      "pergunta": "哪个框架用来反映房间里的故障？",
+      "opcoes": [
+        "My ___ isn't working",
+        "I hate ___",
+        "The ___ is bad",
+        "Please repair ___"
+      ],
+      "correta": 0,
+      "explica": "「My ___ isn't working」几乎适用于房间里任何技术性故障：钥匙、暖气等等。"
+    },
+    {
+      "pergunta": "英式房间最典型的问题是什么？",
+      "opcoes": [
+        "空调开得太猛",
+        "暖气常常不够热",
+        "wifi 总是断线",
+        "没有热水"
+      ],
+      "correta": 1,
+      "explica": "英式房间最典型的问题是暖气不够，不是空调。要说「The heating isn't working」，不是「the AC」。"
+    },
+    {
+      "pergunta": "你在前台用中国的银行卡支付一笔额外费用。会发生什么？",
+      "opcoes": [
+        "经常会被拒绝",
+        "能直接使用，不需要复杂的操作",
+        "必须先做验证",
+        "只接受现金"
+      ],
+      "correta": 1,
+      "explica": "英国的免接触支付非常普及，中国的 Visa 或 Mastercard 卡不需要额外操作就能直接使用。"
+    }
+  ]
+}

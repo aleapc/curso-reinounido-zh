@@ -1,0 +1,247 @@
+{
+  "id": "b04",
+  "slot": "B04",
+  "nivel": "basico",
+  "numero": 4,
+  "parte": "1D",
+  "titulo": "还能轻松改正一切的最后一晚",
+  "subtitulo": "护照、签证、一张在那边能用的银行卡、一份没有网络也能看懂的订单",
+  "cena": "今晚，在家里的桌子上，是所有这些事情还能在三十秒内改正的最后一刻；明天，这一整套文件都要装进一部随时可能没有信号的手机里。",
+  "moldura": "protege",
+  "frasePiso": "你要在睡前解决清单上这四件悬而未决的事，而不是留到机场的队伍里再处理。",
+  "permissao": "在这件事上，你完全有权把准备工作做得多一点。把订单再确认一遍，或者留一个大概率用不上的地址以防没有网络——这不是焦虑：这是整趟旅程里唯一一个环节，今晚花五分钟，就能在明天手机没信号时换来真正的保障。",
+  "permissaoAudioKey": "gb-b04-n02",
+  "fatosDatados": [
+    {
+      "id": "gb-visto-chines",
+      "afirmacao": "As a Chinese passport holder, you need a full UK Standard Visitor visa before travelling to the UK, even for a short tourist stay — China is not on the UK's non-visa-national list, so the lighter Electronic Travel Authorisation (ETA) that now covers EU and several other nationalities does not apply to you. The visa is applied for in advance online, usually requires a visit to a visa application centre for biometrics, and should be sorted weeks before departure, not the night before.",
+      "fonte": "Governo britânico (GOV.UK) — UK Standard Visitor visa; lista de nacionalidades isentas de visto (non-visa nationals) vs. sujeitas a visto",
+      "ano": 2026,
+      "revisarAte": "2027-01-31",
+      "evidencia": "FATO",
+      "risco": "alto",
+      "audioKeys": [
+        "gb-b04-n03"
+      ]
+    },
+    {
+      "id": "gb-passeport-validite",
+      "afirmacao": "O Reino Unido não exige seis meses de validade restante como alguns outros países: o passaporte só precisa continuar válido durante toda a estadia. Ainda assim, confira a data antes de comprar a passagem, nunca depois.",
+      "fonte": "GOV.UK — Foreign travel advice, entrada no Reino Unido",
+      "ano": 2026,
+      "revisarAte": "2027-01-31",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "gb-b04-n04"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b04-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "明天的航班，从今晚就开始了。四件悬而未决的事：护照、签证、银行卡、订单。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b04-n02",
+      "bloco": "cena",
+      "pt": "今晚，改正一个错误很容易。明天，这一切都要装进一部可能没信号的手机里。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b04-n03",
+      "bloco": "corpo",
+      "pt": "光有护照还不够：作为中国护照持有人，你需要提前在线申请英国标准访客签证，而不是简单的电子旅行许可。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b04-n04",
+      "pt": "不需要六个月的有效期：护照只要能覆盖整个行程就行。今晚检查一下。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b04-t01",
+      "es": "I'd like to confirm my reservation.",
+      "tts": "I'd like to confirm my reservation.",
+      "pinyin": "aid laik tu kon-FERM mai re-zer-VEI-shen",
+      "pt": "我想确认一下我的预订。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b04-p01",
+      "promptPt": "你在出发前给酒店写信。先说明来意：你想确认预订。现在请说。",
+      "audioKey": "gb-b04-t01",
+      "es": "I'd like to confirm my reservation.",
+      "tts": "I'd like to confirm my reservation.",
+      "pinyin": "aid laik tu kon-FERM mai re-zer-VEI-shen",
+      "pt": "我想确认一下我的预订。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b04-r01",
+      "es": "Sure, what name is it under?",
+      "tts": "Sure, what name is it under?",
+      "pinyin": "shur, wot neim iz it AN-der",
+      "pt": "好的，用的是什么名字？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b04-n05",
+      "pt": "不要只满足于软件里一个绿色的勾：要一份能保存在别处的确认信息。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b04-p02",
+      "promptPt": "酒店找到了你的名字。请他们把确认信息发到你邮箱，这样没网络也能查看。现在请说。",
+      "audioKey": "gb-b04-t02",
+      "es": "Could you email me the confirmation, please?",
+      "tts": "Could you email me the confirmation, please?",
+      "pinyin": "kud yu I-meil mi the kon-fer-MEI-shen, pliz",
+      "pt": "能麻烦您把确认信息发到我邮箱吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b04-n06",
+      "bloco": "capsula",
+      "pt": "英国不使用欧元。你的银行卡能用——只需要跟银行确认一下手续费。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b04-p03",
+      "promptPt": "确认信息里只显示了酒店的名字。问一下完整地址。现在请说。",
+      "audioKey": "gb-b04-t03",
+      "es": "What's the full address?",
+      "tts": "What's the full address?",
+      "pinyin": "wots the ful e-DRES",
+      "pt": "完整地址是什么？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b04-n07",
+      "pt": "最后一项检查：如果你很晚才到、前台却已经关门，一份有效的预订也会白费。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b04-p04",
+      "promptPt": "你预计晚上十点后才能到酒店。说出这一点，并问前台是不是二十四小时开放。现在请说。",
+      "audioKey": "gb-b04-t04",
+      "es": "I'll arrive after ten. Is the reception open twenty-four hours?",
+      "tts": "I'll arrive after ten. Is the reception open twenty-four hours?",
+      "pinyin": "ail e-RAIV AF-ter ten. iz the ri-SEP-shen OH-pen twen-ti-for AU-erz",
+      "pt": "我十点以后才能到。前台是二十四小时开放的吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b04-r02",
+      "es": "Yes, we're open all night. You're all set.",
+      "tts": "Yes, we're open all night. You're all set.",
+      "pinyin": "yes, wir OH-pen ol nait. yor ol set",
+      "pt": "是的，我们整晚都开着。您都安排好了。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b04-px1",
+      "promptPt": "你想要一个存进通讯录的酒店电话号码，不只是软件里那个。直接开口要。现在请说。",
+      "audioKey": "gb-b04-x1",
+      "es": "Can I get the hotel's phone number?",
+      "tts": "Can I get the hotel's phone number?",
+      "pinyin": "kn ai get the hoh-TELZ fohn NAM-ber",
+      "pt": "能给我一下酒店的电话号码吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b04-px2",
+      "promptPt": "你的航班可能会比预计的更晚才到。问一下能不能把预订保留到很晚。现在请说。",
+      "audioKey": "gb-b04-x2",
+      "es": "Can you hold the reservation until late?",
+      "tts": "Can you hold the reservation until late?",
+      "pinyin": "kn yu hohld the re-zer-VEI-shen an-TIL leit",
+      "pt": "能把预订保留到很晚吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b04-px3",
+      "promptPt": "你还想在落地前确认一下你的 eSIM 已经激活。用在线客服的方式向运营商确认这件事。现在请说。",
+      "audioKey": "gb-b04-x3",
+      "es": "Can you confirm my eSIM is active?",
+      "tts": "Can you confirm my eSIM is active?",
+      "pinyin": "kn yu kon-FERM mai I-sim iz AK-tiv",
+      "pt": "能确认一下我的 eSIM 已经激活了吗？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b04-s01",
+      "es": "I'd like to confirm my reservation. What's the full address?",
+      "tts": "I'd like to confirm my reservation. What's the full address?",
+      "pinyin": "aid laik tu kon-FERM mai re-zer-VEI-shen. wots the ful e-DRES",
+      "pt": "把确认预订和问地址，当成出发前的同一件事跟读一遍。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b04-n08",
+      "bloco": "recap",
+      "pt": "第四部分完成。护照、签证、银行卡都检查过了；预订也在睡前确认好了。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一份有截止日期的清单",
+    "secoes": [
+      {
+        "titulo": "签证，不只是一个电子许可",
+        "corpo": "中国护照持有人属于英国的「需签证国籍」名单，出发前需要申请完整的英国标准访客签证，而不是很多欧盟或其他国家公民现在能用的电子旅行许可（ETA）。申请通常需要在线提交，并前往签证申请中心录入生物信息，务必提前几周办理，而不是出发前一晚才想起来。出发前，务必在 GOV.UK 官方网站上核实最新的金额和具体流程——这类细节变化最快。"
+      },
+      {
+        "titulo": "没有网络也能查看，是这趟旅程需要的功能",
+        "corpo": "把酒店地址、预订信息和电话号码截图保存下来，能扛得住机场 wifi 故障、账号登录不上、手机快没电这些情况——而软件里一串需要联网打开的链接做不到这一点。"
+      },
+      {
+        "titulo": "「确认」是一个行动，不只是一个词",
+        "corpo": "这里用得上的英语，不是罗列一堆文件的名字：而是在出发前，把预订里那些还不牢靠的漏洞一一补上。",
+        "exemplos": [
+          {
+            "es": "I'd like to confirm my reservation.",
+            "pt": "我想确认一下我的预订。"
+          },
+          {
+            "es": "What's the full address?",
+            "pt": "完整地址是什么？"
+          }
+        ]
+      },
+      {
+        "titulo": "出发前最后再核实一次规定",
+        "corpo": "入境规定和签证要求可能会发生变化。出发飞行前，请到 GOV.UK 官网做最后一次核实，不要只依赖这门课的笔记。"
+      }
+    ]
+  }
+}

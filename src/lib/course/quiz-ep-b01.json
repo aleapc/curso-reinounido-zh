@@ -1,0 +1,90 @@
+{
+  "id": "q-b01",
+  "nivel": "basico",
+  "titulo": "问答 — 拳头打在重读音节上",
+  "subtitulo": "在酒店入住的场景里找出重音落在哪里",
+  "introAudioKey": "gb-b01-q-i",
+  "introPt": "你刚到酒店。服务生把行李箱送进房间，在离开前等你说一句话。听完这段简短对话，找出拳头落在哪里。",
+  "cenario": "酒店走廊里，服务生放下行李箱，等着你的指示。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b01-q01",
+      "voz": "target_en_gb_m",
+      "es": "Here's your bag. Anything else?",
+      "tts": "Here's your bag. Anything else?",
+      "pinyin": "hirz yor bag. EN-i-sing els",
+      "pt": "这是您的行李。还需要别的吗？"
+    },
+    {
+      "audioKey": "gb-b01-q02",
+      "voz": "target_en_gb_f",
+      "es": "No, cheers.",
+      "tts": "No, cheers.",
+      "pinyin": "noh, chirz",
+      "pt": "不用了，谢谢。"
+    },
+    {
+      "audioKey": "gb-b01-q03",
+      "voz": "target_en_gb_m",
+      "es": "Enjoy your stay.",
+      "tts": "Enjoy your stay.",
+      "pinyin": "in-JOI yor stei",
+      "pt": "祝您入住愉快。"
+    },
+    {
+      "audioKey": "gb-b01-q04",
+      "voz": "target_en_gb_f",
+      "es": "Cheers.",
+      "tts": "Cheers.",
+      "pinyin": "chirz",
+      "pt": "谢谢。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "用什么动作来标记英语单词的重读音节？",
+      "opcoes": ["咬合", "拳头", "手掌平拍", "均匀的节奏"],
+      "correta": 1,
+      "explica": "拳头标记的是重读音节：hoTEL、inforMAtion——从来不是默认打在第一个音节上。"
+    },
+    {
+      "pergunta": "「information」这个词的重音落在哪里？",
+      "opcoes": ["第一个音节", "第二个音节", "第三个音节", "重音从不移动"],
+      "correta": 2,
+      "explica": "in-for-MEI-shen：拳头落在第三个音节上——这和很多学习者的直觉不同。"
+    },
+    {
+      "pergunta": "为什么把一句英语按音节「平均」地说出来会显得生硬？",
+      "opcoes": [
+        "因为英语和中文一样，是按音节计时的",
+        "因为英语是按重音计时的，会压扁弱读音节",
+        "因为英语里没有 th 这个音",
+        "因为这个词没有意思"
+      ],
+      "correta": 1,
+      "explica": "英语是按重音分配时间的，不是按音节；平均地说出来会显得生硬，甚至可能听不懂。"
+    },
+    {
+      "pergunta": "如果你把「have」里的 H 吞掉了，会发生什么？",
+      "opcoes": [
+        "没什么，意思一样能听懂",
+        "词还是一样，只是显得不太礼貌",
+        "问题不大——但这正是英语发音需要调整的第一步",
+        "句子会变成一个问句"
+      ],
+      "correta": 2,
+      "explica": "have 里的 H 要吐气，不能被吞掉。就算吞了对方多半也能听懂，但这是最该先改的地方。"
+    },
+    {
+      "pergunta": "这部分里拳头这个动作的作用是什么？",
+      "opcoes": [
+        "彻底抹去你的口音",
+        "记住语法规则",
+        "揪出让一个本来认识的词变得认不出来的那个具体错误",
+        "模仿某种英国地方口音"
+      ],
+      "correta": 2,
+      "explica": "这个动作不是在演示一条规则，而是在揪出具体的错误所在。保留自己的口音是完全允许的。"
+    }
+  ]
+}

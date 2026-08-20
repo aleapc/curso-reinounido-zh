@@ -1,0 +1,267 @@
+{
+  "id": "a02",
+  "slot": "A02",
+  "nivel": "avancado",
+  "numero": 30,
+  "parte": "A02",
+  "titulo": "他们在笑什么",
+  "subtitulo": "一个花园，一场烧糊的烧烤，还有一句说得极其认真、其实是个笑话的话",
+  "cena": "有人刚才一脸认真地说自己的鸡肉「perfect」，其实正在烤架上烧成炭，全桌人都笑了，除了你。",
+  "moldura": "ganha",
+  "frasePiso": "你不需要追着笑话跑。在对的时刻笑出来，或者干脆问一句刚才说了什么，这就已经是很好的同伴了。",
+  "fatosDatados": [
+    {
+      "id": "gb-humor-litote",
+      "afirmacao": "British everyday humour leans heavily on dry understatement and deadpan delivery — saying far less than what is meant, or the opposite of it, with a flat or serious tone. It is widely reported as the joke form most often missed by non-native English speakers, who take the literal words at face value.",
+      "fonte": "Consenso de fontes culturais e linguísticas sobre o humor britânico (BBC Culture; British Council)",
+      "ano": 2026,
+      "revisarAte": "2029-08-20",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["gb-a02-n03"]
+    },
+    {
+      "id": "gb-temas-evitar",
+      "afirmacao": "British small-talk etiquette generally treats politics, religion and personal salary as topics to avoid with people you have just met, unless the other person opens the subject first — the same caution that applies almost everywhere in Europe.",
+      "fonte": "Consenso de fontes de etiqueta social britânica",
+      "ano": 2026,
+      "revisarAte": "2029-08-20",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": ["gb-a02-n07"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a02-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "今天要练的是在对的时刻笑出来。其中一步完全是听力练习：你只需要品味它，不用自己说出来。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a02-n02",
+      "bloco": "callback",
+      "pt": "在这之前，先回顾一下昨天的内容。有人问你要不要来杯咖啡，用随意的说法回答。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a02-p01",
+      "promptPt": "你站在市场的咖啡摊前，想试试今天的特调。像昨天那样用简短的说法说出来。现在请说。",
+      "bloco": "callback",
+      "audioKey": "gb-a02-t01",
+      "es": "I'm gonna try the flat white.",
+      "tts": "I'm gonna try the flat white.",
+      "pinyin": "aim GO-na trai the FLAT wait",
+      "pt": "我打算试试那款拿铁。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a02-n03",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "花园里的烧烤聚会。有人把鸡肉烤糊了，还一本正经地说这烤得刚好。全桌人都笑了。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a02-o01",
+      "receptivo": true,
+      "es": "Yeah, exactly how I planned it. Beautifully charred.",
+      "tts": "Yeah, exactly how I planned it. Beautifully charred.",
+      "pinyin": "ye, ig-ZAK-tli hau ai PLAN-nid it. BYU-ti-fu-li chard",
+      "pt": "👂 不用解码：他板着脸说了和自己想法完全相反的话。语气和内容之间的这个落差，就是笑点所在。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a02-n04",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "这是典型的英式轻描淡写：用平淡的语气，说得比实际情况轻得多。这是这里最常见的笑话类型，也是最常被听漏的一种。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a02-n05",
+      "pt": "不需要当场抓住笑点。诚实的信号是稍微晚一点笑出来，或者直接问一句。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a02-p02",
+      "promptPt": "大家都笑了，你没明白为什么。轻松地问一句。现在请说。",
+      "audioKey": "gb-a02-t02",
+      "es": "Wait, was that a joke?",
+      "tts": "Wait, was that a joke?",
+      "pinyin": "weit, woz that e johk",
+      "pt": "等等，那是个笑话吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a02-o02",
+      "es": "Yeah, sorry, it's a bit more than beautifully charred.",
+      "tts": "Yeah, sorry, it's a bit more than beautifully charred.",
+      "pinyin": "ye, SO-ri, its e bit mor than BYU-ti-fu-li chard",
+      "pt": "是的，抱歉，这已经不只是「烤得漂亮」了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a02-n06",
+      "pt": "问一句，让你加入了这个笑话，而不是破坏了它。现在轮到另一半：你自己也能说出口的部分。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a02-p03",
+      "promptPt": "你刚把啤酒洒在自己衬衫上，当着所有人的面。趁别人还没说什么，先自嘲一句。现在请说。",
+      "audioKey": "gb-a02-t03",
+      "es": "Classic me.",
+      "tts": "Classic me.",
+      "pinyin": "KLA-sik mi",
+      "pt": "典型的我。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a02-o03",
+      "es": "Ha, at least you're consistent.",
+      "tts": "Ha, at least you're consistent.",
+      "pinyin": "ha, at list yor kon-SIS-tent",
+      "pt": "哈，至少你挺一贯的。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a02-n07",
+      "bloco": "capsula",
+      "tom": "protege",
+      "pt": "自嘲总是管用。但政治、宗教或者别人的薪水，对刚认识的人来说，不行。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a02-p04",
+      "promptPt": "两个人在餐桌上开始争论政治。轻松地退出话题，不表明自己的立场。现在请说。",
+      "audioKey": "gb-a02-t04",
+      "es": "I'll leave you two to it.",
+      "tts": "I'll leave you two to it.",
+      "pinyin": "ail liv yu tu tu it",
+      "pt": "你们俩慢慢聊，我就不掺和了。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a02-p05",
+      "promptPt": "有人说了一个真正好笑的笑话，你听懂了。说出来。现在请说。",
+      "audioKey": "gb-a02-t05",
+      "es": "Okay, that one got me.",
+      "tts": "Okay, that one got me.",
+      "pinyin": "o-KEI, that wan got mi",
+      "pt": "好吧，这个笑话我认了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a02-n08",
+      "tom": "ganha",
+      "pt": "还有一件事：「taking the piss」，当面善意地取笑朋友，是亲近的表现，不是敌意。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a02-o04",
+      "es": "Oh, don't mind him, he's just taking the piss.",
+      "tts": "Oh, don't mind him, he's just taking the piss.",
+      "pinyin": "oh, dont maind him, hiz jast TEI-king the pis",
+      "pt": "👂 「别理他，他就是在开玩笑逗人而已。」这句不用自己说，听懂就好，把它当成一种伪装过的夸奖来接受。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a02-p06",
+      "promptPt": "你想以后也能用上他们刚才那个说法。问问它是什么意思。现在请说。",
+      "audioKey": "gb-a02-t06",
+      "es": "What does that mean, exactly?",
+      "tts": "What does that mean, exactly?",
+      "pinyin": "wot daz that min, ig-ZAK-tli",
+      "pt": "那句话到底是什么意思？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a02-s01",
+      "es": "Wait, was that a joke? Classic me. I'll leave you two to it.",
+      "tts": "Wait, was that a joke? Classic me. I'll leave you two to it.",
+      "pinyin": "weit, woz that e johk. KLA-sik mi. ail liv yu tu tu it",
+      "pt": "跟读这三个万能招数：发问、自嘲、轻松地退出话题。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a02-n09",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "A02 完成。轻描淡写要靠识别，不能靠翻译。自嘲总是管用；聊政治，最好别。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "轻描淡写不是撒谎，是一种语气",
+    "secoes": [
+      {
+        "titulo": "用平淡的语气，说得比实际轻得多",
+        "corpo": "英国人日常的幽默大量依赖 understatement（轻描淡写）：用平淡甚至严肃的语气，说得比心里想的轻得多。这正是非母语者最容易听漏的笑话类型，因为话语说的是一回事，语气传达的是另一回事。"
+      },
+      {
+        "titulo": "自嘲的笑话总能成功",
+        "corpo": "笑自己的口音、自己的失误或笨拙，是最安全的幽默方式：它不需要任何共享的背景知识，也永远不会冒犯除你以外的任何人。"
+      },
+      {
+        "titulo": "「Taking the piss」：带着善意的取笑",
+        "corpo": "在英国朋友之间，当面善意地取笑某人——他支持的球队、他的车、他的口音——是关系亲近的标志，不是攻击。你只需要能识别并微笑接受，暂时不需要自己主动说出来。"
+      },
+      {
+        "titulo": "在陌生人面前要避开的三个话题",
+        "corpo": "政治、宗教，以及别人挣多少钱。这不是说这些话题永远是禁忌，而是不会跟刚认识的人主动聊起，除非对方自己先开口。"
+      }
+    ]
+  },
+  "permissao": "没听懂笑点，你完全有权利。问一句「那是个笑话吗？」不会破坏气氛——几乎总是相反，它会让气氛更热闹，因为总得有人笨拙地解释一下，而这本身也很好笑。",
+  "permissaoAudioKey": "gb-a02-n05",
+  "espelho": "任何语言都有只有本地人才玩得转的那个层次——你自己的朋友拿你家乡开的玩笑，游客永远不该尝试。英式幽默并不算特别封闭；这一次，只是轮到你来当听众了，而这个位置，是你自己一辈子都在给别人的。",
+  "fichasCulturais": [
+    {
+      "sinal": "有人一脸认真地说某样东西「刚刚好」，而它明显搞砸了。",
+      "suaLeitura": "他说得很认真；我不明白为什么没人纠正他。",
+      "oQueEAli": "这是轻描淡写：平淡的语气和摆出的认真都是笑话的一部分，不是没注意到。正是这种一本正经，才让它变得好笑。",
+      "oQueVoceFaz": "微笑，或者稍微晚一点笑出来，或者直接问一句那是不是个笑话——两种反应都可以接受。",
+      "oQueMelhora": "你留在了笑话里，而不是给出一个字面的回应，把对话瞬间掐断。",
+      "ondeNaoVale": "如果对方明显不高兴或者语气很尖锐，就不适用——那时候不是轻描淡写，而是真正的抱怨，信号就是没有别人在笑。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-a02-n04"]
+    },
+    {
+      "sinal": "聚会上一个陌生人随口提到政治，你觉得自己应该表个态才显得投入。",
+      "suaLeitura": "保持沉默会让人觉得我对这场对话不感兴趣。",
+      "oQueEAli": "对刚认识的人来说，政治、宗教和薪水通常会被排除在轻松的闲聊之外，这是社交惯例，不是因为这些话题永远不能碰。",
+      "oQueVoceFaz": "用一句简短中立的话退出这个话题，再转回更轻松的内容。",
+      "oQueMelhora": "不管每个人心里怎么想，你在餐桌上对所有人都保持了愉快的氛围。",
+      "ondeNaoVale": "如果对方是带着真诚的兴趣直接问你的看法，那就不适用——完全沉默这时反而会显得回避。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-a02-n07"]
+    }
+  ]
+}

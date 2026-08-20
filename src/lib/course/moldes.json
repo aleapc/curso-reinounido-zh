@@ -1,0 +1,455 @@
+{
+  "versao": 1,
+  "sku": "curso-reinounido-zh",
+  "_changelog": [
+    "1 (2026-08-20): ROSTER RE-DERIVADO PARA O PAR fr → en-GB. O arquivo anterior neste worktree era o roster do curso-eua-es (par es-MX → en-US): declarava sku «curso-eua-es», justificava tudo contra a dor do hispanofalante e escrevia as formas em registro AMERICANO. Aqui o comprador é FRANCÊS e o destino é BRITÂNICO. Os dez ids operacionais e as treze casas foram MANTIDOS — a língua-alvo é a mesma e as casas já obedeciam à LEI do §5.1 —, mas três coisas mudaram: (a) o REGISTRO de duas formas, (b) o INVENTÁRIO de encaixes inteiro, de americano para britânico, (c) toda a justificativa, que agora mede o custo do francês e não o do mexicano.",
+    "1 (2026-08-20): AS DUAS FORMAS QUE MUDARAM DE REGISTRO. GET saiu de «Can I get ___?» para «Could I have ___?» e WENT-WRONG saiu de «I lost my ___» para «I've lost my ___». Motivo em duas camadas. (i) BRITÂNICO: «Can I get a coffee» é o americanismo mais audível do balcão inglês — funciona, mas marca; «Could I have» é neutro do pub ao café ao museu. (ii) FRANCÊS: «Could I have» separa GET de CAN-I, que em americano eram duas cascas quase idênticas («Can I ___?» × «Can I get ___?») e teriam colidido na cabeça do francês; e «I've lost my ___» é o decalque exato de «j'ai perdu mon ___», o único lugar do roster onde a estrutura francesa entrega a inglesa de graça. Nenhum dos dois exige nomear tempo verbal para ensinar — continuam pedaço memorizado, kill-switch do §5.1 respeitado.",
+    "1 (2026-08-20): CASAS E REDISPAROS INTOCADOS, e a checagem foi feita. §5.1 manda: todo molde OPERACIONAL nasce em M1 (B01…B18) e M2 só pode plantar os três SOCIAIS nomeados (APRECIAÇÃO/I07, ESCOLHA/I03, PREFERÊNCIA/I05). O roster herdado JÁ estava corrigido nesse ponto — WHAT-TIME em B18 e WENT-WRONG em B16, não em I01/I06 —, e todo redisparo cai depois da casa na ordem B01…B18 → I01…I10 → A01…A08 (G9d). Nada a corrigir; registrado aqui porque a sessão pediu a conferência explicitamente.",
+    "1 (2026-08-20): O TERMO CANÔNICO DA PEÇA PASSA A SER «la formule». Era «la fórmula» (es-MX). O G15 lê este campo para conferir que a CASA de cada molde NOMEIA a peça, e que o nome não muda de parte para parte. «le moule» foi recusado: em francês corrente «moule» puxa primeiro o molusco e depois a peça de fundição, e serve mal para uma frase. «la formule» é o que um francês já diz de uma frase feita («une formule toute faite»), e não colide com nenhum sinônimo instável.",
+    "1 (2026-08-20): A VANTAGEM DO INGLÊS CONTINUA EMBUTIDA NAS CASCAS, mas o custo do aluno MUDOU DE ENDEREÇO. Para o mexicano o custo era o inventário; para o francês é a BOCA e o FALSO AMIGO. O inglês quase não flexiona, então o buraco recebe a coisa-do-mundo em forma de dicionário sem cálculo nenhum — e o francês, que lê inglês melhor do que imagina, monta a frase quase de graça. O que ele não tem de graça é o ⟨h⟩ aspirado de «have», o ⟨th⟩ de «this», o acento móvel de «inforMAtion» e a distinção ship×sheep. Por isso o eixo de drill destes moldes é o SHADOW de pronúncia sobre o encaixe, nunca a gramática (PRODUTO §3.4)."
+  ],
+  "_leia": "O NÚCLEO GERADOR do par fr → en-GB. Um molde é um encaixe cujo buraco se preenche com uma COISA DO MUNDO (the loo, a cash machine, a trolley) dita em inglês britânico — escolha, não cálculo. É o que separa este produto do phrasebook: com inventário fixo o aluno repete as frases que gravamos e trava quando a cena desvia dois graus; com a formule ele MONTA a frase que nunca escrevemos. Para o comprador FRANCÊS o molde é barato de montar (o inglês quase não flexiona, e ele já reconhece metade das palavras pelo cognato latino) e caro de DIZER — a peça troca, a casca não, e o trabalho dele é pôr a boca inglesa numa frase que os olhos dele já leem.",
+  "_regras": {
+    "teto": "12 moldes OPERACIONAIS + até 3 SOCIAIS = 15 declarados no curso inteiro (PRODUTO §5.1 e INV-14). Este SKU usa 10 operacionais e os 3 sociais (teto social esgotado). A folga operacional NÃO é convite para inflar: molde novo só entra quando o corpus o ensinar com ≥2 substituições numa mesma parte (casa) e ele voltar com encaixe novo em ≥2 partes posteriores.",
+    "vocabulario_molde": {
+      "termo": "框架",
+      "_": "O nome da peça na voz-guia mandarim, equivalente ao «the frame» da guia inglesa, ao «la formule» do curso-reinounido-fr e ao «molde» em PT-BR. Termo REUTILIZADO do resto do catálogo -zh (curso-italia-zh, curso-portugal-zh etc., onde a narração já nomeia a peça como 框架 em toda casa de molde) — não um termo novo cunhado para este SKU. É lido pelo G15 (valida-tom): a CASA de cada molde tem que NOMEAR a peça com este termo EXATO, e ele não muda de parte para parte. Nunca chamar de «模板», «公式», «句型», «套路» como sinônimo variável — instabilidade de nome faz o aluno achar que são peças diferentes (esses termos aparecem soltos em prosa aqui e ali no catálogo, mas 框架 é o nome oficial da peça)."
+    },
+    "registro_britanico": {
+      "_": "NORMATIVA DE FASE 2. As 35 partes ainda são o corpus AMERICANO do curso-eua-es. Ao reescrever cada uma, estas trocas são obrigatórias e não são estilo — são a diferença entre o aluno soar viajado e soar de filme americano. A lista completa, com os fatos que também trocam, está em docs/FUNDACAO.md §3.",
+      "trocas": {
+        "the check": "the bill",
+        "the restroom / the bathroom": "the toilet / the loo (público: «the toilets»)",
+        "line": "queue",
+        "takeout / to go": "takeaway",
+        "the subway": "the Underground / the Tube — «subway» no Reino Unido é passagem subterrânea de PEDESTRE",
+        "elevator": "lift",
+        "ATM": "cash machine / cashpoint",
+        "front desk": "reception",
+        "vacation": "holiday",
+        "prepaid (SIM)": "pay as you go",
+        "luggage cart": "trolley",
+        "sunscreen": "sun cream",
+        "drugstore / pharmacy": "chemist (a rede é a Boots) — «pharmacy» é entendido",
+        "french fries": "chips",
+        "chips (de pacote)": "crisps",
+        "thanks / bye informal": "cheers",
+        "first floor (= térreo)": "ground floor — e «first floor» é o 1º ANDAR ACIMA, igual ao francês"
+      },
+      "nao_troca": "«please» continua sendo o politener universal colado no fim de quase tudo, em qualquer variedade. E «sorry» BRITÂNICO acumula uma função que o americano não tem: é também o abridor para chamar alguém e pedir passagem — por isso entrou como segunda forma de EXCUSE."
+    },
+    "casa": "Onde o molde é ENSINADO, com no mínimo 2 substituições na frente do aluno.",
+    "redisparos": "Onde ele volta com encaixe NOVO. LEI DE ORDEM (G9d): todo redisparo vem DEPOIS da casa na ordem canônica (B01…B18 → I01…I10 → A01…A08). Os slots listados aqui são o PLANO de Fase 2; enquanto a parte-destino ainda for andaime americano, o G9c os acusa como «promessa não cumprida» — é esperado e some quando a parte for reescrita.",
+    "previas": "Onde o molde APARECE antes da casa, como frase inteira modelada por nativo. Nunca é redisparo e nunca conta em P5. Campo documental: nenhum portão o lê.",
+    "voz_da_guia": "DERIVADO do fr → en-GB para o par zh → en-GB. A voz-guia é MANDARIM (guide_zh_f/guide_zh_m) e NUNCA pronuncia a casca inglesa em voz alta — nem para apresentá-la. A guia nomeia «框架» e diz em mandarim o que ela faz; quem MODELA a forma é sempre a voz nativa (target_en_gb_f/m), no `ouvir` imediatamente seguinte. O exemplar do curso-eua-es fazia a guia dizer «Do you have» dentro da narração: passa nos portões (citação não é fala, e o G14 sabe disso), mas produz um modelo com sotaque estrangeiro exatamente na frase que o curso existe para consertar. Texto de PROSA (permissao, clique, aprofundar) pode citar inglês à vontade — não vai ao TTS.",
+    "recusados": [
+      {
+        "forma": "Artigo a / an / the / zero",
+        "porque_fora": "O francês TEM artigo e o usa quase sempre — o que ele não tem é o artigo ZERO do inglês («Do you have water?», «I'm looking for sun cream», onde o francês diria «de l'eau», «de la crème solaire»). Seria um buraco preenchido por uma REGRA a calcular (contável? genérico?), não por uma coisa do mundo: reprova em P1. As formules já trazem o artigo fixado na casca («Could I have A table?», «Where's THE lift?»), e o excesso de artigo é o erro que menos custa no balcão — dispensado em voz alta (§5.4)."
+      },
+      {
+        "forma": "Phrasal verbs (check in, pick up, drop off, sold out, tap in / tap out…)",
+        "porque_fora": "Idiomáticos e imprevisíveis: o significado não se monta a partir das partes, e o francês não tem nada parecido para transferir. Entram como INVENTÁRIO FIXO por casa («tap in» e «tap out» no transporte, «check in» no quarto), nunca como molde produtivo."
+      },
+      {
+        "forma": "Pronúncia — ⟨h⟩ aspirado · ⟨th⟩ · acento tônico móvel · vogais curtas × longas · ⟨r⟩ não-uvular",
+        "porque_fora": "É o custo REAL deste SKU (o francês monta a frase e depois não consegue dizê-la), mas é DRILL DE PRONÚNCIA — gesto e shadow —, não molde. Vira o eixo dos passos de shadow e o programa motor de B01, nunca uma fórmula a encaixar. Detalhamento em docs/FUNDACAO.md §2."
+      },
+      {
+        "forma": "Falsos amigos (actually · library · to attend · sensible · to demand · eventually)",
+        "porque_fora": "É o segundo maior custo do francês e o motor das duas gags do SKU, mas não é peça trocável: é LÉXICO com armadilha. Entra como ficha cultural, como inventário e como piada recorrente — nunca como molde, e nunca como «uma parte sobre falsos amigos» (isso é o anti-padrão 6 com outra roupa). Nomeado aqui para que nenhum agente futuro o promova a fórmula."
+      },
+      {
+        "forma": "Contrações (I'm / don't / can't / where's / I've)",
+        "porque_fora": "O aluno OUVE e deve reconhecer, mas produzi-las é opcional: a forma cheia sempre funciona no balcão. Duas exceções já cozidas dentro de moldes e ensinadas como pedaço único, não como regra: «Where's the ___?» e «I've lost my ___»."
+      },
+      {
+        "forma": "Service charge como «molde»",
+        "porque_fora": "Service charge é FATO (bolso + ficha cultural), não frase a produzir. O que o aluno precisa é SABER que os ~12,5% já estão na conta e que dá para pedir para tirar sem justificar — e a frase que ele produz para isso («Could I have the bill without the service charge, please?») é um encaixe de GET + WITHOUT, não um molde novo. Vai para o conhecimento, nunca para o roster."
+      }
+    ],
+    "m2": "APROVEITO não introduz molde OPERACIONAL nenhum — o trabalho dele é trocar os encaixes dos moldes plantados em ME VIRO. CONFERIDO 2026-08-20 nesta derivação: os dez operacionais têm casa em B03…B18, e os únicos moldes com casa em M2 são os três SOCIAIS nomeados pela exceção fechada do §5.1 — APRECIAÇÃO (I07), ESCOLHA (I03) e PREFERÊNCIA (I05). Teto social 3/3 esgotado; nenhum quarto social entra sem decisão do dono.",
+    "m3": "LEIO A SALA não produz molde nenhum. A relação dele com os moldes é auditiva — reconhecer, não montar. A01 é exatamente isso: o aluno reencontra as próprias formules com pedaços erodidos pela fala rápida britânica (o t-glotal de «wa'er», o «innit», o «you alright?» que é oi e não pergunta).",
+    "ativo_de_par": "O núcleo gerador vive inteiro em ME VIRO e é específico do PAR (fr × Reino Unido). Ele NÃO se amortiza entre compradores: quando DE/ES/IT/NL→Reino Unido entrarem reusando o áudio-ALVO britânico, cada um re-deriva o SEU roster na sua língua-guia. O que ELES herdam deste arquivo é a coluna «forma» e a coluna «exemplos» — o registro britânico já resolvido — e o que cada um tem de refazer é a justificativa, o termo canônico e a lista de recusados, que medem o custo de UM comprador só."
+  },
+  "moldes": [
+    {
+      "id": "HAVE",
+      "categoria": "operacional",
+      "forma": "Do you have ___?",
+      "encaixe": "qualquer coisa que o outro possa TER ou que exista ali (disponibilidade e existência na mesma casca)",
+      "tipo": "aberto",
+      "tipoBuraco": "coisa",
+      "casa": "B06",
+      "redisparos": [
+        "B08",
+        "B11",
+        "B15",
+        "B16",
+        "I03"
+      ],
+      "tiles": [
+        "chegar",
+        "mesa",
+        "compras",
+        "quarto"
+      ],
+      "exemplos": [
+        "wifi",
+        "a toilet",
+        "a cash machine",
+        "a charger",
+        "a SIM card",
+        "water",
+        "a trolley",
+        "a table for two",
+        "this in a large"
+      ],
+      "nota": "O de maior alcance do SKU, e nasce na 1ª hora — não na parte de comer. Cobre «vous avez ?» (disponibilidade) e «il y a ?» (existência) com uma casca só, o que resolve de uma vez a hesitação francesa entre «avez-vous» e «est-ce qu'il y a». Casca invariável. Custo do francês, e é só este: o ⟨h⟩ de «have» é ASPIRADO e ele o come («do you 'ave»), e o balconista britânico ainda entende — mas é o ponto onde a boca inglesa começa. Encaixes já em registro BRITÂNICO: «a toilet» e não «a restroom», «a cash machine» e não «an ATM», «a trolley» e não «a luggage cart»."
+    },
+    {
+      "id": "CAN-I",
+      "categoria": "operacional",
+      "forma": "Can I ___?",
+      "encaixe": "qualquer coisa que EU quero fazer e preciso que deixem",
+      "tipo": "aberto",
+      "tipoBuraco": "acao",
+      "casa": "B07",
+      "redisparos": [
+        "B10",
+        "B15",
+        "B16",
+        "B18",
+        "I09"
+      ],
+      "tiles": [
+        "chegar",
+        "pagar",
+        "compras",
+        "quarto"
+      ],
+      "exemplos": [
+        "pay by card",
+        "tap in with this",
+        "get off here",
+        "try this on",
+        "check in early",
+        "leave my bag here",
+        "sit here"
+      ],
+      "nota": "A categoria de improviso mais comum do viajante — «ça se fait, ça ?» —, que existe porque as regras mudam de lugar para lugar. Nasce no trajeto do aeroporto (B07) porque é ali que ele faz duas substituições coladas. No Reino Unido o encaixe nº 1 é «pay by card»: o país é fortemente contactless e muitos lugares são card only, então a pergunta que o francês precisa fazer não é se aceitam cartão — é se aceitam DINHEIRO. A forma cheia «Can I» sempre funciona; «could I» é o mesmo pedido meio grau mais educado, ensinado como variante recebida."
+    },
+    {
+      "id": "WHERE",
+      "categoria": "operacional",
+      "forma": "Where's the ___?",
+      "encaixe": "qualquer lugar conhecido que ele precisa alcançar",
+      "tipo": "aberto",
+      "par": true,
+      "tipoBuraco": "lugar",
+      "casa": "B08",
+      "redisparos": [
+        "B10",
+        "B16",
+        "I03"
+      ],
+      "tiles": [
+        "chegar",
+        "transporte"
+      ],
+      "exemplos": [
+        "toilet",
+        "gate",
+        "exit",
+        "Underground",
+        "lift",
+        "reception",
+        "platform"
+      ],
+      "nota": "Pergunta por um lugar DEFINIDO que ele sabe que existe. Casa em B08, o slot do «onde fica?». Vem amarrado à escotilha de reparo — «Is it far?» + «Could you show me?» —, porque o aperto desta cena é a RESPOSTA (uma direção falada rápido, com o «right» e o «left» que aqui valem a vida), não a pergunta. É a casa da PRIMEIRA GAG do SKU: «Where's the subway?» no Reino Unido manda o aluno para uma passagem subterrânea de pedestre debaixo da rua, não para o metrô — que é «the Underground» ou «the Tube». O falso amigo aqui não é francês×inglês, é americano×britânico, e é falsificável a pé."
+    },
+    {
+      "id": "LOOKING",
+      "categoria": "operacional",
+      "forma": "I'm looking for ___",
+      "encaixe": "procurar coisa ou lugar sem saber o nome exato em inglês",
+      "tipo": "aberto",
+      "tipoBuraco": "coisa",
+      "casa": "B10",
+      "redisparos": [
+        "B15",
+        "B16"
+      ],
+      "previas": [
+        "B08 — aparece dentro da casa de WHERE como frase inteira modelada por nativo, um slot antes; por vir ANTES de B10 é prévia, não redisparo (G9d)."
+      ],
+      "tiles": [
+        "compras",
+        "chegar"
+      ],
+      "exemplos": [
+        "the platform",
+        "a chemist",
+        "sun cream",
+        "the exit",
+        "my gate",
+        "the check-in desk"
+      ],
+      "nota": "O irmão de WHERE para quando o aluno NÃO tem o nome exato: aponta a intenção e deixa o outro completar. É o molde que absorve o falso amigo sem custo — quem procura remédio e diz «I'm looking for a pharmacy» é levado ao mesmo lugar que «a chemist», e quem procura livro e diz «library» em vez de «bookshop» é corrigido de graça pelo balconista. Casa em B10 (ler o lugar), onde ele já está decifrando placas."
+    },
+    {
+      "id": "GET",
+      "categoria": "operacional",
+      "forma": "Could I have ___?",
+      "encaixe": "pedir ou encomendar no balcão ou à mesa",
+      "tipo": "aberto",
+      "tipoBuraco": "coisa",
+      "casa": "B11",
+      "redisparos": [
+        "B12",
+        "B15",
+        "B16"
+      ],
+      "tiles": [
+        "mesa",
+        "compras",
+        "quarto"
+      ],
+      "exemplos": [
+        "a table for two",
+        "the bill",
+        "a pint of lager",
+        "a flat white",
+        "two of these",
+        "this as a takeaway",
+        "a bag",
+        "a receipt"
+      ],
+      "nota": "O cavalo de batalha do balcão, e a forma que MUDOU nesta derivação: «Can I get ___?» (americano) virou «Could I have ___?». Duas razões. (i) No pub e no café britânico «Could I have» é neutro em todo registro, e «Can I get» é o americanismo mais audível do balcão. (ii) Em americano GET e CAN-I eram duas cascas quase gêmeas — «Can I ___?» × «Can I get ___?» — e o francês, que já hesita entre «je peux» e «je voudrais», colidiria as duas; «Could I have» separa fisicamente pedir COISA de pedir PERMISSÃO. Variantes RECEBIDAS (o aluno reconhece, não produz): «Can I have», «I'd like», «I'll have» — e «I'd like» é justamente onde o francês vai tentar pousar, vindo de «je voudrais». Ele FUNCIONA; a guia diz isso em voz alta em vez de corrigir. Este é o molde do PUB: pede-se e paga-se no BALCÃO, não na mesa."
+    },
+    {
+      "id": "WITHOUT",
+      "categoria": "operacional",
+      "forma": "No ___, please · ___ without ___",
+      "encaixe": "tirar ou evitar um item do pedido (sem gelo, sem cebola)",
+      "tipo": "aberto",
+      "tipoBuraco": "ingrediente",
+      "casa": "B12",
+      "redisparos": [
+        "I02",
+        "I03"
+      ],
+      "previas": [
+        "B11 — a primeira rodada já modela «no ice, please» inteiro, um slot antes da casa; por vir antes de B12 é prévia."
+      ],
+      "tiles": [
+        "dieta",
+        "mesa",
+        "saude"
+      ],
+      "exemplos": [
+        "No ice, please",
+        "no onions",
+        "no sugar",
+        "without butter",
+        "without mayo",
+        "without the service charge"
+      ],
+      "nota": "Casa a customização do pedido em B12. «please» faz o trabalho que em francês o condicional («je voudrais») faria — o francês aprende cedo que o politener universal do inglês vai colado no fim, e que sem ele a mesma frase sai seca. Encaixe britânico de bônus: «without the service charge» é a frase que tira os ~12,5% da conta do restaurante, e ela é discricionária. RESSALVA DECLARADA: WITHOUT remove uma PREFERÊNCIA e NÃO comunica alergia; B13 troca deliberadamente de ferramenta (aviso-martelo «I'm allergic to ___» + cartão escrito), porque esta formule não carrega gravidade."
+    },
+    {
+      "id": "HOW-MUCH",
+      "categoria": "operacional",
+      "forma": "How much is ___?",
+      "encaixe": "preço de qualquer coisa",
+      "tipo": "aberto",
+      "tipoBuraco": "coisa",
+      "casa": "B15",
+      "redisparos": [
+        "B16",
+        "I10"
+      ],
+      "previas": [
+        "B11 — o preço já aparece de passagem na primeira rodada, quatro slots antes da casa; prévia, não redisparo."
+      ],
+      "tiles": [
+        "compras",
+        "pagar"
+      ],
+      "exemplos": [
+        "this",
+        "the small one",
+        "a single to Oxford",
+        "the room",
+        "a pint",
+        "it all together"
+      ],
+      "nota": "Casca invariável, e no Reino Unido ela vem com uma boa notícia que o curso diz em voz alta: o PREÇO DA ETIQUETA JÁ INCLUI O VAT. O que sai da boca do caixa é o que estava escrito — o oposto do sales tax americano, e igual ao que o francês já conhece do TTC. O cuidado real aqui é duplo e nenhum é gramatical: reconhecer o número dito rápido (lado receptivo, B09/B14) e lembrar que a resposta vem em LIBRA, não em euro."
+    },
+    {
+      "id": "WHAT-TIME",
+      "categoria": "operacional",
+      "forma": "What time ___?",
+      "encaixe": "horário — quando abre, quando fecha a cozinha, quando é o check-out",
+      "tipo": "aberto",
+      "tipoBuraco": "acao",
+      "casa": "B18",
+      "redisparos": [
+        "I01",
+        "I04",
+        "I09"
+      ],
+      "previas": [],
+      "tiles": [
+        "transporte",
+        "quarto"
+      ],
+      "exemplos": [
+        "does it open",
+        "does the kitchen close",
+        "are last orders",
+        "does the last Tube go",
+        "is check-out"
+      ],
+      "nota": "Horário é decisão de TEMPO, e no Reino Unido ela é o choque de ritmo nº 1 do francês: janta-se CEDO e a cozinha fecha cedo. Um francês que chega às 21h com fome encontra o pub servindo bebida e a cozinha fechada. Por isso os dois encaixes-âncora deste molde são «what time does the kitchen close?» e «what time are last orders?» — o segundo é a frase que compra a última rodada antes do «time» ser chamado no balcão. Casa em B18 («what time is check-out?»), M1, como a LEI do §5.1 exige."
+    },
+    {
+      "id": "WENT-WRONG",
+      "categoria": "operacional",
+      "forma": "I've lost my ___ · My ___ isn't working",
+      "encaixe": "quando algo dá errado — perdi, quebrou, não funciona",
+      "tipo": "aberto",
+      "tipoBuraco": "objeto-perdido",
+      "casa": "B16",
+      "redisparos": [
+        "I06",
+        "I07"
+      ],
+      "previas": [
+        "B17 — «I've lost my passport» aparece na parte de apuro, logo depois da casa; reforça o molde em cena de risco maior."
+      ],
+      "tiles": [
+        "reparo",
+        "apuro",
+        "quarto"
+      ],
+      "exemplos": [
+        "I've lost my passport",
+        "I've lost my phone",
+        "my key card isn't working",
+        "the heating isn't working",
+        "my card isn't working"
+      ],
+      "nota": "A forma mudou de «I lost my ___» (americano) para «I've lost my ___», e esta é a única troca do roster que o francês ganha DE GRAÇA: «I've lost» é o decalque exato de «j'ai perdu» — auxiliar «avoir» + particípio, mesma ordem, mesma lógica. Ensinar assim custa zero e soa mais britânico ao mesmo tempo. Continua PEDAÇO MEMORIZADO, nunca regra a conjugar: o kill-switch do §5.1 vale integralmente — se explicar exigir dizer «present perfect», a explicação vai para `aprofundar` e não para o áudio. Encaixe britânico: «the heating isn't working», não «the AC» — o problema do quarto inglês é o aquecimento."
+    },
+    {
+      "id": "EXCUSE",
+      "categoria": "operacional",
+      "forma": "Excuse me · Sorry",
+      "encaixe": "abridor universal — chamar, pedir passagem, iniciar uma interação",
+      "tipo": "fechado",
+      "tipoBuraco": "acao",
+      "casa": "B03",
+      "redisparos": [
+        "B08",
+        "B11",
+        "I02"
+      ],
+      "tiles": [
+        "chegar",
+        "mesa",
+        "simpatia"
+      ],
+      "exemplos": [
+        "Excuse me",
+        "Excuse me?",
+        "Sorry",
+        "Sorry, is this the queue?"
+      ],
+      "nota": "É o abridor que precede quase toda outra formule. Ganhou uma SEGUNDA forma nesta derivação, e ela é britânica de verdade: «sorry» no Reino Unido não é só desculpa — é o jeito padrão de chamar alguém, de pedir passagem no vagão e de abrir uma pergunta. Um francês que só tem «excuse me» soa correto; um que tem «sorry» soa daqui. Na prática é um PEDÁGIO (a casca é a frase inteira, sem buraco produtivo), declarado como forma FECHADA. O encaixe «Sorry, is this the queue?» é o desarme da fila invisível do balcão do pub — furar fila, inclusive a que não tem linha no chão, é a falta social que mais custa. VER RELATÓRIO: se o dono preferir, sai do roster declarado e vira pedágio ensinado-e-não-declarado (legítimo pelo §5.1), como já é «___, please»."
+    },
+    {
+      "id": "ESCOLHA",
+      "categoria": "social",
+      "forma": "Which do you recommend: ___ or ___?",
+      "encaixe": "duas opções concretas já nomeadas por outra pessoa — pratos, cores, tamanhos — nunca uma pergunta aberta sobre o que é bom em geral",
+      "tipo": "aberto",
+      "tipoBuraco": "coisa",
+      "casa": "I03",
+      "redisparos": [
+        "I09"
+      ],
+      "tiles": [
+        "mesa",
+        "compras"
+      ],
+      "exemplos": [
+        "the ale or the lager",
+        "the pie or the fish",
+        "the blue one or the black one",
+        "the Sunday roast or the pie"
+      ],
+      "nota": "Exceção fechada e nomeada do PRODUTO §5.1: M2 não introduz molde OPERACIONAL, mas pode plantar até 3 moldes SOCIAIS porque a família apetitiva não tem cena em M1. ESCOLHA nasce em I03 devolvendo ao interlocutor a decisão entre duas coisas que ELE mesmo nomeou — nunca um pedido de opinião solto. No balcão do pub é o molde que resolve a parede de bombas de chope sem o aluno ter de fingir que sabe o que é uma bitter. Redispara em I09 com encaixe novo, satisfazendo P5."
+    },
+    {
+      "id": "PREFERENCIA",
+      "categoria": "social",
+      "forma": "Do you prefer ___ or ___?",
+      "encaixe": "duas coisas concretas em jogo numa conversa casual — lugares, cores, bebidas — tanto para perguntar quanto para responder",
+      "tipo": "aberto",
+      "tipoBuraco": "coisa",
+      "casa": "I05",
+      "redisparos": [
+        "I10"
+      ],
+      "tiles": [
+        "simpatia",
+        "compras"
+      ],
+      "exemplos": [
+        "the seaside or the hills",
+        "the red one or the green one",
+        "the ale or the cider",
+        "the mug or the print"
+      ],
+      "nota": "Exceção fechada e nomeada do §5.1, a segunda dos três sociais. A mesma casca serve para responder sobre si e para perguntar sobre o outro, o que a diferencia de ESCOLHA (que sempre devolve a decisão a quem ofereceu as opções). É o molde da conversa de balcão de pub, que no Reino Unido é uma instituição e não um acidente. Redispara em I10 com encaixe novo."
+    },
+    {
+      "id": "APRECIACAO",
+      "categoria": "social",
+      "forma": "I really like ___",
+      "encaixe": "qualquer coisa concreta que valha um elogio genuíno — prato, bebida, objeto — nomeada, nunca genérica",
+      "tipo": "aberto",
+      "tipoBuraco": "coisa",
+      "casa": "I07",
+      "redisparos": [
+        "I08"
+      ],
+      "tiles": [
+        "simpatia",
+        "mesa"
+      ],
+      "exemplos": [
+        "the pie",
+        "this cider",
+        "this jumper",
+        "this"
+      ],
+      "nota": "Exceção fechada e nomeada do §5.1, a terceira e última — o teto de 3 está esgotado. APRECIACAO nasce em I07 nomeando a coisa elogiada, o que a torna mais forte que um «it's good» genérico. Nota de derivação para o francês: ele chega com «c'est très bon» e traduz por «it's very good», que soa plano em inglês britânico; «I really like the pie» carrega a pessoa dentro do elogio e é o que faz o anfitrião responder. Redispara em I08, elogiando algo servido em casa."
+    }
+  ],
+  "cortados": [
+    {
+      "forma": "I would like to / I'd like ___",
+      "porque": "É onde o francês quer pousar, vindo direto de «je voudrais», e por isso ele NÃO é cortado do curso — é cortado do ROSTER. Vive como variante recebida dentro de GET, com a guia dizendo em voz alta que funciona, para o aluno não se corrigir no meio da frase. Dois moldes para o mesmo trabalho inflariam o numerador do G9 sem ensinar nada. Nomeado aqui para que nenhum agente futuro o traga de volta como fórmula própria."
+    },
+    {
+      "forma": "GRAU — a little more / a little less + [X]",
+      "porque": "O que justifica esse molde é uma escala que o aluno ajusta com o próprio julgamento (picante no Phûut!, açúcar). A mesa britânica de sobrevivência resolve quase tudo isso com pergunta fechada ou com WITHOUT; se um recorte futuro (café de terceira onda, curry house) pedir grau produzido pelo aluno, o molde volta lá, não aqui."
+    },
+    {
+      "forma": "CHEERS como molde",
+      "porque": "«Cheers» é a palavra mais britânica que o aluno vai dizer e ouvir, e é forte candidata a MARCA do SKU — mas não tem buraco e não é encaixe: é um pedágio de saída («obrigado», «tchau», «saúde», tudo com a mesma sílaba). Fica como inventário congelado ensinado em B03 e recuperado em toda parte, exatamente como «___, please»."
+    }
+  ]
+}

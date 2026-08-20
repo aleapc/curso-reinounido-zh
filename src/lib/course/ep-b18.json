@@ -1,0 +1,293 @@
+{
+  "id": "b18",
+  "slot": "B18",
+  "nivel": "basico",
+  "numero": 18,
+  "parte": "18A",
+  "titulo": "行李收拾好了，只差搞清楚时间",
+  "subtitulo": "最后一天用「What time ___?」问清楚，还要能不慌不忙地道别",
+  "cena": "行李箱已经收拾好放在门边，飞机是今天下午的，你还不知道能待到几点，才不会被多收一晚的房费。",
+  "moldura": "ganha",
+  "frasePiso": "你要清楚知道在英国最后一天每个截止时间是几点，然后像一个知道自己还会再回来的人那样道别。",
+  "moldes": ["WHAT-TIME"],
+  "clique": {
+    "contagem": [
+      "退房时间",
+      "机场接驳车的时刻",
+      "前台关门的时间",
+      "航班起飞的时间"
+    ],
+    "desconto": "没有人给过你一句专门问最后一天每个时间点的话。你是用「What time」加上你需要知道的事，把这四种情况都搭出来的。",
+    "piso": "下次最后一天有好几个时间要弄清楚，你不会瞎猜：你会用同一个框架，一件一件地问清楚。"
+  },
+  "permissao": "你不需要一次性把所有时间都记下来。你可以在需要的时候一件一件地问；没有人指望你带着一份早就安排妥当的行程表出现。",
+  "permissaoAudioKey": "gb-b18-n09",
+  "espelho": "在你自己国家旅行的最后一天，你也会在放松之前先确认退房时间和去机场的安排；这里不同的地方是具体要用的那句话——还有习惯说一句「Cheers, take care」而不是更长的告别。",
+  "fichasCulturais": [
+    {
+      "sinal": "离开时，前台的工作人员笑了一下说「Cheers, take care!」，几乎没停下脚步，就已经转向了下一位客人。",
+      "suaLeitura": "这个告别太冷淡、太匆忙了，好像根本不在乎。",
+      "oQueEAli": "这是英国标准的服务型告别：简短、温暖、迅速，没有你在别处可能期待的那种更长的仪式感。这跟你这次入住得开不开心没有关系。",
+      "oQueVoceFaz": "回一句「Cheers, you too!」，继续往前走；不需要把这段交流拉长。",
+      "oQueMelhora": "你像本地人一样体面地结束了这段交流，不会觉得有什么话没说完。",
+      "ondeNaoVale": "如果这次住宿中你和对方建立了更私人的关系——比如一位聊了很多的民宿房东——就不适用了；那种情况下，一段更长的告别跟在你自己国家一样，是完全可以预期的。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-b18-n07"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b18-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "第十八部分，这个单元的最后一部分。拳头打在关键的问句上：WOT TAIM iz chek-AUT。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b18-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "行李箱已经收拾好放在门边。飞机是今天下午的，你还不知道能待到几点。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b18-p01",
+      "promptPt": "像昨天在药店那样，说你需要点治头疼的药。现在请说。",
+      "bloco": "callback",
+      "molde": "HAVE",
+      "audioKey": "gb-b18-t01",
+      "es": "Do you have something for a headache?",
+      "tts": "Do you have something for a headache?",
+      "pinyin": "du yu hav SAM-sing for e HED-eik",
+      "pt": "你们有治头疼的药吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b18-n03",
+      "bloco": "molde",
+      "tom": "ganha",
+      "pt": "今天的框架：「What time」加上你想知道的事。退房、接驳车，几乎任何一个时间点都能用。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b18-t02",
+      "es": "What time is check-out?",
+      "tts": "What time is check-out?",
+      "pinyin": "wot taim iz chek-AUT",
+      "pt": "几点退房？"
+    },
+    {
+      "consulta": ["quarto/checkout"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WHAT-TIME",
+      "encaixe": "is check-out",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b18-p02",
+      "promptPt": "在把行李箱拿下楼之前，问一下退房时间。现在请说。",
+      "audioKey": "gb-b18-t02",
+      "es": "What time is check-out?",
+      "tts": "What time is check-out?",
+      "pinyin": "wot taim iz chek-AUT",
+      "pt": "几点退房？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b18-r01",
+      "es": "It's at eleven, but you can leave your bags with us.",
+      "tts": "It's at eleven, but you can leave your bags with us.",
+      "pinyin": "its at i-LEV-en, bat yu kn liv yor bagz with as",
+      "pt": "十一点，不过您可以把行李寄放在我们这里。"
+    },
+    {
+      "consulta": ["quarto/mala"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "CAN-I",
+      "encaixe": "leave my bag here",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b18-p03",
+      "promptPt": "你的航班要下午才起飞。问能不能把行李箱寄放在前台。现在请说。",
+      "audioKey": "gb-b18-t03",
+      "es": "Can I leave my bag here?",
+      "tts": "Can I leave my bag here?",
+      "pinyin": "kn ai liv mai bag hir",
+      "pt": "我能把行李箱放在这里吗？"
+    },
+    {
+      "consulta": ["taxi/errado"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WHAT-TIME",
+      "encaixe": "does the shuttle leave",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b18-p04",
+      "promptPt": "你要坐机场接驳车。问几点发车。现在请说。",
+      "audioKey": "gb-b18-t04",
+      "es": "What time does the shuttle leave?",
+      "tts": "What time does the shuttle leave?",
+      "pinyin": "wot taim daz the SHAT-el liv",
+      "pt": "接驳车几点发车？"
+    },
+    {
+      "consulta": ["quarto/checkin"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "WHAT-TIME",
+      "encaixe": "does reception close",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b18-p05",
+      "promptPt": "你会很晚才回来取行李箱。问前台开到几点。现在请说。",
+      "audioKey": "gb-b18-t05",
+      "es": "What time does reception close?",
+      "tts": "What time does reception close?",
+      "pinyin": "wot taim daz ri-SEP-shen klohz",
+      "pt": "前台几点关门？"
+    },
+    {
+      "consulta": ["quarto/pedir"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WHAT-TIME",
+      "encaixe": "does breakfast end",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b18-p06",
+      "promptPt": "你已经把行李箱拿下楼了，想在去机场之前赶上早餐。问早餐供应到几点。现在请说。",
+      "audioKey": "gb-b18-t07",
+      "es": "What time does breakfast end?",
+      "tts": "What time does breakfast end?",
+      "pinyin": "wot taim daz BREK-fest end",
+      "pt": "早餐供应到几点？"
+    },
+    {
+      "consulta": ["quarto/checkout"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "HOW-MUCH",
+      "encaixe": "a late check-out",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b18-p07",
+      "promptPt": "你的航班太晚了，与其把行李箱放在楼下，你更想在房间里多待几个小时。问延迟退房要多少钱。现在请说。",
+      "audioKey": "gb-b18-t08",
+      "es": "How much is a late check-out?",
+      "tts": "How much is a late check-out?",
+      "pinyin": "hau mach iz e leit chek-AUT",
+      "pt": "延迟退房要多少钱？"
+    },
+    {
+      "consulta": ["taxi/destino"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "CAN-I",
+      "encaixe": "call a taxi",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b18-p08",
+      "promptPt": "酒店的接驳车已经开走了，没等到你。问前台能不能帮你叫辆出租车。现在请说。",
+      "audioKey": "gb-b18-t09",
+      "es": "Can I call a taxi?",
+      "tts": "Can I call a taxi?",
+      "pinyin": "kn ai kol e TAK-si",
+      "pt": "能帮我叫辆出租车吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b18-n04",
+      "pt": "一个框架，四个不同的时间点：退房、接驳车、前台，还有你接下来要问的那个。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b18-n05",
+      "pt": "道别不需要说得很长。「Cheers, thanks so much」几乎能体面地结束任何一次离开。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b18-t06",
+      "es": "Have a safe flight!",
+      "tts": "Have a safe flight!",
+      "pinyin": "hav e seif flait",
+      "pt": "一路平安！"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b18-n07",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "如果告别显得很简短，那不是冷淡：这就是这里标准的服务型告别。你回一句「Cheers, you too!」就好。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b18-n08",
+      "tom": "ganha",
+      "pt": "「Cheers」把这门课首尾呼应了起来：谢谢、再见、干杯——同一个音节，从第六部分的第一个柜台开始就一直在用。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b18-n09",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "你不需要一次性把所有时间都记下来。需要的时候再一个一个地问。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b18-n10",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "退房、接驳车、前台。没有人给过你三句不同的话：都是你用同一个框架搭出来的。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "WHAT-TIME",
+      "audioKey": "gb-b18-s01",
+      "es": "What time is check-out? What time does the shuttle leave?",
+      "tts": "What time is check-out? What time does the shuttle leave?",
+      "pinyin": "wot taim iz chek-AUT? wot taim daz the SHAT-el liv?",
+      "pt": "跟读同一个框架，配上两个不同的时间点。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b18-n11",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "第十八部分完成，ME VIRO 也随之完成。每个场景一个框架，一趟你知道怎么独自收尾的旅程。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "最后一天有自己的时钟",
+    "secoes": [
+      {
+        "titulo": "那个开放的框架",
+        "corpo": "「What time」加上你想知道的事，几乎能覆盖任何一个时间点：退房、交通、开门时间。外壳不变；变的只是句尾问的那件事。"
+      },
+      {
+        "titulo": "寄存行李不只是一份人情",
+        "corpo": "几乎每家酒店都愿意在退房之后免费帮你寄存行李，哪怕航班要几个小时后才起飞。一句「Can I leave my bag here?」能让你不用拖着行李箱逛一整天。"
+      },
+      {
+        "titulo": "简短的告别不代表冷淡",
+        "corpo": "英国服务型告别的语域天生就很简短：「Have a safe flight」「Cheers, take care」，就这样。不要期待一场更长的仪式；简短才是常态，不是缺少温度。"
+      },
+      {
+        "titulo": "十八个部分，一种方法",
+        "corpo": "ME VIRO 这个单元在这里结束，结束在一次离开上，而不是一段飞行或一次紧急情况上。每一部分都种下了一个开放的框架；它们合在一起，覆盖了从入境机场到出境机场的整趟旅程。"
+      }
+    ]
+  }
+}

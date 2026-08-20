@@ -1,0 +1,82 @@
+{
+  "id": "q-i03",
+  "nivel": "intermediario",
+  "titulo": "问答 — 你原本不打算点的那道菜",
+  "subtitulo": "在两个选项之间选，不是在二十个里瞎猜",
+  "introAudioKey": "gb-i03-q-i",
+  "introPt": "一块没有翻译的特色菜黑板。听听这位旅行者是怎么把选择权交还给服务员的。",
+  "cenario": "英国的一家酒吧餐厅，有一块每日特色菜黑板。",
+  "dialogo": [
+    {
+      "audioKey": "gb-i03-q01",
+      "voz": "target_en_gb_m",
+      "es": "Today we've got the fish pie or the pie of the day.",
+      "tts": "Today we've got the fish pie or the pie of the day.",
+      "pinyin": "tu-DEI wiv got the fish pai or the pai of the dei",
+      "pt": "今天有鱼肉派，或者今日特色派。"
+    },
+    {
+      "audioKey": "gb-i03-q02",
+      "voz": "target_en_gb_f",
+      "es": "Which do you recommend: the fish pie or the pie of the day?",
+      "tts": "Which do you recommend: the fish pie or the pie of the day?",
+      "pinyin": "wich du yu rek-o-MEND: the fish pai or the pai of the dei",
+      "pt": "您推荐哪个：鱼肉派还是今日特色派？"
+    },
+    {
+      "audioKey": "gb-i03-q03",
+      "voz": "target_en_gb_m",
+      "es": "Honestly, the pie of the day. It's the one everyone's having tonight.",
+      "tts": "Honestly, the pie of the day. It's the one everyone's having tonight.",
+      "pinyin": "ON-est-li, the pai of the dei. its the wan EV-ri-wanz HAV-ing tu-NAIT",
+      "pt": "说实话，今日特色派。今晚大家点的都是这个。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在 ESCOLHA 框架里，什么是不变的？",
+      "opcoes": ["两个具体的选项", "「Which do you recommend」", "菜的名字", "价格"],
+      "correta": 1,
+      "explica": "「Which do you recommend」开启这个框架；变化的是你要在其中选择的那两样东西。"
+    },
+    {
+      "pergunta": "为什么问推荐不会暴露你是游客？",
+      "opcoes": [
+        "因为大家总是点同一样东西",
+        "因为特色菜黑板天天都不一样，连常客也不会提前知道",
+        "因为没有人在听",
+        "因为这是个很奇怪的问题"
+      ],
+      "correta": 1,
+      "explica": "特色菜取决于厨房当天有什么新鲜食材。"
+    },
+    {
+      "pergunta": "在一家商店里，你看到同款毛衣有两种颜色。你会怎么说？",
+      "opcoes": [
+        "Do you have a soup of the day?",
+        "Which do you recommend: the blue one or the black one?",
+        "Where's the specials board?",
+        "What time do you close?"
+      ],
+      "correta": 1,
+      "explica": "同一个 ESCOLHA 框架在餐厅之外也能用，任何一对选项都适用。"
+    },
+    {
+      "pergunta": "你选了今日特色派，但不想要洋葱。你会怎么说？",
+      "opcoes": ["No onions on that, please", "Where's the onions?", "How much are onions?", "I've lost my onions"],
+      "correta": 0,
+      "explica": "这是第十二部分的 WITHOUT 框架，换了一个新的搭配对象重新使用。"
+    },
+    {
+      "pergunta": "这部分学的框架和这门课其他部分之间，什么是不变的？",
+      "opcoes": [
+        "Do you have 和 Where's 照样管用",
+        "需要学一套全新的语法",
+        "ESCOLHA 取代了 Do you have",
+        "不再需要用 please"
+      ],
+      "correta": 0,
+      "explica": "ESCOLHA 是和你早就会的框架组合使用的，不是取代它们。"
+    }
+  ]
+}

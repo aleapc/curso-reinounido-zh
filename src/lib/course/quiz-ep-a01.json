@@ -1,0 +1,82 @@
+{
+  "id": "q-a01",
+  "nivel": "avancado",
+  "titulo": "问答 — 不是对你说话时，他们是怎么说的",
+  "subtitulo": "听懂柜台前快速、随意的英式英语",
+  "introAudioKey": "gb-a01-q-i",
+  "introPt": "听咖啡师用极快的速度复述一长串点单，然后回答你听到了什么。",
+  "cenario": "周六早上的拥挤咖啡馆，语速是真实的。",
+  "dialogo": [
+    {
+      "audioKey": "gb-a01-q01",
+      "voz": "target_en_gb_m",
+      "es": "Can I get a flat white, oat milk, extra shot, to go?",
+      "tts": "Can I get a flat white, oat milk, extra shot, to go?",
+      "pt": "一杯拿铁、燕麦奶、加一份浓缩、外带？"
+    },
+    {
+      "audioKey": "gb-a01-q02",
+      "voz": "target_en_gb_f",
+      "es": "You alright, love? That's three eighty.",
+      "tts": "You alright, love? That's three eighty.",
+      "pt": "你好呀？一共三镑八十。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在随意的英语里，「wanna」是什么意思？",
+      "opcoes": [
+        "Want to",
+        "Went away",
+        "Was not",
+        "Give me"
+      ],
+      "correta": 0,
+      "explica": "在快速、随意的口语中，「want to」会缩减成「wanna」。"
+    },
+    {
+      "pergunta": "咖啡师对收银台同事说「You alright, love?」。他想从你这里得到什么？",
+      "opcoes": [
+        "一份关于你身体状况的真实汇报",
+        "没什么具体的——这只是一句「你好」",
+        "让你大声回应",
+        "让你无视这句话"
+      ],
+      "correta": 1,
+      "explica": "「You alright?」的作用就像「你好」：预期的回答只是简单地回一句「alright」，从来不是真的解释情况。"
+    },
+    {
+      "pergunta": "使用「wanna」「dunno」或「gimme」是英语用错了吗？",
+      "opcoes": [
+        "是的，这是懒散的表现",
+        "不是，这是全国通用的普通口语",
+        "只有小孩子才这么说",
+        "只有伦敦人这么说"
+      ],
+      "correta": 1,
+      "explica": "这些缩减是正常且普遍的现象，既不是错误，也不是某个地方的行话。"
+    },
+    {
+      "pergunta": "当词中间的 T 消失时，「water」听起来会变成什么？",
+      "opcoes": [
+        "Wa'er",
+        "Vater",
+        "Waster",
+        "War"
+      ],
+      "correta": 0,
+      "explica": "许多英国口音会把词中间的 T 换成一个轻微的停顿——「water」听起来就接近「wa'er」。"
+    },
+    {
+      "pergunta": "咖啡师对你说话很慢，接着用两倍的速度对下一位他认识的客人说话。变化的是什么？",
+      "opcoes": [
+        "你的英语突然变差了",
+        "变化的是他说话的对象，不是语言本身",
+        "咖啡师对你很不礼貌",
+        "那是完全不同的一种方言"
+      ],
+      "correta": 1,
+      "explica": "对访客说的话通常会更慢；对熟人说的话则不会。"
+    }
+  ]
+}

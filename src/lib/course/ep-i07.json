@@ -1,0 +1,260 @@
+{
+  "id": "i07",
+  "slot": "I07",
+  "nivel": "intermediario",
+  "numero": 7,
+  "parte": "I07",
+  "titulo": "I really like this——厨师也会知道",
+  "subtitulo": "一句具体的夸奖真的能传到厨房，冷静又准确的一句话也能让一道凉了的菜被换掉",
+  "cena": "盘子已经空了，透过出餐口能看到厨师，一句诚实的话马上要改变这顿饭接下来的走向。",
+  "decisao": "把好的和不好的都大声说出来，而不是都憋在心里——具体的夸奖和冷静的反映，决定了这顿饭会变得更好还是维持原样",
+  "emJogo": "dinheiro",
+  "moldura": "ganha",
+  "moldes": ["APRECIACAO"],
+  "clique": {
+    "contagem": ["厨房的出餐口", "酒店吧台", "手工市集"],
+    "desconto": "没有人给过你一句专门夸派好吃的话、一句专门夸鸡尾酒的话、再一句专门夸毛衣的话。你是用同一个框架，把这三种情况都搭出来的，只换掉你喜欢的那样东西。"
+  },
+  "frasePiso": "你要用一个框架，大声说出自己真正喜欢的东西——也要能在语气完全不提高的情况下，让一道上错的菜被换掉。",
+  "fichasCulturais": [
+    {
+      "sinal": "服务员问了句「is everything alright with the food?」，站在那里，等着一个不只是条件反射的「挺好」。",
+      "suaLeitura": "我已经回答了该回答的话，不需要再多说什么。",
+      "oQueEAli": "在英国，用餐过程中问一句吃得怎么样是很正常的；而一句具体的夸奖——直接说出菜名——真的能一路传到厨房，那是一份真心的感激，不是一句空话。",
+      "oQueVoceFaz": "说出那道菜的名字，说你真的很喜欢：「I really like this, it's brilliant.」",
+      "oQueMelhora": "具体的夸奖会传到做这道菜的人手里，有时候还能为接下来的整个晚上换来更热情的照顾。",
+      "ondeNaoVale": "在大型连锁快餐店不适用，那里服务员没有办法把这句话传给某个具体的人。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-i07-n02"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i07-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "拳头打在承载夸奖的那个词上：I really LIKE，不是 i really like。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i07-p01",
+      "promptPt": "昨天你讲了手机丢了又找回来的事。今天有人问你整趟旅程怎么样。回答说你很喜欢。现在请说。",
+      "bloco": "callback",
+      "audioKey": "gb-i07-t01",
+      "es": "I loved it.",
+      "tts": "I loved it.",
+      "pinyin": "ai lavd it",
+      "pt": "我很喜欢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i07-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "盘子已经空了，透过出餐口能看到厨师，一句话马上要改变这个晚上接下来的走向。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i07-r01",
+      "es": "Is everything alright with the food?",
+      "tts": "Is everything alright with the food?",
+      "pinyin": "iz EV-ri-sing ol-RAIT with the fud",
+      "pt": "这顿饭吃得还好吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i07-n03",
+      "bloco": "molde",
+      "tom": "ganha",
+      "pt": "这是那个框架：I really like the，加上那样东西。说出菜名，能让这份夸奖传得更远。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "APRECIACAO",
+      "encaixe": "the pie",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i07-p02",
+      "promptPt": "这顿饭真的很好吃。说出来，说出菜名。现在请说。",
+      "audioKey": "gb-i07-t02",
+      "es": "I really like the pie, it's brilliant.",
+      "tts": "I really like the pie, it's brilliant.",
+      "pinyin": "ai RIL-i laik the pai, its BRIL-yant",
+      "pt": "我真的很喜欢这个派，太棒了。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i07-r02",
+      "es": "Thank you, I'll let the kitchen know.",
+      "tts": "Thank you, I'll let the kitchen know.",
+      "pinyin": "sank yu, ail let the KICH-en noh",
+      "pt": "谢谢，我会转告厨房。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i07-p03",
+      "promptPt": "第二天，在酒店吧台，一杯鸡尾酒让你惊艳。用同一个框架。现在请说。",
+      "molde": "APRECIACAO",
+      "encaixe": "this cocktail",
+      "audioKey": "gb-i07-t03",
+      "es": "I really like this cocktail.",
+      "tts": "I really like this cocktail.",
+      "pinyin": "ai RIL-i laik this kok-TEIL",
+      "pt": "我真的很喜欢这杯鸡尾酒。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i07-p04",
+      "promptPt": "在手工市集，一件毛衣打动了你。直接对卖家说出来。现在请说。",
+      "molde": "APRECIACAO",
+      "encaixe": "this jumper",
+      "audioKey": "gb-i07-t04",
+      "es": "I really like this jumper.",
+      "tts": "I really like this jumper.",
+      "pinyin": "ai RIL-i laik this JAM-per",
+      "pt": "我真的很喜欢这件毛衣。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i07-n04",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "现在是另一个动作：有东西不太对。冷静地说出那样东西和问题所在——跟第十六部分是同一个框架。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i07-p05",
+      "promptPt": "汤端上来是凉的。冷静地说出来，不用长篇大论。现在请说。",
+      "molde": "WENT-WRONG",
+      "encaixe": "the soup isn't",
+      "audioKey": "gb-i07-t05",
+      "es": "Excuse me, the soup isn't hot.",
+      "tts": "Excuse me, the soup isn't hot.",
+      "pinyin": "eks-KYUZ mi, the sup IZ-ent hot",
+      "pt": "不好意思，这汤不热。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i07-r03",
+      "es": "I'm so sorry, I'll bring you a new one right away.",
+      "tts": "I'm so sorry, I'll bring you a new one right away.",
+      "pinyin": "aim soh SO-ri, ail bring yu e nyu wan rait e-WEI",
+      "pt": "非常抱歉，我马上给您换一份。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i07-p06",
+      "promptPt": "感谢对方处理得这么快。现在请说。",
+      "audioKey": "gb-i07-t06",
+      "es": "Thanks for sorting that so fast.",
+      "tts": "Thanks for sorting that so fast.",
+      "pinyin": "sanks for SOR-ting that soh fast",
+      "pt": "谢谢您处理得这么快。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i07-n05",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "Excuse me 能在不指责任何人的情况下开启这句反映——说出那样东西和具体的问题，才是真正让问题快速解决的关键。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i07-p07",
+      "promptPt": "新的汤端上来是热的。用一句真诚简短的话结束这个瞬间。现在请说。",
+      "audioKey": "gb-i07-t07",
+      "es": "Now it's perfect.",
+      "tts": "Now it's perfect.",
+      "pinyin": "nau its PER-fekt",
+      "pt": "现在完美了。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i07-p08",
+      "promptPt": "离开前要账单。现在请说。",
+      "audioKey": "gb-i07-t08",
+      "es": "Could I have the bill, please?",
+      "tts": "Could I have the bill, please?",
+      "pinyin": "kud ai hav the bil, pliz",
+      "pt": "能结一下账吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i07-n06",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "说有东西不对之前，你不需要长篇铺垫。Excuse me 加上具体的问题，能很快解决问题。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i07-n07",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "你夸过派、鸡尾酒和毛衣。没有人给过你这三句话：都是你用同一个框架搭出来的。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "APRECIACAO",
+      "audioKey": "gb-i07-s01",
+      "es": "I really like the pie, it's brilliant. Excuse me, the soup isn't hot.",
+      "tts": "I really like the pie, it's brilliant. Excuse me, the soup isn't hot.",
+      "pinyin": "ai RIL-i laik the pai, its BRIL-yant. eks-KYUZ mi, the sup IZ-ent hot",
+      "pt": "跟读夸奖和反映问题，一句接一句。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i07-n08",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "I07 完成。I really like 说出好的地方，excuse me 加上具体问题解决不好的地方——准确，不用大声。"
+    }
+  ],
+  "permissao": "说有东西不对之前，你不需要长篇道歉。Excuse me 加上具体的问题不是在起冲突——这是最快、最冷静地把问题解决掉的方式。",
+  "permissaoAudioKey": "gb-i07-n06",
+  "espelho": "在自己家附近的餐厅里，平静地让服务员把一道菜换掉——只是低声跟服务员说一句，不是大吵大闹——这跟这一课教的是同一种本能反应，只是换了一种语言。",
+  "aprofundar": {
+    "titulo": "准确，而不是大声",
+    "secoes": [
+      {
+        "titulo": "说出具体的名字，比说「delicious」更好",
+        "corpo": "「It's good」能用，但「I really like the pie」说明你真的注意到了自己吃的是什么——在一家小餐馆里，这句夸奖有时真的会一路传到做这道菜的人手里。"
+      },
+      {
+        "titulo": "Excuse me 是开场，不是指责",
+        "corpo": "说一句 excuse me，然后直接接上具体的问题——the soup isn't hot——能让对话始终围绕着「怎么解决」，而不是「该怪谁」。"
+      },
+      {
+        "titulo": "道谢能画上句号",
+        "corpo": "问题解决之后一句简短的 thanks，能让整段交流保持温暖——夸奖和反映问题并不是对立的两件事，它们是同一种诚实的两面。"
+      }
+    ]
+  }
+}

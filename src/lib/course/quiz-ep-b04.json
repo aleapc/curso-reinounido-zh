@@ -1,0 +1,100 @@
+{
+  "id": "q-b04",
+  "nivel": "basico",
+  "titulo": "问答 — 还容易改正的最后一晚",
+  "subtitulo": "护照、签证，以及睡前确认好的预订",
+  "introAudioKey": "gb-b04-q-i",
+  "introPt": "今晚，在家里的桌子上，一切都还容易改正。听完打给酒店的电话，找出哪些事情要在出发前确认，而不是留到机场的队伍里。",
+  "cenario": "出发前一晚，打给酒店总台的电话。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b04-q01",
+      "voz": "target_en_gb_f",
+      "es": "I'd like to confirm my reservation.",
+      "tts": "I'd like to confirm my reservation.",
+      "pinyin": "aid laik tu kon-FERM mai re-zer-VEI-shen",
+      "pt": "我想确认一下我的预订。"
+    },
+    {
+      "audioKey": "gb-b04-q02",
+      "voz": "target_en_gb_m",
+      "es": "Sure, what name is it under?",
+      "tts": "Sure, what name is it under?",
+      "pinyin": "shur, wot neim iz it AN-der",
+      "pt": "好的，用的是什么名字？"
+    },
+    {
+      "audioKey": "gb-b04-q03",
+      "voz": "target_en_gb_f",
+      "es": "Could you email me the confirmation, please? And what's the full address?",
+      "tts": "Could you email me the confirmation, please? And what's the full address?",
+      "pinyin": "kud yu I-meil mi the kon-fer-MEI-shen, pliz? and wots the ful e-DRES",
+      "pt": "能麻烦您把确认信息发到我邮箱吗？还有，完整地址是什么？"
+    },
+    {
+      "audioKey": "gb-b04-q04",
+      "voz": "target_en_gb_m",
+      "es": "Yes, we're open all night. You're all set.",
+      "tts": "Yes, we're open all night. You're all set.",
+      "pinyin": "yes, wir OH-pen ol nait. yor ol set",
+      "pt": "是的，我们整晚都开着。您都安排好了。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "为什么要在今晚确认预订，而不是只相信软件里那个绿色的勾？",
+      "opcoes": [
+        "因为软件从来都不好用",
+        "为了留一份不依赖软件、能在没有网络时查看的确认信息",
+        "因为英国法律要求必须这样做",
+        "为了拿到折扣"
+      ],
+      "correta": 1,
+      "explica": "把地址和预订信息截图保存下来，能扛得住 wifi 故障、账号登录不上或手机没电——软件里的一串链接做不到这一点。"
+    },
+    {
+      "pergunta": "中国护照持有人在飞往英国之前，需要额外办理什么文件？",
+      "opcoes": [
+        "普通的长期居留签证",
+        "只需要一份和护照绑定的电子旅行许可（ETA）",
+        "不需要，护照就够了",
+        "一封经过公证的邀请函"
+      ],
+      "correta": 2,
+      "explica": "中国不在英国的免签证国籍名单上，所以电子旅行许可（ETA）不适用；需要提前申请完整的英国标准访客签证。"
+    },
+    {
+      "pergunta": "关于护照有效期，入境英国需要确认什么？",
+      "opcoes": [
+        "像有些国家一样，回程后还要有六个月有效期",
+        "有效期能覆盖整个行程就行，不需要六个月规则",
+        "不用管，日期不重要",
+        "护照必须是一年内新办的"
+      ],
+      "correta": 1,
+      "explica": "英国不要求护照还剩六个月有效期：只需要有效期能覆盖整个行程就行。"
+    },
+    {
+      "pergunta": "关于中国的银行卡在英国使用，出发前真正该确认的是什么？",
+      "opcoes": [
+        "能不能被接受",
+        "自己银行可能收取的每笔交易手续费",
+        "是不是要提前换成英镑",
+        "是不是只能在大城市使用"
+      ],
+      "correta": 1,
+      "explica": "银行卡在英国基本可以直接使用；真正该确认的是自己银行可能对每笔交易额外收取的手续费。"
+    },
+    {
+      "pergunta": "为什么要在出发前一晚，提前告诉酒店你会很晚才到？",
+      "opcoes": [
+        "为了拿到优惠价格",
+        "为了确认到达时前台还开着门",
+        "这样做从来都没用",
+        "为了换房间"
+      ],
+      "correta": 1,
+      "explica": "如果很晚落地时前台已经关门，一份有效的预订也会白费——所以今晚就该提前说清楚。"
+    }
+  ]
+}

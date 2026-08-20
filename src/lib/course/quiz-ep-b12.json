@@ -1,0 +1,63 @@
+{
+  "id": "q-b12",
+  "nivel": "basico",
+  "titulo": "问答 — 说出你真正想要的",
+  "subtitulo": "「No ___, please」「___ without ___」，以及服务员为什么要复述你的点单",
+  "introAudioKey": "gb-b12-q-i",
+  "introPt": "服务员复述的点单里加了你没点过的洋葱。找出该怎么改过来——以及他大声复述整份点单到底意味着什么。",
+  "cenario": "餐厅桌边，点单刚要送去厨房之前。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b12-q01",
+      "voz": "target_en_gb_m",
+      "es": "No onions, please.",
+      "tts": "No onions, please.",
+      "pinyin": "noh AN-yenz, pliz",
+      "pt": "不要洋葱，谢谢。"
+    },
+    {
+      "audioKey": "gb-b12-q02",
+      "voz": "target_en_gb_f",
+      "es": "Got it — one without onions.",
+      "tts": "Got it — one without onions.",
+      "pinyin": "got it — wan wi-THAUT AN-yenz",
+      "pt": "记下了——一份不加洋葱。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "哪个框架能从已经在下的单里去掉一样配料？",
+      "opcoes": ["No ___, please", "I hate ___", "Remove ___", "Without, without"],
+      "correta": 0,
+      "explica": "「No ___, please」是桌上最短、也最常用的去掉某样东西的说法。"
+    },
+    {
+      "pergunta": "这个框架传达的是哪种信息？",
+      "opcoes": ["严重的过敏", "单纯的个人偏好", "一次正式投诉", "医疗紧急情况"],
+      "correta": 1,
+      "explica": "「No ___, please」去掉的是一种偏好——冰、洋葱、糖。如果涉及健康风险，第十三部分会教一句分量更重的不同说法。"
+    },
+    {
+      "pergunta": "服务员大声复述了你整份点单。这是为什么？",
+      "opcoes": [
+        "他在怀疑你的英语",
+        "这是桌边服务标准的确认流程",
+        "他没听清楚",
+        "他在善意地打趣你"
+      ],
+      "correta": 1,
+      "explica": "大声复述点单是标准的确认流程，对任何客人都一样，跟口音无关。"
+    },
+    {
+      "pergunta": "「please」放在一句英语的句尾起什么作用？",
+      "opcoes": [
+        "没什么作用，可有可无",
+        "让整句话变得委婉，就像中文里的语气一样",
+        "改变动词的意思",
+        "表示过去时"
+      ],
+      "correta": 1,
+      "explica": "英语的动词变化几乎没有礼貌标记。「Please」起的就是这个作用；少了它，整句话听起来像一道生硬的命令。"
+    }
+  ]
+}

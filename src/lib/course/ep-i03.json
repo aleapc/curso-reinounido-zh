@@ -1,0 +1,274 @@
+{
+  "id": "i03",
+  "slot": "I03",
+  "nivel": "intermediario",
+  "numero": 3,
+  "parte": "I03",
+  "titulo": "你原本不打算点的那道菜",
+  "subtitulo": "每日特色菜的黑板天天都不一样，一个问题就能让你在两道好菜之间选一个，而不是在二十个菜名里瞎猜",
+  "cena": "菜单上有二十道菜，一块小黑板上写着「Today's Specials」，字迹密密麻麻，没有人翻译过——服务员已经站在那里等着了。",
+  "decisao": "点哪道菜——让服务员在两个具体的选项之间给建议，而不是在二十个你不认识的菜名里瞎猜",
+  "emJogo": "dinheiro",
+  "moldura": "ganha",
+  "frasePiso": "你要用一个问题，在两道真实存在的菜之间做选择，而不是点菜单上唯一一个你本来就会念的词。",
+  "moldes": ["ESCOLHA"],
+  "clique": {
+    "contagem": ["每日特色菜黑板", "市场的奶酪柜台", "服装店"],
+    "desconto": "没有人给过你一句专门选菜的话、一句专门选尺码的话、再一句专门选颜色的话。你是用同一个问题，把这三种情况都搭出来的，只换掉要在其中选择的那两样东西。",
+    "piso": "下次你不知道点什么，你不会瞎指一个：你会在两个具体的选项之间，问一句该推荐哪个。"
+  },
+  "fichasCulturais": [
+    {
+      "sinal": "服务员念出了黑板上两道特色菜的名字，站在那里等你回答。",
+      "suaLeitura": "我应该认识这些菜才对，不然他会觉得我根本不懂自己在点什么。",
+      "oQueEAli": "每日特色菜黑板天天不一样，取决于厨房当天有什么新鲜食材；哪怕是常客也不会提前知道，所以问该推荐哪个不会暴露什么——这正是大家期待你会做的事。",
+      "oQueVoceFaz": "问一句「Which do you recommend?」，让服务员在他自己刚说出的两个选项里帮你决定。",
+      "oQueMelhora": "你吃到的是厨房今天真正做得好的那道菜，而不是菜单上唯一一个你早就会念的词。",
+      "ondeNaoVale": "在有固定菜单和图片的连锁餐厅不适用，那里没有每天变化的特色菜黑板。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-i03-n03"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i03-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "拳头打在有分量的那个词上：which do you re-co-MMEND。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i03-p01",
+      "promptPt": "昨天在柜台你毫不犹豫地点了单。今天在餐厅门口，直接问同样的事。现在请说。",
+      "bloco": "callback",
+      "audioKey": "gb-i03-t01",
+      "es": "Could I have a table for two, please?",
+      "tts": "Could I have a table for two, please?",
+      "pinyin": "kud ai hav e TEI-bl for tu, pliz",
+      "pt": "能给我们一张两人桌吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i03-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "菜单上二十道菜，一块小黑板写着「Today's Specials」，没有翻译，服务员已经在等着了。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i03-r01",
+      "es": "Today we've got the fish pie or the pie of the day.",
+      "tts": "Today we've got the fish pie or the pie of the day.",
+      "pinyin": "tu-DEI wiv got the fish pai or the pai of the dei",
+      "pt": "今天有鱼肉派，或者今日特色派。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i03-n03",
+      "bloco": "molde",
+      "tom": "ganha",
+      "pt": "这是那个框架：你不是问什么好吃，而是在刚才提到的两样东西里做选择。Which do you recommend，加上这两样。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-i03-t02",
+      "es": "Which do you recommend: the fish pie or the pie of the day?",
+      "tts": "Which do you recommend: the fish pie or the pie of the day?",
+      "pinyin": "wich du yu rek-o-MEND: the fish pai or the pai of the dei",
+      "pt": "您推荐哪个：鱼肉派还是今日特色派？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "ESCOLHA",
+      "encaixe": "the fish pie or the pie of the day",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i03-p02",
+      "promptPt": "服务员刚说出了两道特色菜的名字。把选择权交还给他。现在请说。",
+      "audioKey": "gb-i03-t02b",
+      "es": "Which do you recommend: the fish pie or the pie of the day?",
+      "tts": "Which do you recommend: the fish pie or the pie of the day?",
+      "pinyin": "wich du yu rek-o-MEND: the fish pai or the pai of the dei",
+      "pt": "您推荐哪个：鱼肉派还是今日特色派？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i03-r02",
+      "es": "Honestly, the pie of the day. It's the one everyone's having tonight.",
+      "tts": "Honestly, the pie of the day. It's the one everyone's having tonight.",
+      "pinyin": "ON-est-li, the pai of the dei. its the wan EV-ri-wanz HAV-ing tu-NAIT",
+      "pt": "说实话，今日特色派。今晚大家点的都是这个。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i03-p03",
+      "promptPt": "换一桌，换一天：黑板上又是两道菜，你再次把决定交还给服务员。现在请说。",
+      "molde": "ESCOLHA",
+      "encaixe": "the roast or the fish",
+      "audioKey": "gb-i03-t03",
+      "es": "Which do you recommend: the roast or the fish?",
+      "tts": "Which do you recommend: the roast or the fish?",
+      "pinyin": "wich du yu rek-o-MEND: the rohst or the fish",
+      "pt": "您推荐哪个：烤肉还是鱼？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i03-p04",
+      "promptPt": "在一家商店里，同款毛衣两种颜色。同样的问题在这里也能用。现在请说。",
+      "molde": "ESCOLHA",
+      "encaixe": "the blue one or the black one",
+      "audioKey": "gb-i03-t04",
+      "es": "Which do you recommend: the blue one or the black one?",
+      "tts": "Which do you recommend: the blue one or the black one?",
+      "pinyin": "wich du yu rek-o-MEND: the blu wan or the blak wan",
+      "pt": "您推荐哪个：蓝色的还是黑色的？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i03-n04",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "现在用上你从第六部分就学会的东西：不确定某样东西存不存在时，你随时都可以直接问。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i03-p05",
+      "promptPt": "你想知道今天有没有例汤。问他们有没有。现在请说。",
+      "molde": "HAVE",
+      "encaixe": "a soup of the day",
+      "audioKey": "gb-i03-t05",
+      "es": "Do you have a soup of the day?",
+      "tts": "Do you have a soup of the day?",
+      "pinyin": "du yu hav e sup of the dei",
+      "pt": "你们有今日例汤吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i03-r03",
+      "es": "Yeah, it's on the board by the door.",
+      "tts": "Yeah, it's on the board by the door.",
+      "pinyin": "ye, its on the bord bai the dor",
+      "pt": "有的，写在门边的黑板上。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i03-p06",
+      "promptPt": "你没注意到那块黑板。问黑板在哪里。现在请说。",
+      "molde": "WHERE",
+      "encaixe": "the specials board",
+      "audioKey": "gb-i03-t06",
+      "es": "Where's the specials board?",
+      "tts": "Where's the specials board?",
+      "pinyin": "wehrz the SPESH-elz bord",
+      "pt": "特色菜黑板在哪里？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i03-p07",
+      "promptPt": "你选了今日特色派，但不想要洋葱。点单时要求不放。现在请说。",
+      "molde": "WITHOUT",
+      "encaixe": "onions on that",
+      "audioKey": "gb-i03-t07",
+      "es": "No onions on that, please.",
+      "tts": "No onions on that, please.",
+      "pinyin": "noh AN-yenz on that, pliz",
+      "pt": "这道菜不要放洋葱，谢谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i03-n05",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "服务员刚给你说了两道特色菜的名字。这不是一场考试：哪怕是常客，每晚也都会问同样的问题。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i03-p08",
+      "promptPt": "你选好了今日特色派。跟服务员确认一下。现在请说。",
+      "audioKey": "gb-i03-t08",
+      "es": "I'll have the pie of the day, please.",
+      "tts": "I'll have the pie of the day, please.",
+      "pinyin": "ail hav the pai of the dei, pliz",
+      "pt": "我要今日特色派，谢谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i03-n06",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "你不需要认识整张菜单。在对方自己给出的两个选项里做选择，本身就已经是一个完整的决定。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i03-n07",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "你在两道菜之间选过，也在两件毛衣之间选过。没有人给过你这些句子：都是你用同一个问题搭出来的。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "ESCOLHA",
+      "audioKey": "gb-i03-s01",
+      "es": "Which do you recommend: the fish pie or the pie of the day? Do you have a soup of the day?",
+      "tts": "Which do you recommend: the fish pie or the pie of the day? Do you have a soup of the day?",
+      "pinyin": "wich du yu rek-o-MEND: the fish pai or the pai of the dei? du yu hav e sup of the dei?",
+      "pt": "跟读在两个选项之间做选择，以及问某样东西是否存在。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i03-n08",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "I03 完成。Which do you recommend 能让店家替你做决定——在餐厅之外也一样能用。"
+    }
+  ],
+  "permissao": "坐下之前你不需要认识整张菜单。在两个具体选项之间问该推荐哪个，正是常客会做的事——这不会暴露什么，反而更像是常客的样子。",
+  "permissaoAudioKey": "gb-i03-n06",
+  "espelho": "让服务员在两道当日菜品之间帮你选，这件事你在自己的语言里早就做过、不假思索；这里唯一不同的地方，是你要用哪种语言问出来。",
+  "aprofundar": {
+    "titulo": "一个用来选择的框架，不是用来瞎猜的",
+    "secoes": [
+      {
+        "titulo": "ESCOLHA 这个框架",
+        "corpo": "Which do you recommend，加上用「or」连接的两样具体东西，是一个开放的框架：能用来选菜、选尺码、选颜色，任何摆在你面前的一对真实选项都能用。"
+      },
+      {
+        "titulo": "黑板天天都不一样",
+        "corpo": "每日特色菜取决于厨房当天有什么新鲜食材；哪怕是常客也不会提前记住，所以开口问不会让你显得像个游客。"
+      },
+      {
+        "titulo": "它能和你已经会的东西组合使用",
+        "corpo": "Do you have、Where's 和 no ___ please 在这同一个场景里照样管用——这些都不是新框架，只是换了一样要问的东西而已。"
+      }
+    ]
+  }
+}

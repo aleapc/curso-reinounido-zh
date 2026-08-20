@@ -1,0 +1,71 @@
+{
+  "id": "q-b18",
+  "nivel": "basico",
+  "titulo": "问答 — 行李收拾好了，只差搞清楚时间",
+  "subtitulo": "「What time ___?」，以及简短却不冷淡的告别",
+  "introAudioKey": "gb-b18-q-i",
+  "introPt": "行李箱已经收好，飞机是今天下午的。找出能解决最后一天所有时间问题的框架，还有该怎么道别。",
+  "cenario": "酒店前台，住宿的最后一天。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b18-q01",
+      "voz": "target_en_gb_f",
+      "es": "What time is check-out?",
+      "tts": "What time is check-out?",
+      "pinyin": "wot taim iz chek-AUT",
+      "pt": "几点退房？"
+    },
+    {
+      "audioKey": "gb-b18-q02",
+      "voz": "target_en_gb_m",
+      "es": "It's at eleven, but you can leave your bags with us.",
+      "tts": "It's at eleven, but you can leave your bags with us.",
+      "pinyin": "its at i-LEV-en, bat yu kn liv yor bagz with as",
+      "pt": "十一点，不过您可以把行李寄放在我们这里。"
+    },
+    {
+      "audioKey": "gb-b18-q03",
+      "voz": "target_en_gb_f",
+      "es": "Have a safe flight!",
+      "tts": "Have a safe flight!",
+      "pinyin": "hav e seif flait",
+      "pt": "一路平安！"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "哪个框架能用来问最后一天任何一个时间点？",
+      "opcoes": ["When is ___?", "What time ___?", "How late ___?", "Is it time for ___?"],
+      "correta": 1,
+      "explica": "「What time」加上你想知道的事，能覆盖退房、接驳车、开门时间——外壳不变。"
+    },
+    {
+      "pergunta": "你的航班是下午的，退房时间已经到了。行李箱怎么办？",
+      "opcoes": [
+        "只能拖着它逛一整天",
+        "问能不能寄放在前台",
+        "必须多付一晚的房费",
+        "把它放在走廊里"
+      ],
+      "correta": 1,
+      "explica": "几乎每家酒店都愿意在退房后免费帮你寄存行李。「Can I leave my bag here?」能让你不用拖着行李箱逛一整天。"
+    },
+    {
+      "pergunta": "前台工作人员对你说了句「Cheers, take care!」，就已经转向了下一位客人。你会怎么想？",
+      "opcoes": [
+        "这个告别很冷淡，她在赶时间",
+        "这就是这里标准的服务型告别，本来就很简短",
+        "她不喜欢你这次的入住体验",
+        "她这样做很没礼貌"
+      ],
+      "correta": 1,
+      "explica": "英国服务型告别的语域天生就很简短。简短才是常态，不是缺少温度。"
+    },
+    {
+      "pergunta": "从第一个柜台到最后离开，哪个词把这门课首尾呼应了起来？",
+      "opcoes": ["Bye", "Cheers", "Goodbye", "See you"],
+      "correta": 1,
+      "explica": "「Cheers」根据场合能表达谢谢、再见或干杯——从第六部分开始就一直是同一个音节。"
+    }
+  ]
+}

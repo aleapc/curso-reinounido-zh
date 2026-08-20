@@ -1,0 +1,312 @@
+{
+  "id": "b16",
+  "slot": "B16",
+  "nivel": "basico",
+  "numero": 16,
+  "parte": "16A",
+  "titulo": "在拿到房间号码之前",
+  "subtitulo": "问出能让住宿更舒适的那些事，再学会用「My ___ isn't working」应对东西坏掉的情况",
+  "cena": "你站在前台，身后的队伍越来越长，而你还没决定好，要不要在钥匙递到手里之前，先争取点更好的条件。",
+  "moldura": "ganha",
+  "frasePiso": "办理入住时，你要主动问出能让房间更舒适的条件；之后如果有东西坏了，你也要能直接说出来，不用先在脑子里逐字翻译。",
+  "moldes": ["WENT-WRONG"],
+  "clique": {
+    "contagem": [
+      "打不开的钥匙卡",
+      "不制热的暖气",
+      "找不到的制冰机",
+      "找不到的泳池"
+    ],
+    "desconto": "没有人给过你一句专门说钥匙卡坏了的话，再一句专门说暖气坏了的话。你是用同一个框架——「My ___ isn't working」——把这两种情况都搭出来的。",
+    "piso": "下次酒店房间里有东西坏了，你不会等着它自己好起来：你会立刻用一句你早就会说的话把它说出来。"
+  },
+  "permissao": "为了反映一样东西坏了而道歉，完全没必要。「My ___ isn't working」只是一条信息，不是小题大做的抱怨；酒店本来就指望你会这样说。",
+  "permissaoAudioKey": "gb-b16-n11",
+  "espelho": "在你自己国家的任何一家酒店，你也会毫不犹豫地反映钥匙打不开、暖气不热的问题；这里唯一新鲜的地方是具体要用的那句话——以及在办理入住时主动争取更好的条件，跟事后投诉一样，都是完全正常的事。",
+  "fichasCulturais": [
+    {
+      "sinal": "你在前台递上银行卡，想支付一项额外费用，却发现完全不需要在另一台复杂的终端上输入什么代码。",
+      "suaLeitura": "肯定哪里出了问题，或者少了一个步骤。",
+      "oQueEAli": "英国的免接触支付非常普及，一张外国的 Visa 或 Mastercard 卡不需要任何特殊操作就能直接使用——不像有些国家，本地的支付系统可能不接受外国卡。",
+      "oQueVoceFaz": "正常付款，把卡靠近终端就行；如果金额超过了免接触支付的上限，就插卡输入密码，不会有意外。",
+      "oQueMelhora": "为了一笔简单的酒店额外费用，你不用再花时间找现金或者别的备用方案。",
+      "ondeNaoVale": "对于连锁品牌之外一些非常小的独立民宿，这不代表你就完全不用备一点现金。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-b16-n10"]
+    }
+  ],
+  "fatosDatados": [
+    {
+      "id": "resort-fee-non-affiche",
+      "afirmacao": "A few UK hotels — especially larger city or spa hotels — add optional extras (parking, breakfast, spa access) that are not shown in the room rate you booked. Ask about it at check-in, not after you see the final bill.",
+      "fonte": "Prática padrão do setor hoteleiro, síntese",
+      "ano": 2026,
+      "revisarAte": "2027-06-30",
+      "evidencia": "CONSENSO",
+      "risco": "baixo"
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b16-n01",
+      "gesto": 4,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "第十六部分。还是这个手势，用在词尾辅音上：work-ING、key-CARD。不要在后面多加一个元音。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b16-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "你站在前台，身后队伍越来越长，还没决定要不要在拿到钥匙之前先争取点更好的条件。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b16-p01",
+      "promptPt": "像在商店里那样，问一共多少钱——房费加税。现在请说。",
+      "bloco": "callback",
+      "molde": "HOW-MUCH",
+      "audioKey": "gb-b16-t01",
+      "es": "How much is it all together?",
+      "tts": "How much is it all together?",
+      "pinyin": "hau mach iz it ol tu-GE-ther",
+      "pt": "一共多少钱？"
+    },
+    {
+      "consulta": ["quarto/checkin"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "CAN-I",
+      "encaixe": "check in early",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b16-p02",
+      "promptPt": "你比正式时间来得早，房间可能已经准备好了。问能不能提前办理入住。现在请说。",
+      "audioKey": "gb-b16-t02",
+      "es": "Can I check in early?",
+      "tts": "Can I check in early?",
+      "pinyin": "kn ai chek in ER-li",
+      "pt": "我能提前办理入住吗？"
+    },
+    {
+      "consulta": ["quarto/pedir"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "a quieter room",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b16-p03",
+      "promptPt": "在拿到钥匙之前，问一间更安静的房间。现在请说。",
+      "audioKey": "gb-b16-t03",
+      "es": "Do you have a quieter room?",
+      "tts": "Do you have a quieter room?",
+      "pinyin": "du yu hav e KWAI-et-er rum",
+      "pt": "你们有更安静的房间吗？"
+    },
+    {
+      "consulta": ["quarto/checkout"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "GET",
+      "encaixe": "a late check-out",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b16-p04",
+      "promptPt": "你的航班很晚，想比正常时间晚一点退房。要求延迟退房。现在请说。",
+      "audioKey": "gb-b16-t04",
+      "es": "Could I have a late check-out?",
+      "tts": "Could I have a late check-out?",
+      "pinyin": "kud ai hav e leit chek-aut",
+      "pt": "能延迟退房吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b16-r01",
+      "es": "Sure, that's no problem.",
+      "tts": "Sure, that's no problem.",
+      "pinyin": "shur, thats noh PROB-lem",
+      "pt": "没问题。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b16-n03",
+      "bloco": "molde",
+      "tom": "ganha",
+      "pt": "这是应对东西坏掉的框架：「My」加上坏掉的东西，再加上「isn't working」。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b16-t05",
+      "es": "My key card isn't working.",
+      "tts": "My key card isn't working.",
+      "pinyin": "mai ki kard IZ-ent WER-king",
+      "pt": "我的房卡打不开门。"
+    },
+    {
+      "consulta": ["reparo/nao-funciona"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WENT-WRONG",
+      "encaixe": "my key card isn't working",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b16-p05",
+      "promptPt": "你上楼到了房间，卡刷不开门。回到前台反映这件事。现在请说。",
+      "audioKey": "gb-b16-t05",
+      "es": "My key card isn't working.",
+      "tts": "My key card isn't working.",
+      "pinyin": "mai ki kard IZ-ent WER-king",
+      "pt": "我的房卡打不开门。"
+    },
+    {
+      "consulta": ["reparo/nao-funciona"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "WENT-WRONG",
+      "encaixe": "the heating isn't working",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b16-p06",
+      "promptPt": "你终于进了房间，但暖气不制热。反映这个问题。现在请说。",
+      "audioKey": "gb-b16-t06",
+      "es": "The heating isn't working.",
+      "tts": "The heating isn't working.",
+      "pinyin": "the HI-ting IZ-ent WER-king",
+      "pt": "暖气不工作。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b16-n04",
+      "pt": "英式房间常见的问题是暖气不够热，而不是空调。要说「the heating」，不是「the AC」。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b16-r02",
+      "es": "I'll send someone up right away.",
+      "tts": "I'll send someone up right away.",
+      "pinyin": "ail send SAM-wan ap rait e-WEI",
+      "pt": "我马上让人上去看看。"
+    },
+    {
+      "consulta": ["quarto/pedir"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "WHERE",
+      "encaixe": "the ice machine",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b16-p07",
+      "promptPt": "你要去走廊，但不记得制冰机在哪里了。问一下。现在请说。",
+      "audioKey": "gb-b16-t07",
+      "es": "Where's the ice machine?",
+      "tts": "Where's the ice machine?",
+      "pinyin": "wehrz thi ais me-SHIN",
+      "pt": "制冰机在哪里？"
+    },
+    {
+      "consulta": ["quarto/pedir"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "LOOKING",
+      "encaixe": "the pool",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b16-p08",
+      "promptPt": "你下到大厅，没看到任何指向泳池的牌子。告诉工作人员你在找什么。现在请说。",
+      "audioKey": "gb-b16-t08",
+      "es": "I'm looking for the pool.",
+      "tts": "I'm looking for the pool.",
+      "pinyin": "aim LUK-ing for the pul",
+      "pt": "我在找泳池。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b16-n05",
+      "pt": "付款之前，问一下有没有额外费用会加进账单——停车、水疗。在这里问清楚，总比最后看到账单才发现要好。"
+    },
+    {
+      "consulta": ["pagar/cartao"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "CAN-I",
+      "encaixe": "pay by card",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b16-p09",
+      "promptPt": "你想在前台结清一笔额外费用。问能不能刷卡。现在请说。",
+      "audioKey": "gb-b16-t09",
+      "es": "Can I pay by card?",
+      "tts": "Can I pay by card?",
+      "pinyin": "kn ai pei bai kard",
+      "pt": "我能刷卡付款吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b16-n10",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "你的银行卡在这里能直接用，不需要在另一台复杂的终端上输入什么密码——不像一些国家有各自封闭的支付系统。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b16-n11",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "为反映一样东西坏了道歉，完全没必要。这是酒店本来就期待你说出来的信息，不是小题大做的抱怨。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b16-n12",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "钥匙、暖气。没有人给过你两句不同的话：都是你用同一个框架搭出来的。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "WENT-WRONG",
+      "audioKey": "gb-b16-s01",
+      "es": "My key card isn't working. The heating isn't working.",
+      "tts": "My key card isn't working. The heating isn't working.",
+      "pinyin": "mai ki kard IZ-ent WER-king. the HI-ting IZ-ent WER-king.",
+      "pt": "跟读同一个框架，配上两个不同的问题。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b16-n13",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "第十六部分完成。事前主动问，事后主动说：钥匙坏了、暖气坏了，用同一个框架就够了。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "先问，再反映问题",
+    "secoes": [
+      {
+        "titulo": "顺序很重要",
+        "corpo": "第十六部分先讲的是主动问出能让住宿更舒适的条件——安静的房间、延迟退房——然后才讲反映故障。一开始就主动问，代价跟保持沉默一样，但几乎总能换来更好的结果。"
+      },
+      {
+        "titulo": "反映问题的框架",
+        "corpo": "「My ___ isn't working」几乎适用于房间里任何技术性故障。「I've lost my ___」用来说丢失的东西——同样是整句固定说，不用去想该怎么变形。"
+      },
+      {
+        "titulo": "是暖气，不是空调",
+        "corpo": "英式房间最典型的问题是暖气不够，不是空调。「The heating isn't working」在这里比「the AC」更有用。"
+      },
+      {
+        "titulo": "银行卡能用，没有陷阱",
+        "corpo": "英国的免接触支付非常普及，中国的 Visa 或 Mastercard 卡不需要额外操作就能直接使用——跟一些要求专用本地支付系统的国家不一样。"
+      }
+    ]
+  }
+}

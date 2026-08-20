@@ -1,0 +1,82 @@
+{
+  "id": "q-b11",
+  "nivel": "basico",
+  "titulo": "问答 — 在酒吧吧台点单",
+  "subtitulo": "「Could I have ___?」、临近打烊的时候，以及为什么没有人会来你的桌边",
+  "introAudioKey": "gb-b11-q-i",
+  "introPt": "吧台前排了三层人，永远不会有人主动走到你桌边。听听从点第一杯到结账，整个流程是怎么进行的。",
+  "cenario": "酒吧的吧台前，临近打烊的时候。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b11-q01",
+      "voz": "target_en_gb_f",
+      "es": "Could I have a pint of lager?",
+      "tts": "Could I have a pint of lager?",
+      "pinyin": "kud ai hav e paint of LA-ger",
+      "pt": "能来一品脱拉格啤酒吗？"
+    },
+    {
+      "audioKey": "gb-b11-q02",
+      "voz": "target_en_gb_m",
+      "es": "Anything else?",
+      "tts": "Anything else?",
+      "pinyin": "EN-i-sing els",
+      "pt": "还要别的吗？"
+    },
+    {
+      "audioKey": "gb-b11-q03",
+      "voz": "target_en_gb_f",
+      "es": "Could I have the bill, please?",
+      "tts": "Could I have the bill, please?",
+      "pinyin": "kud ai hav the bil, pliz",
+      "pt": "能结一下账吗？"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "你坐在一家传统酒吧里。你要怎么点到自己的饮料？",
+      "opcoes": [
+        "服务员会过来帮你点单",
+        "你自己去吧台点单",
+        "必须用一个指定软件点单",
+        "等着有人把菜单送过来"
+      ],
+      "correta": 1,
+      "explica": "传统酒吧没有桌边服务：点单和付款都在柜台完成。这跟法式咖啡馆的习惯完全相反。"
+    },
+    {
+      "pergunta": "在吧台前，你应该用哪个框架？",
+      "opcoes": ["Can I get ___?", "Could I have ___?", "Give me ___", "I need ___"],
+      "correta": 1,
+      "explica": "「Could I have」不管在酒吧还是博物馆都很中性。「Can I get」也能用，但听起来带着美式口音。"
+    },
+    {
+      "pergunta": "英国餐厅的账单叫什么？",
+      "opcoes": ["The check", "The bill", "The ticket", "The total"],
+      "correta": 1,
+      "explica": "永远是「the bill」。「The check」是美式说法，一开口就会被认出来。"
+    },
+    {
+      "pergunta": "在酒吧吧台付款时，你应该怎么做？",
+      "opcoes": [
+        "留 18% 到 20% 的小费",
+        "完全不用给小费",
+        "要求加收服务费",
+        "只能用现金付款"
+      ],
+      "correta": 1,
+      "explica": "在吧台点单不用给小费。等价的心意是请酒保喝一杯：「and one for yourself」。"
+    },
+    {
+      "pergunta": "酒保喊了一句「last orders」。这是什么意思？",
+      "opcoes": [
+        "酒吧刚刚开门",
+        "这是打烊前最后一次点单的机会",
+        "啤酒卖完了",
+        "现在必须马上付款"
+      ],
+      "correta": 1,
+      "explica": "「Last orders」大概会在打烊前二十分钟左右出现。接下来会喊「time」，酒吧就打烊了。"
+    }
+  ]
+}

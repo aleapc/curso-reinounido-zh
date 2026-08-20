@@ -1,0 +1,89 @@
+{
+  "id": "q-a08",
+  "nivel": "avancado",
+  "titulo": "问答 — 道别",
+  "subtitulo": "怎么告别才能让人再邀你一次",
+  "introAudioKey": "gb-a08-q-i",
+  "introPt": "晚餐结束，该走了。听完最后这段对话，回答问题。",
+  "cenario": "在主人家吃完晚餐后。",
+  "dialogo": [
+    {
+      "audioKey": "gb-a08-q01",
+      "voz": "target_en_gb_f",
+      "es": "I should get going, but thank you so much.",
+      "tts": "I should get going, but thank you so much.",
+      "pt": "我该走了，真的非常感谢。"
+    },
+    {
+      "audioKey": "gb-a08-q02",
+      "voz": "target_en_gb_m",
+      "es": "Of course! So glad you could make it.",
+      "tts": "Of course! So glad you could make it.",
+      "pt": "当然啦！很高兴你能来。"
+    },
+    {
+      "audioKey": "gb-a08-q03",
+      "voz": "target_en_gb_f",
+      "es": "Your shepherd's pie was seriously the best I've had.",
+      "tts": "Your shepherd's pie was seriously the best I've had.",
+      "pt": "你做的牧羊人派真的是我吃过最好吃的。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在英国，跟一群随意聚会的人道别，通常怎样就够了？",
+      "opcoes": [
+        "叫着每个人的名字一一道别",
+        "对着整个房间打一个招呼",
+        "谁都不用道别",
+        "事后只用文字感谢主人就行"
+      ],
+      "correta": 1,
+      "explica": "在熟人之间的随意聚会上，对全场打一个招呼就完全够了。"
+    },
+    {
+      "pergunta": "根据这部分的内容，哪种夸奖能「传得最远」？",
+      "opcoes": [
+        "「挺好的」",
+        "「你做的牧羊人派真的是我吃过最好吃的」",
+        "没有任何夸奖会被传开",
+        "只有写下来的夸奖才会被传开"
+      ],
+      "correta": 1,
+      "explica": "具体的夸奖会被转述给做这件事的人，哪怕对方当时不在场；泛泛的夸奖只会留在原地。"
+    },
+    {
+      "pergunta": "你临走时已经当面道过谢了。事后再发条消息值得吗？",
+      "opcoes": [
+        "不值得，那样会显得重复",
+        "值得，当天发一条简短的消息是很受欢迎的举动",
+        "只有落下东西时才需要发",
+        "只有非常正式的场合才需要"
+      ],
+      "correta": 1,
+      "explica": "当天发一条简短的感谢短信，能强化当面说的那句谢谢，也会留下好印象。"
+    },
+    {
+      "pergunta": "下面哪一项不属于这门课结尾的「救命清单」？",
+      "opcoes": [
+        "Do you have ___?",
+        "Could I have ___?",
+        "Where's the ___?",
+        "What's your opinion on ___?"
+      ],
+      "correta": 3,
+      "explica": "救命清单里都是生存句型——问、找路、问价钱——不包括征求对方的看法。"
+    },
+    {
+      "pergunta": "主动说「we should definitely keep in touch — can I get your number?」说明了什么？",
+      "opcoes": [
+        "这只是场面话",
+        "真心希望这段关系能在这次拜访之后继续下去",
+        "你想赶紧离开",
+        "你没有玩得开心"
+      ],
+      "correta": 1,
+      "explica": "问一个具体的联系方式，能把一句礼貌的告别变成一段可以延续下去的关系。"
+    }
+  ]
+}

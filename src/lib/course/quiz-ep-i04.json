@@ -1,0 +1,72 @@
+{
+  "id": "q-i04",
+  "nivel": "intermediario",
+  "titulo": "问答 — 最后一轮酒",
+  "subtitulo": "轮流请客、last orders，和酒吧的时钟",
+  "introAudioKey": "gb-i04-q-i",
+  "introPt": "酒吧里的铃响了。听听这位旅行者是怎么应对轮流请客和最后点单的。",
+  "cenario": "英国的一家酒吧，深夜时分。",
+  "dialogo": [
+    {
+      "audioKey": "gb-i04-q01",
+      "voz": "target_en_gb_m",
+      "es": "Same again for everyone?",
+      "tts": "Same again for everyone?",
+      "pinyin": "seim e-GEN for EV-ri-wan",
+      "pt": "大家再来一轮一样的吗？"
+    },
+    {
+      "audioKey": "gb-i04-q02",
+      "voz": "target_en_gb_f",
+      "es": "Yes, this one's on me.",
+      "tts": "Yes, this one's on me.",
+      "pinyin": "yes, this wanz on mi",
+      "pt": "对，这轮我请。"
+    },
+    {
+      "audioKey": "gb-i04-q03",
+      "voz": "target_en_gb_m",
+      "es": "Cheers, that's very kind.",
+      "tts": "Cheers, that's very kind.",
+      "pinyin": "chirz, thats VE-ri kaind",
+      "pt": "谢谢，您太客气了。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在酒吧的一群人里，轮流请客是……",
+      "opcoes": ["个人可以自由选择的事", "一条社交规则——每个人轮到自己都要请一轮", "只有男性才需要做的事", "永远由请客的那个人一个人付"],
+      "correta": 1,
+      "explica": "在英国，「忘记」自己那一轮是一个真正的社交失误。"
+    },
+    {
+      "pergunta": "「last orders」是什么意思？",
+      "opcoes": [
+        "酒吧这一秒就打烊了",
+        "这是最后一次点单的机会，还有几分钟时间",
+        "啤酒卖完了",
+        "到午饭时间了"
+      ],
+      "correta": 1,
+      "explica": "一般还有十五到二十分钟才会真正打烊。"
+    },
+    {
+      "pergunta": "不留小费的话，怎么感谢酒保？",
+      "opcoes": ["什么都不做", "请他喝一杯：「and one for yourself」", "把零钱留在柜台上", "多付 20%"],
+      "correta": 1,
+      "explica": "这是英式吧台前等价于小费的心意表达。"
+    },
+    {
+      "pergunta": "哪个框架用来问最后点单的时间？",
+      "opcoes": ["How much is it?", "What time are last orders?", "Do you have a table?", "Where's the bar?"],
+      "correta": 1,
+      "explica": "这是第十八部分的 WHAT-TIME 框架，换到酒吧场景重新使用。"
+    },
+    {
+      "pergunta": "所有酒吧的打烊时间都一样吗？",
+      "opcoes": ["是的，永远是晚上十一点", "不是，取决于每家店各自的执照", "是的，永远是午夜", "酒吧从不打烊"],
+      "correta": 1,
+      "explica": "打烊时间因执照而异——不是一条全国统一的规定。"
+    }
+  ]
+}

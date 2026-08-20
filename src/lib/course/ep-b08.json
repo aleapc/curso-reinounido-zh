@@ -1,0 +1,290 @@
+{
+  "id": "b08",
+  "slot": "B08",
+  "nivel": "basico",
+  "numero": 8,
+  "parte": "3A",
+  "titulo": "有人用两只手把整张地图都画出来了",
+  "subtitulo": "洗手间在哪里、电梯在哪里，以及当回答变成一整段话该怎么办",
+  "cena": "街角一个陌生人已经开始用两只手在空中比划路线了，一路讲了三条街那么远，而你还没搞清楚自己到底需要什么。",
+  "moldura": "ganha",
+  "frasePiso": "最好的问路方式，是能给你留下一个你真的能用上的下一步。",
+  "moldes": [
+    "WHERE"
+  ],
+  "clique": {
+    "contagem": [
+      "酒店大厅",
+      "走廊",
+      "前台"
+    ],
+    "desconto": "没有人给过你一句专门问洗手间的话、一句专门问电梯的话、再一句专门问门在哪里的话。你只换掉了要找的地方，框架一直没变。",
+    "piso": "下次你需要找一个熟悉的地方类型，就不用现场编整句话了。你只需要说 where's the 加上那个地方，这就够了。"
+  },
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b08-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "拳头打在 WHERE's 上：WHERE's the。不管你在哪里，任何一个熟悉的地方类型都能用这句问。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "CAN-I",
+      "encaixe": "leave my bag here for a minute",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b08-p00",
+      "promptPt": "在酒店大厅，上楼之前你想先把行李箱放一会儿。问能不能这样做。现在请说。",
+      "audioKey": "gb-b08-x0",
+      "es": "Can I leave my bag here for a minute?",
+      "tts": "Can I leave my bag here for a minute?",
+      "pinyin": "kn ai liv mai bag hir for e MI-nit",
+      "pt": "我能把包在这里放一会儿吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b08-n02",
+      "bloco": "cena",
+      "pt": "一个陌生人会跟你讲三条街那么远的路，还两手比划着。先从小处开始问。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b08-n03",
+      "bloco": "molde",
+      "pt": "这个框架是：where's the 加上地方。变的只有你要找的那个地方。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b08-t01",
+      "es": "Where's the toilet?",
+      "tts": "Where's the toilet?",
+      "pinyin": "wehrz the TOI-let",
+      "pt": "洗手间在哪里？"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WHERE",
+      "encaixe": "toilet",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b08-p01",
+      "promptPt": "在酒店大厅，上楼之前，突然有点内急。问你需要的那个地方在哪里。现在请说。",
+      "audioKey": "gb-b08-t01",
+      "es": "Where's the toilet?",
+      "tts": "Where's the toilet?",
+      "pinyin": "wehrz the TOI-let",
+      "pt": "洗手间在哪里？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b08-r01",
+      "es": "Right down the hall, on the left.",
+      "tts": "Right down the hall, on the left.",
+      "pinyin": "rait daun the hol, on the left",
+      "pt": "走到走廊尽头，左手边。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b08-n04",
+      "bloco": "corpo",
+      "pt": "同一个框架，换个地方。电梯也是同一栋楼里一个熟悉的地方类型。"
+    },
+    {
+      "consulta": [
+        "quarto/andar"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WHERE",
+      "encaixe": "lift",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b08-p02",
+      "promptPt": "你拎着行李箱，附近又看不到楼梯。问电梯在哪里。现在请说。",
+      "audioKey": "gb-b08-t02",
+      "es": "Where's the lift?",
+      "tts": "Where's the lift?",
+      "pinyin": "wehrz the lift",
+      "pt": "电梯在哪里？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b08-r02",
+      "es": "Just around the corner.",
+      "tts": "Just around the corner.",
+      "pinyin": "jast e-RAUND the KOR-ner",
+      "pt": "拐个弯就到了。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WHERE",
+      "encaixe": "reception",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b08-p03",
+      "promptPt": "你得回到前台，但从这条走廊你已经不知道该往哪走了。问前台在哪里。现在请说。",
+      "audioKey": "gb-b08-t03",
+      "es": "Where's reception?",
+      "tts": "Where's reception?",
+      "pinyin": "wehrz ri-SEP-shen",
+      "pt": "前台在哪里？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b08-n05",
+      "bloco": "capsula",
+      "pt": "有时候你不知道确切该用哪个词。这时候，指出你的意图，让对方来补全。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b08-t04",
+      "es": "I'm looking for a chemist.",
+      "tts": "I'm looking for a chemist.",
+      "pinyin": "aim LUK-ing for e KEM-ist",
+      "pt": "我在找一家药店。不知道该用哪个词的时候，就像这样指出你的意图。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b08-p04",
+      "promptPt": "对方给了你一条三条街那么远的路线，你听到一半就跟丢了。把回答缩小，只问是不是很远。现在请说。",
+      "audioKey": "gb-b08-t05",
+      "es": "Is it far?",
+      "tts": "Is it far?",
+      "pinyin": "iz it far",
+      "pt": "远吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b08-r03",
+      "es": "No, it's two streets away — past the subway, not through it, mind.",
+      "tts": "No, it's two streets away — past the subway, not through it, mind.",
+      "pinyin": "noh, its tu strits e-WEI — past the SAB-wei, not sru it, maind",
+      "pt": "不远，两条街之外——过了那条地下通道就到，不是穿过去，注意一下。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b08-n06",
+      "tom": "protege",
+      "pt": "他又说了一遍 subway：在这里这个词从来不是地铁。地铁是 the Underground。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b08-p05",
+      "promptPt": "两条街，还是没告诉你具体是哪个方向。请对方在地图上指给你看。现在请说。",
+      "tom": "ganha",
+      "audioKey": "gb-b08-t06",
+      "es": "Can you show me on the map?",
+      "tts": "Can you show me on the map?",
+      "pinyin": "kn yu shoh mi on the map",
+      "pt": "能在地图上指给我看吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WHERE",
+      "encaixe": "the Underground",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b08-px1",
+      "promptPt": "这次你真的要找地铁，不是马路下面的通道。用正确的词，问对问题。现在请说。",
+      "audioKey": "gb-b08-x1",
+      "es": "Where's the Underground?",
+      "tts": "Where's the Underground?",
+      "pinyin": "wehrz the AN-der-graund",
+      "pt": "地铁在哪里？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "an umbrella",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b08-px2",
+      "promptPt": "外面在下雨，你要从酒店出门。在前台，问他们有没有伞可以借。现在请说。",
+      "audioKey": "gb-b08-x2",
+      "es": "Do you have an umbrella?",
+      "tts": "Do you have an umbrella?",
+      "pinyin": "du yu hav an am-BREL-a",
+      "pt": "你们有伞吗？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "EXCUSE",
+      "encaixe": "前台柜台",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b08-px3",
+      "promptPt": "前台工作人员背对着你，正忙着整理钥匙。在说伞的事之前，先重新唤回他的注意。现在请说。",
+      "audioKey": "gb-b08-x3",
+      "es": "Excuse me?",
+      "tts": "Excuse me?",
+      "pinyin": "eks-KYUZ mi",
+      "pt": "不好意思？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b08-s01",
+      "es": "Where's the toilet? Where's the lift? Is it far?",
+      "tts": "Where's the toilet? Where's the lift? Is it far?",
+      "pinyin": "wehrz the TOI-let? wehrz the lift? iz it far",
+      "pt": "跟读这个框架，换两个不同的地方，再加上那个把回答缩小的问句。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b08-n07",
+      "bloco": "recap",
+      "pt": "第八部分完成。Where's the 用来问熟悉的地方，is it far 用来把回答缩小。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一个熟悉的地方类型，不是一整段话",
+    "secoes": [
+      {
+        "titulo": "Where's the，变的只有那个地方",
+        "corpo": "用它来问任何一个你知道附近就有的确定地点：洗手间、电梯、前台。",
+        "exemplos": [
+          {
+            "es": "Where's the toilet?",
+            "pt": "洗手间在哪里？"
+          },
+          {
+            "es": "Where's the lift?",
+            "pt": "电梯在哪里？"
+          }
+        ]
+      },
+      {
+        "titulo": "「I'm looking for ___」是没有确切词汇时的姐妹框架",
+        "corpo": "指出你的意图，让对方来补全，而不是硬用一个你还不认识的词去套框架。"
+      },
+      {
+        "titulo": "「Subway」还是不是地铁",
+        "corpo": "街角的陌生人没人问就又说了一遍：在英国，「subway」依然是马路下面给行人走的地下通道。问地铁要用「Where's the Underground?」或者「Where's the Tube?」。"
+      },
+      {
+        "titulo": "不需要背下整段回答",
+        "corpo": "问路这件事目前主要还是听力练习。你要开口做的，是用 is it far 把回答缩小，或者让对方在地图上指给你看。"
+      }
+    ]
+  }
+}

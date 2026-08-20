@@ -1,0 +1,90 @@
+{
+  "id": "q-b08",
+  "nivel": "basico",
+  "titulo": "问答 — 用两只手画出来的地图",
+  "subtitulo": "Where's the ___?、is it far，以及那个依然不是地铁的词",
+  "introAudioKey": "gb-b08-q-i",
+  "introPt": "你问路，结果对方的回答变成了一整段话。听完对话，找出怎么把它缩小成一个能用上的下一步。",
+  "cenario": "先是在酒店大厅，接着是在街角。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b08-q01",
+      "voz": "target_en_gb_f",
+      "es": "Where's the toilet?",
+      "tts": "Where's the toilet?",
+      "pinyin": "wehrz the TOI-let",
+      "pt": "洗手间在哪里？"
+    },
+    {
+      "audioKey": "gb-b08-q02",
+      "voz": "target_en_gb_m",
+      "es": "Right down the hall, on the left.",
+      "tts": "Right down the hall, on the left.",
+      "pinyin": "rait daun the hol, on the left",
+      "pt": "走到走廊尽头，左手边。"
+    },
+    {
+      "audioKey": "gb-b08-q03",
+      "voz": "target_en_gb_f",
+      "es": "I'm looking for a chemist. Is it far?",
+      "tts": "I'm looking for a chemist. Is it far?",
+      "pinyin": "aim LUK-ing for e KEM-ist. iz it far",
+      "pt": "我在找一家药店。远吗？"
+    },
+    {
+      "audioKey": "gb-b08-q04",
+      "voz": "target_en_gb_m",
+      "es": "No, it's two streets away — past the subway, not through it, mind.",
+      "tts": "No, it's two streets away — past the subway, not through it, mind.",
+      "pinyin": "noh, its tu strits e-WEI — past the SAB-wei, not sru it, maind",
+      "pt": "不远，两条街之外——过了那条地下通道就到，不是穿过去，注意一下。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在「Where's the ___?」这个框架里，什么是不变的？",
+      "opcoes": ["要找的地方", "框架本身；变的只是那个地方", "对方的回答", "什么都会变"],
+      "correta": 1,
+      "explica": "Where's the 不变；变的只是你要找的东西——洗手间、电梯、前台。"
+    },
+    {
+      "pergunta": "当你不知道确切的英语单词时，「I'm looking for ___」起什么作用？",
+      "opcoes": [
+        "没有确切的词就完全没用",
+        "指出你的意图，让对方来补全",
+        "只用于找丢失的东西",
+        "比 Where's the 更礼貌"
+      ],
+      "correta": 1,
+      "explica": "这是 WHERE 的姐妹框架：它指出意图，而不要求你知道确切的词。"
+    },
+    {
+      "pergunta": "一个陌生人给你讲了一条三条街那么远的路线，你听着听着就跟丢了。你会怎么做？",
+      "opcoes": [
+        "干脆放弃这个问题",
+        "问是不是很远，或者请对方看地图，把回答缩小",
+        "一字不差地重复问题",
+        "凭感觉随便走"
+      ],
+      "correta": 1,
+      "explica": "「Is it far?」或者「Can you show me on the map?」能把回答缩小到一个可以用得上的程度。"
+    },
+    {
+      "pergunta": "在英国，「subway」是什么意思？",
+      "opcoes": [
+        "地铁",
+        "马路下面给行人走的地下通道",
+        "一个公交车站",
+        "一种外带三明治"
+      ],
+      "correta": 1,
+      "explica": "这个美式说法会把你带到马路底下去；英国的地铁叫「the Underground」或「the Tube」。"
+    },
+    {
+      "pergunta": "要真的问地铁，应该用哪个框架？",
+      "opcoes": ["Where's the subway?", "Where's the Underground?", "I'm looking for a chemist.", "Is it far?"],
+      "correta": 1,
+      "explica": "「Where's the Underground?」（或「the Tube?」）才是真正能带你去地铁、而不是地下通道的问法。"
+    }
+  ]
+}

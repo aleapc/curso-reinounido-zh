@@ -1,0 +1,103 @@
+{
+  "id": "q-b07",
+  "nivel": "basico",
+  "titulo": "问答 — 六个司机同时招揽的人行道",
+  "subtitulo": "Can I ___?、官方认可的通道，以及那只往右看的眼睛",
+  "introAudioKey": "gb-b07-q-i",
+  "introPt": "在到达大厅外的人行道上，你还没开口，好几个司机就已经在招揽你了。听完这段场景，找出每一步都会用到的那个框架。",
+  "cenario": "到达大厅外的人行道，随后是去酒店的车上。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b07-q01",
+      "voz": "target_en_gb_m",
+      "es": "Taxi, taxi, where are you going?",
+      "tts": "Taxi, taxi, where are you going?",
+      "pinyin": "TAK-si, TAK-si, wehr ar yu GOH-ing",
+      "pt": "打车吗打车吗，去哪里？"
+    },
+    {
+      "audioKey": "gb-b07-q02",
+      "voz": "target_en_gb_f",
+      "es": "Can I pay by card?",
+      "tts": "Can I pay by card?",
+      "pinyin": "kn ai pei bai kard",
+      "pt": "我能刷卡付款吗？"
+    },
+    {
+      "audioKey": "gb-b07-q03",
+      "voz": "target_en_gb_m",
+      "es": "Yes, card or contactless, either works.",
+      "tts": "Yes, card or contactless, either works.",
+      "pinyin": "yes, kard or kon-TAKT-les, AI-ther werks",
+      "pt": "可以，刷卡或者感应支付都行。"
+    },
+    {
+      "audioKey": "gb-b07-q04",
+      "voz": "target_en_gb_f",
+      "es": "Can I get a receipt?",
+      "tts": "Can I get a receipt?",
+      "pinyin": "kn ai get e ri-SIT",
+      "pt": "能给我一张收据吗？"
+    },
+    {
+      "audioKey": "gb-b07-q05",
+      "voz": "target_en_gb_m",
+      "es": "Sure, I'll send it to your email.",
+      "tts": "Sure, I'll send it to your email.",
+      "pinyin": "shur, ail send it tu yor I-meil",
+      "pt": "没问题，我发到您邮箱。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "你还没开口，一个司机就在到达区门口主动搭话了。你会怎么做？",
+      "opcoes": [
+        "为了不浪费时间，立刻上车",
+        "无视这个招揽，去找身份明确的工作人员或带标识的柜台",
+        "当场跟他讲价",
+        "要求看他的从业证件"
+      ],
+      "correta": 1,
+      "explica": "官方认可的通道几乎总是离到达口更远一些；这种在你出来那一刻主动搭话的人，几乎从来都不是官方渠道。"
+    },
+    {
+      "pergunta": "「Can I ___?」这个框架在不同句子里，什么是不变的？",
+      "opcoes": ["地点", "动作", "整个外壳都不变；变的只是那个动作", "什么都会变"],
+      "correta": 2,
+      "explica": "「Can I」这个外壳不变；变的是后面接的那个动作，比如付款、要收据或者要求停车。"
+    },
+    {
+      "pergunta": "为什么要问「Can I pay by card?」，而不是直接递上银行卡？",
+      "opcoes": [
+        "因为英国从不接受刷卡",
+        "因为真正的风险其实是对方不收现金",
+        "因为付现金更快",
+        "这句话从来都不需要问"
+      ],
+      "correta": 1,
+      "explica": "英国的免接触支付非常普及：真正重要的问题不是收不收卡，而是收不收现金。"
+    },
+    {
+      "pergunta": "走下人行道要过一条单行道时，需要打破哪个本能反应？",
+      "opcoes": [
+        "像在中国一样先往左看",
+        "先往右看，那是车辆驶来的方向",
+        "完全不用看，直接信任人行横道",
+        "为了快点过马路，跑起来"
+      ],
+      "correta": 1,
+      "explica": "在英国，车辆是从右边开过来的；一些人行横道地上专门刷了 LOOK RIGHT 字样，正是为了打破这种下意识的反应。"
+    },
+    {
+      "pergunta": "为什么要在进酒店之前先要一张收据？",
+      "opcoes": [
+        "为了抱怨价格",
+        "作为完成这趟行程的凭证，不带任何争执",
+        "只有长途行程才有必要",
+        "为了商量折扣"
+      ],
+      "correta": 1,
+      "explica": "收据只是给这趟行程画上句号的一个简单凭证——不是要和司机起争执。"
+    }
+  ]
+}

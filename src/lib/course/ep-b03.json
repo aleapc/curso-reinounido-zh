@@ -1,0 +1,285 @@
+{
+  "id": "b03",
+  "slot": "B03",
+  "nivel": "basico",
+  "numero": 3,
+  "parte": "1C",
+  "titulo": "队伍越排越长也照样管用的那个词",
+  "subtitulo": "Excuse me 能打开几乎任何一扇门，Sorry 也可以——还有一套救急阶梯，专门应对你听不懂回答的时候",
+  "cena": "柜台工作人员刚用很快的语速说了登机时间，已经是第二遍了，你身后的队伍还在不断变长。",
+  "moldura": "ganha",
+  "moldes": [
+    "EXCUSE"
+  ],
+  "clique": {
+    "contagem": [
+      "航空公司柜台",
+      "飞机过道",
+      "银行柜台"
+    ],
+    "desconto": "没有人给过你一句专门用来叫人、一句专门用来借过、再一句专门用来开口提问的不同说法。就是同一个词，指向不同的场合。",
+    "piso": "下次不管在世界哪个地方，只要你需要引起别人的注意，你都不会再纠结该怎么开口：说一句 excuse me，接下来的话自然就能接上。"
+  },
+  "permissao": "你完全有权说一句「I didn't catch that」，而不需要为任何事道歉。在嘈杂的柜台前跟丢对话，不是你英语学得不好的表现：这是任何语言里、任何真实对话都会有的正常现象。",
+  "permissaoAudioKey": "gb-b03-n06",
+  "fichasCulturais": [
+    {
+      "sinal": "你对一句其实没听太懂的回答点了点头，说了句「okay, cheers」，十分钟后才发现自己走去了错的登机口。",
+      "suaLeitura": "我不想让队伍等我，也不想显得连这么简单的事都听不懂。",
+      "oQueEAli": "点头能让对话在这一秒顺利过去，但十分钟后，整个问题还是会落回到你身上，而这时候原本能给你答案的那个人可能已经不在了。",
+      "oQueVoceFaz": "在你正准备点头的那一刻，改说一句「sorry, I didn't catch that」，而不是凭猜测往下走。",
+      "oQueMelhora": "纠正这件事的时机，正是对方还站在你面前的时候——这是唯一一个不用付出任何代价的时刻。",
+      "ondeNaoVale": "不是说每句话都要这样问——如果从不尝试去听、每次都直接说「I didn't catch that」，那看起来就不是在救急，而是直接放弃了。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "gb-b03-n01"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b03-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "第三部分。拳头打在 CUSE 上：ex-CUSE me。这个词几乎能打开所有的门。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b03-n02",
+      "bloco": "cena",
+      "pt": "工作人员语速很快地说了两遍时间。队伍越来越长。你首先需要的是引起他的注意。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b03-n03",
+      "bloco": "molde",
+      "pt": "今天的框架，而且它从来不变：excuse me。变化的只有场合。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b03-t01",
+      "es": "Excuse me?",
+      "tts": "Excuse me?",
+      "pinyin": "eks-KYUZ mi",
+      "pt": "不好意思？用疑问的语气，重新唤回对方的注意。"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "EXCUSE",
+      "encaixe": "航空公司柜台",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b03-p01",
+      "promptPt": "工作人员已经开始转向下一位。趁他还没走开，重新唤回他的注意。现在请说。",
+      "audioKey": "gb-b03-t01",
+      "es": "Excuse me?",
+      "tts": "Excuse me?",
+      "pinyin": "eks-KYUZ mi",
+      "pt": "不好意思？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b03-r01",
+      "es": "Yes? What can I do for you?",
+      "tts": "Yes? What can I do for you?",
+      "pinyin": "yes? wot kn ai du for yu",
+      "pt": "怎么了？有什么能帮您的？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b03-n04",
+      "bloco": "corpo",
+      "pt": "救急阶梯的第一级：我没听懂。不用挤出假笑。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b03-t02",
+      "es": "Sorry, I didn't catch that.",
+      "tts": "Sorry, I didn't catch that.",
+      "pinyin": "SO-ri, ai DID-ent kach that",
+      "pt": "不好意思，我没听清楚。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b03-p02",
+      "promptPt": "工作人员说得很快，你什么都没听懂。告诉他你没听清楚，不用过度道歉。现在请说。",
+      "audioKey": "gb-b03-t02",
+      "es": "Sorry, I didn't catch that.",
+      "tts": "Sorry, I didn't catch that.",
+      "pinyin": "SO-ri, ai DID-ent kach that",
+      "pt": "不好意思，我没听清楚。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b03-r02",
+      "es": "No problem, let me repeat that.",
+      "tts": "No problem, let me repeat that.",
+      "pinyin": "noh PROB-lem, let mi ri-PIT that",
+      "pt": "没问题，我再说一遍。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b03-p03",
+      "promptPt": "他要重复一遍，但同样的速度你还是跟不上。请他说慢一点。现在请说。",
+      "audioKey": "gb-b03-t03",
+      "es": "Could you speak more slowly, please?",
+      "tts": "Could you speak more slowly, please?",
+      "pinyin": "kud yu spik mor SLOH-li, pliz",
+      "pt": "您能说慢一点吗，麻烦了？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b03-r03",
+      "es": "Of course. Boarding starts at four fifteen.",
+      "tts": "Of course. Boarding starts at four fifteen.",
+      "pinyin": "of kors. BOR-ding starts at for fif-TIN",
+      "pt": "当然。登机四点十五分开始。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b03-n05",
+      "bloco": "capsula",
+      "pt": "说慢一点，也可能卡在一个数字或一个名字上。这时候不要再重复听：直接请对方写下来。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b03-p04",
+      "promptPt": "你还是分不清是四点十五还是四点五十。与其再听一遍，不如请对方写下来。现在请说。",
+      "audioKey": "gb-b03-t04",
+      "es": "Can you write that down for me?",
+      "tts": "Can you write that down for me?",
+      "pinyin": "kn yu rait that daun for mi",
+      "pt": "能麻烦您帮我写下来吗？"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "EXCUSE",
+      "encaixe": "飞机过道",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b03-px1",
+      "promptPt": "在飞机上，你要走到过道里去自己的座位，有人正好在你面前放行李。请他让一下。现在请说。",
+      "audioKey": "gb-b03-x1",
+      "es": "Excuse me, sorry.",
+      "tts": "Excuse me, sorry.",
+      "pinyin": "eks-KYUZ mi, SO-ri",
+      "pt": "借过一下，不好意思。"
+    },
+    {
+      "consulta": [
+        "pagar/dinheiro"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "EXCUSE",
+      "encaixe": "银行柜台",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b03-px2",
+      "promptPt": "现在你换了个完全不同的地方，要办理存取款业务，问一个跟机场毫不相干的问题。用同一个词，一样地开口。现在请说。",
+      "audioKey": "gb-b03-x2",
+      "es": "Excuse me, one question.",
+      "tts": "Excuse me, one question.",
+      "pinyin": "eks-KYUZ mi, wan KWES-chen",
+      "pt": "不好意思，想问一个问题。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b03-px3",
+      "promptPt": "对方刚说的街道名字，你还是听不清楚具体是哪几个字母。请对方一个字母一个字母地拼出来。现在请说。",
+      "audioKey": "gb-b03-x3",
+      "es": "Can you spell that, please?",
+      "tts": "Can you spell that, please?",
+      "pinyin": "kn yu spel that, pliz",
+      "pt": "能麻烦您拼一下吗？"
+    },
+    {
+      "consulta": [
+        "chegar/fila"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "EXCUSE",
+      "encaixe": "酒吧柜台",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b03-px4",
+      "promptPt": "后来，在一家拥挤酒吧的柜台前，你不确定自己在这条隐形队伍里是不是排对了位置。用这个词更英式的另一种说法开口。现在请说。",
+      "audioKey": "gb-b03-x4",
+      "es": "Sorry, is this the queue?",
+      "tts": "Sorry, is this the queue?",
+      "pinyin": "SO-ri, iz this the kyu",
+      "pt": "不好意思，这里是排队的地方吗？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b03-s01",
+      "es": "Excuse me? Sorry, I didn't catch that. Could you speak more slowly, please?",
+      "tts": "Excuse me? Sorry, I didn't catch that. Could you speak more slowly, please?",
+      "pinyin": "eks-KYUZ mi? SO-ri, ai DID-ent kach that. kud yu spik mor SLOH-li, pliz",
+      "pt": "跟读救急阶梯的前三级，不用过度道歉。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b03-n06",
+      "bloco": "recap",
+      "pt": "第三部分完成。Excuse me 能打开门，Sorry 也可以。这套阶梯能帮你脱身。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "救急是换个频道，不是重复同一次尝试",
+    "secoes": [
+      {
+        "titulo": "不要一次爬完整个阶梯",
+        "corpo": "从能解决问题的最小那一级开始。如果说慢一点就够了，那就到此为止。只有信息还是不够可靠时——数字、名字、地址——才需要往上爬到请对方写下来这一级。"
+      },
+      {
+        "titulo": "「Excuse me」用来开口，「sorry」用来补救",
+        "corpo": "在移动之前，用 excuse me 来引起注意或请求借过。当你已经碰到了什么人或东西，或者真的打断了别人，就用 sorry。",
+        "exemplos": [
+          {
+            "es": "Excuse me?",
+            "pt": "不好意思？（用来引起注意）"
+          },
+          {
+            "es": "Excuse me, sorry.",
+            "pt": "借过一下，不好意思。（擦身而过时）"
+          }
+        ]
+      },
+      {
+        "titulo": "英式的「sorry」能做的不只是道歉",
+        "corpo": "在英国，sorry 还能用来开启一个问题，也能用来确认自己在队伍里的位置——包括酒吧柜台前那条地上完全没有画线、却有着调酒师心里门儿清的先后顺序的隐形队伍。"
+      },
+      {
+        "titulo": "写下来，好过第三次尝试去听",
+        "corpo": "第三次尝试去听同一句话，结果往往不会有什么不同。请对方写下来，能给你们两个人一个可以一起核对的东西。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "q-a06",
+  "nivel": "avancado",
+  "titulo": "问答 — 他们的日历",
+  "subtitulo": "法定假日、圣诞节，以及能打开任何一扇关着的门的两句问话",
+  "introAudioKey": "gb-a06-q-i",
+  "introPt": "你计划去博物馆的那天正好是法定假日。听完对话，回答问题。",
+  "cenario": "一个普通周一的博物馆门口。",
+  "dialogo": [
+    {
+      "audioKey": "gb-a06-q01",
+      "voz": "target_en_gb_m",
+      "es": "Sorry, we're closed today — it's the bank holiday.",
+      "tts": "Sorry, we're closed today — it's the bank holiday.",
+      "pt": "不好意思，我们今天没开门——今天是法定假日。"
+    },
+    {
+      "audioKey": "gb-a06-q02",
+      "voz": "target_en_gb_f",
+      "es": "Is the shopping centre open today?",
+      "tts": "Is the shopping centre open today?",
+      "pt": "购物中心今天开门吗？"
+    },
+    {
+      "audioKey": "gb-a06-q03",
+      "voz": "target_en_gb_m",
+      "es": "Yeah, everything's open except the banks and this place.",
+      "tts": "Yeah, everything's open except the banks and this place.",
+      "pt": "开着呢，除了银行和这里，其他都开门。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "英格兰一年有多少个法定假日？",
+      "opcoes": [
+        "五个",
+        "八个",
+        "二十个",
+        "官方上一个都没有"
+      ],
+      "correta": 1,
+      "explica": "英格兰和威尔士一年有八个法定假日，苏格兰九个，北爱尔兰十个。"
+    },
+    {
+      "pergunta": "博物馆因为法定假日关门了。这对普通商店意味着什么？",
+      "opcoes": [
+        "它们也都会关门",
+        "大部分照常营业，只有圣诞节是例外",
+        "只有银行会关门",
+        "无法判断"
+      ],
+      "correta": 1,
+      "explica": "除了圣诞节，商家几乎从不按照法定假日清单来决定开关门。"
+    },
+    {
+      "pergunta": "12 月 25 日在英国会发生什么？",
+      "opcoes": [
+        "没什么特别的，一切照常",
+        "几乎所有地方都关门，公共交通比如地铁完全停运",
+        "只有银行关门",
+        "这是一个大促销的日子"
+      ],
+      "correta": 1,
+      "explica": "圣诞节当天是真正的全面停摆：商店关门，全国公共交通停运。"
+    },
+    {
+      "pergunta": "Boxing Day 是什么？",
+      "opcoes": [
+        "另一个平静的法定假日",
+        "圣诞节次日，天不亮就开始的大促销",
+        "政府关门的日子",
+        "一个宗教节日"
+      ],
+      "correta": 1,
+      "explica": "这一天正好和圣诞节完全相反：商店重新开门大搞促销，天不亮门口就排起了队。"
+    },
+    {
+      "pergunta": "哪两句问话能让你知道一个地方真实的营业情况？",
+      "opcoes": [
+        "多少钱？和在哪里？",
+        "今天是法定假日吗？和你们今天开门吗？",
+        "你们几点关门？和收不收卡？",
+        "有折扣吗？和有停车场吗？"
+      ],
+      "correta": 1,
+      "explica": "第一句给你的是全国性的规则；第二句才是这家店真实的答案。"
+    }
+  ]
+}

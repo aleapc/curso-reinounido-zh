@@ -1,0 +1,108 @@
+{
+  "id": "q-b05",
+  "nivel": "basico",
+  "titulo": "问答 — 三个回答，说完就停",
+  "subtitulo": "在边检柜台前，事由、时长与住处",
+  "introAudioKey": "gb-b05-q-i",
+  "introPt": "边检官员手里拿着护照，一个接一个地问了三个问题。听完对话，找出每个回答分别在哪里停下。",
+  "cenario": "落地后的边检柜台前。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b05-q01",
+      "voz": "target_en_gb_m",
+      "es": "What's the purpose of your visit?",
+      "tts": "What's the purpose of your visit?",
+      "pinyin": "wots the PER-pos of yor VIZ-it",
+      "pt": "您此行的目的是什么？"
+    },
+    {
+      "audioKey": "gb-b05-q02",
+      "voz": "target_en_gb_f",
+      "es": "I'm here on holiday.",
+      "tts": "I'm here on holiday.",
+      "pinyin": "aim hir on HOL-i-dei",
+      "pt": "我是来度假的。"
+    },
+    {
+      "audioKey": "gb-b05-q03",
+      "voz": "target_en_gb_m",
+      "es": "How many days will you be staying? And where?",
+      "tts": "How many days will you be staying? And where?",
+      "pinyin": "hau MEN-i deiz wil yu bi STEI-ing? and wehr",
+      "pt": "您会待多少天？住在哪里？"
+    },
+    {
+      "audioKey": "gb-b05-q04",
+      "voz": "target_en_gb_f",
+      "es": "Ten days. I'm staying at this hotel.",
+      "tts": "Ten days. I'm staying at this hotel.",
+      "pinyin": "ten deiz. aim STEI-ing at this hoh-TEL",
+      "pt": "十天。我住在这家酒店。"
+    },
+    {
+      "audioKey": "gb-b05-q05",
+      "voz": "target_en_gb_m",
+      "es": "Thank you. Welcome to the UK.",
+      "tts": "Thank you. Welcome to the UK.",
+      "pinyin": "sank yu. wel-KAM tu the yu-KEI",
+      "pt": "谢谢。欢迎来到英国。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "对「What's the purpose of your visit?」最好的回答是什么？",
+      "opcoes": [
+        "把整个行程从头到尾详细讲一遍",
+        "一句简短又真实的话，说完就停",
+        "反过来问官员一个问题",
+        "什么都不说，只递上护照"
+      ],
+      "correta": 1,
+      "explica": "简短又真实的回答在这里不会显得可疑；用没人问过的细节把它拉长，才是拖慢柜台节奏的原因。"
+    },
+    {
+      "pergunta": "当官员把你关于停留时长的回答和你的预订信息做比对时，他在做什么？",
+      "opcoes": [
+        "没什么特别的",
+        "他正当场决定允许你停留多久",
+        "在核查你的犯罪记录",
+        "在计算一笔旅游税"
+      ],
+      "correta": 1,
+      "explica": "官员会在入境时当场决定你能停留到什么时候——预订信息为你的回答提供了支撑。"
+    },
+    {
+      "pergunta": "当官员要预订凭证时，正确的做法是什么？",
+      "opcoes": [
+        "讲讲你是怎么挑中这家酒店的",
+        "递上已经准备好的确认信息，不再多加解释",
+        "说自己没带在身上",
+        "提议给一个别的地址"
+      ],
+      "correta": 1,
+      "explica": "「Yes. Here it is」能把交流的重心从记忆转移到实实在在的凭证上——这就够了。"
+    },
+    {
+      "pergunta": "过了边检之后，会立刻发生什么实际的变化？",
+      "opcoes": [
+        "没什么变化，欧元还能用一阵子",
+        "你已经在使用英镑、离开了欧元区，刷卡几乎能解决一切",
+        "必须在机场柜台把所有钱都换掉",
+        "物价会自动翻倍"
+      ],
+      "correta": 1,
+      "explica": "英国不在欧元区；商家不接受欧元，而且因为这个国家几乎全面无现金化，刷卡在实际操作中就能解决问题。"
+    },
+    {
+      "pergunta": "如果你没听清楚官员的问题，你会怎么做？",
+      "opcoes": [
+        "随便回答一个，免得浪费时间",
+        "礼貌地请他再说一遍",
+        "换一条队伍排",
+        "直接无视这个问题"
+      ],
+      "correta": 1,
+      "explica": "干净利落地请对方再说一遍，不用过度道歉，比随便乱猜一个答案更能让交流顺利推进。"
+    }
+  ]
+}

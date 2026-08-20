@@ -1,0 +1,73 @@
+{
+  "id": "q-b14",
+  "nivel": "basico",
+  "titulo": "问答 — 账单不该有隐藏的惊喜，除了一样",
+  "subtitulo": "价格已经含税，还有那笔自愿性的服务费",
+  "introAudioKey": "gb-b14-q-i",
+  "introPt": "账单显示的金额比预期的高，服务员在等着。找出价格里已经包含了什么，以及什么需要另外问。",
+  "cenario": "餐桌前，账单刚送来。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b14-q01",
+      "voz": "target_en_gb_m",
+      "es": "That price already includes everything.",
+      "tts": "That price already includes everything.",
+      "pinyin": "that prais ol-RE-di in-KLUDZ EV-ri-sing",
+      "pt": "这个价格已经包含了一切。"
+    },
+    {
+      "audioKey": "gb-b14-q02",
+      "voz": "target_en_gb_f",
+      "es": "Could I have the bill without the service charge, please?",
+      "tts": "Could I have the bill without the service charge, please?",
+      "pinyin": "kud ai hav the bil wi-THAUT the SER-vis charj, pliz",
+      "pt": "能给我一份不含服务费的账单吗？"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "英国菜单上的价格含税吗？",
+      "opcoes": [
+        "不含，跟美国一样在结账时另外加",
+        "含，写多少就是付多少",
+        "看餐厅而定",
+        "只有饮料含税"
+      ],
+      "correta": 1,
+      "explica": "和美国的销售税不一样，英国的增值税永远已经包含在标出来的价格里。"
+    },
+    {
+      "pergunta": "大约 12.5% 的服务费是什么？",
+      "opcoes": [
+        "一项到处都一样的法律义务",
+        "一种自愿性的行业惯例",
+        "增值税的另一种叫法",
+        "只针对团体的附加费"
+      ],
+      "correta": 1,
+      "explica": "服务费是行业惯例，不是法律规定。可以要求去掉，不需要解释理由。"
+    },
+    {
+      "pergunta": "你会怎么要求把服务费从账单里去掉？",
+      "opcoes": [
+        "Could I have the bill without the service charge, please?",
+        "I refuse to pay the service",
+        "Take the service off, now",
+        "No service, no bill"
+      ],
+      "correta": 0,
+      "explica": "这不是一个新框架：只是把你早就会的「Could I have」和「without」拼在一起而已。"
+    },
+    {
+      "pergunta": "在酒吧吧台，服务费是怎么处理的？",
+      "opcoes": [
+        "适用同样的服务费",
+        "完全没有服务费，也不用给小费",
+        "服务费要付双倍",
+        "服务费要到周末才结算"
+      ],
+      "correta": 1,
+      "explica": "这条规则只适用于桌边服务。正如第十一部分提到的，在酒吧吧台从来不用给小费。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "q-i02",
+  "nivel": "intermediario",
+  "titulo": "问答 — 那条不存在的队伍",
+  "subtitulo": "站好位置、耐心等待、在柜台点单",
+  "introAudioKey": "gb-i02-q-i",
+  "introPt": "酒吧柜台前挤满了人，没有人坐着。听听这位旅行者是怎么在不碰到任何人的情况下找到自己位置的。",
+  "cenario": "英国的一家酒吧，晚间高峰时段。",
+  "dialogo": [
+    {
+      "audioKey": "gb-i02-q01",
+      "voz": "target_en_gb_m",
+      "es": "Sorry mate, I was here first.",
+      "tts": "Sorry mate, I was here first.",
+      "pinyin": "SO-ri meit, ai woz hir ferst",
+      "pt": "不好意思，我比你先到。"
+    },
+    {
+      "audioKey": "gb-i02-q02",
+      "voz": "target_en_gb_f",
+      "es": "Sorry, are you in the queue?",
+      "tts": "Sorry, are you in the queue?",
+      "pinyin": "SO-ri, ar yu in the kyu",
+      "pt": "不好意思，你在排队吗？"
+    },
+    {
+      "audioKey": "gb-i02-q03",
+      "voz": "target_en_gb_m",
+      "es": "Yep, right behind me.",
+      "tts": "Yep, right behind me.",
+      "pinyin": "yep, rait bi-HAIND mi",
+      "pt": "是的，就跟在我后面。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在英国酒吧的柜台前，服务是怎么进行的？",
+      "opcoes": ["服务员会走到桌边", "直接在柜台点单付款", "要先拿一张排队号码牌", "坐下来等着"],
+      "correta": 1,
+      "explica": "传统酒吧没有桌边服务：点单和付款都在柜台完成。"
+    },
+    {
+      "pergunta": "既没有拉绳也没有号码牌，你怎么知道存在一条队伍？",
+      "opcoes": [
+        "其实根本没有队伍",
+        "到达的先后顺序被遵守着，酒保心里清楚",
+        "必须要一张号码牌",
+        "大家各自随意点单"
+      ],
+      "correta": 1,
+      "explica": "这个秩序是隐形的，但确实存在——问一句「is this the queue?」能打消疑虑。"
+    },
+    {
+      "pergunta": "如果你不确定自己在队伍里的位置对不对，你会说什么？",
+      "opcoes": ["What time do you close?", "Sorry, are you in the queue?", "How much is this?", "Where's the toilet?"],
+      "correta": 1,
+      "explica": "这是 EXCUSE 框架的第二种形式——sorry 在这里是礼貌的开场词。"
+    },
+    {
+      "pergunta": "你要点一品脱拉格啤酒，你会怎么说？",
+      "opcoes": ["Can I get a pint?", "Could I have a pint of lager, please?", "I'm looking for a lager", "Where's the lager?"],
+      "correta": 1,
+      "explica": "这是第十一部分诞生的英式 GET 框架。"
+    },
+    {
+      "pergunta": "你什么时候付款？",
+      "opcoes": ["最后统一结一次账", "点单的时候立刻付款", "第二天再付", "从来不用付，都是免费的"],
+      "correta": 1,
+      "explica": "跟很多餐厅最后才结一次账不同，这里每一样都是在柜台当场结清的。"
+    }
+  ]
+}

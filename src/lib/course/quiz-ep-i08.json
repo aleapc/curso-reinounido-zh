@@ -1,0 +1,67 @@
+{
+  "id": "q-i08",
+  "nivel": "intermediario",
+  "titulo": "问答 — 有人邀请你去家里做客",
+  "subtitulo": "直接问，而不是靠猜",
+  "introAudioKey": "gb-i08-q-i",
+  "introPt": "有人邀你周五去吃晚饭。听听这位旅行者是怎么答应邀请、并问该带什么的。",
+  "cenario": "英国的一次晚餐邀请。",
+  "dialogo": [
+    {
+      "audioKey": "gb-i08-q01",
+      "voz": "target_en_gb_m",
+      "es": "Would you like to come round for dinner on Friday?",
+      "tts": "Would you like to come round for dinner on Friday?",
+      "pinyin": "wud yu laik tu kam raund for DIN-er on FRAI-dei",
+      "pt": "周五要不要来我家吃晚饭？"
+    },
+    {
+      "audioKey": "gb-i08-q02",
+      "voz": "target_en_gb_f",
+      "es": "I'd love to, thank you. What can I bring?",
+      "tts": "I'd love to, thank you. What can I bring?",
+      "pinyin": "aid lav tu, sank yu. wot kn ai bring",
+      "pt": "非常乐意，谢谢。我该带点什么？"
+    },
+    {
+      "audioKey": "gb-i08-q03",
+      "voz": "target_en_gb_m",
+      "es": "Just bring yourself, but a bottle of wine is always welcome.",
+      "tts": "Just bring yourself, but a bottle of wine is always welcome.",
+      "pinyin": "jast bring yor-SELF, bat e BOT-el of wain iz OL-weiz WEL-kam",
+      "pt": "人来就行，不过带瓶酒总是受欢迎的。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在英国朋友间的非正式晚餐上，问「what can I bring?」是……",
+      "opcoes": ["不懂事的表现", "被期待的常态", "只在商务晚宴上才能问的问题", "没用的，没人会回答"],
+      "correta": 1,
+      "explica": "主人几乎总有现成的答案；开口问会被看作是体贴。"
+    },
+    {
+      "pergunta": "去别人家吃非正式晚餐，晚到多久是可以接受的？",
+      "opcoes": ["完全不行，必须准时到达", "十到十五分钟", "一个小时", "永远不能接受迟到"],
+      "correta": 1,
+      "explica": "这跟分秒必较的商务约会完全不同。"
+    },
+    {
+      "pergunta": "你看到主人在摆桌子，人手不够，你会怎么做？",
+      "opcoes": ["等着对方来问你", "主动提出帮忙：Can I help with anything?", "直接离开", "开始自己吃起来"],
+      "correta": 1,
+      "explica": "主动提出帮忙是这套礼节的一部分，哪怕主人会婉拒。"
+    },
+    {
+      "pergunta": "递上你带来的那瓶酒时，你会说什么？",
+      "opcoes": ["What can I bring?", "I brought this for you.", "Can I help clear up?", "This was a great night."],
+      "correta": 1,
+      "explica": "这是递上礼物的时刻，用一句简单直接的话就行。"
+    },
+    {
+      "pergunta": "主人婉拒了你收拾的帮忙，说「no need, I've got it」。你会怎么做？",
+      "opcoes": ["坚持要帮忙", "接受，热情地告别", "一句话不说就走", "不管怎样还是继续收拾"],
+      "correta": 1,
+      "explica": "主动提出这件事本身就已经够了；接受对方的婉拒并道谢，能让这个晚上体面收尾。"
+    }
+  ]
+}

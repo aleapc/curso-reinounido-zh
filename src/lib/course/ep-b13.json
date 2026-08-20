@@ -1,0 +1,247 @@
+{
+  "id": "b13",
+  "slot": "B13",
+  "nivel": "basico",
+  "numero": 13,
+  "parte": "13A",
+  "titulo": "永远不能说一半的那句话",
+  "subtitulo": "在餐桌上声明健康风险的固定句型，再加上一张写好的卡片当后盾",
+  "cena": "菜已经在送来你桌上的路上了，你不确定里面有没有花生；这话必须在菜到之前说，不能等到之后。",
+  "moldura": "ganha",
+  "frasePiso": "哪怕这是你第一次在家门外大声说出这句话，你也要毫不犹豫、不轻描淡写地用英语说出自己的过敏情况。",
+  "permissao": "你不需要解释具体的反应，也不需要为此辩解。清清楚楚、不带尴尬地说一次「I'm allergic to ___」就已经够了。需要的话就重复说，直到对方确认为止。",
+  "permissaoAudioKey": "gb-b13-n08",
+  "espelho": "在你自己的国家，吃陌生食物之前你也会提前说明过敏情况；这里不同的地方是具体要用的那个词——还有英国的过敏原标示法规格外严格这一点。",
+  "fichasCulturais": [
+    {
+      "sinal": "你说自己对花生过敏，服务员没等你说完剩下的点单就直接冲进了厨房，或者亲自把主厨请了出来。",
+      "suaLeitura": "他反应过度了，这只是点单里多了一条信息而已。",
+      "oQueEAli": "自 2021 年起，英国法律要求清楚标示十四种主要过敏原，很多餐厅也训练员工，一旦桌上有人声明过敏，就立刻和厨房核实。",
+      "oQueVoceFaz": "给对方需要的时间。等他回来时确认一下：「Yes, peanuts — no peanuts at all.」",
+      "oQueMelhora": "你吃到的是一份真正能放心的菜，而不是一份你只能寄希望于「应该没问题」的菜。",
+      "ondeNaoVale": "在没有独立厨房的小路边摊或餐车不完全适用：那里交叉污染的风险本身就更高，哪怕工作人员很想帮你，最好还是在点单之前就先问清楚。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-b13-n06"]
+    }
+  ],
+  "fatosDatados": [
+    {
+      "id": "loi-allergenes-royaume-uni",
+      "afirmacao": "By law, any food business in the UK must clearly provide information on fourteen major allergens present in the food it serves, including peanuts, tree nuts, milk, eggs, shellfish, fish, wheat, soya and sesame — whether the food is packaged or served at a counter.",
+      "fonte": "UK Food Information Regulations 2014 («Natasha's Law», estendida em 2021 aos produtos pré-embalados para venda direta)",
+      "ano": 2021,
+      "revisarAte": "2027-06-01",
+      "evidencia": "FATO",
+      "risco": "medio"
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b13-n01",
+      "gesto": 2,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "第十三部分。继续保持元音纯净：a-LER-jik，不要拖长。清晰又简短。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b13-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "菜端上来了，你不确定里面有没有花生。这话必须在菜到之前说，不能等到之后。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b13-p01",
+      "promptPt": "昨天你点了不加糖的茶。现在把那句话换成洋葱重复一遍。现在请说。",
+      "bloco": "callback",
+      "molde": "WITHOUT",
+      "audioKey": "gb-b13-t01",
+      "es": "No onions, please.",
+      "tts": "No onions, please.",
+      "pinyin": "noh AN-yenz, pliz",
+      "pt": "不要洋葱，谢谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b13-n03",
+      "tom": "protege",
+      "pt": "这句话不能随意调整：它是一把锤子，不是一个框架。永远整句说，永远说得一样。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b13-t02",
+      "es": "I'm allergic to peanuts.",
+      "tts": "I'm allergic to peanuts.",
+      "pinyin": "aim e-LER-jik tu PI-natz",
+      "pt": "我对花生过敏。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b13-p02",
+      "promptPt": "在点单之前，告诉服务员你对花生过敏。现在请说。",
+      "audioKey": "gb-b13-t02",
+      "es": "I'm allergic to peanuts.",
+      "tts": "I'm allergic to peanuts.",
+      "pinyin": "aim e-LER-jik tu PI-natz",
+      "pt": "我对花生过敏。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b13-r01",
+      "es": "Got it, I'll let the kitchen know.",
+      "tts": "Got it, I'll let the kitchen know.",
+      "pinyin": "got it, ail let the KICH-en noh",
+      "pt": "记下了，我会告诉厨房。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b13-p03",
+      "promptPt": "服务员走了，但没有好好确认。冷静地把这句话再说一遍，并补充这件事很严重。现在请说。",
+      "audioKey": "gb-b13-t03",
+      "es": "I'm allergic to shellfish. It's serious.",
+      "tts": "I'm allergic to shellfish. It's serious.",
+      "pinyin": "aim e-LER-jik tu SHEL-fish. its SIR-i-as",
+      "pt": "我对贝类海鲜过敏。这事很严重。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b13-n04",
+      "pt": "想加强语气的话，加上一句「It's serious」：这不改变原来的句型，只是让这个警示更有分量。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b13-p04",
+      "promptPt": "你在药店，买药之前得先确认一下。说你对青霉素过敏。现在请说。",
+      "audioKey": "gb-b13-t04",
+      "es": "I'm allergic to penicillin.",
+      "tts": "I'm allergic to penicillin.",
+      "pinyin": "aim e-LER-jik tu pen-i-SIL-in",
+      "pt": "我对青霉素过敏。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b13-p06",
+      "promptPt": "在早餐自助餐台，一盘面包上撒满了坚果，你分不清是哪种。在取用之前也说明这个过敏情况。现在请说。",
+      "audioKey": "gb-b13-t06",
+      "es": "I'm allergic to nuts.",
+      "tts": "I'm allergic to nuts.",
+      "pinyin": "aim e-LER-jik tu nats",
+      "pt": "我对坚果过敏。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b13-p07",
+      "promptPt": "同一个自助餐台还有一道菜里有你认不出来的奶油。说你对乳制品也过敏。现在请说。",
+      "audioKey": "gb-b13-t07",
+      "es": "I'm allergic to dairy.",
+      "tts": "I'm allergic to dairy.",
+      "pinyin": "aim e-LER-jik tu DEHR-i",
+      "pt": "我对乳制品过敏。"
+    },
+    {
+      "consulta": ["saude/minha-alergia"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "CAN-I",
+      "encaixe": "speak to the chef",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b13-p08",
+      "promptPt": "服务员已经回厨房了，但在菜上来之前，你想要更直接的确认。要求跟主厨说话。现在请说。",
+      "audioKey": "gb-b13-t08",
+      "es": "Can I speak to the chef?",
+      "tts": "Can I speak to the chef?",
+      "pinyin": "kn ai spik tu the chef",
+      "pt": "我能和主厨说句话吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b13-n05",
+      "pt": "声音不是你唯一的工具：一张写好过敏情况的卡片，不用依赖你在紧张时刻的发音。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b13-p05",
+      "promptPt": "除了说出来，也把卡片拿出来。请服务员看一下。现在请说。",
+      "audioKey": "gb-b13-t05",
+      "es": "Can I show you this card?",
+      "tts": "Can I show you this card?",
+      "pinyin": "kn ai shoh yu this kard",
+      "pt": "我能给您看一下这张卡片吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b13-n06",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "如果服务员跑去厨房，或者把主厨请了出来，他没有反应过度：2021 年的法律把声明过的过敏当作至关重要的信息来对待。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b13-n07",
+      "tom": "ganha",
+      "pt": "涉及十四种主要过敏原——花生、贝类海鲜、乳制品、麸质等等。这是欧洲最严格的法规之一。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b13-n08",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "不需要解释具体的反应，也不需要为此辩解。清楚地说一次就已经够了。需要的话就重复，直到对方确认。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b13-n09",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "第十三部分完成。「I'm allergic to」加上那个词，永远整句说，再加一张写好的卡片当后盾。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "为什么这句话不是一个框架",
+    "secoes": [
+      {
+        "titulo": "锤子句型，不是开放框架",
+        "corpo": "「I'm allergic to ___」永远整句、以同样的方式说出来。和「Could I have ___?」或「Do you have ___?」不同，这里没有随意调整语气的空间：改变说法，恰恰会在最要紧的时刻削弱它的分量。"
+      },
+      {
+        "titulo": "写好的卡片是后盾",
+        "corpo": "在紧张的时刻，或者口音比较重的时候，声音可能会掉链子。用英语写好过敏情况的卡片，不用依赖发音，也不用指望一次就被听懂。"
+      },
+      {
+        "titulo": "欧洲最严格的法规之一",
+        "corpo": "英国 2014 年的法律，在 2021 年扩展后（俗称「Natasha's Law」），要求清楚标示十四种主要过敏原，哪怕是柜台现做的食物也不例外。很多餐厅都以同样严谨的态度培训员工。"
+      },
+      {
+        "titulo": "这和第十二部分不是一回事",
+        "corpo": "第十二部分去掉的是一种偏好——不要洋葱、不要冰。第十三部分传达的是健康风险。厨房对待这两者的方式不同，你自己也该区别对待：一个是口味问题，另一个是安全问题。"
+      }
+    ]
+  }
+}

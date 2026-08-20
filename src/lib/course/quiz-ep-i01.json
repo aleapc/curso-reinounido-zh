@@ -1,0 +1,82 @@
+{
+  "id": "q-i01",
+  "nivel": "intermediario",
+  "titulo": "问答 — 这个国家的时钟",
+  "subtitulo": "厨房关门比你想象的早",
+  "introAudioKey": "gb-i01-q-i",
+  "introPt": "你晚上九点走进一家餐厅，服务员已经在倒扣椅子了。把事情的先后顺序理清楚。",
+  "cenario": "英国的一家酒吧餐厅，晚上九点十五。",
+  "dialogo": [
+    {
+      "audioKey": "gb-i01-q01",
+      "voz": "target_en_gb_m",
+      "es": "Sorry, we stopped serving at nine.",
+      "tts": "Sorry, we stopped serving at nine.",
+      "pinyin": "SO-ri, wi stopt SER-ving at nain",
+      "pt": "不好意思，我们九点就不供餐了。"
+    },
+    {
+      "audioKey": "gb-i01-q02",
+      "voz": "target_en_gb_f",
+      "es": "What time does the kitchen close?",
+      "tts": "What time does the kitchen close?",
+      "pinyin": "wot taim daz the KICH-en klohz",
+      "pt": "厨房几点关门？"
+    },
+    {
+      "audioKey": "gb-i01-q03",
+      "voz": "target_en_gb_m",
+      "es": "Nine on weekdays, half nine on Sundays.",
+      "tts": "Nine on weekdays, half nine on Sundays.",
+      "pinyin": "nain on WIK-deiz, haf nain on SAN-deiz",
+      "pt": "平时九点，周日九点半。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "英国晚餐的高峰通常在什么时段？",
+      "opcoes": ["下午四点到五点", "晚上六点到八点", "晚上十点之后", "没有固定时间"],
+      "correta": 1,
+      "explica": "晚餐高峰其实很早，跟中国常见的六七点开饭时间差不多，容易让人低估厨房关门的速度。"
+    },
+    {
+      "pergunta": "在「What time ___?」这个框架里，什么是不变的？",
+      "opcoes": ["地点", "「What time」", "具体的时间", "服务员"],
+      "correta": 1,
+      "explica": "「What time」开启这个框架；变化的只是动词和你问的那件事。"
+    },
+    {
+      "pergunta": "周六晚上你走进一家新餐厅。坐下之前你会问什么？",
+      "opcoes": [
+        "What time does the kitchen close?",
+        "How much is the bill?",
+        "Do you have wifi?",
+        "Where's the toilet?"
+      ],
+      "correta": 0,
+      "explica": "第十八部分那个框架，换上「kitchen」，能让你不至于扑空一间已经不供餐的厨房。"
+    },
+    {
+      "pergunta": "「Sunday roast」是什么？",
+      "opcoes": [
+        "全天供应的早餐",
+        "周日的传统午餐，供应时间有限",
+        "饮料的折扣活动",
+        "只在吧台供应的菜单"
+      ],
+      "correta": 1,
+      "explica": "这是一个具体的时间窗口，通常是中午到下午四点，最好提前确认具体时间。"
+    },
+    {
+      "pergunta": "「厨房关门早」这条规律，在哪些地方可能不适用？",
+      "opcoes": [
+        "大城市和夜生活热闹的街区",
+        "任何一家家庭餐馆",
+        "从来没有例外",
+        "只在早餐时段不适用"
+      ],
+      "correta": 0,
+      "explica": "确实存在真正的例外；这正是为什么开口问永远比自己猜测更靠谱。"
+    }
+  ]
+}

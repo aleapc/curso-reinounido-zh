@@ -1,0 +1,275 @@
+{
+  "id": "i10",
+  "slot": "I10",
+  "nivel": "intermediario",
+  "numero": 10,
+  "parte": "I10",
+  "titulo": "钱的事，不用大惊小怪",
+  "subtitulo": "服务费不是强制的，酒吧吧台什么都不用留，多人聚餐时有时已经算进去了",
+  "cena": "账单上出现一行已经算进总额的「Service charge (12.5%)」，你不确定离开时是不是还要在桌上另外留点什么。",
+  "decisao": "留多少、留在哪里——在餐厅，服务费是自愿性的，可以要求去掉，不用解释理由；在酒吧吧台，什么都不用留",
+  "emJogo": "dinheiro",
+  "moldura": "protege",
+  "frasePiso": "在计算任何东西之前，你要先把账单看完整；你也会毫不犹豫地分清楚，哪一行是自愿的、哪一行不是。",
+  "fatosDatados": [
+    {
+      "id": "gb-service-charge",
+      "afirmacao": "在餐厅，账单上常常已经自动加了约 12.5% 的服务费。这是自愿性质的：你可以要求去掉，不用解释理由。",
+      "fonte": "Praxe do setor, amplamente documentada; taxa típica de 10 a 15%, cerca de 12,5% em Londres",
+      "ano": 2026,
+      "revisarAte": "2028-01-01",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": ["gb-i10-n02"]
+    },
+    {
+      "id": "gb-pub-no-tip",
+      "afirmacao": "在酒吧吧台，不用留小费。等价的心意是请酒保喝一杯：「and one for yourself」。",
+      "fonte": "Praxe do setor de pubs britânicos, amplamente documentada",
+      "ano": 2026,
+      "revisarAte": "2028-01-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["gb-i10-n04"]
+    },
+    {
+      "id": "gb-vat-etiquette",
+      "afirmacao": "标签上标出的价格已经包含增值税（VAT）——写多少就是付多少，跟中国常见的定价习惯一样，标出来的价格就是最终价格。",
+      "fonte": "Fato fiscal básico (IVA incluído no preço exibido no Reino Unido)",
+      "ano": 2026,
+      "revisarAte": "2028-01-01",
+      "evidencia": "FATO",
+      "risco": "baixo"
+    }
+  ],
+  "fichasCulturais": [
+    {
+      "sinal": "两人晚餐的账单上已经加了一行「Service charge (12.5%)」的总额，你正准备在这基础上再算一笔小费。",
+      "suaLeitura": "这行奇怪的费用肯定是某种税，或者是餐厅算错了。",
+      "oQueEAli": "很多餐厅会自动加上大约 12.5% 的服务费——这是自愿性质的，不是法律规定，你可以要求去掉，不用解释理由。但在酒吧吧台，从来不需要留小费。",
+      "oQueVoceFaz": "在计算任何东西之前，先把整张账单看完，找找有没有「service charge」这一行。",
+      "oQueMelhora": "你不会为同一件事付两次钱，也能清楚知道自己付的到底是什么，而不是只信任那个总数。",
+      "ondeNaoVale": "在酒吧吧台不适用，那里从来没有服务费，也不需要给小费——唯一的心意是请酒保喝一杯。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-i10-n02"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i10-n01",
+      "gesto": 4,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "how much 里的那个结尾手势：much 词尾的辅音要真的发出来。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i10-p01",
+      "promptPt": "昨天你问了能不能在市集尝一口。今天用另一个你早就会的框架，在商店里问价格。现在请说。",
+      "bloco": "callback",
+      "molde": "HOW-MUCH",
+      "encaixe": "is this",
+      "audioKey": "gb-i10-t01",
+      "es": "How much is this?",
+      "tts": "How much is this?",
+      "pinyin": "hau mach iz this",
+      "pt": "这个多少钱？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i10-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "账单上出现一行已经加进去的「service charge (12.5%)」——没有人问过你同不同意。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i10-n03",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "这不是法律，是行业惯例：自愿性质，你可以要求去掉，不用解释理由。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i10-r01",
+      "es": "Here's your bill whenever you're ready.",
+      "tts": "Here's your bill whenever you're ready.",
+      "pinyin": "hirz yor bil wen-EV-er yor RED-i",
+      "pt": "这是您的账单，您准备好了就付。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i10-p02",
+      "promptPt": "你想在做任何决定之前先确认总额。问一共多少钱。现在请说。",
+      "molde": "HOW-MUCH",
+      "encaixe": "is it all together",
+      "audioKey": "gb-i10-t02",
+      "es": "How much is it all together?",
+      "tts": "How much is it all together?",
+      "pinyin": "hau mach iz it ol tu-GE-ther",
+      "pt": "一共多少钱？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i10-n04",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "在酒吧吧台不一样：什么都不用留。等价的心意，是请酒保喝一杯。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i10-p03",
+      "promptPt": "你想知道这里这行费用是不是自愿的。问能不能去掉。现在请说。",
+      "audioKey": "gb-i10-t03",
+      "es": "Could I have the bill without the service charge, please?",
+      "tts": "Could I have the bill without the service charge, please?",
+      "pinyin": "kud ai hav the bil wi-THAUT the SER-vis charj, pliz",
+      "pt": "能给我一份不含服务费的账单吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i10-r02",
+      "es": "Of course, no problem at all.",
+      "tts": "Of course, no problem at all.",
+      "pinyin": "of kors, noh PROB-lem at ol",
+      "pt": "当然，完全没问题。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i10-n05",
+      "pt": "商店标签上的价格已经含税——写多少就是付多少，跟你熟悉的定价方式一样。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i10-p04",
+      "promptPt": "第二天，在一家商店里，你想在决定之前先知道价格。现在请说。",
+      "molde": "HOW-MUCH",
+      "encaixe": "is the small one",
+      "audioKey": "gb-i10-t04",
+      "es": "How much is the small one?",
+      "tts": "How much is the small one?",
+      "pinyin": "hau mach iz the smol wan",
+      "pt": "小的那个多少钱？"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i10-p05",
+      "promptPt": "这次你打算保留这行费用，但想确认它只算了一次。现在请说。",
+      "audioKey": "gb-i10-t05",
+      "es": "Is the service charge already included?",
+      "tts": "Is the service charge already included?",
+      "pinyin": "iz the SER-vis charj ol-RE-di in-KLU-ded",
+      "pt": "服务费已经算进去了吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-i10-r03",
+      "es": "Yes, for tables of six or more we add twelve and a half percent automatically.",
+      "tts": "Yes, for tables of six or more we add twelve and a half percent automatically.",
+      "pinyin": "yes, for TEI-belz of siks or mor wi ad twelv and e haf per-SENT o-to-MAT-ik-li",
+      "pt": "是的，六人或以上的桌子，我们会自动加收 12.5%。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i10-p06",
+      "promptPt": "现在你知道已经算进去了。感谢对方帮你确认。现在请说。",
+      "audioKey": "gb-i10-t06",
+      "es": "Got it, thank you for checking.",
+      "tts": "Got it, thank you for checking.",
+      "pinyin": "got it, sank yu for CHEK-ing",
+      "pt": "明白了，谢谢您帮忙确认。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-i10-p07",
+      "promptPt": "在酒吧吧台，你付了自己那杯啤酒的钱，不用多留一分。简单确认一下就好。现在请说。",
+      "audioKey": "gb-i10-t07",
+      "es": "That's everything, thanks.",
+      "tts": "That's everything, thanks.",
+      "pinyin": "thats EV-ri-sing, sanks",
+      "pt": "就这些了，谢谢。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-i10-p08",
+      "promptPt": "同一个摊位上有两件纪念品：一个马克杯和一张版画。问卖家自己更喜欢哪个。现在请说。",
+      "molde": "PREFERENCIA",
+      "encaixe": "the mug or the print",
+      "audioKey": "gb-i10-t08",
+      "es": "Do you prefer the mug or the print?",
+      "tts": "Do you prefer the mug or the print?",
+      "pinyin": "du yu pri-FER the mag or the print",
+      "pt": "您更喜欢马克杯还是版画？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-i10-n06",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "要求去掉服务费，你不需要感到过意不去。在酒吧吧台什么都不留，也不是小气——这就是常态。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-i10-s01",
+      "es": "How much is it all together? Is the service charge already included?",
+      "tts": "How much is it all together? Is the service charge already included?",
+      "pinyin": "hau mach iz it ol tu-GE-ther? iz the SER-vis charj ol-RE-di in-KLU-ded",
+      "pt": "跟读问总价，以及确认服务费是不是已经算进去了。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-i10-n07",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "I10 完成。在餐厅，服务费是自愿的；在酒吧吧台，什么都不用留；标签上的价格，税已经算进去了。"
+    }
+  ],
+  "permissao": "要求把服务费从账单里去掉，你不需要解释理由。这本来就是自愿性质的——没有人会因此评判你，在酒吧吧台不留钱也一样。",
+  "permissaoAudioKey": "gb-i10-n06",
+  "espelho": "在决定付多少钱之前先把账单看完整，这件事你在自己国家也会做；这里新鲜的地方是，在餐厅里，整整一行费用可以不用解释理由就要求去掉，而在酒吧吧台，本来就没有什么需要额外添加的。",
+  "aprofundar": {
+    "titulo": "三条规则，三个不同的地方",
+    "secoes": [
+      {
+        "titulo": "在餐厅，是自愿的",
+        "corpo": "账单上加的约 12.5% 服务费是行业惯例，不是法律规定。你可以要求去掉，不用解释理由——用的是 Could I have 加 without 拼起来的那句：「Could I have the bill without the service charge, please?」"
+      },
+      {
+        "titulo": "在酒吧吧台，什么都不用留",
+        "corpo": "吧台不收小费。如果你喜欢这份服务，等价的心意是请酒保喝一杯，说一句「and one for yourself」。"
+      },
+      {
+        "titulo": "在标签上，价格已经含税了",
+        "corpo": "商店标出的价格已经包含增值税——写多少就是收银台要付的数字，跟你熟悉的定价方式一样，跟美国那种要在收银台另外加税的销售税不同。"
+      }
+    ]
+  }
+}

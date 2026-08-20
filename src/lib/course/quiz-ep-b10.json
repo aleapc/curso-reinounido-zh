@@ -1,0 +1,80 @@
+{
+  "id": "q-b10",
+  "nivel": "basico",
+  "titulo": "问答 — 开口问之前先读懂走廊",
+  "subtitulo": "WAY OUT、「I'm looking for」这个框架，以及那个不是地铁的词",
+  "introAudioKey": "gb-b10-q-i",
+  "introPt": "三扇门，手上拎满行李，唯一有用的信息就是每扇门上方那块小牌子。找出对的那扇，也找出完全没有牌子时该怎么说。",
+  "cenario": "机场走廊里，从登机口到出口之间。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b10-q01",
+      "voz": "target_en_gb_f",
+      "es": "I'm looking for my gate.",
+      "tts": "I'm looking for my gate.",
+      "pinyin": "aim LUK-ing for mai geit",
+      "pt": "我在找我的登机口。"
+    },
+    {
+      "audioKey": "gb-b10-q02",
+      "voz": "target_en_gb_m",
+      "es": "It's down that way, past the shops.",
+      "tts": "It's down that way, past the shops.",
+      "pinyin": "its daun that wei, past the shops",
+      "pt": "在那边，过了那些商店就到。"
+    },
+    {
+      "audioKey": "gb-b10-q03",
+      "voz": "target_en_gb_f",
+      "es": "Can I go through here?",
+      "tts": "Can I go through here?",
+      "pinyin": "kn ai goh sru hir",
+      "pt": "我能从这里过去吗？"
+    },
+    {
+      "audioKey": "gb-b10-q04",
+      "voz": "target_en_gb_m",
+      "es": "Sorry, staff only — round the other side.",
+      "tts": "Sorry, staff only — round the other side.",
+      "pinyin": "SO-ri, staf OHN-li — raund the A-ther said",
+      "pt": "不好意思，仅限工作人员——从另一边绕过去。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在英国，出口牌子上写的是什么？",
+      "opcoes": ["EXIT，跟其他地方一样", "WAY OUT，几乎总是这样", "SUBWAY", "OUT"],
+      "correta": 1,
+      "explica": "在英国，出口牌子几乎总是写着 WAY OUT，尤其是在地铁和火车站。EXIT 在别处也存在，但 WAY OUT 才是英式的默认说法。"
+    },
+    {
+      "pergunta": "你不知道你要找的东西确切的英语单词。你会怎么说？",
+      "opcoes": ["What's it called?", "I'm looking for ___", "Where is the word for ___?", "Give me ___"],
+      "correta": 1,
+      "explica": "「I'm looking for」加上你要找的东西就够了：对方会帮你补完，你只需要指出意图。"
+    },
+    {
+      "pergunta": "在一扇手动门上，PULL 是什么意思？",
+      "opcoes": ["往外推", "往自己这边拉", "暂停使用", "紧急出口"],
+      "correta": 1,
+      "explica": "Pull 是往自己这边拉，push 是往外推。在手碰到门把手之前，先读一读牌子。"
+    },
+    {
+      "pergunta": "在英国，subway 这个词指的是什么？",
+      "opcoes": ["地铁", "给行人走的地下通道", "一种三明治", "夜间公交车"],
+      "correta": 1,
+      "explica": "Subway 是马路下面的地下通道。地铁是 the Underground 或者 the Tube。一个诚实的例外：在格拉斯哥，地铁确实就叫 the Subway。"
+    },
+    {
+      "pergunta": "在一个没有「QUEUE HERE」牌子、也没有拉绳的柜台前，你会怎么做？",
+      "opcoes": [
+        "直接走过去，反正没有真正的队伍",
+        "站到最后一个人的后面",
+        "等着别人叫你的名字",
+        "要一张排队号码牌"
+      ],
+      "correta": 1,
+      "explica": "就算没有牌子，队伍依然存在：站在最后的那个人就是队尾。插队会像有拉绳时一样立刻被人注意到。"
+    }
+  ]
+}

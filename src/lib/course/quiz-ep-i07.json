@@ -1,0 +1,72 @@
+{
+  "id": "q-i07",
+  "nivel": "intermediario",
+  "titulo": "问答 — I really like this",
+  "subtitulo": "夸奖和反映问题，都不用大惊小怪",
+  "introAudioKey": "gb-i07-q-i",
+  "introPt": "服务员问这顿饭吃得好不好。听听这位旅行者是怎么具体说出自己喜欢什么的。",
+  "cenario": "英国的一家酒吧餐厅，用餐进行中。",
+  "dialogo": [
+    {
+      "audioKey": "gb-i07-q01",
+      "voz": "target_en_gb_m",
+      "es": "Is everything alright with the food?",
+      "tts": "Is everything alright with the food?",
+      "pinyin": "iz EV-ri-sing ol-RAIT with the fud",
+      "pt": "这顿饭吃得还好吗？"
+    },
+    {
+      "audioKey": "gb-i07-q02",
+      "voz": "target_en_gb_f",
+      "es": "I really like the pie, it's brilliant.",
+      "tts": "I really like the pie, it's brilliant.",
+      "pinyin": "ai RIL-i laik the pai, its BRIL-yant",
+      "pt": "我真的很喜欢这个派，太棒了。"
+    },
+    {
+      "audioKey": "gb-i07-q03",
+      "voz": "target_en_gb_m",
+      "es": "Thank you, I'll let the kitchen know.",
+      "tts": "Thank you, I'll let the kitchen know.",
+      "pinyin": "sank yu, ail let the KICH-en noh",
+      "pt": "谢谢，我会转告厨房。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在 APRECIACAO 框架里，什么是不变的？",
+      "opcoes": ["被夸奖的那样东西", "「I really like」", "服务员的名字", "价格"],
+      "correta": 1,
+      "explica": "「I really like」开启这个框架；变的只是被点名的那样东西。"
+    },
+    {
+      "pergunta": "为什么说出菜名比只说「it's good」更好？",
+      "opcoes": [
+        "没有任何区别",
+        "具体的夸奖真的能一路传到厨房",
+        "语法上更礼貌",
+        "「it's good」是错误的说法"
+      ],
+      "correta": 1,
+      "explica": "点名的夸奖说明你真的注意到了自己吃的是什么。"
+    },
+    {
+      "pergunta": "汤端上来是凉的。你会冷静地怎么说？",
+      "opcoes": ["I really like this soup.", "Excuse me, the soup isn't hot.", "Where's the soup?", "How much is the soup?"],
+      "correta": 1,
+      "explica": "这是第十六部分的 WENT-WRONG 框架，换成冷静反映问题的场合重新使用。"
+    },
+    {
+      "pergunta": "在反映问题时，「excuse me」起什么作用？",
+      "opcoes": ["指责服务员", "在不指责任何人的情况下开启这句话", "取消点单", "要账单"],
+      "correta": 1,
+      "explica": "Excuse me 加上具体的问题，能让语气始终围绕着解决问题。"
+    },
+    {
+      "pergunta": "除了在餐厅里，「I really like ___」还能用在哪里？",
+      "opcoes": ["没有别的地方能用", "吧台、市集——任何看到值得夸奖的东西的地方", "只能用来夸食物", "只能对服务员说"],
+      "correta": 1,
+      "explica": "这个框架是开放的：鸡尾酒、毛衣，任何具体的东西都能用。"
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "id": "b12",
+  "slot": "B12",
+  "nivel": "basico",
+  "numero": 12,
+  "parte": "4B",
+  "titulo": "说出你真正想要的",
+  "subtitulo": "用「No ___, please」和「___ without ___」，把你不想要的东西从盘子里拿掉",
+  "cena": "服务员大声复述你的点单，里面加了你没点过的洋葱，你得赶在他去厨房之前把它改过来。",
+  "moldura": "ganha",
+  "frasePiso": "你要学会在餐桌上修改点单，不用指着东西说，也不用为这么做道歉。",
+  "moldes": ["WITHOUT"],
+  "clique": {
+    "contagem": [
+      "不要冰的汽水",
+      "不要洋葱的沙拉",
+      "不要糖的茶",
+      "不要蛋黄酱的三明治"
+    ],
+    "desconto": "没有人给过你一句专门去掉每种配料的话。你是用同一个框架——「No ___, please」或者「___ without ___」——把这四种情况都搭出来的。",
+    "piso": "下次上来的菜里有你没点过的东西，你不会默默吃下去：你会用一句你早就会说的话把它改过来。"
+  },
+  "permissao": "你不需要解释为什么不要某样东西。「No ___, please」本身就是一句完整的话；没有人指望听到理由。",
+  "permissaoAudioKey": "gb-b12-n08",
+  "espelho": "在你自己的国家，你也会不加解释地要求去掉盘子里的某样东西——不要洋葱、不要辣；这里唯一新鲜的地方是句尾那个「please」，它起到的作用，就相当于中文里那种委婉的语气。",
+  "fichasCulturais": [
+    {
+      "sinal": "你点单时说了「不要洋葱」，服务员在转身去厨房之前，把你的整份点单大声复述了一遍。",
+      "suaLeitura": "他是不是没听清楚我说的话，或者以为我说错了。",
+      "oQueEAli": "大声复述点单是英式桌边服务里标准的确认流程，不是在怀疑你的英语。不管客人是什么口音，都会这样确认。",
+      "oQueVoceFaz": "回一句「Yes, that's right」，或者简单点点头就好。",
+      "oQueMelhora": "你能放心地确认点单，不会平添压力，因为你知道这个复述是系统里的一部分，跟你无关。",
+      "ondeNaoVale": "在快餐柜台不适用，那里节奏太快，不会把整份点单再说一遍。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-b12-n07"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b12-n01",
+      "gesto": 4,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "第十二部分。这个手势标记英语的词尾辅音：不要拖长，也不要在后面加个元音。WithouT。PlateS。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b12-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "服务员复述的点单里有你没点过的洋葱。得在他去厨房之前改过来。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b12-p01",
+      "promptPt": "昨天在酒吧，你们吃完了，没人过来结账。重复上一部分学的那句框架。现在请说。",
+      "bloco": "callback",
+      "molde": "GET",
+      "audioKey": "gb-b12-t01",
+      "es": "Could I have the bill, please?",
+      "tts": "Could I have the bill, please?",
+      "pinyin": "kud ai hav the bil, pliz",
+      "pt": "能结一下账吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b12-n03",
+      "bloco": "molde",
+      "tom": "ganha",
+      "pt": "今天有两种形式：「No ___, please」用来去掉某样东西，「___ without ___」用来一开始就点不含它的版本。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b12-t02",
+      "es": "No ice, please.",
+      "tts": "No ice, please.",
+      "pinyin": "noh ais, pliz",
+      "pt": "不要冰，谢谢。"
+    },
+    {
+      "consulta": ["mesa/bebida"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WITHOUT",
+      "encaixe": "ice",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b12-p02",
+      "promptPt": "你点了一杯汽水，端上来的冰比你想要的多。要求不放冰。现在请说。",
+      "audioKey": "gb-b12-t02",
+      "es": "No ice, please.",
+      "tts": "No ice, please.",
+      "pinyin": "noh ais, pliz",
+      "pt": "不要冰，谢谢。"
+    },
+    {
+      "consulta": ["dieta/sem"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "WITHOUT",
+      "encaixe": "onions",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b12-p03",
+      "promptPt": "你不喜欢汉堡里的生洋葱。要求不放。现在请说。",
+      "audioKey": "gb-b12-t03",
+      "es": "No onions, please.",
+      "tts": "No onions, please.",
+      "pinyin": "noh AN-yenz, pliz",
+      "pt": "不要洋葱，谢谢。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b12-t04",
+      "es": "A burger without cheese, please.",
+      "tts": "A burger without cheese, please.",
+      "pinyin": "e BER-ger wi-THAUT chiz, pliz",
+      "pt": "要一个不加芝士的汉堡，谢谢。"
+    },
+    {
+      "consulta": ["mesa/comida"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "WITHOUT",
+      "encaixe": "sugar",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b12-p04",
+      "promptPt": "你点了一杯茶，不想要甜的。要求不加糖。现在请说。",
+      "audioKey": "gb-b12-t05",
+      "es": "Tea without sugar, please.",
+      "tts": "Tea without sugar, please.",
+      "pinyin": "ti wi-THAUT SHU-ger, pliz",
+      "pt": "要一杯不加糖的茶，谢谢。"
+    },
+    {
+      "consulta": ["mesa/comida"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WITHOUT",
+      "encaixe": "mayo",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b12-p05",
+      "promptPt": "三明治里总有那种你不喜欢的白色酱料。要求不加。现在请说。",
+      "audioKey": "gb-b12-t06",
+      "es": "No mayo, please.",
+      "tts": "No mayo, please.",
+      "pinyin": "noh MEI-oh, pliz",
+      "pt": "不要蛋黄酱，谢谢。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b12-r01",
+      "es": "Got it — one without mayo.",
+      "tts": "Got it — one without mayo.",
+      "pinyin": "got it — wan wi-THAUT MEI-oh",
+      "pt": "记下了——一份不加蛋黄酱。"
+    },
+    {
+      "consulta": ["mesa/errado"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "CAN-I",
+      "encaixe": "swap this for chips",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b12-p06",
+      "promptPt": "这道菜配的是沙拉，你更想要菜单上另一个选项。问能不能换成薯条。现在请说。",
+      "audioKey": "gb-b12-t07",
+      "es": "Can I swap this for chips?",
+      "tts": "Can I swap this for chips?",
+      "pinyin": "kn ai swop this for chips",
+      "pt": "我能把这个换成薯条吗？"
+    },
+    {
+      "consulta": ["mesa/errado"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "GET",
+      "encaixe": "that changed",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b12-p07",
+      "promptPt": "服务员在去厨房之前把你的点单记错了。要求他改一下。现在请说。",
+      "audioKey": "gb-b12-t08",
+      "es": "Could I have that changed?",
+      "tts": "Could I have that changed?",
+      "pinyin": "kud ai hav that CHEIN-jd",
+      "pt": "能帮我改一下吗？"
+    },
+    {
+      "consulta": ["mesa/bebida"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WITHOUT",
+      "encaixe": "lemon",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b12-p08",
+      "promptPt": "你点了水，不想要里面加柠檬。要求不放。现在请说。",
+      "audioKey": "gb-b12-t09",
+      "es": "No lemon, please.",
+      "tts": "No lemon, please.",
+      "pinyin": "noh LEM-en, pliz",
+      "pt": "不要柠檬，谢谢。"
+    },
+    {
+      "consulta": ["mesa/comida"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "WITHOUT",
+      "encaixe": "salt and vinegar",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b12-p09",
+      "promptPt": "你想要原味薯条，不要那种常见的盐醋调味。要求不放。现在请说。",
+      "audioKey": "gb-b12-t10",
+      "es": "Chips without salt and vinegar, please.",
+      "tts": "Chips without salt and vinegar, please.",
+      "pinyin": "chips wi-THAUT solt and VIN-e-ger, pliz",
+      "pt": "要不加盐醋的薯条，谢谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b12-n04",
+      "pt": "注意：这个框架去掉的是一种个人偏好，不是在传达食物过敏的风险。如果是健康问题，第十三部分会教一句不同的话。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b12-n05",
+      "pt": "「Please」几乎能加在任何一句话的结尾：起到的作用，就相当于中文里那种委婉的语气。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b12-n06",
+      "pt": "一个额外有用的说法：「without the service charge」能把账单上那笔服务费去掉。第十四部分还会讲到这个。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b12-n07",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "如果服务员大声复述你的点单，他不是在怀疑你：这是英式桌边服务标准的确认流程。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b12-n08",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "你不需要解释为什么不要某样东西。「No ___, please」本身就是一句完整的话。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b12-n09",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "冰、洋葱、糖、蛋黄酱。没有人给过你四句不同的话：全都是你用同一个框架搭出来的。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "WITHOUT",
+      "audioKey": "gb-b12-s01",
+      "es": "No ice, please. No onions, please. Tea without sugar, please.",
+      "tts": "No ice, please. No onions, please. Tea without sugar, please.",
+      "pinyin": "noh ais, pliz. noh AN-yenz, pliz. ti wi-THAUT SHU-ger, pliz.",
+      "pt": "跟读同一个框架，配上三样不同的东西。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b12-n10",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "第十二部分完成。冰、洋葱、糖、蛋黄酱：一个框架就够了，每句结尾都加上「please」。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "两种形式，一个框架",
+    "secoes": [
+      {
+        "titulo": "「No ___, please」——快捷版",
+        "corpo": "用来从已经点好、或者正在下的单里去掉某样东西：「No ice, please」「No onions, please」。这是桌上最短、也最常用的说法。"
+      },
+      {
+        "titulo": "「___ without ___」——从一开始就说清楚",
+        "corpo": "用来从一开始就点一份不含某种配料的完整餐点：「A burger without cheese, please」。两种说法起的作用一样；哪句先想到就用哪句。"
+      },
+      {
+        "titulo": "这不是在说食物过敏",
+        "corpo": "这个框架去掉的是一种偏好——冰、洋葱、糖。如果是健康方面的问题，第十三部分会教一句分量更重的不同说法：厨房对待过敏和对待口味的处理方式是不一样的。"
+      },
+      {
+        "titulo": "「please」不是可有可无的",
+        "corpo": "英语的动词变化里几乎没有礼貌的标记。句尾的「please」正是让整句话变得委婉的关键；少了它，「No ice」听起来更像一道生硬的命令，而不是一句正常的请求。"
+      }
+    ]
+  }
+}

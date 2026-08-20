@@ -1,0 +1,127 @@
+{
+  "id": "q-b06",
+  "nivel": "basico",
+  "titulo": "问答 — 解决落地后第一个小时的悬而未决",
+  "subtitulo": "有用的顺序、「Do you have ___?」这个框架，以及那个不是地铁的词",
+  "introAudioKey": "gb-b06-q-i",
+  "introPt": "大厅里还有四件事悬而未决：行李没出来、完全没信号、钱的问题，还有那个来接你的人迟到了。把它们按顺序理清楚，别让一个问题拖出下一个问题。",
+  "cenario": "到达大厅，传送带已经停了，来接你的人还没到。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b06-q01",
+      "voz": "target_en_gb_f",
+      "es": "My bag hasn't come out.",
+      "tts": "My bag hasn't come out.",
+      "pinyin": "mai bag HAZ-nt kam aut",
+      "pt": "我的行李箱还没出来。"
+    },
+    {
+      "audioKey": "gb-b06-q02",
+      "voz": "target_en_gb_m",
+      "es": "Do you have your baggage tag?",
+      "tts": "Do you have your baggage tag?",
+      "pinyin": "du yu HAV yor BAG-ij tag",
+      "pt": "您带着行李标签吗？"
+    },
+    {
+      "audioKey": "gb-b06-q03",
+      "voz": "target_en_gb_f",
+      "es": "Do you have wifi?",
+      "tts": "Do you have wifi?",
+      "pinyin": "du yu HAV wai-FI",
+      "pt": "你们有 wifi 吗？"
+    },
+    {
+      "audioKey": "gb-b06-q04",
+      "voz": "target_en_gb_m",
+      "es": "Yes, the network's on the sign.",
+      "tts": "Yes, the network's on the sign.",
+      "pinyin": "yes, the NET-werks on the sain",
+      "pt": "有的，网络名称写在牌子上。"
+    },
+    {
+      "audioKey": "gb-b06-q05",
+      "voz": "target_en_gb_f",
+      "es": "Do you have a cash machine?",
+      "tts": "Do you have a cash machine?",
+      "pinyin": "du yu HAV e kash me-SHIN",
+      "pt": "这里有取款机吗？"
+    },
+    {
+      "audioKey": "gb-b06-q06",
+      "voz": "target_en_gb_m",
+      "es": "There's one through the subway, by the bus stops. Cheers.",
+      "tts": "There's one through the subway, by the bus stops. Cheers.",
+      "pinyin": "thehrz wan sru the SAB-wei, bai the bas stops. chirz",
+      "pt": "过了那条地下通道，在公交车站旁边有一台。谢谢。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "离开行李提取区之前，应该先报备什么？",
+      "opcoes": [
+        "来接你的人迟到了",
+        "还没出来的行李箱",
+        "一笔刷卡消费",
+        "酒店地址"
+      ],
+      "correta": 1,
+      "explica": "航空公司柜台是第一件要解决的事：行李不见了，出了大厅就没法处理。"
+    },
+    {
+      "pergunta": "在落地后第一小时的这些问句里，什么是不变的？",
+      "opcoes": [
+        "问的地点",
+        "「Do you have」",
+        "价格",
+        "对方的回答"
+      ],
+      "correta": 1,
+      "explica": "「Do you have」是这个框架的开头；唯一会变的是你需要的那样东西。"
+    },
+    {
+      "pergunta": "工作人员回答「through the subway」。他是在指哪里？",
+      "opcoes": [
+        "地铁站",
+        "马路下面给行人走的地下通道",
+        "机场的接驳列车",
+        "一个换汇窗口"
+      ],
+      "correta": 1,
+      "explica": "在英国，「subway」指的是马路下面的地下通道。地铁是「the Underground」或「the Tube」——这是美式英语和英式英语之间的一个陷阱。一个诚实的例外：在格拉斯哥，地铁真的就叫「the Subway」。"
+    },
+    {
+      "pergunta": "在伦敦地铁闸机前，你应该怎么做？",
+      "opcoes": [
+        "在窗口排队买纸质车票",
+        "进站和出站都贴同一张免接触卡",
+        "先把人民币换成英镑",
+        "买一本一周的车票册"
+      ],
+      "correta": 1,
+      "explica": "已经没有纸质车票了：读卡器会自动计算并封顶你当天和当周的费用——前提是进站和出站都用同一张卡或同一部手机。"
+    },
+    {
+      "pergunta": "你口袋里只有人民币。这会带来什么影响？",
+      "opcoes": [
+        "没什么影响，商店都收人民币",
+        "这里用的是英镑：刷卡支付，或者取一些英镑现金",
+        "必须先去换汇窗口",
+        "每个柜台都要问一下汇率"
+      ],
+      "correta": 1,
+      "explica": "英国不在欧元区，商家也不接受人民币。因为几乎所有消费都能刷卡完成，这个问题通常自然而然就解决了——取款机是一道保险，不是必须走的一步。"
+    },
+    {
+      "pergunta": "为什么要选一个显眼、明确的会合点？",
+      "opcoes": [
+        "为了谈车费的价格",
+        "为了安心等待，不去靠近非正规的拉客服务",
+        "为了填一张表格",
+        "为了取回行李"
+      ],
+      "correta": 1,
+      "explica": "一个稳定的会合点，能解决落地后第一个小时里最后一件悬而未决的事，然后第七部分才开始安排交通。"
+    }
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "id": "b06",
+  "slot": "B06",
+  "nivel": "basico",
+  "numero": 6,
+  "parte": "2B",
+  "titulo": "落地后的六十分钟，一件一件来",
+  "subtitulo": "行李、网络、现金、洗手间和会合点，都要在离开大厅之前搞定",
+  "cena": "行李传送带已经停了，你的箱子还没出来，那位挂着航空公司工牌的工作人员站在二十米外，没有主动走向你。",
+  "moldura": "ganha",
+  "frasePiso": "你要不多说一句废话地搞定落地后的第一个小时。大多数人穿过这个大厅时，手里拿着手机，脑子却是一团乱。",
+  "moldes": [
+    "HAVE"
+  ],
+  "clique": {
+    "contagem": [
+      "问询台",
+      "航空公司柜台",
+      "手机店",
+      "机场商店",
+      "会合点"
+    ],
+    "desconto": "没有人教过你一句专门问网络的话、一句专门问洗手间的话、一句专门问钱的话、再一句专门问 SIM 卡的话。你是用同一个框架，搭配开头都一样的三个词，把这四件事都问出来的。",
+    "piso": "下次你降落在一个陌生的国家，就不会拖着五件悬而未决的事穿过大厅了：你会一件一件解决，先从最不能等的那件开始。"
+  },
+  "permissao": "这个大厅里的每个柜台，你都不需要一句专门的话。同一个框架加上要问的东西，在整栋楼里都是一个完整的问句——没有人会给你的说法打分。你的口音不是开口之前要先解决的问题：这是一个中文母语者说英语时正常要付出的代价，在柜台前完全不会让你多花一分钱。",
+  "permissaoAudioKey": "gb-b06-n07",
+  "espelho": "任何人降落在自己国家一个陌生的机场，都会不假思索地做同样的事——行李、网络、现金，那些悬而未决的小事；这里唯一新鲜的地方，是要用四个开头都一样的词来完成它。",
+  "fatosDatados": [
+    {
+      "fato": "伦敦的公共交通已经没有纸质车票了：靠把一张免接触银行卡、手机或 Oyster 卡贴到读卡器上支付，进站和出站都要贴一次。当天和当周（周一到周日）的总费用会自动封顶。中国的银行卡（带 Visa 或 Mastercard 标志的）可以直接使用。",
+      "fonte": "TfL / National Rail — 纸质 Travelcard 已于 2023 年 1 月取消；周封顶自 2021 年起实行。",
+      "ano": 2026,
+      "revisarAte": "2027-01-31",
+      "ressalva": "永远不要引用具体的封顶金额：它每年一月都会变，而且因区域而异。海外银行卡在境外消费可能会被额外收取每笔交易的手续费。"
+    },
+    {
+      "fato": "英国不使用欧元：货币是英镑，商家不接受欧元（接受的话汇率也很差）。因为这个国家几乎全面无现金化，刷卡在实际操作中就能解决问题。",
+      "fonte": "基本货币事实（不在欧元区）；无现金化的程度是被广泛记录的实地观察结果，不是一条成文的规定。",
+      "ano": 2026,
+      "revisarAte": "2027-06-30"
+    }
+  ],
+  "fichasCulturais": [
+    {
+      "sinal": "地铁闸机前，没有人在窗口排队买票：大家把银行卡或手机往那个黄色的读卡器上一贴就直接通过了，手上什么票都没有。",
+      "suaLeitura": "肯定有个地方能买票，我得先去找票在哪里买，就像在家里那样。",
+      "oQueEAli": "伦敦的公共交通已经取消了纸质车票。靠把一张免接触卡或手机贴到读卡器上支付，进站和出站都要贴，当天和当周的总费用会自动封顶——前提是你要一直用同一张卡或同一部手机。",
+      "oQueVoceFaz": "选定一张卡，或者一部手机，整趟行程都只用它：进站贴一下，出站再贴一下。",
+      "oQueMelhora": "你能顺畅通过闸机，花费不会超过当天的封顶金额，也不用再纠结上车前该买哪种票。",
+      "ondeNaoVale": "不是每个地方都这样：一些地区列车和长途大巴依然需要提前买票，伦敦以外的每个地方公共交通系统也各有各的规则。而且如果是两个人同行，每人都要用自己的卡——两个人共用一张卡会打破封顶的计算方式。",
+      "evidencia": "FONTE",
+      "audioKeys": [
+        "gb-b06-n05"
+      ]
+    },
+    {
+      "sinal": "大厅里有个箭头指向 SUBWAY，图标是一个人走下楼梯。",
+      "suaLeitura": "Subway 就是地铁：我从这里下去就对了。",
+      "oQueEAli": "在英国，subway 指的是马路下面给行人走的地下通道。伦敦的地铁叫 the Underground，或者 the Tube，它的标志是一个红色圆圈中间横着一条蓝色的杠。这个来自美式英语的词，会把游客带着行李箱送到马路底下去。",
+      "oQueVoceFaz": "去找 Underground 这个词，或者那个红蓝相间的圆形标志；如果只看到 subway，那就只是过个马路，到上面之后要重新问路。",
+      "oQueMelhora": "你能一次就走到正确的站台，不用把同一段楼梯上上下下走两遍。",
+      "ondeNaoVale": "这一条在格拉斯哥不适用，那里的地铁官方名字就叫 the Subway——在美国当然也不适用，那里 subway 本来就是地铁的意思。这个陷阱不是出在中文和英语之间，而是出在两种英语之间。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "gb-b06-n06"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b06-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "第六部分。拳头打在重读音节上：wai-FI、TOI-let、CHAR-jer。重音的位置因词而异，不是固定的。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b06-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "传送带停了，你的箱子还没出来，挂着工牌的工作人员离得很远。先处理最不能等的事。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b06-p01",
+      "promptPt": "又是边检，跟昨天一样的问题：你要待多久、为什么来。说你是来度假的。现在请说。",
+      "bloco": "callback",
+      "audioKey": "gb-b06-t01",
+      "es": "I'm on holiday.",
+      "tts": "I'm on holiday.",
+      "pinyin": "aim on HOL-i-dei",
+      "pt": "我在度假。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b06-n03",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "落地后的第一个小时有个顺序：行李、网络、现金、洗手间、会合点。交通安排放在最后。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b06-n04",
+      "bloco": "molde",
+      "tom": "ganha",
+      "pt": "这是那个框架：问这个地方有没有那样东西。三个词永远不变，后面接上要问的东西。听好。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b06-t02",
+      "es": "Do you have wifi?",
+      "tts": "Do you have wifi?",
+      "pinyin": "du yu HAV wai-FI",
+      "pt": "你们有 wifi 吗？"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "wifi",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b06-p02",
+      "promptPt": "你的 eSIM 装好了，但一点信号都没有。在问询台，问这里有没有网络。现在请说。",
+      "audioKey": "gb-b06-t02",
+      "es": "Do you have wifi?",
+      "tts": "Do you have wifi?",
+      "pinyin": "du yu HAV wai-FI",
+      "pt": "你们有 wifi 吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b06-r01",
+      "es": "Yes, the network's on the sign.",
+      "tts": "Yes, the network's on the sign.",
+      "pinyin": "yes, the NET-werks on the sain",
+      "pt": "有的，网络名称写在牌子上。"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "a toilet",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b06-p03",
+      "promptPt": "在飞机上坐了两个小时，出去之前你的身体只想着一件事。在航空公司柜台，问这里有没有洗手间。现在请说。",
+      "audioKey": "gb-b06-t03",
+      "es": "Do you have a toilet?",
+      "tts": "Do you have a toilet?",
+      "pinyin": "du yu HAV e TOI-let",
+      "pt": "这里有洗手间吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b06-r02",
+      "es": "Yes, just past the shops, on the right.",
+      "tts": "Yes, just past the shops, on the right.",
+      "pinyin": "yes, jast past the shops, on the rait",
+      "pt": "有的，过了那些商店就到，在右手边。"
+    },
+    {
+      "consulta": [
+        "pagar/dinheiro"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "a cash machine",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b06-p04",
+      "promptPt": "你身上只有人民币，在这里花不出去。你想在出去之前取一点英镑现金：问出口附近的工作人员这里有没有取款机。现在请说。",
+      "audioKey": "gb-b06-t04",
+      "es": "Do you have a cash machine?",
+      "tts": "Do you have a cash machine?",
+      "pinyin": "du yu HAV e kash me-SHIN",
+      "pt": "这里有取款机吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b06-r03",
+      "es": "There's one through the subway, by the bus stops.",
+      "tts": "There's one through the subway, by the bus stops.",
+      "pinyin": "thehrz wan sru the SAB-wei, bai the bas stops",
+      "pt": "过了那条地下通道，在公交车站旁边有一台。"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "a charger",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b06-p05",
+      "promptPt": "你的手机只剩百分之三的电，你看到大厅咖啡馆有个空插座。问柜台有没有充电器可以借。现在请说。",
+      "audioKey": "gb-b06-t05",
+      "es": "Do you have a charger?",
+      "tts": "Do you have a charger?",
+      "pinyin": "du yu HAV e CHAR-jer",
+      "pt": "你们有充电器吗？"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "a SIM card",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b06-p06",
+      "promptPt": "eSIM 一直连不上。在航站楼的手机店，问他们有没有实体 SIM 卡。现在请说。",
+      "audioKey": "gb-b06-t06",
+      "es": "Do you have a SIM card?",
+      "tts": "Do you have a SIM card?",
+      "pinyin": "du yu HAV e SIM kard",
+      "pt": "你们有 SIM 卡吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b06-r04",
+      "es": "Pay as you go, or monthly?",
+      "tts": "Pay as you go, or monthly?",
+      "pinyin": "pei az yu GOH, or MAN-sli",
+      "pt": "预付费的，还是包月的？"
+    },
+    {
+      "consulta": [
+        "pagar/cartao"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b06-p07",
+      "promptPt": "他刚问了你这个问题，而你只待十天：千万别绑定包月。用他自己的说法回答，句尾加上礼貌用语。现在请说。",
+      "audioKey": "gb-b06-t07",
+      "es": "Pay as you go, please.",
+      "tts": "Pay as you go, please.",
+      "pinyin": "pei az yu GOH, pliz",
+      "pt": "预付费的，麻烦了。"
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "water",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b06-p08",
+      "promptPt": "从起飞到现在你什么都没喝。在机场商店，简单问一句他们有没有卖水。现在请说。",
+      "audioKey": "gb-b06-t08",
+      "es": "Do you have water?",
+      "tts": "Do you have water?",
+      "pinyin": "du yu HAV WOH-ter",
+      "pt": "你们有水吗？"
+    },
+    {
+      "consulta": [
+        "transporte/bagagem"
+      ],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "a trolley",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b06-p09",
+      "promptPt": "两个行李箱，你一个人搬不动。你不知道大厅里那种带轮子的推车英语怎么说——试试看，用这个框架加上你能想到的词。现在请说。",
+      "audioKey": "gb-b06-t09",
+      "es": "Do you have a trolley?",
+      "tts": "Do you have a trolley?",
+      "pinyin": "du yu HAV e TROL-i",
+      "pt": "你们有手推车吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b06-r05",
+      "es": "Trolleys are just outside, love. Cheers.",
+      "tts": "Trolleys are just outside, love. Cheers.",
+      "pinyin": "TROL-iz ar jast aut-SAID, lav. chirz",
+      "pt": "手推车就在外面。谢啦。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b06-n05",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "闸机前没有窗口：把卡贴在那个黄色的读卡器上就行。进站和出站，都用同一张。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b06-n06",
+      "bloco": "capsula",
+      "tom": "protege",
+      "pt": "他刚说了 subway。在这里这个词不是地铁：是马路下面的地下通道。地铁是 Underground。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b06-n07",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "不需要每个柜台都用不同的话。同一个框架加上要问的东西：这已经是一个完整的问句了，带着口音也一样。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b06-n08",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "你问出了网络、洗手间、现金、SIM 卡。没有人给过你四句不同的话：是你自己搭出来的。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "audioKey": "gb-b06-s01",
+      "es": "Do you have wifi? Do you have a toilet? Do you have a cash machine?",
+      "tts": "Do you have wifi? Do you have a toilet? Do you have a cash machine?",
+      "pinyin": "du yu HAV wai-FI? du yu HAV e TOI-let? du yu HAV e kash me-SHIN?",
+      "pt": "同一个开头，三样不同的东西。have 里的 H 不能被吞掉。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b06-n09",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "第六部分完成。行李、网络、现金、洗手间、会合点：五件事，一个框架就搞定了。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一个框架，能应付大半打柜台",
+    "secoes": [
+      {
+        "titulo": "开放的那个词",
+        "corpo": "「Do you have」保持不变，你只需要换掉最后要问的那样东西。这个词不需要变形、不用因为主语而变化、也不用和任何东西保持一致——这是英语送给中文母语者的一份礼物。你要做的不是造句，而是把它说出来。只有两点要注意：have 里的 H 要吐气——像「hotel」那样吐出来，不要吞掉——要问的那样东西要在句尾说清楚。",
+        "exemplos": [
+          {
+            "es": "Do you have wifi?",
+            "pt": "你们有 wifi 吗？"
+          },
+          {
+            "es": "Do you have a toilet?",
+            "pt": "这里有洗手间吗？"
+          },
+          {
+            "es": "Do you have a cash machine?",
+            "pt": "这里有取款机吗？"
+          }
+        ]
+      },
+      {
+        "titulo": "要说「toilet」或「loo」，不要说「restroom」",
+        "corpo": "在公共场所，正式说法是「the toilets」——或者更随意也完全常见的「the loo」。「Restroom」和「bathroom」是美式说法：能听懂，但一开口就会被认出是美式英语。用这个框架就是：「Do you have a toilet?」。还有三个词也是同样的道理，很多学习者以为自己早就会了：账单要说「the bill」不是「the check」，排队要说「a queue」不是「a line」，外带要说「takeaway」不是「takeout」。"
+      },
+      {
+        "titulo": "「Subway」不是地铁",
+        "corpo": "工作人员说的是「through the subway」。在英国，「subway」指的是马路下面给行人走的地下通道；伦敦的地铁叫「the Underground」，或者「the Tube」。要是问「the subway」，就会被带着行李箱送到马路底下去。一个诚实的反例：在格拉斯哥，地铁的官方名字确实就叫「the Subway」。所以这个陷阱不是出在中文和英语之间——而是出在美式英语和英式英语之间，而这会是这门课里反复出现的一种情况。"
+      },
+      {
+        "titulo": "「Cheers」能顶你一半的「谢谢」",
+        "corpo": "柜台那位工作人员最后说了句「Cheers」。这不是在敬酒：根据场合的不同，它是「谢谢」「再见」或者「没问题了」，你一天里会听到三十次。用「Cheers」代替「Thank you very much」，只用一个音节，就能让你听起来更地道一些。眼下你还不需要产出别的，只需要能听懂它，并把它送回去就够了。"
+      },
+      {
+        "titulo": "整趟行程用同一张卡",
+        "corpo": "伦敦的公共交通已经没有纸质车票了。你把免接触卡——或手机——贴到进站口，出站时再贴一次；系统会自己计算并封顶你当天和当周的总费用。唯一重要的规则是：永远用同一张卡，不然封顶计算就会被打乱。中国的银行卡可以直接使用，这一点跟前往荷兰的旅客要面对的情况不同；不过你的银行可能会对每笔交易收取手续费——出发前先确认一下。"
+      },
+      {
+        "titulo": "这里用的是英镑，不是欧元或人民币",
+        "corpo": "英国不在欧元区。你手上的人民币在商店里派不上用场，能兑换的地方汇率也不划算。因为这个国家几乎所有消费都能刷卡完成，换汇这个问题通常自然而然就解决了——大厅里的取款机是一道保险，不是必须走的一步。"
+      },
+      {
+        "titulo": "接下来是交通",
+        "corpo": "第六部分在一个明确、稳定的会合点结束。选择和商量交通方式，是第七部分的内容，这样两类决定就不会在人行道上混在一起。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "id": "b14",
+  "slot": "B14",
+  "nivel": "basico",
+  "numero": 14,
+  "parte": "14A",
+  "titulo": "账单不该有隐藏的惊喜，除了一样",
+  "subtitulo": "标出来的价格就是要付的价格——除了那一行可以要求去掉的服务费",
+  "cena": "账单显示 57.50 英镑，你心里算的却是 50 英镑，服务员就站在那里，等着看你会有什么反应。",
+  "moldura": "ganha",
+  "frasePiso": "你要能看懂一份英国账单，清楚知道数字为什么变了，而不会觉得自己被多收了钱。",
+  "permissao": "你不需要在桌上精确算出那个百分比。知道有服务费这一行、也知道可以要求去掉，这就足够了；没有人指望你能心算得分毫不差。",
+  "permissaoAudioKey": "gb-b14-n09",
+  "espelho": "在中国，给小费基本不是常规习惯，价格标多少就是多少；这里几乎是另一种情况——标出来的价格已经含税，但不含服务费，服务费会额外出现在账单上，你需要学会认出它来。",
+  "fichasCulturais": [
+    {
+      "sinal": "账单上出现一行「Service charge (12.5%)」，已经被加进了总额里，而你都还没来得及考虑要不要给小费。",
+      "suaLeitura": "这是强加给我的额外费用，没提前问过我，感觉像个小陷阱。",
+      "oQueEAli": "在很多英国餐厅，大约 12.5% 的自愿性服务费会自动加进账单——这是行业惯例，不是法律规定，一般在 10% 到 15% 之间浮动。",
+      "oQueVoceFaz": "在加任何东西之前，先把整张账单看完。如果觉得这笔服务费不合理，可以要求去掉，不需要解释理由。",
+      "oQueMelhora": "你付的正是你该付的金额，不会在已经包含服务费的基础上又额外多给一次小费，如果服务确实很差，你也保留了主动权。",
+      "ondeNaoVale": "在酒吧吧台不适用，那里从来不付服务费也不给小费——参见第十一部分。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-b14-n05"]
+    }
+  ],
+  "fatosDatados": [
+    {
+      "id": "service-charge-discricionario",
+      "afirmacao": "In most restaurants, a discretionary service charge of around 12.5% is added to the bill. You can ask for it to be removed, without giving a reason — it typically ranges from 10 to 15%, with 12.5% most common in London.",
+      "valor": "~12.5%",
+      "fonte": "Praxe do setor, amplamente documentada",
+      "ano": 2026,
+      "revisarAte": "2027-01-31",
+      "evidencia": "CONSENSO",
+      "risco": "alto",
+      "audioKeys": ["gb-b14-n05", "gb-b14-n06"]
+    },
+    {
+      "id": "vat-deja-inclus",
+      "afirmacao": "The price on the menu already includes VAT. What is written is what you pay — unlike the American system, where sales tax is added at the till.",
+      "fonte": "Fato fiscal básico (IVA britânico incluído no preço exibido ao consumidor)",
+      "ano": 2026,
+      "revisarAte": "2027-06-30",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": ["gb-b14-n03"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b14-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "第十四部分。数字要读得节奏均匀：FIF-ty-SEV-en，FIF-ty-SIKS。每个音节的分量要一样。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b14-n02",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "账单显示五十七英镑五十，你心里算的是五十英镑。服务员站在那里，等着。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b14-p01",
+      "promptPt": "菜上来之前，像上一部分那样再声明一次你的过敏情况。现在请说。",
+      "bloco": "callback",
+      "molde": "WITHOUT",
+      "audioKey": "gb-b14-t01",
+      "es": "No onions, please.",
+      "tts": "No onions, please.",
+      "pinyin": "noh AN-yenz, pliz",
+      "pt": "不要洋葱，谢谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b14-n03",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "好消息：菜单上的价格已经含税了。写多少就是付多少——不会额外再加。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b14-t02",
+      "es": "That price already includes everything.",
+      "tts": "That price already includes everything.",
+      "pinyin": "that prais ol-RE-di in-KLUDZ EV-ri-sing",
+      "pt": "这个价格已经包含了一切。"
+    },
+    {
+      "consulta": ["pagar/dividir"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "CAN-I",
+      "encaixe": "split the bill",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b14-p02",
+      "promptPt": "你们四个人，每人都想付自己的那份。问服务员能不能分开付账单。现在请说。",
+      "audioKey": "gb-b14-t03",
+      "es": "Can I split the bill?",
+      "tts": "Can I split the bill?",
+      "pinyin": "kn ai split the bil",
+      "pt": "能分开付账单吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b14-r01",
+      "es": "Sure, four ways?",
+      "tts": "Sure, four ways?",
+      "pinyin": "shur, for weiz",
+      "pt": "没问题，分成四份吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b14-n04",
+      "pt": "最好在账单打印之前就问。账单一旦打印成一张统一的单子，再分开就要多花点时间。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b14-n05",
+      "bloco": "capsula",
+      "tom": "protege",
+      "pt": "这才是真正的惊喜：大约 12.5% 的自愿性服务费，常常会出现在账单最下面。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b14-n06",
+      "tom": "ganha",
+      "pt": "「自愿性」意味着可以要求去掉，不需要解释理由。这是行业惯例，从来不是法律规定。"
+    },
+    {
+      "consulta": ["pagar/errado"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "GET",
+      "encaixe": "the bill without the service charge",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b14-p03",
+      "promptPt": "今晚的服务真的很差，你不想付那 12.5%。要一份不含服务费的账单。现在请说。",
+      "audioKey": "gb-b14-t04",
+      "es": "Could I have the bill without the service charge, please?",
+      "tts": "Could I have the bill without the service charge, please?",
+      "pinyin": "kud ai hav the bil wi-THAUT the SER-vis charj, pliz",
+      "pt": "能给我一份不含服务费的账单吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b14-n07",
+      "pt": "这不是一个新框架：只是把你早就会的「Could I have」和「without」拼在一起而已。"
+    },
+    {
+      "consulta": ["mesa/conta"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "CAN-I",
+      "encaixe": "see that again",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b14-p04",
+      "promptPt": "你不确定服务费是不是已经包含在内了。冷静地要求再看一眼账单。现在请说。",
+      "audioKey": "gb-b14-t05",
+      "es": "Can I see that again?",
+      "tts": "Can I see that again?",
+      "pinyin": "kn ai si that e-GEN",
+      "pt": "能再给我看一下吗？"
+    },
+    {
+      "consulta": ["pagar/dinheiro"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "CAN-I",
+      "encaixe": "pay by card",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b14-p05",
+      "promptPt": "你身上只有人民币。问能不能刷卡付款。现在请说。",
+      "audioKey": "gb-b14-t06",
+      "es": "Can I pay by card?",
+      "tts": "Can I pay by card?",
+      "pinyin": "kn ai pei bai kard",
+      "pt": "我能刷卡付款吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b14-r02",
+      "es": "Of course — we're card only, actually.",
+      "tts": "Of course — we're card only, actually.",
+      "pinyin": "of kors — wir kard OHN-li, AK-tyu-a-li",
+      "pt": "当然——其实我们只收卡。"
+    },
+    {
+      "consulta": ["pagar/pedir"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "GET",
+      "encaixe": "a receipt",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b14-p06",
+      "promptPt": "你刚付完款，想留个凭证记账。在起身之前要一张收据。现在请说。",
+      "audioKey": "gb-b14-t07",
+      "es": "Could I have a receipt?",
+      "tts": "Could I have a receipt?",
+      "pinyin": "kud ai hav e ri-SIT",
+      "pt": "能给我一张收据吗？"
+    },
+    {
+      "consulta": ["mesa/conta"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "HAVE",
+      "encaixe": "a pen",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b14-p07",
+      "promptPt": "你要在收据的纸质联上签字，手边却没有笔。问他们有没有一支。现在请说。",
+      "audioKey": "gb-b14-x1",
+      "es": "Do you have a pen?",
+      "tts": "Do you have a pen?",
+      "pinyin": "du yu hav e pen",
+      "pt": "你们有笔吗？"
+    },
+    {
+      "consulta": ["mesa/conta"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "EXCUSE",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b14-p08",
+      "promptPt": "你还没看完账单，服务员就拿着机器转向了另一桌。把他叫回来。现在请说。",
+      "audioKey": "gb-b14-x2",
+      "es": "Excuse me.",
+      "tts": "Excuse me.",
+      "pinyin": "eks-KYUZ mi",
+      "pt": "不好意思。"
+    },
+    {
+      "consulta": ["pagar/dinheiro"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "CAN-I",
+      "encaixe": "pay in cash instead",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b14-p09",
+      "promptPt": "机器刷了两次都读不出你的卡。问能不能改用现金付款。现在请说。",
+      "audioKey": "gb-b14-x3",
+      "es": "Can I pay in cash instead?",
+      "tts": "Can I pay in cash instead?",
+      "pinyin": "kn ai pei in kash in-STED",
+      "pt": "能改用现金付款吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b14-n08",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "如果你是在酒吧吧台点单——不是坐在桌边——记住第十一部分说过的：那种情况完全不用付服务费，也不用给小费。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b14-n09",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "你不需要在桌上算出精确的百分比。知道有这一行、也知道可以要求去掉，就已经够了。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b14-n10",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "第十四部分完成。价格已经含税，但不一定含服务费——而这个，你可以要求去掉。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "唯一一个不在价格里的数字",
+    "secoes": [
+      {
+        "titulo": "标出来的价格，就是要付的价格",
+        "corpo": "和美国的销售税不一样，英国的增值税（VAT）永远已经包含在你看到的价格里——不管是在餐厅还是在商店。收银台不用再算什么。"
+      },
+      {
+        "titulo": "服务费，不是法律规定",
+        "corpo": "10% 到 15% 的服务费（伦敦常见的是 12.5%）是行业惯例，从来不是法律义务。可以要求去掉，不需要解释理由——这既不违规，也不会显得失礼。"
+      },
+      {
+        "titulo": "和中国「不给小费」的习惯对照",
+        "corpo": "在中国，给小费基本不是常规做法，标多少价格就付多少钱。这里正好相反：服务费是额外加上去的，作为中国游客，要做的不是主动去加钱，而是要懂得——如果自己愿意，也可以把它减掉。"
+      },
+      {
+        "titulo": "在酒吧吧台，不涉及服务费",
+        "corpo": "这条规则只适用于桌边服务。在酒吧吧台点单，从来不用留小费；等价的心意，正如第十一部分提到的，是请酒保喝一杯。"
+      }
+    ]
+  }
+}

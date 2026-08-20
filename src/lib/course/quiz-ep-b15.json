@@ -1,0 +1,63 @@
+{
+  "id": "q-b15",
+  "nivel": "basico",
+  "titulo": "问答 — 价格从不在你以为的那个尺码上",
+  "subtitulo": "「How much is ___?」、英国的尺码，以及不是人民币的英镑",
+  "introAudioKey": "gb-b15-q-i",
+  "introPt": "没有价格标签，也看不到尺码，店员在两米开外。找出能同时解决这两个问题的框架，还有涉及的那个数字。",
+  "cenario": "服装店里，打折桌前。",
+  "dialogo": [
+    {
+      "audioKey": "gb-b15-q01",
+      "voz": "target_en_gb_f",
+      "es": "How much is this?",
+      "tts": "How much is this?",
+      "pinyin": "hau mach iz this",
+      "pt": "这个多少钱？"
+    },
+    {
+      "audioKey": "gb-b15-q02",
+      "voz": "target_en_gb_m",
+      "es": "That one's eighteen pounds.",
+      "tts": "That one's eighteen pounds.",
+      "pinyin": "that wanz EI-tin paundz",
+      "pt": "这件是十八英镑。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "哪个框架既能问单件商品的价格，也能问整袋商品的总价？",
+      "opcoes": ["What's the price?", "How much is ___?", "Give me the total", "Cost me ___"],
+      "correta": 1,
+      "explica": "「How much is」加上任何东西，都能覆盖单件商品或者整袋商品。它不会变形。"
+    },
+    {
+      "pergunta": "英国的 UK 10 大概对应什么样的尺码情况？",
+      "opcoes": ["和中国尺码完全一样", "和常见的中国尺码存在明显差异", "永远正好是第 10 号", "取决于颜色"],
+      "correta": 1,
+      "explica": "英国的尺码体系和中国常见的尺码并不是直接对应的关系，不同品牌之间差异还会更大。试穿比计算更能解决问题。"
+    },
+    {
+      "pergunta": "商店里标出来的数字是最终价格吗？",
+      "opcoes": [
+        "不是，税还要在收银台另外加",
+        "是的，增值税已经包含在标出来的价格里",
+        "只有打折商品才是",
+        "取决于具体的商店"
+      ],
+      "correta": 1,
+      "explica": "跟第十四部分讲的一样，英国的增值税已经包含在标出来的价格里。收银台不会有意外。"
+    },
+    {
+      "pergunta": "你身上只有人民币。在商店里会发生什么？",
+      "opcoes": [
+        "商店会很乐意接受人民币",
+        "商家不接受人民币，但刷卡几乎能解决一切",
+        "进店之前必须先把钱换掉",
+        "只有大商场才接受人民币"
+      ],
+      "correta": 1,
+      "explica": "英国不在欧元区，也不接受人民币现金，但因为这个国家几乎全面无现金化，实际操作中刷卡能解决几乎一切问题。"
+    }
+  ]
+}

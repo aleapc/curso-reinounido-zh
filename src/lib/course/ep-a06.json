@@ -1,0 +1,249 @@
+{
+  "id": "a06",
+  "slot": "A06",
+  "nivel": "avancado",
+  "numero": 34,
+  "parte": "A06",
+  "titulo": "他们的日历",
+  "subtitulo": "英格兰一年有八个法定假日，12 月 25 日连地铁都会停运，26 日人们天不亮就开始排队",
+  "cena": "你原本计划周一去博物馆，门口的工作人员脸上已经写着他接下来要跟你解释为什么今天没开门。",
+  "moldura": "ganha",
+  "frasePiso": "在做任何计划之前先问两句——「今天是法定假日吗？」和「你们今天开门吗？」——不用背下一个日期，就能把整个日历都问明白。",
+  "fatosDatados": [
+    {
+      "id": "gb-bank-holidays",
+      "afirmacao": "England and Wales observe eight bank holidays a year, Scotland nine and Northern Ireland ten, on which banks and most public offices close. Most shops, restaurants and attractions stay open on ordinary bank holidays — often with special hours — with Christmas Day and, in much of the country, Easter Sunday as the two real exceptions.",
+      "fonte": "GOV.UK — UK bank holidays",
+      "ano": 2026,
+      "revisarAte": "2027-01-15",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": ["gb-a06-n04"]
+    },
+    {
+      "id": "gb-noel-transporte",
+      "afirmacao": "Christmas Day is the one day of the year when nearly everything genuinely stops in the UK: almost all shops close, and the London Underground and most public transport across the country run no service at all — a level of shutdown that catches many foreign visitors by surprise. Boxing Day (26 December) is the opposite: shops reopen with major sales, and queues form outside some stores well before dawn.",
+      "fonte": "Consenso de fontes sobre comércio e transporte britânico no Natal (TfL — Christmas Day service; imprensa sobre Boxing Day sales)",
+      "ano": 2026,
+      "revisarAte": "2027-01-15",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": ["gb-a06-n07"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a06-n01",
+      "gesto": 3,
+      "bloco": "aquecimento",
+      "pt": "你不需要背下整个英国的日历。你要学的是两句问话，让日历替你说话。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a06-n02",
+      "bloco": "callback",
+      "pt": "回顾一下昨天。有人用威尔士语向你问好，你选择继续说英语。热情地再说一遍。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a06-p01",
+      "promptPt": "现在请说。",
+      "audioKey": "gb-a06-t01",
+      "es": "English is great, thanks.",
+      "tts": "English is great, thanks.",
+      "pinyin": "ING-lish iz greit, sanks",
+      "pt": "英语挺好的，谢谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a06-n03",
+      "bloco": "cena",
+      "tom": "ganha",
+      "pt": "你原本计划周一去博物馆。门口的工作人员脸上写着他接下来要解释点什么。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a06-o01",
+      "es": "Sorry, we're closed today — it's the bank holiday.",
+      "tts": "Sorry, we're closed today — it's the bank holiday.",
+      "pinyin": "SO-ri, wir klohzd tu-DEI — its the bank HOL-i-dei",
+      "pt": "不好意思，我们今天没开门——今天是法定假日。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a06-n04",
+      "bloco": "corpo",
+      "tom": "ganha",
+      "pt": "英格兰一年有八个法定假日。银行和政府部门会关门；大部分商店照常营业。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a06-p02",
+      "promptPt": "在打乱整个计划之前，先问一件更具体、更眼前的事。现在请说。",
+      "audioKey": "gb-a06-t02",
+      "es": "Is the shopping centre open today?",
+      "tts": "Is the shopping centre open today?",
+      "pinyin": "iz the SHOP-ing SEN-ter OH-pen tu-DEI",
+      "pt": "购物中心今天开门吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a06-o02",
+      "es": "Yeah, everything's open except the banks and this place.",
+      "tts": "Yeah, everything's open except the banks and this place.",
+      "pinyin": "ye, EV-ri-things OH-pen ik-SEPT the banks and this pleis",
+      "pt": "开着呢，除了银行和这里，其他都开门。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a06-n05",
+      "pt": "这后半句只有你问了才会得到。官方的日历和实际的日历，并不是一回事。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-a06-n06",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "真正的例外是 12 月 25 日：那一天，连伦敦地铁都不运行。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a06-o03",
+      "es": "We're shut on Christmas Day, no transport at all — but doors open early on the 26th for the sales.",
+      "tts": "We're shut on Christmas Day, no transport at all — but doors open early on the 26th for the sales.",
+      "pinyin": "wir shat on KRIS-mas dei, noh TRANS-port at ol — bat dorz OH-pen ER-li on the twen-ti-SIKSTH for the seilz",
+      "pt": "圣诞节那天我们不开门，交通也完全停摆——但 26 号一大早就开门搞促销。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a06-p03",
+      "promptPt": "那天什么交通都没有，这让你真的很惊讶。说出来。现在请说。",
+      "audioKey": "gb-a06-t03",
+      "es": "No transport at all? People actually plan around that?",
+      "tts": "No transport at all? People actually plan around that?",
+      "pinyin": "noh TRANS-port at ol? PI-pl AK-tyu-a-li plan e-RAUND that",
+      "pt": "完全没有交通？大家真的会围着这个安排计划吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a06-o04",
+      "es": "Oh, absolutely. Everyone's home by then anyway.",
+      "tts": "Oh, absolutely. Everyone's home by then anyway.",
+      "pinyin": "oh, AB-so-lut-li. EV-ri-wanz hohm bai then EN-i-wei",
+      "pt": "那当然。反正到那时候大家都已经在家了。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-a06-p04",
+      "promptPt": "比起 26 号的促销，你对他自己这一天怎么过更感兴趣。问他这一天做什么。现在请说。",
+      "audioKey": "gb-a06-t04",
+      "es": "So, what do you do for Christmas Day?",
+      "tts": "So, what do you do for Christmas Day?",
+      "pinyin": "soh, wot du yu du for KRIS-mas dei",
+      "pt": "那你自己圣诞节那天一般做什么？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-a06-o05",
+      "es": "Whole family round, way too much food, and the Queen's speech on the telly at three.",
+      "tts": "Whole family round, way too much food, and the Queen's speech on the telly at three.",
+      "pinyin": "hohl FA-mi-li raund, wei tu mach fud, and the kwinz spich on the TE-li at sri",
+      "pt": "全家人聚在一起，吃得多到离谱，下午三点看电视里的王室演讲。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-a06-p05",
+      "promptPt": "听起来挺美好的。说出来。现在请说。",
+      "audioKey": "gb-a06-t05",
+      "es": "That sounds like a good day, honestly.",
+      "tts": "That sounds like a good day, honestly.",
+      "pinyin": "that saundz laik e gud dei, ON-est-li",
+      "pt": "说实话，听起来是很美好的一天。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-a06-s01",
+      "es": "Is the shopping centre open today? No transport at all? So, what do you do for Christmas Day?",
+      "tts": "Is the shopping centre open today? No transport at all? So, what do you do for Christmas Day?",
+      "pinyin": "iz the SHOP-ing SEN-ter OH-pen tu-DEI. noh TRANS-port at ol. soh, wot du yu du for KRIS-mas dei",
+      "pt": "跟读这两个用来计划的问题，还有能让你收到一份邀请的那句。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-a06-n08",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "A06 完成。问是不是法定假日，问对方开不开门，问那天他自己做什么。这套问法能应对任何一次闭门羹。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "两份对不上号的清单",
+    "secoes": [
+      {
+        "titulo": "官方法定假日其实不多",
+        "corpo": "一年只有八个日期会让英格兰和威尔士的银行和大部分政府部门关门——苏格兰是九个，北爱尔兰是十个。这是一份短清单，也是唯一真正能保证全国各地都关门的清单。"
+      },
+      {
+        "titulo": "商家几乎从不照着这份清单走",
+        "corpo": "除了一个例外——圣诞节当天——大部分商店和餐厅即使在政府关门的日子也照常营业。一家小店挂出「因法定假日休息」的牌子，几乎总是店主自己的决定，不是什么强制规定。"
+      },
+      {
+        "titulo": "12 月 25 日才是真正的全面停摆",
+        "corpo": "这一天，伦敦地铁和全国大部分公共交通干脆完全停运——这种停摆的程度，会让许多习惯了最低限度服务的外国访客大吃一惊。第二天，也就是 Boxing Day，则完全相反：商店重新开门、大搞促销，一些店铺门口天不亮就排起了队。"
+      },
+      {
+        "titulo": "问具体的地方，而不是问整个国家",
+        "corpo": "「今天是法定假日吗？」告诉你的是全国性的规则。「你们开门吗？」才能给你真正需要的答案，因为每家店都是自己做决定，常常在任何官方清单上都查不到的日子里关门。"
+      }
+    ]
+  },
+  "permissao": "你完全有权围绕一个法定假日提前规划，而不是一头撞上去。错过 12 月 26 日一大早的促销，什么都没损失——很多本地人每年都会做出同样的取舍，真去排队的人也早就知道会挤成什么样。",
+  "permissaoAudioKey": "gb-a06-n07",
+  "espelho": "任何见过外国访客兴冲冲地跑来，指望在自己国家的法定假日享受到正常服务的人，都从另一边经历过这件事——信息其实是公开的，只是没写进他带来的那本旅游指南里。解决办法在两个方向上是一样的：做计划之前，先问问本地人。",
+  "fichasCulturais": [
+    {
+      "sinal": "你确认过某个日期不在官方法定假日清单上，也据此安排了计划，结果那个地方还是关着门。",
+      "suaLeitura": "我查到的信息是错的，或者这个地方不太靠谱。",
+      "oQueEAli": "英国有两份对不上号的日历：一份是官方法定假日的短清单，另一份是实际上会被遵守、但不出现在任何法律条文里的更长清单——圣诞节尤其如此——它会让商家关门。",
+      "oQueVoceFaz": "去问人，而不是查清单，而且要问两遍：今天是不是法定假日，以及这家店具体开不开门。",
+      "oQueMelhora": "你得到的是针对你要去的那个具体地方的真实答案，这才是真正对你有用的那个答案。",
+      "ondeNaoVale": "这条对为游客设计的大酒店、机场和连锁品牌不太适用，它们在法定假日通常照常营业——这种落差主要出现在小商铺、博物馆和行政办公场所。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-a06-n05"]
+    },
+    {
+      "sinal": "有人兴致勃勃地跟你描述天不亮就去排队抢 Boxing Day 促销的经历，你觉得这有点过头了。",
+      "suaLeitura": "这是不加节制的消费主义，我应该说点什么。",
+      "oQueEAli": "对很多人来说，Boxing Day 与其说是一次购物，不如说是一种社交传统——圣诞节刚过就和家人一起出门、排队时的那份兴奋——从外面看像是一场交易，其实更多是关于人和氛围。",
+      "oQueVoceFaz": "带着真诚的好奇提问，而不是评判：他们想买什么，是不是每年都去，排队时的气氛怎么样。",
+      "oQueMelhora": "你了解到了这个传统里有人情味的一面，而不是只停留在报道里能看到的那层表面。",
+      "ondeNaoVale": "这不是说你不能对整体的消费文化有自己的看法——这条特指的是，不要把主人兴致勃勃的分享，变成一场他没要求过的说教。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-a06-n06"]
+    }
+  ]
+}

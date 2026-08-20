@@ -1,0 +1,82 @@
+{
+  "id": "q-a05",
+  "nivel": "avancado",
+  "titulo": "问答 — 另一种语言",
+  "subtitulo": "威尔士语与英语并排存在，一个地方词汇要诚实地说出来",
+  "introAudioKey": "gb-a05-q-i",
+  "introPt": "你还没开口，店员就用威尔士语向你问好了。听完对话，回答问题。",
+  "cenario": "加的夫的一家店铺。",
+  "dialogo": [
+    {
+      "audioKey": "gb-a05-q01",
+      "voz": "target_en_gb_f",
+      "es": "Bore da! Just you today, or can I help with anything?",
+      "tts": "Bore da! Just you today, or can I help with anything?",
+      "pt": "早上好！今天就随便看看，还是需要帮忙？"
+    },
+    {
+      "audioKey": "gb-a05-q02",
+      "voz": "target_en_gb_f",
+      "es": "English is great, thanks — I'm actually trying to practise.",
+      "tts": "English is great, thanks — I'm actually trying to practise.",
+      "pt": "英语挺好的，谢谢——其实我正想练习英语。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "威尔士语在英国是官方语言吗？",
+      "opcoes": [
+        "是的，在威尔士与英语同为官方语言",
+        "不是，只是一种没有正式地位的民俗语言",
+        "只在几个偏远村庄使用",
+        "是的，但只是最近才有的地位"
+      ],
+      "correta": 0,
+      "explica": "威尔士语在威尔士与英语同为官方语言：路牌、文件和公告都是两种语言并排出现。"
+    },
+    {
+      "pergunta": "店员一见到你就用威尔士语问好。这部分说明这是什么？",
+      "opcoes": [
+        "对你英语水平的一种评判",
+        "这个国家正常运作在两种语言之间，随后切换成英语",
+        "店员的一个失误",
+        "只会在机场发生的事"
+      ],
+      "correta": 1,
+      "explica": "本地问候语出于习惯先说出口，随后对话切换成英语，这不是在考你。"
+    },
+    {
+      "pergunta": "英格兰北方的服务员用「pet」称呼你，是什么意思？",
+      "opcoes": [
+        "说你像个宠物",
+        "一种带地方色彩的亲切称呼，用来称呼陌生人，没有暧昧含义",
+        "一种伪装过的侮辱",
+        "只用来称呼小孩的词"
+      ],
+      "correta": 1,
+      "explica": "在北方，love、pet 或 duck 是地方性的亲切称呼，店家会用来称呼任何一位顾客。"
+    },
+    {
+      "pergunta": "你第一次用了「ta」，对方夸奖了你。你可以诚实地说什么？",
+      "opcoes": [
+        "顺着让对方以为你已经说得像本地人一样",
+        "「Just the one word, but I wanted to get it right」",
+        "什么都不说",
+        "转移话题"
+      ],
+      "correta": 1,
+      "explica": "说清楚那只是这一个词、说得用心，能同时保住努力和诚实。"
+    },
+    {
+      "pergunta": "苏格兰高地至今仍有一定使用基础的语言是哪种？",
+      "opcoes": [
+        "苏格兰盖尔语",
+        "法语",
+        "荷兰语",
+        "到处都只有英语"
+      ],
+      "correta": 0,
+      "explica": "苏格兰盖尔语在高地部分地区依然被使用和标示，与英语并存。"
+    }
+  ]
+}

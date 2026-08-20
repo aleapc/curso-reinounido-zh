@@ -1,0 +1,82 @@
+{
+  "id": "q-i10",
+  "nivel": "intermediario",
+  "titulo": "问答 — 钱的事，不用大惊小怪",
+  "subtitulo": "餐厅的服务费，酒吧吧台什么都不用留",
+  "introAudioKey": "gb-i10-q-i",
+  "introPt": "账单上出现一行已经加进去的服务费。听听这位旅行者是怎么确认总额、又要求去掉这行费用的。",
+  "cenario": "英国的一家餐厅，结账的时候。",
+  "dialogo": [
+    {
+      "audioKey": "gb-i10-q01",
+      "voz": "target_en_gb_m",
+      "es": "Here's your bill whenever you're ready.",
+      "tts": "Here's your bill whenever you're ready.",
+      "pinyin": "hirz yor bil wen-EV-er yor RED-i",
+      "pt": "这是您的账单，您准备好了就付。"
+    },
+    {
+      "audioKey": "gb-i10-q02",
+      "voz": "target_en_gb_f",
+      "es": "Could I have the bill without the service charge, please?",
+      "tts": "Could I have the bill without the service charge, please?",
+      "pinyin": "kud ai hav the bil wi-THAUT the SER-vis charj, pliz",
+      "pt": "能给我一份不含服务费的账单吗？"
+    },
+    {
+      "audioKey": "gb-i10-q03",
+      "voz": "target_en_gb_m",
+      "es": "Of course, no problem at all.",
+      "tts": "Of course, no problem at all.",
+      "pinyin": "of kors, noh PROB-lem at ol",
+      "pt": "当然，完全没问题。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "餐厅账单上大约 12.5% 的服务费是……",
+      "opcoes": ["政府规定的强制税费", "一种自愿性的行业惯例，可以要求去掉", "法律禁止的做法", "永远是 20%"],
+      "correta": 1,
+      "explica": "这是行业惯例，不是法律规定——不解释理由就要求去掉是完全合理的。"
+    },
+    {
+      "pergunta": "在酒吧吧台，你会怎么处理小费？",
+      "opcoes": ["永远留 10%", "什么都不留——等价的心意是请酒保喝一杯", "问酒保该留多少", "永远凑整到下一个整数英镑"],
+      "correta": 1,
+      "explica": "「And one for yourself」在酒吧吧台代替了小费。"
+    },
+    {
+      "pergunta": "英国商品标签上的价格意味着什么？",
+      "opcoes": [
+        "收银台还要另外加税",
+        "增值税已经包含在内，跟你熟悉的定价方式一样",
+        "价格会根据时间变化",
+        "需要讨价还价"
+      ],
+      "correta": 1,
+      "explica": "跟美国的销售税不同，英国的增值税已经包含在标出来的价格里。"
+    },
+    {
+      "pergunta": "哪句话是用来要求把服务费从账单里去掉的？",
+      "opcoes": [
+        "How much is it all together?",
+        "Could I have the bill without the service charge, please?",
+        "Is the tip included?",
+        "Do you prefer the mug or the print?"
+      ],
+      "correta": 1,
+      "explica": "这是 Could I have 加上 without 拼起来的用法，不是一个新框架。"
+    },
+    {
+      "pergunta": "六人或以上的桌子，常常会发生什么？",
+      "opcoes": [
+        "没什么特别的",
+        "会自动加收服务费，并且账单上会写明",
+        "这顿饭是免费的",
+        "永远要分好几次付款"
+      ],
+      "correta": 1,
+      "explica": "在计算任何东西之前，最好先把账单看完整。"
+    }
+  ]
+}

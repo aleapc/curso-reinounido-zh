@@ -1,0 +1,306 @@
+{
+  "id": "b17",
+  "slot": "B17",
+  "nivel": "basico",
+  "numero": 17,
+  "parte": "17A",
+  "titulo": "决定去药店还是去医院的那种疼痛",
+  "subtitulo": "问出能缓解疼痛的东西，反映丢失的物品，以及按严重程度该拨打的号码",
+  "cena": "你从昨晚开始就肚子疼，不知道吃点药店买的药能不能好，还是得去看医生，时间还在一分一秒地过去。",
+  "moldura": "protege",
+  "frasePiso": "你要能分清一次轻微的不适和真正的急症，也要清楚知道按严重程度该拨打哪个号码。",
+  "permissao": "你不需要自己给自己下诊断。先去药店问一问是完全合理的第一步；如果情况没有好转，要求看医生也不是小题大做，这正是大家期待你会做的事。",
+  "permissaoAudioKey": "gb-b17-n10",
+  "espelho": "在你自己的国家，你也会根据严重程度在药店和医院之间做选择；这里不同的地方是，急诊（A&E）对任何人当场都是免费的——但和中国大部分医保不覆盖境外这一点不同，这不代表你可以不买旅行保险。",
+  "fichasCulturais": [
+    {
+      "sinal": "在药店里，你看到一个单独的柜台，隔着一块小窗口，一些人安静地在那里等着，跟普通收银台分开。",
+      "suaLeitura": "这是同一家药店的另一条队伍，办的是同一件事。",
+      "oQueEAli": "这个柜台是药剂师窗口（pharmacist counter），和普通商品的收银台是分开的。这里发放的是处方药，不是非处方药。",
+      "oQueVoceFaz": "如果你要找的是简单的东西——头疼、肚子疼、轻微过敏——你可以自己在货架上找，或者去普通收银台问，不用去这个窗口。",
+      "oQueMelhora": "几分钟就能解决简单的问题，不用为不需要处方的东西去排一条不必要的队。",
+      "ondeNaoVale": "如果你要找的药在英国需要处方，哪怕在你自己国家是非处方药，这条也不适用；那种情况下你确实需要这个窗口，很可能还需要看医生。",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["gb-b17-n05"]
+    }
+  ],
+  "fatosDatados": [
+    {
+      "id": "numeros-urgencia-999-112-111",
+      "afirmacao": "For a real emergency, dial 999. The European 112 also works, on the same line. For something urgent but not life-threatening, call 111 (NHS, free, 24/7) — it is what keeps you out of A&E when you do not need it.",
+      "fonte": "NHS / GOV.UK",
+      "ano": 2026,
+      "revisarAte": "2027-06-30",
+      "evidencia": "FATO",
+      "risco": "alto",
+      "audioKeys": ["gb-b17-n07", "gb-b17-n08"]
+    },
+    {
+      "id": "cobertura-saude-turista-chines",
+      "afirmacao": "In the UK, A&E (emergency) treatment is free at the point of use for everyone, regardless of nationality or insurance status. However, China has no reciprocal healthcare agreement with the UK, so non-emergency treatment, hospital stays and prescription medicine are generally chargeable to Chinese visitors. Travel insurance with medical cover is strongly recommended before the trip, not arranged after something happens.",
+      "fonte": "GOV.UK / NHS — «Ordinarily resident» rules e cobrança a visitantes sem acordo recíproco",
+      "ano": 2026,
+      "revisarAte": "2027-06-30",
+      "evidencia": "FATO",
+      "risco": "alto",
+      "audioKeys": ["gb-b17-n06"]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b17-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "tom": "ganha",
+      "pt": "第十七部分。节奏均匀，不要着急：ai nid SAM-sing for the pein。每个词都有自己的分量。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b17-n02",
+      "bloco": "cena",
+      "tom": "protege",
+      "pt": "从昨晚开始肚子就疼。你不知道该去药店还是去看医生，时间还在一分一秒地过去。"
+    },
+    {
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b17-p01",
+      "promptPt": "像上一部分那样，问酒店附近你需要的东西在哪里。现在请说。",
+      "bloco": "callback",
+      "molde": "WHERE",
+      "audioKey": "gb-b17-t01",
+      "es": "Where's the ice machine?",
+      "tts": "Where's the ice machine?",
+      "pinyin": "wehrz thi ais me-SHIN",
+      "pt": "制冰机在哪里？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b17-n03",
+      "bloco": "corpo",
+      "tom": "protege",
+      "pt": "几乎总是第一反应：先去药店。用第一天学的同一个框架，只是把物品换成症状。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_f",
+      "audioKey": "gb-b17-t02",
+      "es": "Do you have something for a stomachache?",
+      "tts": "Do you have something for a stomachache?",
+      "pinyin": "du yu hav SAM-sing for e STAM-ek-eik",
+      "pt": "你们有治肚子疼的药吗？"
+    },
+    {
+      "consulta": ["saude/algo-para"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "something for a stomachache",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b17-p02",
+      "promptPt": "你到了药店。问有没有治肚子疼的药。现在请说。",
+      "audioKey": "gb-b17-t02",
+      "es": "Do you have something for a stomachache?",
+      "tts": "Do you have something for a stomachache?",
+      "pinyin": "du yu hav SAM-sing for e STAM-ek-eik",
+      "pt": "你们有治肚子疼的药吗？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_en_gb_m",
+      "audioKey": "gb-b17-r01",
+      "es": "This should help. Take it with food.",
+      "tts": "This should help. Take it with food.",
+      "pinyin": "this shud help. teik it with fud",
+      "pt": "这个应该有用。要跟食物一起吃。"
+    },
+    {
+      "consulta": ["saude/algo-para"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "HAVE",
+      "encaixe": "something for a fever",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b17-p05",
+      "promptPt": "回到酒店，除了肚子疼，还开始发烧了。问药店有没有治这个的药。现在请说。",
+      "audioKey": "gb-b17-t05",
+      "es": "Do you have something for a fever?",
+      "tts": "Do you have something for a fever?",
+      "pinyin": "du yu hav SAM-sing for e FI-ver",
+      "pt": "你们有退烧药吗？"
+    },
+    {
+      "consulta": ["saude/guardia"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "WHERE",
+      "encaixe": "the nearest 24-hour chemist",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b17-p06",
+      "promptPt": "天已经黑了，酒店附近的药店关门了。问最近的二十四小时药店在哪里。现在请说。",
+      "audioKey": "gb-b17-t06",
+      "es": "Where's the nearest 24-hour chemist?",
+      "tts": "Where's the nearest 24-hour chemist?",
+      "pinyin": "wehrz the NI-rest twen-ti-FOR-aur KEM-ist",
+      "pt": "最近的二十四小时药店在哪里？"
+    },
+    {
+      "consulta": ["saude/algo-para"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WENT-WRONG",
+      "encaixe": "my medicine isn't working",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b17-p07",
+      "promptPt": "吃药已经过了几个小时，疼痛还是没缓解。告诉药店的人这药不管用。现在请说。",
+      "audioKey": "gb-b17-t07",
+      "es": "My medicine isn't working.",
+      "tts": "My medicine isn't working.",
+      "pinyin": "mai MED-i-sin IZ-ent WER-king",
+      "pt": "我吃的药不管用。"
+    },
+    {
+      "consulta": ["saude/algo-para"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "CAN-I",
+      "encaixe": "see a doctor",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b17-p03",
+      "promptPt": "药没有起作用，几个小时后疼痛还是一样。问能不能看医生。现在请说。",
+      "audioKey": "gb-b17-t03",
+      "es": "Can I see a doctor?",
+      "tts": "Can I see a doctor?",
+      "pinyin": "kn ai si e DOK-ter",
+      "pt": "我能看医生吗？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b17-n04",
+      "pt": "这里出现了两条不同的路：你的药店、GP（全科医生），或者急诊（A&E）。"
+    },
+    {
+      "consulta": ["saude/algo-para"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "EXCUSE",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b17-p08",
+      "promptPt": "药剂师正在窗口那边招呼别人，而你的情况已经不能再等了。用一直以来那个词引起他的注意。现在请说。",
+      "audioKey": "gb-b17-t08",
+      "es": "Excuse me.",
+      "tts": "Excuse me.",
+      "pinyin": "eks-KYUZ mi",
+      "pt": "不好意思。"
+    },
+    {
+      "consulta": ["saude/farmacia"],
+      "tipo": "responde",
+      "voz": "target_en_gb_m",
+      "molde": "WHERE",
+      "encaixe": "the nearest GP surgery",
+      "promptVoz": "guide_zh_f",
+      "promptAudioKey": "gb-b17-p09",
+      "promptPt": "药剂师建议你去看全科医生，别再等了。问最近的诊所在哪里。现在请说。",
+      "audioKey": "gb-b17-x1",
+      "es": "Where's the nearest GP surgery?",
+      "tts": "Where's the nearest GP surgery?",
+      "pinyin": "wehrz the NI-rest ji-pi SER-jer-i",
+      "pt": "最近的全科诊所在哪里？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b17-n05",
+      "bloco": "capsula",
+      "tom": "protege",
+      "pt": "对于不危及生命的问题——剧烈咳嗽、扭伤的脚踝——全科医生或者拨打 111，会比去急诊更快得到处理。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b17-n06",
+      "tom": "ganha",
+      "pt": "一个好消息：急诊治疗对任何人当场都是免费的，不论国籍。但中国和英国之间没有互惠医保协议，非紧急的治疗、住院和处方药通常都要自费——出发前一定要买好带医疗保障的旅行保险。"
+    },
+    {
+      "consulta": ["saude/112"],
+      "tipo": "responde",
+      "voz": "target_en_gb_f",
+      "molde": "WENT-WRONG",
+      "encaixe": "my passport",
+      "promptVoz": "guide_zh_m",
+      "promptAudioKey": "gb-b17-p04",
+      "promptPt": "在这一团乱麻中，你还发现护照也找不到了。用房间里学的那个框架反映这件事。现在请说。",
+      "audioKey": "gb-b17-t04",
+      "es": "I've lost my passport.",
+      "tts": "I've lost my passport.",
+      "pinyin": "aiv lost mai PAS-port",
+      "pt": "我的护照丢了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b17-n07",
+      "tom": "protege",
+      "pt": "如果情况真的很严重——胸口疼、呼吸困难——不管在哪里，号码都是 999。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b17-n08",
+      "tom": "ganha",
+      "pt": "欧洲统一号码 112 也能打通同一条线路。紧急但不危及生命的情况，记住 111，全天候免费。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b17-n09",
+      "tom": "ganha",
+      "pt": "三个号码，三种用途：999 或 112 用于危及生命的紧急情况，111 用于紧急但不危及生命的情况。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_zh_m",
+      "audioKey": "gb-b17-n10",
+      "bloco": "permissao",
+      "tom": "ganha",
+      "pt": "不需要自己给自己下诊断。先从药店开始是完全合理的；如果情况没有好转，看医生也不算小题大做。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_zh_f",
+      "audioKey": "gb-b17-n11",
+      "bloco": "recap",
+      "tom": "ganha",
+      "pt": "第十七部分完成。先去药店，111 用于紧急情况，999 或 112 用于严重情况——而且要记得提前买好旅行保险。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "药店、全科医生还是急诊：怎么判断",
+    "secoes": [
+      {
+        "titulo": "决策的阶梯",
+        "corpo": "轻微不适先去药店 → 紧急但不危及生命的情况打 111 或找全科医生 → 只有真正严重的情况才去急诊。每往上一级，花的时间都会更长。"
+      },
+      {
+        "titulo": "急诊当场免费，这一点确实不同",
+        "corpo": "急诊治疗对任何人当场都是免费的，不管是本地居民还是游客，也不管有没有保险。但中国和英国之间没有互惠医保协议，非紧急的治疗、住院和处方药通常都需要自费——这正是旅行保险存在的意义。"
+      },
+      {
+        "titulo": "GHIC/EHIC 不适用于你",
+        "corpo": "GHIC 是英国居民前往欧盟旅行时使用的卡，EHIC 是欧盟公民之间的互惠医保卡，这两者都不适用于中国游客。作为中国游客，除了急诊当场免费这一点，其他医疗费用都要靠自己的旅行保险来覆盖，出发前务必确认保单包含医疗和紧急转运。"
+      },
+      {
+        "titulo": "999、112、111：三个号码，三种用途",
+        "corpo": "999 是全国紧急号码；欧洲统一号码 112 也能接通同一条线路。111（NHS 提供，全天候免费）用于紧急但不危及生命的情况——这是能让你在不需要的时候不用跑急诊的号码。"
+      }
+    ]
+  }
+}
