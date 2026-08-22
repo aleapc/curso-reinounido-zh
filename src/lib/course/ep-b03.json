@@ -219,7 +219,7 @@
     },
     {
       "consulta": [
-        "chegar/fila"
+        "chegar/ultimo"
       ],
       "tipo": "responde",
       "voz": "target_en_gb_f",

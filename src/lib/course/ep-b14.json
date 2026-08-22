@@ -97,7 +97,7 @@
       "pt": "这个价格已经包含了一切。"
     },
     {
-      "consulta": ["pagar/dividir"],
+      "consulta": ["pagar/rachar"],
       "tipo": "responde",
       "voz": "target_en_gb_f",
       "molde": "CAN-I",

@@ -96,7 +96,7 @@
       "pt": "这个多少钱？"
     },
     {
-      "consulta": ["compras/preco"],
+      "consulta": ["compras/quanto"],
       "tipo": "responde",
       "voz": "target_en_gb_f",
       "molde": "HOW-MUCH",
@@ -120,7 +120,7 @@
       "pt": "这件是十八英镑。"
     },
     {
-      "consulta": ["compras/talla"],
+      "consulta": ["compras/quanto"],
       "tipo": "responde",
       "voz": "target_en_gb_f",
       "molde": "HAVE",
@@ -182,7 +182,7 @@
       "pt": "我去后面库房看看。"
     },
     {
-      "consulta": ["compras/preco"],
+      "consulta": ["compras/quanto"],
       "tipo": "responde",
       "voz": "target_en_gb_f",
       "molde": "HOW-MUCH",

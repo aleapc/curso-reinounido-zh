@@ -85,7 +85,7 @@
     },
     {
       "consulta": [
-        "taxi/pagamento"
+        "pagar/cartao"
       ],
       "tipo": "responde",
       "voz": "target_en_gb_f",

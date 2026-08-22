@@ -150,7 +150,7 @@
       "pt": "我的房卡打不开门。"
     },
     {
-      "consulta": ["reparo/nao-funciona"],
+      "consulta": ["quarto/nao-funciona"],
       "tipo": "responde",
       "voz": "target_en_gb_f",
       "molde": "WENT-WRONG",
@@ -165,7 +165,7 @@
       "pt": "我的房卡打不开门。"
     },
     {
-      "consulta": ["reparo/nao-funciona"],
+      "consulta": ["quarto/nao-funciona"],
       "tipo": "responde",
       "voz": "target_en_gb_m",
       "molde": "WENT-WRONG",

@@ -104,9 +104,11 @@ export const FOLHAS: Folha[] = [
   { id: 'compras/quanto', tile: 'compras', rotulo: 'How much / what size' },
   { id: 'compras/so-olhando', tile: 'compras', rotulo: 'Just looking' },
   { id: 'compras/pagar', tile: 'compras', rotulo: 'Paying & the receipt' },
+  { id: 'compras/probador', tile: 'compras', rotulo: 'The fitting room' },
   { id: 'compras/devolver', tile: 'compras', rotulo: 'Taking it back', reativa: true },
 
   // 9 · saude
+  { id: 'saude/farmacia', tile: 'saude', rotulo: 'Find a pharmacy or doctor' },
   { id: 'saude/algo-para', tile: 'saude', rotulo: '"Something for…"' },
   { id: 'saude/receita', tile: 'saude', rotulo: 'With or without a prescription' },
   { id: 'saude/minha-alergia', tile: 'saude', rotulo: 'My allergy, my medicine' },
